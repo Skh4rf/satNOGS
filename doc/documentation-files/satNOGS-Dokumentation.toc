@@ -1,0 +1,25 @@
+\contentsline {chapter}{\numberline {1}Abstract}{2}{}%
+\contentsline {chapter}{\numberline {2}Vorwort}{3}{}%
+\contentsline {chapter}{\numberline {3}Theoretische Grundlagen}{5}{}%
+\contentsline {section}{\numberline {3.1}SatNOGS-Netzwerk}{5}{}%
+\contentsline {section}{\numberline {3.2}grundlegende Antennentheorie}{7}{}%
+\contentsline {subsection}{\numberline {3.2.1}Einführung}{7}{}%
+\contentsline {subsection}{\numberline {3.2.2}Antennenfeldzonen}{7}{}%
+\contentsline {subsection}{\numberline {3.2.3}Polarisation}{7}{}%
+\contentsline {subsection}{\numberline {3.2.4}Kenngrößen einer Antenne}{7}{}%
+\contentsline {subsubsection}{\nonumberline Antennengewinn}{7}{}%
+\contentsline {subsubsection}{\nonumberline Welligkeit}{7}{}%
+\contentsline {subsubsection}{\nonumberline Richtcharakteristik und Richtdiagramm}{7}{}%
+\contentsline {subsubsection}{\nonumberline Einfluss der Erde auf das Richtdiagramm}{7}{}%
+\contentsline {subsection}{\numberline {3.2.5}Antennentypen}{7}{}%
+\contentsline {subsubsection}{\nonumberline Dipol}{7}{}%
+\contentsline {subsubsection}{\nonumberline QFH (Quadrifilar Helical Antenna)}{7}{}%
+\contentsline {chapter}{\numberline {4}Hauptteil}{8}{}%
+\contentsline {section}{\numberline {4.1}1. Antenne: Dipol}{8}{}%
+\contentsline {section}{\numberline {4.2}2. Antenne: QFH (Quadrifilar Helical Antenna)}{8}{}%
+\contentsline {chapter}{\numberline {5}Zusammenfassung}{9}{}%
+\contentsline {chapter}{\numberline {6}Literaturverzeichnis}{10}{}%
+\contentsline {chapter}{\numberline {7}Abkürzungsverzeichnis}{11}{}%
+\contentsline {chapter}{\numberline {8}Begleitprotokoll}{12}{}%
+\contentsline {chapter}{\numberline {9}Anhang}{13}{}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

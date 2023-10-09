@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9.24) (preloaded format=pdflatex 2023.10.2)  3 OCT 2023 13:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9.24) (preloaded format=pdflatex 2023.10.2)  9 OCT 2023 16:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -285,7 +285,7 @@ Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
 \@eurobox=\box55
 )
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 1
-6.
+7.
  (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
@@ -297,20 +297,20 @@ File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 ) (satNOGS-Dokumentation.aux)
 \openout1 = `satNOGS-Dokumentation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
 
 (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
@@ -337,18 +337,18 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Font Info:    Trying to load font information for OT1+phv on input line 1
-9.
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 2
+0.
  (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 19.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 20.
 
 
 (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 19.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 20.
 
 
 (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -362,12 +362,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 i/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
 chapter 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--23
+Underfull \hbox (badness 10000) in paragraph at lines 22--24
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--29
+Underfull \hbox (badness 10000) in paragraph at lines 26--31
 
  []
 
@@ -385,31 +385,114 @@ chapter 2.
 
 ]
 chapter 3.
+
+Overfull \hbox (5.52412pt too wide) in paragraph at lines 45--46
+\OT1/ptm/m/n/12 Das SatNOGS-Netzwerk spielt eine zentrale Rolle in unserer Dipl
+omarbeit und bietet hunderten
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
+
+ []
+
+<Doku - Grafiken/SatNOGS_explanation.png, id=17, 1027.84pt x 726.715pt>
+File: Doku - Grafiken/SatNOGS_explanation.png Graphic file (type png)
+<use Doku - Grafiken/SatNOGS_explanation.png>
+Package pdftex.def Info: Doku - Grafiken/SatNOGS_explanation.png  used on input
+ line 57.
+(pdftex.def)             Requested size: 284.52756pt x 201.17235pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
+
+ []
+
 [5
 
-]
+ <./Doku - Grafiken/SatNOGS_explanation.png>]
+<Doku - Grafiken/SatNOGS_BlockDiagram.png, id=23, 1105.12875pt x 289.08pt>
+File: Doku - Grafiken/SatNOGS_BlockDiagram.png Graphic file (type png)
+<use Doku - Grafiken/SatNOGS_BlockDiagram.png>
+Package pdftex.def Info: Doku - Grafiken/SatNOGS_BlockDiagram.png  used on inpu
+t line 67.
+(pdftex.def)             Requested size: 455.24408pt x 119.07935pt.
+
+Overfull \hbox (7.11313pt too wide) in paragraph at lines 67--69
+ [] 
+ []
+
+
+Overfull \hbox (39.18513pt too wide) in paragraph at lines 73--74
+[]\OT1/ptm/m/n/12 Zum Empfang von Daten kommen zwei Antennentypen infrage: Dire
+ktionale oder omnidirektionale
+ []
+
+
+Overfull \hbox (19.22859pt too wide) in paragraph at lines 73--74
+\OT1/ptm/m/n/12 werden, jedoch wird f[]ur solch ein Modell ein Rotator ben[]oti
+gt. Der Vorteil einer omnidirektionalen
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
+
+ []
+
+
+Overfull \hbox (38.97954pt too wide) in paragraph at lines 79--80
+\OT1/ptm/m/n/12 Noise Amplifier) notwendig. Das SDR []ubernimmt softwaretechnis
+ch Aufgaben welche normalerweise
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
+
+ []
+
+
+Overfull \hbox (0.97623pt too wide) in paragraph at lines 82--83
+[]\OT1/ptm/m/n/12 Die Aufgabe des SatNOGS Clients kann in der Regel von jedem L
+inux-PC oder RaspberryPi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
+
+ []
+
+[6 <./Doku - Grafiken/SatNOGS_BlockDiagram.png>] [7]
 chapter 4.
-[6
-
-]
-chapter 5.
-[7
-
-]
-chapter 6.
 [8
 
 ]
-chapter 7.
+chapter 5.
 [9
 
 ]
-chapter 8.
+chapter 6.
 [10
 
 ]
-chapter 9.
+chapter 7.
 [11
+
+]
+chapter 8.
+[12
+
+]
+chapter 9.
+[13
 
 ] (satNOGS-Dokumentation.aux)
  ***********
@@ -418,20 +501,20 @@ L3 programming layer <2023-08-29>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 6909 strings out of 475248
- 135107 string characters out of 5757813
- 1920785 words of memory out of 5000000
- 28381 multiletter control sequences out of 15000+600000
- 570755 words of font info for 62 fonts, out of 8000000 for 9000
+ 6998 strings out of 475248
+ 137791 string characters out of 5757813
+ 1923785 words of memory out of 5000000
+ 28458 multiletter control sequences out of 15000+600000
+ 577121 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,7n,107p,10936b,271s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,7n,107p,10936b,278s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a
 .pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a
 .pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a
 .pfb>
-Output written on satNOGS-Dokumentation.pdf (11 pages, 46971 bytes).
+Output written on satNOGS-Dokumentation.pdf (13 pages, 183711 bytes).
 PDF statistics:
- 54 PDF objects out of 1000 (max. 8388607)
+ 66 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
