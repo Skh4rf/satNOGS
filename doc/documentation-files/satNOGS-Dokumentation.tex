@@ -1,12 +1,22 @@
 \documentclass[12pt]{scrreprt}
-\usepackage{babel}
-\usepackage{german}
-\usepackage{times}
+\usepackage[ngerman]{babel}
+\usepackage{mathptmx}
 \usepackage{amssymb}
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{eurosym}
 \usepackage{graphicx}
+\usepackage{chngcntr}
+\usepackage{minted}
+\usepackage{hyperref}
+\usepackage{biblatex}
+\usepackage{fancyhdr}
+\usepackage{cleveref}
+\usepackage{acronym}
+
+
+
+\counterwithout{figure}{chapter}
 
 \subject{Diplomarbeit}
 \title{Empfangsstation für globales Satellitenbodenstationsnetzwerk SatNOGS}
@@ -19,6 +29,9 @@
 	\maketitle
 	
 	\chapter{Abstract}
+	
+	
+	
 	Ziel der Diplomarbeit ist es, eine funktionstüchtige Satelliten-Ground-Station aufzubauen, um mit 
 	Satelliten im Amateurfunkband, vor allem auch dem CubeSat des STS1, kommunizieren zu können.\\
 	
@@ -48,27 +61,25 @@
 	Das, was SatNOGS zu so einer attraktiven Lösung macht, ist der Fakt dass die Bodenstation um den ganzen Globus verteilt sind. Der große Vorteil davon ist, dass der Empfang von Satellitendaten nun über alle verfügbaren Empfangsstationen laufen kann.\\
 	
 	
-	In Abbildung \ref{fig:Abb 3.1} wird die Topologie des SatNOGS-Netzwerkes abstrahiert dargestellt.
+	In Abbildung \ref{fig:SatNOGS_Erklärung} wird die Topologie des SatNOGS-Netzwerkes abstrahiert dargestellt.
 	Alle über das Netzwerk verfügbaren Bodenstationen sind mit SatNOGS-Servern verbunden. Auf diese Server kann über die Website bzw. API zugegriffen werden, welche die empfangenen Satellitendaten für alle Benutzer erreichbar macht.
 	
+	\begin{figure}[!hbtp]%
+		\centering
+			\includegraphics[width=10cm]{../ref/SatNOGS_explanation}
+			\caption{Erklärung des SatNOGS Netzwerkes}
+			\label{fig:SatNOGS_Erklärung}
+	\end{figure}	
 	
-	\begin{figure}[h]
-		\begin{center}
-			\includegraphics[width=10cm]{Doku - Grafiken/SatNOGS_explanation}
-			\label{fig:Abb 3.1}
-			\caption{SatNOGS-Netzwerk Erklärung}
-		\end{center}
-	\end{figure}
-	
-	Um näher auf den Ablauf des Datenempfangs und der benötigten Systemblöcke einzugehen wird auf Abbildung \ref{fig:Abb 3.2} verwiesen.\\	
-	
-	\begin{figure}[h]
-		\begin{center}
-			\includegraphics[width=16cm]{Doku - Grafiken/SatNOGS_BlockDiagram}
-			\label{fig:Abb 3.2}
+	\begin{figure}[!hbtp]%
+		\centering
+			\includegraphics[width=16cm]{../ref/SatNOGS_BlockDiagram}
 			\caption{SatNOGS-Systemtopologie}
-		\end{center}
+			\label{fig:SatNOGS_Systemtopologie}
 	\end{figure}
+	
+	Um näher auf den Ablauf des Datenempfangs und der benötigten Systemblöcke einzugehen wird auf Abbildung \ref{fig:SatNOGS_Systemtopologie} verwiesen.\\
+
 
 	Zum Empfang von Daten kommen zwei Antennentypen infrage: Direktionale oder omnidirektionale Antennen. Eine direktionale Antenne folgt dem Verlauf des Satelliten. Dies bringt den Vorteil mit sich, dass eine höhere Empfangsleistung erzielt, und somit klarere Daten empfangen werden, jedoch wird für solch ein Modell ein Rotator benötigt. Der Vorteil einer omnidirektionalen Antenne ist, dass kein teurer Rotator notwendig ist, allerdings können damit nur schwer brauchbare Daten empfangen werden.\\
 	
@@ -79,10 +90,10 @@
 	Zur Demodulation der Daten sind ein SDR (Software Defined Radio) sowie ein LNA (Low Noise Amplifier) notwendig. Das SDR übernimmt softwaretechnisch Aufgaben welche normalerweise von Hardware übernommen werden (Demodulation, Filter, Mixer, etc...). Der LNA, wie der Name schon andeutet, ist für die Verstärkung kleiner Signale mit besonderer Rauscharmut verantwortlich. \\
 	
 	
-	Die Aufgabe des SatNOGS Clients kann in der Regel von jedem Linux-PC oder RaspberryPi übernommen werden. Allerdings wird die Kompatibilität nur für den RaspberryPi3 und 4 garantiert.\\
+	Die Aufgabe des SatNOGS Clients kann in der Regel von jedem Linux-PC oder RaspberryPi übernommen werden. Allerdings wird die Kompatibilität zwar für alle Linux-basierten PCs, jedoch nur für die RaspBerryPis Version 3, 3+ und 4 garantiert.\\
 	
 	
-	Der SatNOGS Client ist direkt mit den Servern verbunden
+	Der SatNOGS Client ist mit den Servern verbunden, der die Bodentation als solche im Netzwerk repräsentiert. Die Server unterhalten weiters eine Datenbank, welche Daten über Satelliten enthält, die mit den Empfangsstationen erreichbar sind.
 	\pagebreak
 	
 	\section{grundlegende Antennentheorie}
@@ -124,6 +135,9 @@
 	\pagebreak
 	
 	\chapter{Literaturverzeichnis}
+	\pagebreak
+	
+	\listoffigures
 	\pagebreak
 	
 	\chapter{Abkürzungsverzeichnis}
