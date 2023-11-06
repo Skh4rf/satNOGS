@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9.24) (preloaded format=pdflatex 2023.10.2)  13 OCT 2023 14:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9.24) (preloaded format=pdflatex 2023.10.2)  6 NOV 2023 10:01
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -900,31 +900,31 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 \@quotelevel=\count443
 \@quotereset=\count444
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2
-7.
+6.
 (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 (satNOGS-Dokumentation.aux)
 \openout1 = `satNOGS-Dokumentation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
 
 (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
@@ -951,7 +951,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 27.
+Package hyperref Info: Link coloring OFF on input line 26.
  (satNOGS-Dokumentation.out) (satNOGS-Dokumentation.out)
 \@outlinefile=\write6
 \openout6 = `satNOGS-Dokumentation.out'.
@@ -963,7 +963,7 @@ Class scrreprt Info: loading recommended package `bookmark'.
 (scrreprt)           `bookmarkpackage=false' before \begin{document} and
 (scrreprt)           you can avoid this message adding:
 (scrreprt)             \usepackage{bookmark}
-(scrreprt)           before \begin{document} on input line 27.
+(scrreprt)           before \begin{document} on input line 26.
 
 (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
@@ -999,37 +999,37 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'satNOGS-Dokumentation.bbl' not found.
 
 No file satNOGS-Dokumentation.bbl.
-Package biblatex Info: Reference section=0 on input line 27.
-Package biblatex Info: Reference segment=0 on input line 27.
+Package biblatex Info: Reference section=0 on input line 26.
+Package biblatex Info: Reference segment=0 on input line 26.
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 30.
+ 29.
 (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 30.
+ 29.
 
 (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 30.
+ 29.
 
 (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 30.
+ 29.
 
 (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
 
 [1
 
@@ -1054,12 +1054,12 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              deprecated \float@addtolist interface.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--37
+Underfull \hbox (badness 10000) in paragraph at lines 34--36
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--44
+Underfull \hbox (badness 10000) in paragraph at lines 37--42
 
  []
 
@@ -1083,88 +1083,171 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 ]
 chapter 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--62
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
 
-<../ref/SatNOGS_explanation.png, id=61, 1027.84pt x 726.715pt>
+<../ref/SatNOGS_explanation.png, id=63, 1027.84pt x 726.715pt>
 File: ../ref/SatNOGS_explanation.png Graphic file (type png)
 <use ../ref/SatNOGS_explanation.png>
-Package pdftex.def Info: ../ref/SatNOGS_explanation.png  used on input line 69.
+Package pdftex.def Info: ../ref/SatNOGS_explanation.png  used on input line 64.
 
 (pdftex.def)             Requested size: 284.52756pt x 201.17235pt.
-<../ref/SatNOGS_BlockDiagram.png, id=63, 1105.12875pt x 289.08pt>
+<../ref/SatNOGS_BlockDiagram.png, id=65, 1105.12875pt x 289.08pt>
 File: ../ref/SatNOGS_BlockDiagram.png Graphic file (type png)
 <use ../ref/SatNOGS_BlockDiagram.png>
-Package pdftex.def Info: ../ref/SatNOGS_BlockDiagram.png  used on input line 76
+Package pdftex.def Info: ../ref/SatNOGS_BlockDiagram.png  used on input line 71
 .
 (pdftex.def)             Requested size: 455.24408pt x 119.07935pt.
 
-Overfull \hbox (7.11313pt too wide) in paragraph at lines 76--77
+Overfull \hbox (7.11313pt too wide) in paragraph at lines 71--72
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
 
 [5
 
  <../ref/SatNOGS_explanation.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 84--85
 
  []
 
+[6 <../ref/SatNOGS_BlockDiagram.png>]
+Overfull \hbox (16.8898pt too wide) in paragraph at lines 91--92
+\OT1/ptm/m/n/12 Um die in der Di-plom-ar-beit be-ar-bei-te-ten In-hal-te bes-se
+r ver-ste-hen zu k[]onnen, wird ei-ne Einf[]uhrung
+ []
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--91
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
 
  []
 
-[6 <../ref/SatNOGS_BlockDiagram.png>] [7]
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
+
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
+19.
+(C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
+
+ []
+
+<../ref/Richtdiagramm_Beispiel.png, id=87, 452.892pt x 374.5995pt>
+File: ../ref/Richtdiagramm_Beispiel.png Graphic file (type png)
+<use ../ref/Richtdiagramm_Beispiel.png>
+Package pdftex.def Info: ../ref/Richtdiagramm_Beispiel.png  used on input line 
+167.
+(pdftex.def)             Requested size: 455.24408pt x 376.55342pt.
+
+Overfull \hbox (7.11313pt too wide) in paragraph at lines 167--168
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--180
+
+ []
+
+[9 <../ref/Richtdiagramm_Beispiel.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
+
+ []
+
+[10]
 chapter 4.
-[8
+[11
 
 ]
 chapter 5.
-[9
+[12
 
 ]
 chapter 6.
-[10
+[13
 
 ] (satNOGS-Dokumentation.lof)
 \tf@lof=\write8
 \openout8 = `satNOGS-Dokumentation.lof'.
 
- [11
+ [14
 
 ]
 chapter 7.
-[12
+[15
 
 ]
 chapter 8.
-[13
+[16
 
 ]
 chapter 9.
-[14
+[17
 
 ] (satNOGS-Dokumentation.aux)
  ***********
@@ -1178,20 +1261,25 @@ Package logreq Info: Writing requests to 'satNOGS-Dokumentation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26696 strings out of 475248
- 509149 string characters out of 5757813
- 1926785 words of memory out of 5000000
- 47853 multiletter control sequences out of 15000+600000
- 579717 words of font info for 87 fonts, out of 8000000 for 9000
+ 26765 strings out of 475248
+ 510390 string characters out of 5757813
+ 1928785 words of memory out of 5000000
+ 47896 multiletter control sequences out of 15000+600000
+ 587626 words of font info for 102 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,8n,107p,10945b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmssbx10.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/urw/time
-s/utmb8a.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/urw/time
-s/utmr8a.pfb>
-Output written on satNOGS-Dokumentation.pdf (14 pages, 204738 bytes).
+cmmi10.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmr10.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmssbx10.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/gabri/AppData/Local/Programs/M
+iKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/gabri/AppData/Local/Programs/Mi
+KTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/gabri/AppData/Local/Programs/Mi
+KTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/gabri/AppData/Local/Programs/Mi
+KTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on satNOGS-Dokumentation.pdf (17 pages, 315416 bytes).
 PDF statistics:
- 209 PDF objects out of 1000 (max. 8388607)
- 49 named destinations out of 1000 (max. 500000)
- 155 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 260 PDF objects out of 1000 (max. 8388607)
+ 57 named destinations out of 1000 (max. 500000)
+ 168 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -7,20 +7,21 @@
 \contentsline {subsection}{\numberline {3.2.1}Einführung}{7}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Antennenfeldzonen}{7}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Polarisation}{7}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Kenngrößen einer Antenne}{7}{subsection.3.2.4}%
-\contentsline {subsubsection}{\nonumberline Antennengewinn}{7}{subsubsection*.3}%
-\contentsline {subsubsection}{\nonumberline Welligkeit}{7}{subsubsection*.5}%
-\contentsline {subsubsection}{\nonumberline Richtcharakteristik und Richtdiagramm}{7}{subsubsection*.7}%
-\contentsline {subsubsection}{\nonumberline Einfluss der Erde auf das Richtdiagramm}{7}{subsubsection*.9}%
-\contentsline {subsection}{\numberline {3.2.5}Antennentypen}{7}{subsection.3.2.5}%
-\contentsline {subsubsection}{\nonumberline Dipol}{7}{subsubsection*.11}%
-\contentsline {subsubsection}{\nonumberline QFH (Quadrifilar Helical Antenna)}{7}{subsubsection*.13}%
-\contentsline {chapter}{\numberline {4}Hauptteil}{8}{chapter.4}%
-\contentsline {section}{\numberline {4.1}1. Antenne: Dipol}{8}{section.4.1}%
-\contentsline {section}{\numberline {4.2}2. Antenne: QFH (Quadrifilar Helical Antenna)}{8}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Zusammenfassung}{9}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Literaturverzeichnis}{10}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Abkürzungsverzeichnis}{12}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Begleitprotokoll}{13}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Anhang}{14}{chapter.9}%
+\contentsline {subsection}{\numberline {3.2.4}Kenngrößen einer Antenne}{8}{subsection.3.2.4}%
+\contentsline {subsubsection}{\nonumberline Antennengewinn}{8}{subsubsection*.3}%
+\contentsline {subsubsection}{\nonumberline Welligkeit}{8}{subsubsection*.5}%
+\contentsline {subsubsection}{\nonumberline Richtcharakteristik und Richtdiagramm}{8}{subsubsection*.7}%
+\contentsline {subsubsection}{\nonumberline Einfluss der Erde auf das Richtdiagramm}{10}{subsubsection*.9}%
+\contentsline {subsection}{\numberline {3.2.5}Antennentypen}{10}{subsection.3.2.5}%
+\contentsline {subsubsection}{\nonumberline Dipol}{10}{subsubsection*.11}%
+\contentsline {subsubsection}{\nonumberline QFH (Quadrifilar Helical Antenna)}{10}{subsubsection*.13}%
+\contentsline {subsection}{\numberline {3.2.6}Baluns und Mantelwellensperren}{10}{subsection.3.2.6}%
+\contentsline {chapter}{\numberline {4}Hauptteil}{11}{chapter.4}%
+\contentsline {section}{\numberline {4.1}1. Antenne: Dipol}{11}{section.4.1}%
+\contentsline {section}{\numberline {4.2}2. Antenne: QFH (Quadrifilar Helical Antenna)}{11}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Zusammenfassung}{12}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Literaturverzeichnis}{13}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Abkürzungsverzeichnis}{15}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Begleitprotokoll}{16}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Anhang}{17}{chapter.9}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
