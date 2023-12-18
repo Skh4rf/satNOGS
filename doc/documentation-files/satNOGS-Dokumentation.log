@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9.24) (preloaded format=pdflatex 2023.10.2)  4 DEC 2023 15:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9.24) (preloaded format=pdflatex 2023.10.2)  18 DEC 2023 14:39
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1037,6 +1037,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 
 {C:/Users/gabri/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/gabr
 i/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
+(Abstract_Vorwort.tex
 chapter 1.
 
 Class scrreprt Warning: \float@addtolists detected!
@@ -1054,12 +1055,12 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              deprecated \float@addtolist interface.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--36
+Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--42
+Underfull \hbox (badness 10000) in paragraph at lines 7--12
 
  []
 
@@ -1067,7 +1068,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--42
 
 ]
 chapter 2.
-[3
+) [3
 
 ] (satNOGS-Dokumentation.toc
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
@@ -1080,32 +1081,32 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 
  [4
 
-]
+] (Theorie.tex
 chapter 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--58
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
 <../ref/SatNOGS_explanation.png, id=63, 1027.84pt x 726.715pt>
 File: ../ref/SatNOGS_explanation.png Graphic file (type png)
 <use ../ref/SatNOGS_explanation.png>
-Package pdftex.def Info: ../ref/SatNOGS_explanation.png  used on input line 64.
+Package pdftex.def Info: ../ref/SatNOGS_explanation.png  used on input line 14.
 
 (pdftex.def)             Requested size: 284.52756pt x 201.17235pt.
 <../ref/SatNOGS_BlockDiagram.png, id=65, 1105.12875pt x 289.08pt>
 File: ../ref/SatNOGS_BlockDiagram.png Graphic file (type png)
 <use ../ref/SatNOGS_BlockDiagram.png>
-Package pdftex.def Info: ../ref/SatNOGS_BlockDiagram.png  used on input line 71
+Package pdftex.def Info: ../ref/SatNOGS_BlockDiagram.png  used on input line 21
 .
 (pdftex.def)             Requested size: 455.24408pt x 119.07935pt.
 
-Overfull \hbox (7.11313pt too wide) in paragraph at lines 71--72
+Overfull \hbox (7.11313pt too wide) in paragraph at lines 21--22
  [][] 
  []
 
@@ -1113,70 +1114,70 @@ Overfull \hbox (7.11313pt too wide) in paragraph at lines 71--72
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
 [5
 
  <../ref/SatNOGS_explanation.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
 
  []
 
 [6 <../ref/SatNOGS_BlockDiagram.png>]
-Overfull \hbox (16.8898pt too wide) in paragraph at lines 91--92
+Overfull \hbox (16.8898pt too wide) in paragraph at lines 41--42
 \OT1/ptm/m/n/12 Um die in der Di-plom-ar-beit be-ar-bei-te-ten In-hal-te bes-se
 r ver-ste-hen zu k[]onnen, wird ei-ne Einf[]uhrung
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--111
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--116
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
-19.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 6
+9.
 (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 137--138
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--148
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
 
  []
 
@@ -1184,10 +1185,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 147--148
 File: ../ref/Richtdiagramm_Beispiel.png Graphic file (type png)
 <use ../ref/Richtdiagramm_Beispiel.png>
 Package pdftex.def Info: ../ref/Richtdiagramm_Beispiel.png  used on input line 
-167.
+117.
 (pdftex.def)             Requested size: 455.24408pt x 376.55342pt.
 
-Overfull \hbox (7.11313pt too wide) in paragraph at lines 167--168
+Overfull \hbox (7.11313pt too wide) in paragraph at lines 117--118
  [][] 
  []
 
@@ -1195,40 +1196,35 @@ Overfull \hbox (7.11313pt too wide) in paragraph at lines 167--168
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--173
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 174--175
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--180
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
 
 [9 <../ref/Richtdiagramm_Beispiel.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 181--182
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--184
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
 
  []
 
-[10]
+) [10] (Hauptteil.tex
 chapter 4.
+) [11
 
-Underfull \hbox (badness 10000) in paragraph at lines 204--205
-
- []
-
-[11
-
-]
+] (Schluss.tex
 chapter 5.
 [12
 
@@ -1252,7 +1248,7 @@ chapter 8.
 
 ]
 chapter 9.
-[17
+) [17
 
 ] (satNOGS-Dokumentation.aux)
  ***********
@@ -1266,10 +1262,10 @@ Package logreq Info: Writing requests to 'satNOGS-Dokumentation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26765 strings out of 475248
- 510390 string characters out of 5757813
+ 26804 strings out of 475248
+ 511341 string characters out of 5757813
  1928785 words of memory out of 5000000
- 47896 multiletter control sequences out of 15000+600000
+ 47917 multiletter control sequences out of 15000+600000
  587626 words of font info for 102 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,8n,107p,10945b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1282,9 +1278,9 @@ iKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/gabri/AppData/Local/Programs/Mi
 KTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/gabri/AppData/Local/Programs/Mi
 KTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/gabri/AppData/Local/Programs/Mi
 KTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on satNOGS-Dokumentation.pdf (17 pages, 315540 bytes).
+Output written on satNOGS-Dokumentation.pdf (17 pages, 316433 bytes).
 PDF statistics:
- 260 PDF objects out of 1000 (max. 8388607)
- 57 named destinations out of 1000 (max. 500000)
+ 267 PDF objects out of 1000 (max. 8388607)
+ 63 named destinations out of 1000 (max. 500000)
  168 words of extra memory for PDF output out of 10000 (max. 10000000)
 
