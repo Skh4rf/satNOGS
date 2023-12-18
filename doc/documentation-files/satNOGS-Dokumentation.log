@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9.24) (preloaded format=pdflatex 2023.10.2)  6 NOV 2023 10:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9.24) (preloaded format=pdflatex 2023.10.2)  4 DEC 2023 15:01
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1221,6 +1221,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 183--184
 
 [10]
 chapter 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
+
+ []
+
 [11
 
 ]
@@ -1277,7 +1282,7 @@ iKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/gabri/AppData/Local/Programs/Mi
 KTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/gabri/AppData/Local/Programs/Mi
 KTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/gabri/AppData/Local/Programs/Mi
 KTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on satNOGS-Dokumentation.pdf (17 pages, 315416 bytes).
+Output written on satNOGS-Dokumentation.pdf (17 pages, 315540 bytes).
 PDF statistics:
  260 PDF objects out of 1000 (max. 8388607)
  57 named destinations out of 1000 (max. 500000)
