@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9.24) (preloaded format=pdflatex 2023.10.2)  18 DEC 2023 14:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9.24) (preloaded format=pdflatex 2023.10.2)  18 DEC 2023 15:39
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1093,13 +1093,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-<../ref/SatNOGS_explanation.png, id=63, 1027.84pt x 726.715pt>
+<../ref/SatNOGS_explanation.png, id=80, 1027.84pt x 726.715pt>
 File: ../ref/SatNOGS_explanation.png Graphic file (type png)
 <use ../ref/SatNOGS_explanation.png>
 Package pdftex.def Info: ../ref/SatNOGS_explanation.png  used on input line 14.
 
 (pdftex.def)             Requested size: 284.52756pt x 201.17235pt.
-<../ref/SatNOGS_BlockDiagram.png, id=65, 1105.12875pt x 289.08pt>
+<../ref/SatNOGS_BlockDiagram.png, id=82, 1105.12875pt x 289.08pt>
 File: ../ref/SatNOGS_BlockDiagram.png Graphic file (type png)
 <use ../ref/SatNOGS_BlockDiagram.png>
 Package pdftex.def Info: ../ref/SatNOGS_BlockDiagram.png  used on input line 21
@@ -1181,7 +1181,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 97--98
 
  []
 
-<../ref/Richtdiagramm_Beispiel.png, id=87, 452.892pt x 374.5995pt>
+<../ref/Richtdiagramm_Beispiel.png, id=104, 452.892pt x 374.5995pt>
 File: ../ref/Richtdiagramm_Beispiel.png Graphic file (type png)
 <use ../ref/Richtdiagramm_Beispiel.png>
 Package pdftex.def Info: ../ref/Richtdiagramm_Beispiel.png  used on input line 
@@ -1222,7 +1222,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 133--134
 
 ) [10] (Hauptteil.tex
 chapter 4.
-) [11
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+
+ []
+
+(Hauptteil-CCSDS.tex)) [11
 
 ] (Schluss.tex
 chapter 5.
@@ -1262,10 +1267,10 @@ Package logreq Info: Writing requests to 'satNOGS-Dokumentation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26804 strings out of 475248
- 511341 string characters out of 5757813
- 1928785 words of memory out of 5000000
- 47917 multiletter control sequences out of 15000+600000
+ 26828 strings out of 475248
+ 511772 string characters out of 5757813
+ 1929785 words of memory out of 5000000
+ 47930 multiletter control sequences out of 15000+600000
  587626 words of font info for 102 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,8n,107p,10945b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1278,9 +1283,9 @@ iKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/gabri/AppData/Local/Programs/Mi
 KTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/gabri/AppData/Local/Programs/Mi
 KTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/gabri/AppData/Local/Programs/Mi
 KTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on satNOGS-Dokumentation.pdf (17 pages, 316433 bytes).
+Output written on satNOGS-Dokumentation.pdf (17 pages, 322826 bytes).
 PDF statistics:
- 267 PDF objects out of 1000 (max. 8388607)
- 63 named destinations out of 1000 (max. 500000)
- 168 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 308 PDF objects out of 1000 (max. 8388607)
+ 71 named destinations out of 1000 (max. 500000)
+ 232 words of extra memory for PDF output out of 10000 (max. 10000000)
 

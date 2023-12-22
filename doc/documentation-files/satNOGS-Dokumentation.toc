@@ -20,8 +20,16 @@
 \contentsline {subsubsection}{\nonumberline Spannungsbalun}{10}{subsubsection*.17}%
 \contentsline {subsubsection}{\nonumberline Un-Un}{10}{subsubsection*.19}%
 \contentsline {chapter}{\numberline {4}Hauptteil}{11}{chapter.4}%
-\contentsline {section}{\numberline {4.1}1. Antenne: Dipol}{11}{section.4.1}%
-\contentsline {section}{\numberline {4.2}2. Antenne: QFH (Quadrifilar Helical Antenna)}{11}{section.4.2}%
+\contentsline {section}{\numberline {4.1}Antennen}{11}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}1. Antenne: Dipol}{11}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}2. Antenne: QFH (Quadrifilar Helical Antenna)}{11}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}3. Antenne: Helix-Antenne}{11}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Kommunikationsprotokolle: CCSDS}{11}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Punctured Convolutional Code}{11}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Reed Solomon 255,223 coding}{11}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Standard CCSDS descrambling}{11}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Standard CCSDS Sync Word}{11}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}CRC32 C Checksum}{11}{subsection.4.2.5}%
 \contentsline {chapter}{\numberline {5}Zusammenfassung}{12}{chapter.5}%
 \contentsline {chapter}{\numberline {6}Literaturverzeichnis}{13}{chapter.6}%
 \contentsline {chapter}{\numberline {7}Abkürzungsverzeichnis}{15}{chapter.7}%
