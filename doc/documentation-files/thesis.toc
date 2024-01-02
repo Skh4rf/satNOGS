@@ -1,0 +1,38 @@
+\babel@toc {german}{}\relax 
+\contentsline {section}{\numberline {0.1}Abstract (deutsch)}{vii}{section.0.1}%
+\contentsline {section}{\numberline {0.2}Abstract (english)}{vii}{section.0.2}%
+\contentsline {chapter}{\numberline {1}Rationale}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Einführung}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}SatNOGS-Netzwerk}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}grundlegende Antennentheorie}{6}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Einführung}{6}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Antennenfeldzonen}{6}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Polarisation}{7}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Kenngrößen einer Antenne}{7}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}Antennengewinn}{8}{section.2.3}%
+\contentsline {subsubsection}{\nonumberline Welligkeit}{8}{subsubsection*.10}%
+\contentsline {subsubsection}{\nonumberline Richtcharakteristik und Richtdiagramm}{8}{subsubsection*.12}%
+\contentsline {subsubsection}{\nonumberline Einfluss der Erde auf das Richtdiagramm}{10}{subsubsection*.15}%
+\contentsline {subsection}{\numberline {2.3.1}Antennentypen}{11}{subsection.2.3.1}%
+\contentsline {subsubsection}{\nonumberline Dipol}{11}{subsubsection*.17}%
+\contentsline {subsubsection}{\nonumberline QFH (Quadrifilar Helical Antenna)}{11}{subsubsection*.19}%
+\contentsline {subsection}{\numberline {2.3.2}Baluns}{11}{subsection.2.3.2}%
+\contentsline {subsubsection}{\nonumberline Strombalun}{11}{subsubsection*.21}%
+\contentsline {subsubsection}{\nonumberline Spannungsbalun}{11}{subsubsection*.23}%
+\contentsline {subsubsection}{\nonumberline Un-Un}{11}{subsubsection*.25}%
+\contentsline {chapter}{\numberline {3}Simulation}{13}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Quadrifilare Helix-Antenne (QFH)}{13}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}3D-Modelle}{13}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}CENOS}{13}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}gerichtete Helix-Antenne}{13}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}3D-Modelle}{13}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}CENOS}{13}{subsection.3.2.2}%
+\contentsline {chapter}{\numberline {4}Discussion}{15}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Summary of findings}{15}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Schlussfolgerung}{17}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Literaturverzeichnis}{19}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Abkürzungsverzeichnis}{21}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Begleitprotokoll}{23}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Anhang}{25}{chapter.9}%
+\contentsline {chapter}{\numberline {10}Perspectives}{27}{chapter.10}%
+\contentsline {chapter}{\numberline {11}Bibliography}{29}{chapter.11}%
