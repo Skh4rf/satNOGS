@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2023.12.29)  2 JAN 2024 22:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2023.12.29)  2 JAN 2024 22:39
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1730,17 +1730,13 @@ Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 
 LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <20.74> not available
 (Font)              Font shape `T1/lmss/bx/n' tried instead on input line 6.
-) [7] (thesis.toc
-Underfull \vbox (badness 2119) has occurred while \output is active []
-
- [8
+) [7] (thesis.toc [8
 
 ])
 \tf@toc=\write6
 \openout6 = `thesis.toc'.
 
-
-[9] (mainmatter/rationale.tex
+ [9] (mainmatter/rationale.tex
 chapter 1.
 
 Class scrreprt Warning: \float@addtolists detected!
@@ -1798,7 +1794,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--14
 
  []
 
-<../ref/SatNOGS_explanation.png, id=155, 1027.84pt x 726.715pt>
+<../ref/SatNOGS_explanation.png, id=167, 1027.84pt x 726.715pt>
 File: ../ref/SatNOGS_explanation.png Graphic file (type png)
 <use ../ref/SatNOGS_explanation.png>
 Package pdftex.def Info: ../ref/SatNOGS_explanation.png  used on input line 17.
@@ -1810,7 +1806,7 @@ LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <10.95> not available
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3]
-<../ref/SatNOGS_BlockDiagram.png, id=163, 1105.12875pt x 289.08pt>
+<../ref/SatNOGS_BlockDiagram.png, id=175, 1105.12875pt x 289.08pt>
 File: ../ref/SatNOGS_BlockDiagram.png Graphic file (type png)
 <use ../ref/SatNOGS_BlockDiagram.png>
 Package pdftex.def Info: ../ref/SatNOGS_BlockDiagram.png  used on input line 24
@@ -1895,7 +1891,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 101--103
  []
 
 [8]
-<../ref/Richtdiagramm_Beispiel.png, id=199, 452.892pt x 374.5995pt>
+<../ref/Richtdiagramm_Beispiel.png, id=211, 452.892pt x 374.5995pt>
 File: ../ref/Richtdiagramm_Beispiel.png Graphic file (type png)
 <use ../ref/Richtdiagramm_Beispiel.png>
 Package pdftex.def Info: ../ref/Richtdiagramm_Beispiel.png  used on input line 
@@ -1936,7 +1932,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 132--139
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10])
-(mainmatter/simulation.tex [11] [12
+(mainmatter/gs-setup.tex [11] [12
 
 
 ]
@@ -1952,7 +1948,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-) (mainmatter/discussion.tex [13] [14
+) (mainmatter/simulation.tex [13] [14
 
 
 ]
@@ -1968,7 +1964,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-) (mainmatter/conclusion.tex [15] [16
+) (mainmatter/construction.tex [15] [16
 
 
 ]
@@ -1984,11 +1980,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [17]
-[18
+) (mainmatter/discussion.tex [17] [18
 
 
 ]
@@ -2004,18 +1996,10 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [19]
-(thesis.lof)
-\tf@lof=\write7
-\openout7 = `thesis.lof'.
+) (mainmatter/conclusion.tex [19] [20
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [20]
+]
 chapter 7.
 
 Class scrreprt Warning: Redefinition of \@makechapterhead detected.
@@ -2031,10 +2015,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [21
-
-
-]
+ [21]
 [22
 
 
@@ -2051,10 +2032,18 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-[23] [24
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23]
+(thesis.lof)
+\tf@lof=\write7
+\openout7 = `thesis.lof'.
 
 
-]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24]
 chapter 9.
 
 Class scrreprt Warning: Redefinition of \@makechapterhead detected.
@@ -2067,7 +2056,14 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-) (mainmatter/perspectives.tex [25] [26
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25
+
+
+]
+[26
 
 
 ]
@@ -2083,28 +2079,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-
-LaTeX Warning: Citation 'Cohen2017MouseoVeRLaboratory' on page 27 undefined on 
-input line 5.
-
-
-LaTeX Warning: Citation 'Fernandes2017a' on page 27 undefined on input line 6.
-
-
-LaTeX Warning: Citation 'Buehlmann2018TheCharacteristics' on page 27 undefined 
-on input line 6.
-
-)
-Underfull \hbox (badness 10000) in paragraph at lines 3--144
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--144
-
- []
-
-(frontbackmatter/bibliography.tex [27] [28
+[27] [28
 
 
 ]
@@ -2120,10 +2095,63 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
+) (mainmatter/perspectives.tex [29] [30
+
+
+]
+chapter 12.
+
+Class scrreprt Warning: Redefinition of \@makechapterhead detected.
+(scrreprt)              Note: KOMA-Script does use styles for commands like
+(scrreprt)              \chapter. Currently it internally still provides and
+(scrreprt)              uses \@makechapterhead, but a completely different
+(scrreprt)              definition compared to the standard classes.
+(scrreprt)              So redefining or using internal \@makechapterhead
+(scrreprt)              by users or package authors may already break
+(scrreprt)              KOMA-Script and will not work with a coming version,
+(scrreprt)              that will remove this deprecated code.
+
+
+LaTeX Warning: Citation 'Cohen2017MouseoVeRLaboratory' on page 31 undefined on 
+input line 5.
+
+
+LaTeX Warning: Citation 'Fernandes2017a' on page 31 undefined on input line 6.
+
+
+LaTeX Warning: Citation 'Buehlmann2018TheCharacteristics' on page 31 undefined 
+on input line 6.
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 3--146
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--146
+
+ []
+
+(frontbackmatter/bibliography.tex [31] [32
+
+
+]
+chapter 13.
+
+Class scrreprt Warning: Redefinition of \@makechapterhead detected.
+(scrreprt)              Note: KOMA-Script does use styles for commands like
+(scrreprt)              \chapter. Currently it internally still provides and
+(scrreprt)              uses \@makechapterhead, but a completely different
+(scrreprt)              definition compared to the standard classes.
+(scrreprt)              So redefining or using internal \@makechapterhead
+(scrreprt)              by users or package authors may already break
+(scrreprt)              KOMA-Script and will not work with a coming version,
+(scrreprt)              that will remove this deprecated code.
+
 
 LaTeX Warning: Empty bibliography on input line 3.
 
-) [29] (thesis.aux)
+) [33] (thesis.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-12-11>
@@ -2144,10 +2172,10 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40271 strings out of 474495
- 775870 string characters out of 5743934
- 1937460 words of memory out of 5000000
- 61548 multiletter control sequences out of 15000+600000
+ 40305 strings out of 474495
+ 776518 string characters out of 5743934
+ 1938460 words of memory out of 5000000
+ 61564 multiletter control sequences out of 15000+600000
  665561 words of font info for 218 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,13n,145p,10930b,2202s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2164,9 +2192,9 @@ ublic/lm/lmssbx10.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1
 /public/tex-gyre/qhvb.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/tex-gyre/qhvr.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fon
 ts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on thesis.pdf (38 pages, 569633 bytes).
+Output written on thesis.pdf (42 pages, 577273 bytes).
 PDF statistics:
- 492 PDF objects out of 1000 (max. 8388607)
- 107 named destinations out of 1000 (max. 500000)
- 60190 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 543 PDF objects out of 1000 (max. 8388607)
+ 119 named destinations out of 1000 (max. 500000)
+ 60238 words of extra memory for PDF output out of 61914 (max. 10000000)
 

@@ -20,19 +20,25 @@
 \contentsline {subsubsection}{\nonumberline Strombalun}{11}{subsubsection*.21}%
 \contentsline {subsubsection}{\nonumberline Spannungsbalun}{11}{subsubsection*.23}%
 \contentsline {subsubsection}{\nonumberline Un-Un}{11}{subsubsection*.25}%
-\contentsline {chapter}{\numberline {3}Simulation}{13}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Quadrifilare Helix-Antenne (QFH)}{13}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}3D-Modelle}{13}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}CENOS}{13}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}gerichtete Helix-Antenne}{13}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}3D-Modelle}{13}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}CENOS}{13}{subsection.3.2.2}%
-\contentsline {chapter}{\numberline {4}Discussion}{15}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Summary of findings}{15}{section.4.1}%
-\contentsline {chapter}{\numberline {5}Schlussfolgerung}{17}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Literaturverzeichnis}{19}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Abkürzungsverzeichnis}{21}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Begleitprotokoll}{23}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Anhang}{25}{chapter.9}%
-\contentsline {chapter}{\numberline {10}Perspectives}{27}{chapter.10}%
-\contentsline {chapter}{\numberline {11}Bibliography}{29}{chapter.11}%
+\contentsline {chapter}{\numberline {3}Aufsetzen der Bodenstation}{13}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Code}{13}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Erklärung}{13}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Simulation}{15}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Quadrifilare Helix-Antenne (QFH)}{15}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}3D-Modelle}{15}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}CENOS}{15}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}gerichtete Helix-Antenne}{15}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}3D-Modelle}{15}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}CENOS}{15}{subsection.4.2.2}%
+\contentsline {chapter}{\numberline {5}Konstruktion der Antennen}{17}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Quadrifilare Helix-Antenne (QFH)}{17}{section.5.1}%
+\contentsline {section}{\numberline {5.2}gerichtete Helix-Antenne}{17}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Discussion}{19}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Summary of findings}{19}{section.6.1}%
+\contentsline {chapter}{\numberline {7}Schlussfolgerung}{21}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Literaturverzeichnis}{23}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Abkürzungsverzeichnis}{25}{chapter.9}%
+\contentsline {chapter}{\numberline {10}Begleitprotokoll}{27}{chapter.10}%
+\contentsline {chapter}{\numberline {11}Anhang}{29}{chapter.11}%
+\contentsline {chapter}{\numberline {12}Perspectives}{31}{chapter.12}%
+\contentsline {chapter}{\numberline {13}Bibliography}{33}{chapter.13}%
