@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2023.12.29)  2 JAN 2024 22:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2023.12.29)  3 JAN 2024 10:12
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1651,27 +1651,37 @@ Package pdftex.def Info: ./figures/theme/HTLR_watermark.pdf  used on input line
  117.
 (pdftex.def)             Requested size: 597.53275pt x 845.04932pt.
 [2 <./figures/theme/HTLR_watermark.pdf>] (frontbackmatter/quotes.tex
+<figures/upper-quote-marks.png, id=49, 651.43375pt x 426.59375pt>
+File: figures/upper-quote-marks.png Graphic file (type png)
+<use figures/upper-quote-marks.png>
+Package pdftex.def Info: figures/upper-quote-marks.png  used on input line 4.
+(pdftex.def)             Requested size: 113.81102pt x 74.52483pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 2.
+(Font)              <8> on input line 7.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 2.
+(Font)              <6> on input line 7.
 
 
-LaTeX Warning: Citation 'Adams' undefined on input line 4.
+LaTeX Warning: Citation 'Adams' undefined on input line 9.
 
 
-LaTeX Warning: Citation 'Darwin1872TheSex' undefined on input line 9.
+LaTeX Warning: Citation 'Hertz' undefined on input line 14.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--11
+Underfull \hbox (badness 10000) in paragraph at lines 7--16
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--11
+Underfull \hbox (badness 10000) in paragraph at lines 7--16
 
  []
 
+<figures/lower-quote-marks.png, id=51, 646.415pt x 425.59pt>
+File: figures/lower-quote-marks.png Graphic file (type png)
+<use figures/lower-quote-marks.png>
+Package pdftex.def Info: figures/lower-quote-marks.png  used on input line 18.
+(pdftex.def)             Requested size: 113.81102pt x 74.92744pt.
 ) (frontbackmatter/preface.tex
 LaTeX Font Info:    Trying to load font information for T1+qhv on input line 2.
 
@@ -1687,8 +1697,8 @@ Package microtype Info: Loading generic protrusion settings for font family
 [3
 
 {C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/
-Users/gabri/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ec.enc}] [
-4
+Users/gabri/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ec.enc} <.
+/figures/upper-quote-marks.png> <./figures/lower-quote-marks.png>] [4
 
 
 ]
@@ -1713,7 +1723,12 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 )
-(frontbackmatter/abstract.tex [5] [6
+(frontbackmatter/abstract.tex
+Underfull \hbox (badness 10000) in paragraph at lines 5--2
+
+ []
+
+[5] [6
 
 
 ]
@@ -1794,7 +1809,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--14
 
  []
 
-<../ref/SatNOGS_explanation.png, id=167, 1027.84pt x 726.715pt>
+<../ref/SatNOGS_explanation.png, id=174, 1027.84pt x 726.715pt>
 File: ../ref/SatNOGS_explanation.png Graphic file (type png)
 <use ../ref/SatNOGS_explanation.png>
 Package pdftex.def Info: ../ref/SatNOGS_explanation.png  used on input line 17.
@@ -1806,7 +1821,7 @@ LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <10.95> not available
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3]
-<../ref/SatNOGS_BlockDiagram.png, id=175, 1105.12875pt x 289.08pt>
+<../ref/SatNOGS_BlockDiagram.png, id=181, 1105.12875pt x 289.08pt>
 File: ../ref/SatNOGS_BlockDiagram.png Graphic file (type png)
 <use ../ref/SatNOGS_BlockDiagram.png>
 Package pdftex.def Info: ../ref/SatNOGS_BlockDiagram.png  used on input line 24
@@ -1891,7 +1906,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 101--103
  []
 
 [8]
-<../ref/Richtdiagramm_Beispiel.png, id=211, 452.892pt x 374.5995pt>
+<../ref/Richtdiagramm_Beispiel.png, id=217, 452.892pt x 374.5995pt>
 File: ../ref/Richtdiagramm_Beispiel.png Graphic file (type png)
 <use ../ref/Richtdiagramm_Beispiel.png>
 Package pdftex.def Info: ../ref/Richtdiagramm_Beispiel.png  used on input line 
@@ -2172,10 +2187,10 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40305 strings out of 474495
- 776518 string characters out of 5743934
+ 40321 strings out of 474495
+ 777054 string characters out of 5743934
  1938460 words of memory out of 5000000
- 61564 multiletter control sequences out of 15000+600000
+ 61578 multiletter control sequences out of 15000+600000
  665561 words of font info for 218 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,13n,145p,10930b,2202s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2192,9 +2207,9 @@ ublic/lm/lmssbx10.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1
 /public/tex-gyre/qhvb.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/tex-gyre/qhvr.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fon
 ts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on thesis.pdf (42 pages, 577273 bytes).
+Output written on thesis.pdf (42 pages, 634467 bytes).
 PDF statistics:
- 543 PDF objects out of 1000 (max. 8388607)
- 119 named destinations out of 1000 (max. 500000)
- 60238 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 550 PDF objects out of 1000 (max. 8388607)
+ 121 named destinations out of 1000 (max. 500000)
+ 60248 words of extra memory for PDF output out of 61914 (max. 10000000)
 
