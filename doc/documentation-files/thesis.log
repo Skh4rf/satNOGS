@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2023.12.29)  3 JAN 2024 10:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2023.12.29)  12 JAN 2024 10:19
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1728,6 +1728,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--2
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--2
+
+ []
+
 [5] [6
 
 
@@ -2126,28 +2131,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-
-LaTeX Warning: Citation 'Cohen2017MouseoVeRLaboratory' on page 31 undefined on 
-input line 5.
-
-
-LaTeX Warning: Citation 'Fernandes2017a' on page 31 undefined on input line 6.
-
-
-LaTeX Warning: Citation 'Buehlmann2018TheCharacteristics' on page 31 undefined 
-on input line 6.
-
-)
-Underfull \hbox (badness 10000) in paragraph at lines 3--146
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--146
-
- []
-
-(frontbackmatter/bibliography.tex [31] [32
+) (frontbackmatter/bibliography.tex [31] [32
 
 
 ]
@@ -2187,11 +2171,11 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40321 strings out of 474495
- 777054 string characters out of 5743934
+ 40133 strings out of 474495
+ 773393 string characters out of 5743934
  1938460 words of memory out of 5000000
- 61578 multiletter control sequences out of 15000+600000
- 665561 words of font info for 218 fonts, out of 8000000 for 9000
+ 61397 multiletter control sequences out of 15000+600000
+ 664910 words of font info for 213 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,13n,145p,10930b,2202s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/bitstrea/charter/bc
@@ -2207,7 +2191,7 @@ ublic/lm/lmssbx10.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1
 /public/tex-gyre/qhvb.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/tex-gyre/qhvr.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fon
 ts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on thesis.pdf (42 pages, 634467 bytes).
+Output written on thesis.pdf (42 pages, 631528 bytes).
 PDF statistics:
  550 PDF objects out of 1000 (max. 8388607)
  121 named destinations out of 1000 (max. 500000)

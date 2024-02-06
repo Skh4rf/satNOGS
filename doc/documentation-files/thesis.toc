@@ -35,10 +35,10 @@
 \contentsline {section}{\numberline {5.2}gerichtete Helix-Antenne}{17}{section.5.2}%
 \contentsline {chapter}{\numberline {6}Discussion}{19}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Summary of findings}{19}{section.6.1}%
-\contentsline {chapter}{\numberline {7}Schlussfolgerung}{21}{chapter.7}%
+\contentsline {chapter}{\numberline {7}Schluss}{21}{chapter.7}%
 \contentsline {chapter}{\numberline {8}Literaturverzeichnis}{23}{chapter.8}%
 \contentsline {chapter}{\numberline {9}Abkürzungsverzeichnis}{25}{chapter.9}%
 \contentsline {chapter}{\numberline {10}Begleitprotokoll}{27}{chapter.10}%
 \contentsline {chapter}{\numberline {11}Anhang}{29}{chapter.11}%
-\contentsline {chapter}{\numberline {12}Perspectives}{31}{chapter.12}%
-\contentsline {chapter}{\numberline {13}Bibliography}{33}{chapter.13}%
+\contentsline {chapter}{\numberline {12}Perspektiven}{31}{chapter.12}%
+\contentsline {chapter}{\numberline {13}Literaturverzeichnis}{33}{chapter.13}%
