@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2023.12.29)  10 FEB 2024 11:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2023.12.29)  11 FEB 2024 18:28
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1820,56 +1820,57 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 8--14
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8--14
+(mainmatter/Theory/satnogs.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--9
 
  []
 
-<../ref/SatNOGS_explanation.png, id=186, 1027.84pt x 726.715pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--9
+
+ []
+
+<../ref/SatNOGS_explanation.png, id=190, 1027.84pt x 726.715pt>
 File: ../ref/SatNOGS_explanation.png Graphic file (type png)
 <use ../ref/SatNOGS_explanation.png>
-Package pdftex.def Info: ../ref/SatNOGS_explanation.png  used on input line 17.
+Package pdftex.def Info: ../ref/SatNOGS_explanation.png  used on input line 12.
 
 (pdftex.def)             Requested size: 402.565pt x 284.62637pt.
 LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <10.95> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 18.
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 13.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3]
-<../ref/SatNOGS_BlockDiagram.png, id=193, 1105.12875pt x 289.08pt>
+<../ref/SatNOGS_BlockDiagram.png, id=197, 1105.12875pt x 289.08pt>
 File: ../ref/SatNOGS_BlockDiagram.png Graphic file (type png)
 <use ../ref/SatNOGS_BlockDiagram.png>
-Package pdftex.def Info: ../ref/SatNOGS_BlockDiagram.png  used on input line 24
+Package pdftex.def Info: ../ref/SatNOGS_BlockDiagram.png  used on input line 19
 .
 (pdftex.def)             Requested size: 402.565pt x 105.29938pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--41
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--41
+)
+(mainmatter/Theory/antenna-theory.tex
+Underfull \hbox (badness 10000) in paragraph at lines 24--1
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--41
+Underfull \hbox (badness 10000) in paragraph at lines 24--1
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--41
+Underfull \hbox (badness 10000) in paragraph at lines 24--1
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--41
+Underfull \hbox (badness 10000) in paragraph at lines 24--1
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--1
 
  []
 
@@ -1878,97 +1879,100 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [5]
 LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <17.28> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 44.
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--51
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 62--67
+Underfull \hbox (badness 10000) in paragraph at lines 7--10
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--67
+Underfull \hbox (badness 10000) in paragraph at lines 21--26
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--71
+Underfull \hbox (badness 10000) in paragraph at lines 21--26
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--71
+Underfull \hbox (badness 10000) in paragraph at lines 28--30
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--30
 
  []
 
 [6{C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.en
 c}{C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.en
 c}]
-LaTeX Font Info:    Trying to load font information for TS1+bch on input line 7
-3.
+LaTeX Font Info:    Trying to load font information for TS1+bch on input line 3
+2.
  (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1bch.fd
 File: ts1bch.fd 2004/10/18 font definitions for TS1/bch.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 92--95
+Underfull \hbox (badness 10000) in paragraph at lines 51--54
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 101--103
+Underfull \hbox (badness 10000) in paragraph at lines 60--62
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--103
+Underfull \hbox (badness 10000) in paragraph at lines 60--62
 
  []
 
-[8]
-<../ref/Richtdiagramm_Beispiel.png, id=229, 452.892pt x 374.5995pt>
+<../ref/Richtdiagramm_Beispiel.png, id=221, 452.892pt x 374.5995pt>
 File: ../ref/Richtdiagramm_Beispiel.png Graphic file (type png)
 <use ../ref/Richtdiagramm_Beispiel.png>
 Package pdftex.def Info: ../ref/Richtdiagramm_Beispiel.png  used on input line 
-120.
+79.
 (pdftex.def)             Requested size: 402.565pt x 332.98096pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 125--130
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 125--130
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 84--89
 
  []
 
 
-Overfull \hbox (23.84328pt too wide) in paragraph at lines 125--130
+Underfull \hbox (badness 10000) in paragraph at lines 84--89
+
+ []
+
+
+Overfull \hbox (23.84328pt too wide) in paragraph at lines 84--89
 \T1/bch/m/n/12 (-20) Eine wei-te-re wich-ti-ge Kenn-grö-ÿe bei Richt-an-ten-nen
  ist das Vor-Rückwärtsverhältnis.
  []
 
-[9 <../ref/Richtdiagramm_Beispiel.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 132--139
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--98
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--139
+Underfull \hbox (badness 10000) in paragraph at lines 91--98
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--139
+Underfull \hbox (badness 10000) in paragraph at lines 91--98
 
  []
 
 
+Underfull \vbox (badness 6188) has occurred while \output is active []
+
+ [9 <../ref/Richtdiagramm_Beispiel.png>]) (mainmatter/Theory/qha-theory.tex)
+(mainmatter/Theory/helix-theory.tex)) (mainmatter/gs-setup.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10])
-(mainmatter/gs-setup.tex [11] [12
+ [10]
+[11] [12
 
 
 ]
@@ -1984,7 +1988,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-) (mainmatter/simulation.tex [13] [14
+) (mainmatter/rotor.tex [13] [14
 
 
 ]
@@ -2000,7 +2004,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-) (mainmatter/construction.tex [15] [16
+) (mainmatter/qfh-antenna.tex [15] [16
 
 
 ]
@@ -2016,7 +2020,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-) (mainmatter/discussion.tex [17] [18
+) (mainmatter/helixantenna.tex [17] [18
 
 
 ]
@@ -2032,7 +2036,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-) (mainmatter/conclusion.tex [19] [20
+) (mainmatter/mechanics.tex [19] [20
 
 
 ]
@@ -2048,11 +2052,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [21]
-[22
+) (mainmatter/discussion.tex [21] [22
 
 
 ]
@@ -2068,18 +2068,10 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [23]
-(thesis.lof)
-\tf@lof=\write7
-\openout7 = `thesis.lof'.
+) (mainmatter/conclusion.tex [23] [24
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [24]
+]
 chapter 10.
 
 Class scrreprt Warning: Redefinition of \@makechapterhead detected.
@@ -2095,10 +2087,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [25
-
-
-]
+ [25]
 [26
 
 
@@ -2115,10 +2104,18 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-[27] [28
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [27]
+(thesis.lof)
+\tf@lof=\write7
+\openout7 = `thesis.lof'.
 
 
-]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [28]
 chapter 12.
 
 Class scrreprt Warning: Redefinition of \@makechapterhead detected.
@@ -2131,7 +2128,14 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-) (mainmatter/perspectives.tex [29] [30
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29
+
+
+]
+[30
 
 
 ]
@@ -2147,7 +2151,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-) (frontbackmatter/bibliography.tex [31] [32
+[31] [32
 
 
 ]
@@ -2163,10 +2167,42 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
+) (mainmatter/perspectives.tex [33] [34
+
+
+]
+chapter 15.
+
+Class scrreprt Warning: Redefinition of \@makechapterhead detected.
+(scrreprt)              Note: KOMA-Script does use styles for commands like
+(scrreprt)              \chapter. Currently it internally still provides and
+(scrreprt)              uses \@makechapterhead, but a completely different
+(scrreprt)              definition compared to the standard classes.
+(scrreprt)              So redefining or using internal \@makechapterhead
+(scrreprt)              by users or package authors may already break
+(scrreprt)              KOMA-Script and will not work with a coming version,
+(scrreprt)              that will remove this deprecated code.
+
+) (frontbackmatter/bibliography.tex [35] [36
+
+
+]
+chapter 16.
+
+Class scrreprt Warning: Redefinition of \@makechapterhead detected.
+(scrreprt)              Note: KOMA-Script does use styles for commands like
+(scrreprt)              \chapter. Currently it internally still provides and
+(scrreprt)              uses \@makechapterhead, but a completely different
+(scrreprt)              definition compared to the standard classes.
+(scrreprt)              So redefining or using internal \@makechapterhead
+(scrreprt)              by users or package authors may already break
+(scrreprt)              KOMA-Script and will not work with a coming version,
+(scrreprt)              that will remove this deprecated code.
+
 
 LaTeX Warning: Empty bibliography on input line 3.
 
-) [33] (thesis.aux)
+) [37] (thesis.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-12-11>
@@ -2187,11 +2223,11 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40144 strings out of 474495
- 773779 string characters out of 5743934
+ 40185 strings out of 474495
+ 775593 string characters out of 5743934
  1938460 words of memory out of 5000000
- 61401 multiletter control sequences out of 15000+600000
- 664910 words of font info for 213 fonts, out of 8000000 for 9000
+ 61424 multiletter control sequences out of 15000+600000
+ 667315 words of font info for 210 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,13n,145p,10930b,2222s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/bitstrea/charter/bc
@@ -2207,9 +2243,9 @@ ublic/lm/lmssbx10.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1
 /public/tex-gyre/qhvb.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/tex-gyre/qhvr.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fon
 ts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on thesis.pdf (44 pages, 635022 bytes).
+Output written on thesis.pdf (48 pages, 641516 bytes).
 PDF statistics:
- 565 PDF objects out of 1000 (max. 8388607)
- 125 named destinations out of 1000 (max. 500000)
- 60256 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 590 PDF objects out of 1000 (max. 8388607)
+ 129 named destinations out of 1000 (max. 500000)
+ 60784 words of extra memory for PDF output out of 61914 (max. 10000000)
 
