@@ -14,11 +14,16 @@
 \contentsline {paragraph}{\nonumberline Welligkeit}{8}{paragraph*.13}%
 \contentsline {paragraph}{\nonumberline Richtcharakteristik und Richtdiagramm}{8}{paragraph*.15}%
 \contentsline {paragraph}{\nonumberline Einfluss der Erde auf das Richtdiagramm}{10}{paragraph*.18}%
-\contentsline {subsubsection}{\nonumberline Baluns}{10}{subsubsection*.20}%
-\contentsline {paragraph}{\nonumberline Strombalun}{10}{paragraph*.22}%
-\contentsline {paragraph}{\nonumberline Spannungsbalun}{10}{paragraph*.24}%
+\contentsline {subsection}{\numberline {3.2.6}Baluns}{10}{subsection.3.2.6}%
+\contentsline {subsubsection}{\nonumberline Strombalun}{10}{subsubsection*.20}%
+\contentsline {subsubsection}{\nonumberline Spannungsbalun}{10}{subsubsection*.22}%
 \contentsline {section}{\numberline {3.3}QHA (Quadrifilare Helixantenne)}{11}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Vorteile}{11}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Funktionsweise und charakteristische Eigenschaften}{11}{subsection.3.3.2}%
 \contentsline {section}{\numberline {3.4}Helixantenne}{11}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Vorteile}{11}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Funktionsweise und charakteristische Eigenschaften}{11}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Berechnung}{11}{subsection.3.4.3}%
 \contentsline {chapter}{\numberline {4}Aufsetzen der Bodenstation}{13}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Code}{13}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Erklärung}{13}{section.4.2}%
@@ -29,11 +34,16 @@
 \contentsline {section}{\numberline {6.3}Realisierung}{17}{section.6.3}%
 \contentsline {section}{\numberline {6.4}Messungen}{17}{section.6.4}%
 \contentsline {chapter}{\numberline {7}Helixantenne}{19}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Funktionsweise}{19}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Design}{19}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Realisierung}{19}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Messungen}{19}{section.7.4}%
+\contentsline {section}{\numberline {7.1}Design}{19}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Realisierung}{19}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Anpassung}{20}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Tests}{20}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Erweiterung der Helixantenne als Array}{20}{section.7.5}%
+\contentsline {subsection}{\numberline {7.5.1}Gerüst}{20}{subsection.7.5.1}%
+\contentsline {subsection}{\numberline {7.5.2}Anpassung}{20}{subsection.7.5.2}%
+\contentsline {subsection}{\numberline {7.5.3}Test}{20}{subsection.7.5.3}%
 \contentsline {chapter}{\numberline {8}Mechanik}{21}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Schaltschrank}{21}{section.8.1}%
 \contentsline {chapter}{\numberline {9}Discussion}{23}{chapter.9}%
 \contentsline {section}{\numberline {9.1}Summary of findings}{23}{section.9.1}%
 \contentsline {chapter}{\numberline {10}Schluss}{25}{chapter.10}%

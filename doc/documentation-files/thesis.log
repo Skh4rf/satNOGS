@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2023.12.29)  11 FEB 2024 18:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2023.12.29)  11 FEB 2024 20:41
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1830,7 +1830,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--9
 
  []
 
-<../ref/SatNOGS_explanation.png, id=190, 1027.84pt x 726.715pt>
+<../ref/SatNOGS_explanation.png, id=212, 1027.84pt x 726.715pt>
 File: ../ref/SatNOGS_explanation.png Graphic file (type png)
 <use ../ref/SatNOGS_explanation.png>
 Package pdftex.def Info: ../ref/SatNOGS_explanation.png  used on input line 12.
@@ -1842,7 +1842,7 @@ LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <10.95> not available
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3]
-<../ref/SatNOGS_BlockDiagram.png, id=197, 1105.12875pt x 289.08pt>
+<../ref/SatNOGS_BlockDiagram.png, id=219, 1105.12875pt x 289.08pt>
 File: ../ref/SatNOGS_BlockDiagram.png Graphic file (type png)
 <use ../ref/SatNOGS_BlockDiagram.png>
 Package pdftex.def Info: ../ref/SatNOGS_BlockDiagram.png  used on input line 19
@@ -1927,7 +1927,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 60--62
 
  []
 
-<../ref/Richtdiagramm_Beispiel.png, id=221, 452.892pt x 374.5995pt>
+<../ref/Richtdiagramm_Beispiel.png, id=243, 452.892pt x 374.5995pt>
 File: ../ref/Richtdiagramm_Beispiel.png Graphic file (type png)
 <use ../ref/Richtdiagramm_Beispiel.png>
 Package pdftex.def Info: ../ref/Richtdiagramm_Beispiel.png  used on input line 
@@ -1968,11 +1968,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 91--98
 Underfull \vbox (badness 6188) has occurred while \output is active []
 
  [9 <../ref/Richtdiagramm_Beispiel.png>]) (mainmatter/Theory/qha-theory.tex)
-(mainmatter/Theory/helix-theory.tex)) (mainmatter/gs-setup.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [10]
-[11] [12
+(mainmatter/Theory/helix-theory.tex [10])) (mainmatter/gs-setup.tex [11]
+[12
 
 
 ]
@@ -2036,10 +2033,11 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-) (mainmatter/mechanics.tex [19] [20
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-]
+ [19])
+(mainmatter/mechanics.tex [20]
 chapter 8.
 
 Class scrreprt Warning: Redefinition of \@makechapterhead detected.
@@ -2052,7 +2050,10 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-) (mainmatter/discussion.tex [21] [22
+) (mainmatter/discussion.tex [21
+
+
+] [22
 
 
 ]
@@ -2223,11 +2224,11 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40185 strings out of 474495
- 775593 string characters out of 5743934
+ 40208 strings out of 474495
+ 775832 string characters out of 5743934
  1938460 words of memory out of 5000000
- 61424 multiletter control sequences out of 15000+600000
- 667315 words of font info for 210 fonts, out of 8000000 for 9000
+ 61435 multiletter control sequences out of 15000+600000
+ 667575 words of font info for 212 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,13n,145p,10930b,2222s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/bitstrea/charter/bc
@@ -2243,9 +2244,9 @@ ublic/lm/lmssbx10.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1
 /public/tex-gyre/qhvb.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/tex-gyre/qhvr.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fon
 ts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on thesis.pdf (48 pages, 641516 bytes).
+Output written on thesis.pdf (48 pages, 650508 bytes).
 PDF statistics:
- 590 PDF objects out of 1000 (max. 8388607)
- 129 named destinations out of 1000 (max. 500000)
- 60784 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 644 PDF objects out of 1000 (max. 8388607)
+ 138 named destinations out of 1000 (max. 500000)
+ 60872 words of extra memory for PDF output out of 61914 (max. 10000000)
 
