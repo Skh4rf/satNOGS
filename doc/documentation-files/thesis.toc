@@ -23,7 +23,7 @@
 \contentsline {section}{\numberline {3.4}Helixantenne}{11}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1}Vorteile}{11}{subsection.3.4.1}%
 \contentsline {subsection}{\numberline {3.4.2}Funktionsweise und charakteristische Eigenschaften}{11}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Berechnung}{11}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.3}Berechnung}{12}{subsection.3.4.3}%
 \contentsline {chapter}{\numberline {4}Aufsetzen der Bodenstation}{13}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Code}{13}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Erklärung}{13}{section.4.2}%
@@ -36,7 +36,7 @@
 \contentsline {chapter}{\numberline {7}Helixantenne}{19}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Design}{19}{section.7.1}%
 \contentsline {section}{\numberline {7.2}Realisierung}{19}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Anpassung}{20}{section.7.3}%
+\contentsline {section}{\numberline {7.3}Anpassung}{19}{section.7.3}%
 \contentsline {section}{\numberline {7.4}Tests}{20}{section.7.4}%
 \contentsline {section}{\numberline {7.5}Erweiterung der Helixantenne als Array}{20}{section.7.5}%
 \contentsline {subsection}{\numberline {7.5.1}Gerüst}{20}{subsection.7.5.1}%

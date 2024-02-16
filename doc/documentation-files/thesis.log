@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2023.12.29)  11 FEB 2024 20:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2023.12.29)  16 FEB 2024 08:34
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1969,10 +1969,7 @@ Underfull \vbox (badness 6188) has occurred while \output is active []
 
  [9 <../ref/Richtdiagramm_Beispiel.png>]) (mainmatter/Theory/qha-theory.tex)
 (mainmatter/Theory/helix-theory.tex [10])) (mainmatter/gs-setup.tex [11]
-[12
-
-
-]
+[12]
 chapter 4.
 
 Class scrreprt Warning: Redefinition of \@makechapterhead detected.
@@ -1985,7 +1982,10 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-) (mainmatter/rotor.tex [13] [14
+) (mainmatter/rotor.tex [13
+
+
+] [14
 
 
 ]
@@ -2034,7 +2034,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              that will remove this deprecated code.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1342) has occurred while \output is active []
 
  [19])
 (mainmatter/mechanics.tex [20]
@@ -2109,6 +2109,9 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [27]
+
+LaTeX Warning: Empty bibliography on input line 8.
+
 (thesis.lof)
 \tf@lof=\write7
 \openout7 = `thesis.lof'.
@@ -2244,7 +2247,7 @@ ublic/lm/lmssbx10.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1
 /public/tex-gyre/qhvb.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/tex-gyre/qhvr.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fon
 ts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on thesis.pdf (48 pages, 650508 bytes).
+Output written on thesis.pdf (48 pages, 651362 bytes).
 PDF statistics:
  644 PDF objects out of 1000 (max. 8388607)
  138 named destinations out of 1000 (max. 500000)
