@@ -1,0 +1,71 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: thesis.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: biblatex.bst
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: thesis-blx.bib
+Database file #2: references.bib
+Warning--I didn't find a database entry for "Adams"
+Warning--I didn't find a database entry for "Hertz"
+Biblatex version: 3.19
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+You've used 3 entries,
+            6399 wiz_defined-function locations,
+            1227 strings with 9531 characters,
+and the built_in function-call counts, 15498 in all, are:
+= -- 1093
+> -- 319
+< -- 60
++ -- 501
+- -- 137
+* -- 1054
+:= -- 1962
+add.period$ -- 0
+call.type$ -- 3
+change.case$ -- 20
+chr.to.int$ -- 42
+cite$ -- 4
+duplicate$ -- 1665
+empty$ -- 1269
+format.name$ -- 154
+if$ -- 3098
+int.to.chr$ -- 0
+int.to.str$ -- 4
+missing$ -- 0
+newline$ -- 92
+num.names$ -- 82
+pop$ -- 762
+preamble$ -- 1
+purify$ -- 33
+quote$ -- 0
+skip$ -- 446
+stack$ -- 0
+substring$ -- 1822
+swap$ -- 328
+text.length$ -- 82
+text.prefix$ -- 2
+top$ -- 1
+type$ -- 90
+warning$ -- 0
+while$ -- 282
+width$ -- 0
+write$ -- 90
+(There were 2 warnings)

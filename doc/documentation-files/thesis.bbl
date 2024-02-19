@@ -1,0 +1,94 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nty/global//global/global}
+  \entry{Amrhein2019}{article}{}
+    \name{author}{3}{}{%
+      {{hash=AV}{%
+         family={Amrhein},
+         familyi={A\bibinitperiod},
+         given={V.},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Greenland},
+         familyi={G\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MB}{%
+         family={Mcshane},
+         familyi={M\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \keyw{Research Data, Research Management}
+    \strng{namehash}{AVGSMB1}
+    \strng{fullhash}{AVGSMB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \verb{doi}
+    \verb 10.1038/d41586-019-00857-9
+    \endverb
+    \field{number}{7748}
+    \field{pages}{305\bibrangedash 307}
+    \field{title}{{Scientists rise up against statistical significance.}}
+    \field{volume}{567}
+    \field{journaltitle}{Nature}
+    \field{year}{2019}
+  \endentry
+
+  \entry{Baird2012VisualEnvironments}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BE}{%
+         family={Baird},
+         familyi={B\bibinitperiod},
+         given={E.},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=DM}{%
+         family={Dacke},
+         familyi={D\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \keyw{Bumblebee, Centring, Flight control, Ground speed, Vision}
+    \strng{namehash}{BEDM1}
+    \strng{fullhash}{BEDM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \verb{doi}
+    \verb 10.1007/s00359-012-0757-7
+    \endverb
+    \field{number}{12}
+    \field{pages}{869\bibrangedash 876}
+    \field{title}{{Visual flight control in naturalistic and artificial
+  environments}}
+    \field{volume}{198}
+    \field{journaltitle}{Journal of Comparative Physiology A: Neuroethology,
+  Sensory, Neural, and Behavioral Physiology}
+    \field{year}{2012}
+  \endentry
+\enddatalist
+\endinput

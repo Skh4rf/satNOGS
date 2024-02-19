@@ -75,21 +75,6 @@
 \define@choicekey*[ct]{cthesis}{colortheme}[\val\themenr]{ucph,sund,science,hum,samf,jura,teo,HTLR-Elektronik}[ucph]{\def\cthesis@colortheme{\themenr}}
 \setkeys[ct]{cthesis}{colortheme=ucph}
 
-% OPTION bibsys
-% --> values = biber|bibtex
-\define@choicekey*[ct]{cthesis}{bibsys}[\val\bibsysnr]{biber,bibtex}[bibtex]{\def\cthesis@bibsys{#1}}
-\setkeys[ct]{cthesis}{bibsys=bibtex}
-
-% OPTION bibfile
-% --> values = file name of your bibtex file
-\define@key[ct]{cthesis}{bibfile}[bib-refs]{\def\cthesis@bibfile{#1}}
-\setkeys[ct]{cthesis}{bibfile=references}
-
-% OPTION bibstyle
-% --> values = alphabetic|numeric|authoryear
-\define@choicekey*[ct]{cthesis}{bibstyle}[\val\bibstylenr]{alphabetic,numeric,authoryear}[alphabetic]{\def\cthesis@bibstyle{#1}}
-\setkeys[ct]{cthesis}{bibstyle=alphabetic}
-
 
 \DeclareOptionX*{
 	\PackageWarning{ucphthesis}{Unknown option ‘\CurrentOption’}%
@@ -130,35 +115,35 @@
 	% --> text colors
 	\colorlet{ctcolorfloatlabel}{ctcoloraccessory}
 	\colorlet{ctcolorlistlabel}{ctcolormain}
-
+	
 	\ifcase\cthesis@colorize
-		% case = 0 (colorize == full)
-		% do nothing
+	% case = 0 (colorize == full)
+	% do nothing
 	\or
-		% case = 1 (colorize == reduced)
-		% --> footer colors
-		\colorlet{ctcolorfooterline}{ctcolorgray}
-		\colorlet{ctcolorfootertitle}{ctcolorgray}
-		% --> sectioning colors
-		\colorlet{ctcolorsubsection}{ctcolorblack}
-		\colorlet{ctcolorpartnum}{ctcolorblack}
-		% --> text colors
-		\colorlet{ctcolorlistlabel}{ctcolorblack}
+	% case = 1 (colorize == reduced)
+	% --> footer colors
+	\colorlet{ctcolorfooterline}{ctcolorgray}
+	\colorlet{ctcolorfootertitle}{ctcolorgray}
+	% --> sectioning colors
+	\colorlet{ctcolorsubsection}{ctcolorblack}
+	\colorlet{ctcolorpartnum}{ctcolorblack}
+	% --> text colors
+	\colorlet{ctcolorlistlabel}{ctcolorblack}
 	\or
-		% case = 2 (colorize == bw)
-		% --> footer colors
-		\colorlet{ctcolorfooterline}{ctcolorgray}
-		\colorlet{ctcolorfootertitle}{ctcolorgray}
-		% --> sectioning colors
-		\colorlet{ctcolortitle}{ctcolorblack}
-		\colorlet{ctcolorpartnum}{ctcolorblack}
-		\colorlet{ctcolorchapternum}{ctcolorblack}
-		\colorlet{ctcolorchapterline}{ctcolorblack}
-		\colorlet{ctcolorsection}{ctcolorblack}
-		\colorlet{ctcolorsubsection}{ctcolorblack}
-		% --> text colors
-		\colorlet{ctcolorfloatlabel}{ctcolorblack}
-		\colorlet{ctcolorlistlabel}{ctcolorblack}
+	% case = 2 (colorize == bw)
+	% --> footer colors
+	\colorlet{ctcolorfooterline}{ctcolorgray}
+	\colorlet{ctcolorfootertitle}{ctcolorgray}
+	% --> sectioning colors
+	\colorlet{ctcolortitle}{ctcolorblack}
+	\colorlet{ctcolorpartnum}{ctcolorblack}
+	\colorlet{ctcolorchapternum}{ctcolorblack}
+	\colorlet{ctcolorchapterline}{ctcolorblack}
+	\colorlet{ctcolorsection}{ctcolorblack}
+	\colorlet{ctcolorsubsection}{ctcolorblack}
+	% --> text colors
+	\colorlet{ctcolorfloatlabel}{ctcolorblack}
+	\colorlet{ctcolorlistlabel}{ctcolorblack}
 	\else
 	\fi
 }
@@ -214,29 +199,29 @@
 
 % sets the color theme regarding the given package option colortheme
 \ifcase\cthesis@colortheme
-	% case 0 (colortheme == ucph)
-	\cthesissetcolorucph
+% case 0 (colortheme == ucph)
+\cthesissetcolorucph
 \or
-	% case 1 (colortheme == sund)
-	\cthesissetcolorsund
+% case 1 (colortheme == sund)
+\cthesissetcolorsund
 \or
-    % case 2 (colortheme == science)
-    \cthesissetcolorscience
+% case 2 (colortheme == science)
+\cthesissetcolorscience
 \or
-    % case 3 (colortheme == hum)
-    \cthesissetcolorhum
+% case 3 (colortheme == hum)
+\cthesissetcolorhum
 \or
-    % case 2 (colortheme == samf)
-    \cthesissetcolorsamf
+% case 2 (colortheme == samf)
+\cthesissetcolorsamf
 \or
-    % case 2 (colortheme == jura)
-    \cthesissetcolorjura
+% case 2 (colortheme == jura)
+\cthesissetcolorjura
 \or
-    % case 2 (colortheme == teo)
-    \cthesissetcolorteo
+% case 2 (colortheme == teo)
+\cthesissetcolorteo
 \else
-	% all other cases
-	\cthesissetcolorucph
+% all other cases
+\cthesissetcolorucph
 \fi
 
 
@@ -247,22 +232,22 @@
 %\ifthenelse{\boolean{@sansserif}}%
 \ifct@cthesis@sansserif
 %	{%
-		% Using sans-serif fonts
-		%
-		%\RequirePackage{helvet}	% Font:	Helvetica
-		%\RequirePackage{nimbus}	% Font:	Nimbus Sans, a clone of the Helvetica
-		\RequirePackage{tgheros}	% Font:	TEX Gyre Heros
-		%\RequirePackage{libertine}	% Font:	Biolinum, the standard sans serif typeface with the Libertine package
-		%\RequirePackage[scaled]{berasans} % Font:	Bera Sans, a a version of Bitstream Vera Sans slightly enhanced
-		\renewcommand*\familydefault{\sfdefault}%
-%	}{%
-\else
-		% Using serif fonts
-		%
-		\RequirePackage{lmodern}	% font set: Latin Modern
-		\RequirePackage{charter}	% font set: Charter
-		%\RequirePackage{fourier}	% font set: (basically improved utopia)
-%	}
+	% Using sans-serif fonts
+	%
+	%\RequirePackage{helvet}	% Font:	Helvetica
+	%\RequirePackage{nimbus}	% Font:	Nimbus Sans, a clone of the Helvetica
+	\RequirePackage{tgheros}	% Font:	TEX Gyre Heros
+	%\RequirePackage{libertine}	% Font:	Biolinum, the standard sans serif typeface with the Libertine package
+	%\RequirePackage[scaled]{berasans} % Font:	Bera Sans, a a version of Bitstream Vera Sans slightly enhanced
+	\renewcommand*\familydefault{\sfdefault}%
+	%	}{%
+	\else
+	% Using serif fonts
+	%
+	\RequirePackage{lmodern}	% font set: Latin Modern
+	\RequirePackage{charter}	% font set: Charter
+	%\RequirePackage{fourier}	% font set: (basically improved utopia)
+	%	}
 \fi
 %\usepackage{mathptmx}               % sets font to times new roman
 
@@ -300,67 +285,42 @@
 
 %
 \RequirePackage[					% modify figure and table captions
-	font={small}, 					% 	- small font size
-	labelfont={bf,sf,color=ctcolorfloatlabel},% 	- label in bold, sans-serif and magenta
-	labelsep=\cthesis@figuresep,				% 	- separator: none, colon, period, space, quad, newline, endash
-	singlelinecheck=false			% 	- no centered single-lined captions
+font={small}, 					% 	- small font size
+labelfont={bf,sf,color=ctcolorfloatlabel},% 	- label in bold, sans-serif and magenta
+labelsep=\cthesis@figuresep,				% 	- separator: none, colon, period, space, quad, newline, endash
+singlelinecheck=false			% 	- no centered single-lined captions
 ]{caption}[2008/08/24]
 %\ifthenelse{\boolean{@figurecaptionoutside}}%
 \ifct@cthesis@hangfigurecaption
 %	{%
-		\DeclareCaptionFormat{llap}{\llap{#1#2}#3\par}%
-		\captionsetup{format=llap,labelsep=quad,singlelinecheck=false}%
-%	}{}
+	\DeclareCaptionFormat{llap}{\llap{#1#2}#3\par}%
+	\captionsetup{format=llap,labelsep=quad,singlelinecheck=false}%
+	%	}{}
 \fi
 %
 \RequirePackage[					% page layout modifications
-	paper=a4paper,					% 	- use A4 paper size
-	%scale={0.86,0.94},				% 	- total body size (h,v)
-	%scale={0.86,0.94},				% 	- total body size (h,v)
-	nohead,							% 	- no header
-	includefoot,					% 	- include footer space
-	includemp,						% 	- include side note space
-	bindingoffset=0.5cm,			% 	- binding correction (exclude with even margins)
-	top=2.25cm,						% 	- total body: top margin
-	left=3.75cm,					% 	- total body: left margin (odd pages)(2.75 for even margins)
-	right=0.5cm,					% 	- total body: right margin (odd pages)
-	bottom=1.5cm,					% 	- total body: bottom margin
-	marginparwidth=1.75cm,			% 	- width for side note
-	marginparsep=10pt,				% 	- space between notes and body text (content)
-	footskip=2cm,					% 	- footer skip size
+paper=a4paper,					% 	- use A4 paper size
+%scale={0.86,0.94},				% 	- total body size (h,v)
+%scale={0.86,0.94},				% 	- total body size (h,v)
+nohead,							% 	- no header
+includefoot,					% 	- include footer space
+includemp,						% 	- include side note space
+bindingoffset=0.5cm,			% 	- binding correction (exclude with even margins)
+top=2.25cm,						% 	- total body: top margin
+left=3.75cm,					% 	- total body: left margin (odd pages)(2.75 for even margins)
+right=0.5cm,					% 	- total body: right margin (odd pages)
+bottom=1.5cm,					% 	- total body: bottom margin
+marginparwidth=1.75cm,			% 	- width for side note
+marginparsep=10pt,				% 	- space between notes and body text (content)
+footskip=2cm,					% 	- footer skip size
 ]{geometry}
 %
 \RequirePackage[					% advanced quotes
-	strict=true,					% 	- warning are errors now
-	style=german					% 	- german quotes
+strict=true,					% 	- warning are errors now
+style=german					% 	- german quotes
 ]{csquotes}
 %
-\RequirePackage[					% use biblatex for bibliography
-	backend=\cthesis@bibsys,		% 	- use biber backend (bibtex replacement) or bibtex
-	bibencoding=utf8,				% 	- use auto file encode
-	style=\cthesis@bibstyle,		% 	- use alphabetic (or numeric) bib style
-	natbib=true,					% 	- allow natbib commands
-	dashed=false,                   %   - ensures duplicate author mentions
-	hyperref=true,					% 	- activate hyperref support
-	backref=false,					% 	- activate backrefs
-	isbn=false,						% 	- don't show isbn tags
-	url=false,						% 	- don't show url tags
-	doi=false,						% 	- don't show doi tags
-	urldate=long,					% 	- display type for dates
-	uniquename=false,               %   - remove first names
-	uniquelist=minyear,
-%	maxnames=3,%
-%	minnames=1,%
-	maxbibnames=10,%
-	minbibnames=3,%
-	maxcitenames=2,%
-%	mincitenames=1%
-]{biblatex}
-\bibliography{\cthesis@bibfile}
 
-\DefineBibliographyStrings{english}{%
-	andothers = {{\textit{et\,al\adddot}}}, % 'et al.' in italics
-}
 
 % **************************************************
 % Text Format
@@ -375,7 +335,7 @@
 % List Definitions
 % **************************************************
 \newenvironment{my_list}%
-	{\begin{enumerate}%
+{\begin{enumerate}%
 		\setlength{\itemsep}{1pt}%
 		\setlength{\parskip}{0pt}%
 		\setlength{\parsep}{0pt}%
@@ -383,20 +343,20 @@
 	{\end{enumerate}}
 %
 \newenvironment{my_list_num}
-	{\begin{enumerate}[topsep=-5pt,partopsep=0pt,parsep=2pt,itemsep=3pt]}
+{\begin{enumerate}[topsep=-5pt,partopsep=0pt,parsep=2pt,itemsep=3pt]}
 	{\end{enumerate}}%
 
 \newenvironment{my_list_item}
-	{\begin{itemize}[topsep=-5pt,partopsep=0pt,parsep=2pt,itemsep=3pt]}
+{\begin{itemize}[topsep=-5pt,partopsep=0pt,parsep=2pt,itemsep=3pt]}
 	{\end{itemize}}%
 
 \newenvironment{ct_version_list}
-	{\begin{itemize}[topsep=-5pt,partopsep=0pt,parsep=2pt,itemsep=3pt]}
+{\begin{itemize}[topsep=-5pt,partopsep=0pt,parsep=2pt,itemsep=3pt]}
 	{\end{itemize}}%
 
-	\newenvironment{ct_version_list_sub}
-		{\begin{itemize}[topsep=-0pt,partopsep=0pt,parsep=0pt,itemsep=0pt]}
-		{\end{itemize}}%
+\newenvironment{ct_version_list_sub}
+{\begin{itemize}[topsep=-0pt,partopsep=0pt,parsep=0pt,itemsep=0pt]}
+	{\end{itemize}}%
 
 \renewcommand{\descriptionlabel}[1]{%
 	\hspace*{\labelsep}%
@@ -404,14 +364,14 @@
 	\tgherosfont\textbf{#1}%
 }
 \newenvironment{my_list_desc}
-	{\begin{description}[%
+{\begin{description}[%
 		style=multiline,%
 		topsep=-5pt,%
 		leftmargin=3cm,%
 		partopsep=0pt,%
 		parsep=2pt,%
 		itemsep=3pt%
-	]}
+		]}
 	{\end{description}}%
 
 % **************************************************
@@ -590,18 +550,18 @@
 \titleclass{\part}{top} % <-- display:
 \assignpagestyle{\part}{empty}	% <-- no page numbers/decorations
 \titleformat{\part}%
-	[display]%
-	{\usekomafont{part}}%
-	{\raggedleft{%
+[display]%
+{\usekomafont{part}}%
+{\raggedleft{%
 		{\thesispartlabelfont%
 			\partname\ \thepart\ \quad}%
 		{\color{ctcolorpartline}%
 			\hspace*{-200pt}\rule[20pt]{600pt}{2pt}}
-		}%
 	}%
-	{0em}%
-	{\raggedleft}%
-	[\phantomsection]
+}%
+{0em}%
+{\raggedleft}%
+[\phantomsection]
 %
 % > formats: \chapter
 %
@@ -612,17 +572,17 @@
 \newcommand\ctformatchapter[1]{\parbox[t]{\dimexpr\textwidth-4em\relax}{\raggedright#1}}
 %
 \titleformat{\chapter}[display]%
-	{\usekomafont{chapter}}%
-	{\vspace{-8em}\raggedleft{%
+{\usekomafont{chapter}}%
+{\vspace{-8em}\raggedleft{%
 		{\color{ctcolorchapterline}%
 			\rule[-5pt]{2pt}{6cm}}\quad%
 		{\color{ctcolorchapternum}
 			\fontsize{60}{60}\selectfont\thechapter}%
-		}%
 	}%
-	{-2.1em}%
-	{\ctformatchapter}%
-	[\phantomsection]
+}%
+{-2.1em}%
+{\ctformatchapter}%
+[\phantomsection]
 %
 % > formats: \section
 \titlespacing{\section}{0em}{.75em}{.2em}%[0pt]
@@ -630,24 +590,24 @@
 %\ifthenelse{\boolean{@sectionlabeloutside}}%
 \ifct@cthesis@hangsection
 %	{%
-		\titleformat{\section}[hang]%
-			{\usekomafont{section}}%
-			{\color{ctcolorblack}
-			    \thesection
-			    \hspace*{10pt}
-			}%
-			{0pt}%
-			{\raggedright}%
-			[\phantomsection]
-%	}{%
-\else
-		\titleformat{\section}[block]%
-			{\usekomafont{section}}%
-			{\color{ctcolorblack}\thesection\hspace*{10pt}}%
-			{0pt}%
-			{\raggedright}%
-			[\phantomsection]
-%	}
+	\titleformat{\section}[hang]%
+	{\usekomafont{section}}%
+	{\color{ctcolorblack}
+		\thesection
+		\hspace*{10pt}
+	}%
+	{0pt}%
+	{\raggedright}%
+	[\phantomsection]
+	%	}{%
+	\else
+	\titleformat{\section}[block]%
+	{\usekomafont{section}}%
+	{\color{ctcolorblack}\thesection\hspace*{10pt}}%
+	{0pt}%
+	{\raggedright}%
+	[\phantomsection]
+	%	}
 \fi
 %
 % > formats: \subsection
@@ -655,33 +615,33 @@
 %\ifthenelse{\boolean{@subsectionlabeloutside}}%
 \ifct@cthesis@hangsubsection
 %	{%
-		\titleformat{\subsection}[hang]%
-			{\usekomafont{subsection}}%
-			{\color{ctcolorblack}
-			    \thesubsection
-			    \hspace*{10pt}}%
-			{0pt}%
-			{\raggedright}%
-			[\phantomsection]
-%	}{%
-\else
-		\titleformat{\subsection}[block]%
-			{\usekomafont{subsection}}%
-			{\color{ctcolorblack}\thesubsection\hspace*{10pt}}%
-			{0pt}%
-			{\raggedright}%
-			[\phantomsection]
-%	}
+	\titleformat{\subsection}[hang]%
+	{\usekomafont{subsection}}%
+	{\color{ctcolorblack}
+		\thesubsection
+		\hspace*{10pt}}%
+	{0pt}%
+	{\raggedright}%
+	[\phantomsection]
+	%	}{%
+	\else
+	\titleformat{\subsection}[block]%
+	{\usekomafont{subsection}}%
+	{\color{ctcolorblack}\thesubsection\hspace*{10pt}}%
+	{0pt}%
+	{\raggedright}%
+	[\phantomsection]
+	%	}
 \fi
 %
 % > formats: \paragraph
 \titlespacing{\paragraph}{0pt}{\parsep}{1em}%[0pt]
 % \titleformat{\paragraph}[runin]%
-	% {\usekomafont{paragraph}}%
-	% {}%
-	% {}%
-	% {}%
-	% []
+% {\usekomafont{paragraph}}%
+% {}%
+% {}%
+% {}%
+% []
 %
 %
 % **************************************************
@@ -711,9 +671,9 @@
 % Clean chapter quotations
 \newcommand{\hugequote}{%
 	{\book\fontsize{75}{80}\selectfont%
-	\hspace*{-.475em}\color{ctcolorgraylight}%
-	\textit{\glqq}%
-	\vskip -.26em}%
+		\hspace*{-.475em}\color{ctcolorgraylight}%
+		\textit{\glqq}%
+		\vskip -.26em}%
 }
 \newcommand{\cleanchapterquote}[3]{%
 	\begin{minipage}{.865\textwidth}%
@@ -722,11 +682,11 @@
 				\begin{flushleft}
 					{\hugequote}\textit{#1}
 				\end{flushleft}
-	    		\begin{flushright}
-    				--- \textbf{#2} \\
-    				#3
-		    	\end{flushright}
-		    \end{minipage}%
+				\begin{flushright}
+					--- \textbf{#2} \\
+					#3
+				\end{flushright}
+			\end{minipage}%
 		\end{flushright}
 	\end{minipage}%
 	\bigskip
@@ -734,16 +694,16 @@
 %
 % Clean Quotation environment
 \newenvironment{thesis_quotation}%
-	{%
+{%
 	\begin{minipage}{.865\textwidth}%
 		\begin{flushright}
 			\begin{minipage}{.95\textwidth}%
-	}%
-	{%
+			}%
+			{%
 			\end{minipage}%
 		\end{flushright}
 	\end{minipage}%
-	}%
+}%
 %
 % Clean signs around word origins in definitions
 %\newcommand{\cthesisorigin}[1]{\textsf{\textlangle}#1\textsf{\textrangle}}
@@ -754,27 +714,26 @@
 % **************************************************
 \graphicspath{ {./figures/} }       % specifies the root folder for figures
 \newcommand\TitleBackground{%                   
-    \put(0,0){%
-        \parbox[b][\paperheight]{\paperwidth}{%
-            \vfill
-            \centering
-            {%\transparent{.9}
-             \includegraphics[width=\paperwidth,
-                              height=\paperheight,%
-                              keepaspectratio]{theme/\thesisTheme.pdf}}%
-            \vfill
+	\put(0,0){%
+		\parbox[b][\paperheight]{\paperwidth}{%
+			\vfill
+			\centering
+			{%\transparent{.9}
+				\includegraphics[width=\paperwidth,
+				height=\paperheight,%
+				keepaspectratio]{theme/\thesisTheme.pdf}}%
+			\vfill
 }}}
 %
 \newcommand\TitleWatermark{%                   % Watermark Only
-    \put(0,0){%
-        \parbox[b][\paperheight]{\paperwidth}{%
-            \vfill
-            \centering
-            {%\transparent{.9}
-             \includegraphics[width=\paperwidth,
-                              height=\paperheight,%
-                              keepaspectratio]{theme/HTLR_watermark.pdf}}%
-            \vfill
+	\put(0,0){%
+		\parbox[b][\paperheight]{\paperwidth}{%
+			\vfill
+			\centering
+			{%\transparent{.9}
+				\includegraphics[width=\paperwidth,
+				height=\paperheight,%
+				keepaspectratio]{theme/HTLR_watermark.pdf}}%
+			\vfill
 }}}
-
 
