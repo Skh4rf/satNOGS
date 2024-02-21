@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2023.12.29)  19 FEB 2024 22:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2023.12.29)  21 FEB 2024 07:31
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1593,13 +1593,19 @@ Package biblatex Info: Data encoding 'utf8' specified.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'thesis.bbl' found.
- (thesis.bbl)
+ (thesis.bbl
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'HelicalAntennas':
+(biblatex)                - Invalid format of field 'date' 
+(biblatex)                - Invalid format of field 'date'.
+
+)
 Package biblatex Info: Reference section=0 on input line 117.
 Package biblatex Info: Reference segment=0 on input line 117.
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 1
 25.
-
-(C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmss.fd
+ (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -1852,7 +1858,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--9
 
  []
 
-<../ref/SatNOGS_explanation.png, id=209, 1027.84pt x 726.715pt>
+<../ref/SatNOGS_explanation.png, id=211, 1027.84pt x 726.715pt>
 File: ../ref/SatNOGS_explanation.png Graphic file (type png)
 <use ../ref/SatNOGS_explanation.png>
 Package pdftex.def Info: ../ref/SatNOGS_explanation.png  used on input line 12.
@@ -1864,7 +1870,7 @@ LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <10.95> not available
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3]
-<../ref/SatNOGS_BlockDiagram.png, id=216, 1105.12875pt x 289.08pt>
+<../ref/SatNOGS_BlockDiagram.png, id=218, 1105.12875pt x 289.08pt>
 File: ../ref/SatNOGS_BlockDiagram.png Graphic file (type png)
 <use ../ref/SatNOGS_BlockDiagram.png>
 Package pdftex.def Info: ../ref/SatNOGS_BlockDiagram.png  used on input line 19
@@ -1949,7 +1955,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 60--62
 
  []
 
-<../ref/Richtdiagramm_Beispiel.png, id=240, 452.892pt x 374.5995pt>
+<../ref/Richtdiagramm_Beispiel.png, id=242, 452.892pt x 374.5995pt>
 File: ../ref/Richtdiagramm_Beispiel.png Graphic file (type png)
 <use ../ref/Richtdiagramm_Beispiel.png>
 Package pdftex.def Info: ../ref/Richtdiagramm_Beispiel.png  used on input line 
@@ -1991,16 +1997,19 @@ Underfull \vbox (badness 6188) has occurred while \output is active []
 
  [9 <../ref/Richtdiagramm_Beispiel.png>]) (mainmatter/Theory/qha-theory.tex)
 (mainmatter/Theory/helix-theory.tex [10]
-Underfull \hbox (badness 10000) in paragraph at lines 4--10
+<../ref/Spirale_Doku.png, id=279, 233.07076pt x 413.74574pt>
+File: ../ref/Spirale_Doku.png Graphic file (type png)
+<use ../ref/Spirale_Doku.png>
+Package pdftex.def Info: ../ref/Spirale_Doku.png  used on input line 10.
+(pdftex.def)             Requested size: 113.81102pt x 202.04272pt.
 
- []
+Underfull \vbox (badness 1960) has occurred while \output is active []
+
+ [11]))
+(mainmatter/gs-setup.tex [12 <../ref/Spirale_Doku.png>] [13] [14
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--10
-
- []
-
-[11])) (mainmatter/gs-setup.tex [12]
+]
 chapter 3.
 
 Class scrreprt Warning: Redefinition of \@makechapterhead detected.
@@ -2013,10 +2022,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-) (mainmatter/rotor.tex [13
-
-
-] [14
+) (mainmatter/rotor.tex [15] [16
 
 
 ]
@@ -2032,7 +2038,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-) (mainmatter/qfh-antenna.tex [15] [16
+) (mainmatter/qfh-antenna.tex [17] [18
 
 
 ]
@@ -2048,7 +2054,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-) (mainmatter/helixantenna.tex [17] [18
+) (mainmatter/helixantenna.tex [19] [20
 
 
 ]
@@ -2067,8 +2073,8 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 
 Underfull \vbox (badness 1342) has occurred while \output is active []
 
- [19])
-(mainmatter/mechanics.tex [20]
+ [21])
+(mainmatter/mechanics.tex [22]
 chapter 7.
 
 Class scrreprt Warning: Redefinition of \@makechapterhead detected.
@@ -2081,10 +2087,10 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-) (mainmatter/discussion.tex [21
+) (mainmatter/discussion.tex [23
 
 
-] [22
+] [24
 
 
 ]
@@ -2100,7 +2106,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-) (mainmatter/conclusion.tex [23] [24
+) (mainmatter/conclusion.tex [25] [26
 
 
 ]
@@ -2119,8 +2125,8 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [25]
-[26
+ [27]
+[28
 
 
 ]
@@ -2139,18 +2145,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [27]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 8
-.
-
-(C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
+ [29]
 (thesis.lof)
 \tf@lof=\write7
 \openout7 = `thesis.lof'.
@@ -2158,7 +2153,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [28]
+ [30]
 chapter 11.
 
 Class scrreprt Warning: Redefinition of \@makechapterhead detected.
@@ -2174,11 +2169,11 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [29
+ [31
 
 
 ]
-[30
+[32
 
 
 ]
@@ -2194,7 +2189,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-[31] [32
+[33] [34
 
 
 ]
@@ -2210,7 +2205,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-) (mainmatter/perspectives.tex [33] [34
+) (mainmatter/perspectives.tex [35] [36
 
 
 ]
@@ -2226,7 +2221,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-) (frontbackmatter/bibliography.tex [35] [36
+) (frontbackmatter/bibliography.tex [37] [38
 
 
 ]
@@ -2242,7 +2237,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-[37] [38
+[39] [40
 
 
 ]
@@ -2258,7 +2253,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-) [39] (thesis.aux)
+) [41] (thesis.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-12-11>
@@ -2279,11 +2274,11 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40509 strings out of 474495
- 781727 string characters out of 5743934
+ 40461 strings out of 474495
+ 781015 string characters out of 5743934
  1938460 words of memory out of 5000000
- 61701 multiletter control sequences out of 15000+600000
- 674534 words of font info for 228 fonts, out of 8000000 for 9000
+ 61661 multiletter control sequences out of 15000+600000
+ 668983 words of font info for 222 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,13n,145p,10930b,2222s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/bitstrea/charter/bc
@@ -2296,13 +2291,12 @@ e1/public/lm/lmmi8.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type
 /public/lm/lmr8.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/p
 ublic/lm/lmssbx10.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1
 /public/lm/lmsy10.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/lm/lmtt12.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1
 /public/tex-gyre/qhvb.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/tex-gyre/qhvr.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fon
 ts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on thesis.pdf (50 pages, 676979 bytes).
+Output written on thesis.pdf (52 pages, 692726 bytes).
 PDF statistics:
- 660 PDF objects out of 1000 (max. 8388607)
- 144 named destinations out of 1000 (max. 500000)
- 65464 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 669 PDF objects out of 1000 (max. 8388607)
+ 147 named destinations out of 1000 (max. 500000)
+ 60861 words of extra memory for PDF output out of 61914 (max. 10000000)
 
