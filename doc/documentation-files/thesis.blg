@@ -27,45 +27,45 @@ Warning--I didn't find a database entry for "Hertz"
 Biblatex version: 3.19
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 3 entries,
+You've used 6 entries,
             6399 wiz_defined-function locations,
-            1216 strings with 9219 characters,
-and the built_in function-call counts, 21128 in all, are:
-= -- 1316
-> -- 1234
-< -- 89
-+ -- 1249
-- -- 990
-* -- 1206
-:= -- 2931
+            1233 strings with 9740 characters,
+and the built_in function-call counts, 39040 in all, are:
+= -- 2157
+> -- 2594
+< -- 199
++ -- 2611
+- -- 2183
+* -- 2090
+:= -- 5167
 add.period$ -- 0
-call.type$ -- 3
-change.case$ -- 17
-chr.to.int$ -- 104
-cite$ -- 4
-duplicate$ -- 1403
-empty$ -- 1658
-format.name$ -- 96
-if$ -- 3642
+call.type$ -- 6
+change.case$ -- 46
+chr.to.int$ -- 176
+cite$ -- 10
+duplicate$ -- 2813
+empty$ -- 3105
+format.name$ -- 164
+if$ -- 6478
 int.to.chr$ -- 0
-int.to.str$ -- 4
+int.to.str$ -- 9
 missing$ -- 0
-newline$ -- 62
-num.names$ -- 82
-pop$ -- 784
+newline$ -- 120
+num.names$ -- 137
+pop$ -- 1805
 preamble$ -- 1
-purify$ -- 21
+purify$ -- 53
 quote$ -- 0
-skip$ -- 463
+skip$ -- 861
 stack$ -- 0
-substring$ -- 2956
-swap$ -- 300
-text.length$ -- 100
-text.prefix$ -- 2
+substring$ -- 4679
+swap$ -- 674
+text.length$ -- 183
+text.prefix$ -- 5
 top$ -- 1
-type$ -- 90
+type$ -- 192
 warning$ -- 0
-while$ -- 260
+while$ -- 406
 width$ -- 0
-write$ -- 60
+write$ -- 115
 (There were 2 warnings)

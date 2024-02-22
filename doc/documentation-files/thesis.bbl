@@ -17,6 +17,36 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global}
+  \entry{helix-calc-daycounter}{online}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{title}{Helical Antenna Design Calculator}
+    \verb{url}
+    \verb https://www.daycounter.com/Calculators/Helical-Antenna-Design-Calcula
+    \verb tor.phtml
+    \endverb
+    \verb{file}
+    \verb Helical Antenna Design Calculator:C\:\\Users\\gabri\\Zotero\\storage\
+    \verb \MDZZX7RN\\Helical-Antenna-Design-Calculator.html:text/html
+    \endverb
+    \field{urlday}{22}
+    \field{urlmonth}{02}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{helixWebsite}{online}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{title}{Helical Antenna (Helix)}
+    \verb{url}
+    \verb https://www.antenna-theory.com/antennas/travelling/helix.php
+    \endverb
+    \warn{\item Invalid format of field 'date' \item Invalid format of field
+  'date'}
+  \endentry
+
   \entry{FaradayRotation}{book}{}
     \name{author}{1}{}{%
       {{hash=uHWTI}{%
@@ -36,6 +66,35 @@
     \field{sortinithash}{H}
     \field{title}{Encyclopedia of Physical Science and Technology}
     \field{year}{2001}
+  \endentry
+
+  \entry{Kraus-2002-AntennasB}{book}{}
+    \name{author}{2}{}{%
+      {{hash=KJD}{%
+         family={Kraus},
+         familyi={K\bibinitperiod},
+         given={John\bibnamedelima D},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=MRJ}{%
+         family={Marhefka},
+         familyi={M\bibinitperiod},
+         given={Ronald\bibnamedelima J},
+         giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {McGraw-Hill}%
+    }
+    \keyw{Antenna Textbook}
+    \strng{namehash}{KJDMRJ1}
+    \strng{fullhash}{KJDMRJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{title}{Antenna for all applications}
+    \field{year}{2002}
   \endentry
 
   \entry{HelicalAntennas}{book}{}

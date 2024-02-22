@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2023.12.29)  21 FEB 2024 07:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2023.12.29)  22 FEB 2024 20:00
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1596,6 +1596,12 @@ Package biblatex Info: ... file 'thesis.bbl' found.
  (thesis.bbl
 
 Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'helixWebsite':
+(biblatex)                - Invalid format of field 'date' 
+(biblatex)                - Invalid format of field 'date'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                with 'HelicalAntennas':
 (biblatex)                - Invalid format of field 'date' 
 (biblatex)                - Invalid format of field 'date'.
@@ -1858,7 +1864,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--9
 
  []
 
-<../ref/SatNOGS_explanation.png, id=211, 1027.84pt x 726.715pt>
+<../ref/SatNOGS_explanation.png, id=207, 1027.84pt x 726.715pt>
 File: ../ref/SatNOGS_explanation.png Graphic file (type png)
 <use ../ref/SatNOGS_explanation.png>
 Package pdftex.def Info: ../ref/SatNOGS_explanation.png  used on input line 12.
@@ -1870,7 +1876,7 @@ LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <10.95> not available
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3]
-<../ref/SatNOGS_BlockDiagram.png, id=218, 1105.12875pt x 289.08pt>
+<../ref/SatNOGS_BlockDiagram.png, id=214, 1105.12875pt x 289.08pt>
 File: ../ref/SatNOGS_BlockDiagram.png Graphic file (type png)
 <use ../ref/SatNOGS_BlockDiagram.png>
 Package pdftex.def Info: ../ref/SatNOGS_BlockDiagram.png  used on input line 19
@@ -1955,7 +1961,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 60--62
 
  []
 
-<../ref/Richtdiagramm_Beispiel.png, id=242, 452.892pt x 374.5995pt>
+<../ref/Richtdiagramm_Beispiel.png, id=238, 452.892pt x 374.5995pt>
 File: ../ref/Richtdiagramm_Beispiel.png Graphic file (type png)
 <use ../ref/Richtdiagramm_Beispiel.png>
 Package pdftex.def Info: ../ref/Richtdiagramm_Beispiel.png  used on input line 
@@ -1997,7 +2003,7 @@ Underfull \vbox (badness 6188) has occurred while \output is active []
 
  [9 <../ref/Richtdiagramm_Beispiel.png>]) (mainmatter/Theory/qha-theory.tex)
 (mainmatter/Theory/helix-theory.tex [10]
-<../ref/Spirale_Doku.png, id=279, 233.07076pt x 413.74574pt>
+<../ref/Spirale_Doku.png, id=275, 233.07076pt x 413.74574pt>
 File: ../ref/Spirale_Doku.png Graphic file (type png)
 <use ../ref/Spirale_Doku.png>
 Package pdftex.def Info: ../ref/Spirale_Doku.png  used on input line 10.
@@ -2005,11 +2011,25 @@ Package pdftex.def Info: ../ref/Spirale_Doku.png  used on input line 10.
 
 Underfull \vbox (badness 1960) has occurred while \output is active []
 
- [11]))
-(mainmatter/gs-setup.tex [12 <../ref/Spirale_Doku.png>] [13] [14
+ [11]
+[12 <../ref/Spirale_Doku.png>]
+
+Package caption Warning: \label without proper reference on input line 34.
+See the caption package documentation for explanation.
 
 
-]
+LaTeX Warning: Reference `fig:Wndg_aufgerollt' on page 13 undefined on input li
+ne 29.
+
+<../ref/Windung_aufgerollt.png, id=291, 473.97075pt x 342.078pt>
+File: ../ref/Windung_aufgerollt.png Graphic file (type png)
+<use ../ref/Windung_aufgerollt.png>
+Package pdftex.def Info: ../ref/Windung_aufgerollt.png  used on input line 33.
+(pdftex.def)             Requested size: 170.71652pt x 123.21062pt.
+
+Underfull \vbox (badness 6284) has occurred while \output is active []
+
+ [13 <../ref/Windung_aufgerollt.png>])) (mainmatter/gs-setup.tex [14]
 chapter 3.
 
 Class scrreprt Warning: Redefinition of \@makechapterhead detected.
@@ -2022,7 +2042,10 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-) (mainmatter/rotor.tex [15] [16
+) (mainmatter/rotor.tex [15
+
+
+] [16
 
 
 ]
@@ -2146,6 +2169,17 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [29]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 8
+.
+
+(C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
 (thesis.lof)
 \tf@lof=\write7
 \openout7 = `thesis.lof'.
@@ -2274,11 +2308,11 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40461 strings out of 474495
- 781015 string characters out of 5743934
+ 40568 strings out of 474495
+ 783204 string characters out of 5743934
  1938460 words of memory out of 5000000
- 61661 multiletter control sequences out of 15000+600000
- 668983 words of font info for 222 fonts, out of 8000000 for 9000
+ 61734 multiletter control sequences out of 15000+600000
+ 676224 words of font info for 240 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,13n,145p,10930b,2222s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/bitstrea/charter/bc
@@ -2288,15 +2322,18 @@ rea/charter/bchri8a.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/public/lm/lmmi12.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/public/lm/lmmi8.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type
 1/public/lm/lmr12.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/lm/lmr8.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/lm/lmssbx10.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/lm/lmsy10.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/tex-gyre/qhvb.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/tex-gyre/qhvr.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fon
-ts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on thesis.pdf (52 pages, 692726 bytes).
+/public/lm/lmr6.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/lm/lmr8.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/lm/lmssbx10.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/lm/lmsy10.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/lm/lmsy8.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/lm/lmtt12.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/tex-gyre/qhvb.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/tex-gyre/qhvr.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/
+type1/urw/helvetic/uhvr8a.pfb>
+Output written on thesis.pdf (52 pages, 763069 bytes).
 PDF statistics:
- 669 PDF objects out of 1000 (max. 8388607)
- 147 named destinations out of 1000 (max. 500000)
- 60861 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 697 PDF objects out of 1000 (max. 8388607)
+ 153 named destinations out of 1000 (max. 500000)
+ 65458 words of extra memory for PDF output out of 74296 (max. 10000000)
 
