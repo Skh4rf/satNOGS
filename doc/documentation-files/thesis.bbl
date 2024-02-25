@@ -17,24 +17,6 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global}
-  \entry{helix-calc-daycounter}{online}{}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{H}
-    \field{sortinithash}{H}
-    \field{title}{Helical Antenna Design Calculator}
-    \verb{url}
-    \verb https://www.daycounter.com/Calculators/Helical-Antenna-Design-Calcula
-    \verb tor.phtml
-    \endverb
-    \verb{file}
-    \verb Helical Antenna Design Calculator:C\:\\Users\\gabri\\Zotero\\storage\
-    \verb \MDZZX7RN\\Helical-Antenna-Design-Calculator.html:text/html
-    \endverb
-    \field{urlday}{22}
-    \field{urlmonth}{02}
-    \field{urlyear}{2024}
-  \endentry
-
   \entry{helixWebsite}{online}{}
     \field{labeltitlesource}{title}
     \field{sortinit}{H}
@@ -45,27 +27,6 @@
     \endverb
     \warn{\item Invalid format of field 'date' \item Invalid format of field
   'date'}
-  \endentry
-
-  \entry{FaradayRotation}{book}{}
-    \name{author}{1}{}{%
-      {{hash=uHWTI}{%
-         prefix={und},
-         prefixi={u\bibinitperiod},
-         family={Hiromitsu\bibnamedelima Wakana},
-         familyi={H\bibinitperiod\bibinitdelim W\bibinitperiod},
-         given={Takashi\bibnamedelima Iida},
-         giveni={T\bibinitperiod\bibinitdelim I\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{HWTIu1}
-    \strng{fullhash}{HWTIu1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{H}
-    \field{sortinithash}{H}
-    \field{title}{Encyclopedia of Physical Science and Technology}
-    \field{year}{2001}
   \endentry
 
   \entry{Kraus-2002-AntennasB}{book}{}
@@ -117,6 +78,43 @@
     \field{title}{Helical Antennas in Satellite Radio Channel}
     \warn{\item Invalid format of field 'date' \item Invalid format of field
   'date'}
+  \endentry
+
+  \entry{takashi_encyclopedia_2003}{book}{}
+    \name{author}{2}{}{%
+      {{hash=TI}{%
+         family={Takashi},
+         familyi={T\bibinitperiod},
+         given={Iida},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=HW}{%
+         family={Hiromitsu},
+         familyi={H\bibinitperiod},
+         given={Wakana},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TIHW1}
+    \strng{fullhash}{TIHW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{edition}{3}
+    \field{title}{Encyclopedia of Physical Science and Technology}
+    \verb{url}
+    \verb https://www.sciencedirect.com/topics/physics-and-astronomy/faraday-ef
+    \verb fect
+    \endverb
+    \verb{file}
+    \verb Faraday Effect - an overview | ScienceDirect Topics:C\:\\Users\\gabri
+    \verb \\Zotero\\storage\\TS3E8B8U\\faraday-effect.html:text/html
+    \endverb
+    \field{year}{2003}
+    \field{urlday}{24}
+    \field{urlmonth}{02}
+    \field{urlyear}{2024}
   \endentry
 \enddatalist
 \endinput
