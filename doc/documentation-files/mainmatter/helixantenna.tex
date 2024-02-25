@@ -11,6 +11,8 @@ Für die in dieser Diplomarbeit konstruierte Helixantenne wurden die folgenden P
 \end{tabular}
 
 \section{Design}
+Durch den Einsatz im Freien muss die Helixantenne einige Anforderungen erfüllen. Beispielsweise dürfen wichtige Strukturelemente unter UV-Einwirkung nicht brüchig werden, es darf sich durch Regen kein Wasser stauen und sie muss starken Windböen standhalten. 
+
 Um die Helixantenne zu designen wurden Online-Rechner verwendet REFERENZEN. Folgende Ergebnisse konnten erhalten werden:
 
 GRAFIK
@@ -35,25 +37,79 @@ Die Helixantenne besteht theoretisch aus nur zwei Bauteilen: der Spirale und dem
 
 BILD DER HELIXANTENNE
 
+MATERIALLISTE
 \begin{itemize}
 	\item PVC-Rohr
 	\item Abstandhalter (Teflon bzw. PAS60)
 	\item Rohrflansch
+	\item Aluminiumrohr
+	\item Aluminiumplatte
 \end{itemize}
 
-Es lässt sich erkennen, dass 
+Das PVC-Rohr in das die Abstandhalter gesteckt sind, ist UV-stabilisiert. Wäre der Kunststoff nicht gegen UV-Strahlung geschützt, so würde dieser nach einer Zeit spröde und würde zusammenbrechen.
+
+ZEICHNUNG DES ROHRES
+
+Wie an der Zeichnung zu erkennen ist, wurden Löcher mit einem Abstand von [ABSTAND] und einem Durchmesser von 11mm gebohrt. Diese schaffen genug Platz für die Seitenelemente welche einen Durchmesser von 10mm aufweisen. Das Rohr besitzt weiters zwei Löcher am unteren Ende. Diese dienen dazu Das Rohr am Rohrflansch mithilfe von Schrauben zu montieren. 
+
+Die Abstandhalter sind hierbei jeweils mit 90° voneinander separiert um eine möglichst große Stabilität in allen Lagen zu ermöglichen. Das gewählte Material ist hierbei Teflon bzw. PTFE, da es eine sehr niedrige elektrische Permittivität besitzt. Das $\epsilon\textsubscript{r}$ von PTFE ist rund 2,2, während das von Luft ca. 1 ist. Teflon ist zwar ein relativ weicher Kunststoff, allerdings erhöht die Anordnung der Seitenelemente die strukturelle Stabilität der Konstruktion MISSING REFERENCE. Da PTFE ein Hochleistungskunststoff ist, eignet dieser sich bestens für den Einsatz im Freien.
+
+BILD VON OBEN
+
+ZEICHNUNG ABSTANDHALTER
+
+An der Zeichnung lässt sich erkennen, dass ein Außengewinde ungefähr bis zur Mitte der Teflonstange geschnitten ist. Der Stab wird mit dem Gewinde zuerst in die Löcher des PVC-Rohres gesteckt, damit dieser von vorne und hinten mit Muttern an das Rohr geschraubt werden kann.
+
+BILD DER BEFESTIGUNG
+
+Von der anderen Seite wird ein Loch mit einem Durchmesser von 5mm (M6 Gewinde) gebohrt. An dieses Kernloch werden UV-stabilisierte Rohrschellen montiert. Diese tolerieren Rohrdurchmesser von bis zu 18mm. Durch die Verwendung von Rohrschellen vereinfacht sich die Montage der Spirale auf ein einfaches Einschnappen in die Rohrschellen.
+
+BILD DER ROHRSCHELLEN
+
+Außerdem lässt sich der Abstand der Spirale zum Reflektor verändern, wodurch eine Verbesserung der Richtcharakteristik bzw. des maximalen Antennengewinns erzielt werden könnte.
+
+Der Rohrflansch bildet das Bindeelement zwischen dem PVC-Rohr und der Reflektorplatte. Der Rohrflansch hat einen Innendurchmesser von 51mm, und eine Wandstärke von 4mm.
+
+BILD DES ROHRFLANSCHES
+
+Er besteht aus einem Rohr, in welches zwei durchgehende Löcher mit einem Durchmesser von [DURCHMESSER] gebohrt wurden, und einer Platte in die ebenfalls zwei Löcher mit einem Durchmesser von [DURCHMESSER] gebohrt wurden. Die Platte und das Rohr werden aneinander geschweißt. Die Platte des Rohrflansches verbindet den Reflektor, und das Aluminiumrohr verbindet das PVC-Rohr.
+
+Für den Reflektor wurde eine runde Aluminiumplatte gewählt. Für die reale Konstruktion wurden Löcher in den äußeren Rand der Platte gelasert, um den Luftwiderstand zu reduzieren. Diese müssen kleiner als $\frac{\lambda}{7}$ sein, um unerwünschte Störungen zu vermeiden.
+
+BILD DER REFLEKTORPLATTE
+
+In der Mitte des Reflektors werden zwei Löcher mit einem Durchmesser von [DURCHMESSER] gebohrt an denen der Rohrflansch befestigt wird. 
+
+Die Helix wurde real ebenso gebogen wie in der Simulation. Es wurde ein Aluminiumrohr mit einem Außendurchmesser von 18mm und einer Wandstärke von 2mm verwendet. Das Rohr hat eine Länge von [LÄNGE] und wurde zu einer Spirale gebogen, welche einen Durchmesser von 270mm, eine Höhe von [HÖHE] und konsequent eine Steigung von 11,5° oder einen Abstand zwischen den Windungen von 172,5mm hat.
+
+BILD DER HELIX
+
+Um die Helixantenne wasserdicht zu gestalten wurden kurze Aluminiumrundlinge auf das Helixrohr geschweißt. Am unteren Ende der Helix, an der der Innenleiter des Koaxialkabels befestigt wird, wurde ein Gewinde in die Metallplatte geschnitten.
+
+BILD DES RUNDLINGS	
+
+Mithilfe dieses Gewindes kann ein Kabel mithilfe eines Ringkabelschuhs und einer Schraube montiert werden.
+
+Um die PVC-Rohre wasserdicht zu gestalten wurden Abdeckungen 3D-gedruckt. Diese wurden mithilfe des Filaments DuraPro ASA gedruckt. Dieses Filament besitzt UV- sowie Wetterfestigkeit, was es zu einer guten Option für dieses Anwendungsgebiet macht.
+
+BILD DER ABDECKUNG
+
+Der Anschluss für das Koaxialkabel (BNC-Buchse) wurde nach der Lieferung der einzelnen Bauteile montiert. Er wurde direkt unter dem Ende der Helix platziert. 
 
 Aufbau (Teflon Abstandhalter, PVC-Rohr, Spirale, Reflektor) Fusion Modelle, Zeichnungen
 
 Spirale gebogen, Reflektor gelasert, UV-stabilisiertes PVC-Rohr, Befestigungsmethode, Anpassstreifen?, Verschlüsse (3D-Druck), BNC-Buchse, Befestigung des Kabels an der Helix, Befestigung des PVC-Rohrs am Reflektor
 
 \section{Anpassung}
-Veränderung der Höhe der Helix, anpassstreifen
+Um eine einzelne Helixantenne anzupassen gibt es verschiedene Möglichkeiten. Eine weit verbreitete Option ist es, einen entsprechend dimensionierten Blechstreifen mit einer Länge von $\frac{\lambda}{4}$ entlang des unteren Endes der Helix zu montieren. Dieser agiert als Resonanztransformator und soll die Impedanz der Antenne auf einen Wert von 50$\Omega$ senken.
+
+Da die Höhe der Helix variabel ist, lässt sich überprüfen ob der Abstand der Helix zum Reflektor von Relevanz für eine erfolgreiche Anpassung ist. 
 
 \section{Tests}
 Tests im Freien, Messungen an Satelliten
 
 \section{Erweiterung der Helixantenne als Array}
+Nun wird die Helixantenne durch drei weitere, identische, Helixantennen erweitert, welche zusammen ein Array bilden. Hierbei ist der Abstand zwischen den einzelnen Antennen 
 
 \subsection{Gerüst}
 effektive apertur, Fusion Modelle, Zeichnungen

@@ -33,20 +33,20 @@
 \contentsline {chapter}{\numberline {6}Helixantenne}{23}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Design}{23}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Realisierung}{24}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Anpassung}{25}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Tests}{25}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Erweiterung der Helixantenne als Array}{25}{section.6.5}%
-\contentsline {subsection}{\numberline {6.5.1}Gerüst}{25}{subsection.6.5.1}%
-\contentsline {subsection}{\numberline {6.5.2}Anpassung}{25}{subsection.6.5.2}%
-\contentsline {subsection}{\numberline {6.5.3}Test}{25}{subsection.6.5.3}%
-\contentsline {chapter}{\numberline {7}Mechanik}{27}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Schaltschrank}{27}{section.7.1}%
-\contentsline {chapter}{\numberline {8}Discussion}{29}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Summary of findings}{29}{section.8.1}%
-\contentsline {chapter}{\numberline {9}Schluss}{31}{chapter.9}%
-\contentsline {chapter}{\numberline {10}Abkürzungsverzeichnis}{33}{chapter.10}%
-\contentsline {chapter}{\numberline {11}Begleitprotokoll}{35}{chapter.11}%
-\contentsline {chapter}{\numberline {12}Anhang}{37}{chapter.12}%
-\contentsline {chapter}{\numberline {13}Perspektiven}{39}{chapter.13}%
-\contentsline {chapter}{\numberline {14}Literaturverzeichnis}{41}{chapter.14}%
-\contentsline {chapter}{\nonumberline Literatur}{43}{chapter*.46}%
+\contentsline {section}{\numberline {6.3}Anpassung}{27}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Tests}{28}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Erweiterung der Helixantenne als Array}{28}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Gerüst}{28}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.5.2}Anpassung}{28}{subsection.6.5.2}%
+\contentsline {subsection}{\numberline {6.5.3}Test}{28}{subsection.6.5.3}%
+\contentsline {chapter}{\numberline {7}Mechanik}{29}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Schaltschrank}{29}{section.7.1}%
+\contentsline {chapter}{\numberline {8}Discussion}{31}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Summary of findings}{31}{section.8.1}%
+\contentsline {chapter}{\numberline {9}Schluss}{33}{chapter.9}%
+\contentsline {chapter}{\numberline {10}Abkürzungsverzeichnis}{35}{chapter.10}%
+\contentsline {chapter}{\numberline {11}Begleitprotokoll}{37}{chapter.11}%
+\contentsline {chapter}{\numberline {12}Anhang}{39}{chapter.12}%
+\contentsline {chapter}{\numberline {13}Perspektiven}{41}{chapter.13}%
+\contentsline {chapter}{\numberline {14}Literaturverzeichnis}{43}{chapter.14}%
+\contentsline {chapter}{\nonumberline Literatur}{45}{chapter*.46}%
