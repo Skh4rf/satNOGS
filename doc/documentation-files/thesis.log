@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2023.12.29)  25 FEB 2024 10:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2023.12.29)  25 FEB 2024 11:26
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2092,10 +2092,13 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              that will remove this deprecated code.
 
 
-Underfull \vbox (badness 1342) has occurred while \output is active []
+Underfull \vbox (badness 1910) has occurred while \output is active []
 
- [23])
-(mainmatter/mechanics.tex [24]
+ [23]
+[24]) (mainmatter/mechanics.tex [25] [26
+
+
+]
 chapter 7.
 
 Class scrreprt Warning: Redefinition of \@makechapterhead detected.
@@ -2108,10 +2111,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-) (mainmatter/discussion.tex [25
-
-
-] [26
+) (mainmatter/discussion.tex [27] [28
 
 
 ]
@@ -2127,31 +2127,11 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-) (mainmatter/conclusion.tex [27] [28
+) (mainmatter/conclusion.tex [29] [30
 
 
 ]
 chapter 9.
-
-Class scrreprt Warning: Redefinition of \@makechapterhead detected.
-(scrreprt)              Note: KOMA-Script does use styles for commands like
-(scrreprt)              \chapter. Currently it internally still provides and
-(scrreprt)              uses \@makechapterhead, but a completely different
-(scrreprt)              definition compared to the standard classes.
-(scrreprt)              So redefining or using internal \@makechapterhead
-(scrreprt)              by users or package authors may already break
-(scrreprt)              KOMA-Script and will not work with a coming version,
-(scrreprt)              that will remove this deprecated code.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [29]
-[30
-
-
-]
-chapter 10.
 
 Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              Note: KOMA-Script does use styles for commands like
@@ -2171,6 +2151,26 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
+chapter 10.
+
+Class scrreprt Warning: Redefinition of \@makechapterhead detected.
+(scrreprt)              Note: KOMA-Script does use styles for commands like
+(scrreprt)              \chapter. Currently it internally still provides and
+(scrreprt)              uses \@makechapterhead, but a completely different
+(scrreprt)              definition compared to the standard classes.
+(scrreprt)              So redefining or using internal \@makechapterhead
+(scrreprt)              by users or package authors may already break
+(scrreprt)              KOMA-Script and will not work with a coming version,
+(scrreprt)              that will remove this deprecated code.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [33]
+[34
+
+
+]
 chapter 11.
 
 Class scrreprt Warning: Redefinition of \@makechapterhead detected.
@@ -2183,7 +2183,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-[33] [34
+[35] [36
 
 
 ]
@@ -2199,7 +2199,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-) (mainmatter/perspectives.tex [35] [36
+) (mainmatter/perspectives.tex [37] [38
 
 
 ]
@@ -2215,7 +2215,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-) (frontbackmatter/bibliography.tex [37] [38
+) (frontbackmatter/bibliography.tex [39] [40
 
 
 ]
@@ -2231,7 +2231,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-[39] [40
+[41] [42
 
 
 ]
@@ -2256,7 +2256,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-) [41]
+) [43]
 (thesis.aux)
  ***********
 LaTeX2e <2023-11-01>
@@ -2278,11 +2278,11 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40527 strings out of 474495
- 782077 string characters out of 5743934
+ 40535 strings out of 474495
+ 782145 string characters out of 5743934
  1938460 words of memory out of 5000000
  61701 multiletter control sequences out of 15000+600000
- 672776 words of font info for 236 fonts, out of 8000000 for 9000
+ 673194 words of font info for 240 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,13n,145p,10930b,2222s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/bitstrea/charter/bc
@@ -2301,9 +2301,9 @@ blic/lm/lmtt12.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/pu
 blic/tex-gyre/qhvb.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type
 1/public/tex-gyre/qhvr.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/
 type1/urw/helvetic/uhvr8a.pfb>
-Output written on thesis.pdf (52 pages, 729109 bytes).
+Output written on thesis.pdf (54 pages, 733069 bytes).
 PDF statistics:
- 676 PDF objects out of 1000 (max. 8388607)
- 152 named destinations out of 1000 (max. 500000)
+ 684 PDF objects out of 1000 (max. 8388607)
+ 154 named destinations out of 1000 (max. 500000)
  64925 words of extra memory for PDF output out of 74296 (max. 10000000)
 

@@ -1,14 +1,54 @@
 \chapter{Helixantenne}
-Die zweite aufgebaute Antenne ist eine Helix-Antenne. Da sie gerichtet ist hat Sie eine höhere Direktivität. Sie ist die einfachste zirkular polarisierte Antenne. Kombiniert mit ihrer hohen Bandbreite macht sie das zu einer attraktiven Option zur Verwendung in der Satellitenkommunikation.
+Die zweite aufgebaute Antenne ist eine monofilare Helixantenne. Dieser Antennentyp ist gerichtet, was bedeutet, dass sie in eine bestimmte Richtung einen höheren Antennengewinn im Vergleich zu anderen Richtungen hat. Sie ist eine der einfachsten Antennenarten um eine zirkulare Polarisation zu erzielen. Kombiniert mit ihrer hohen Bandbreite macht sie das zu einer attraktiven Option zum Nachbau und zur Verwendung in der Satellitenkommunikation.
+
+Für die in dieser Diplomarbeit konstruierte Helixantenne wurden die folgenden Parameter gewählt.
+
+\begin{tabular}{|l|l|}
+	\textbf{Parameter} & \textbf{Wert}\\
+	Resonanzfrequenz & 433MHz\\
+	Windungen & 6\\
+	Abstand zwischen Windungen & $0,25\lambda$
+\end{tabular}
 
 \section{Design}
-Aufbau (Teflon Abstandhalter, PVC-Rohr, Spirale, Reflektor) Fusion Modelle, Zeichnungen
+Um die Helixantenne zu designen wurden Online-Rechner verwendet REFERENZEN. Folgende Ergebnisse konnten erhalten werden:
+
+GRAFIK
+
+Mithilfe dieser Werte konnte eine erste Näherung für die Antenne konstruiert werden. 
+
+GRAFIK
+
+Diese konnte mithilfe von CENOS-Simulation-Suite simuliert werden. Für die Werte, welche aus dem Rechner erhalten wurden, resultierten folgende Ergebnisse.
+
+S11-Parameter
+SWR
+Abstrahlverhalten 2D
+Abstrahlverhalten 3D
+
+Um die Resonanzfrequenz der Helixantenne zu verschieben wurde der Durchmesser der Spirale verändert. Eine Resonanzfrequenz von 433MHz konnte mit einem Helix-Durchmesser von 270mm erreicht werden. Der Reflektor wurde aus der Theorie mit ca. $\frac{3\lambda}{4}$ festgelegt, was einem Durchmesser von 520mm entspricht.
+
+Es ist wichtig anzumerken, dass der Steigungswinkel der Spirale hierbei ca. 11,5° beträgt. Dies bedeutet, dass die Steigung von dem relativ engen Idealbereich zwischen 12° und 14° abweicht.
 
 \section{Realisierung}
+Die Helixantenne besteht theoretisch aus nur zwei Bauteilen: der Spirale und dem Reflektor. Für die Simulation genügte dieses Modell, allerdings werden in der Realität Strukturelemente benötigt um diese zu befestigen.
+
+BILD DER HELIXANTENNE
+
+\begin{itemize}
+	\item PVC-Rohr
+	\item Abstandhalter (Teflon bzw. PAS60)
+	\item Rohrflansch
+\end{itemize}
+
+Es lässt sich erkennen, dass 
+
+Aufbau (Teflon Abstandhalter, PVC-Rohr, Spirale, Reflektor) Fusion Modelle, Zeichnungen
+
 Spirale gebogen, Reflektor gelasert, UV-stabilisiertes PVC-Rohr, Befestigungsmethode, Anpassstreifen?, Verschlüsse (3D-Druck), BNC-Buchse, Befestigung des Kabels an der Helix, Befestigung des PVC-Rohrs am Reflektor
 
 \section{Anpassung}
-Veränderung der Höhe der Helix
+Veränderung der Höhe der Helix, anpassstreifen
 
 \section{Tests}
 Tests im Freien, Messungen an Satelliten
