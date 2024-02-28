@@ -25,6 +25,7 @@
 \contentsline {section}{\numberline {3.1}Code}{17}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Erklärung}{17}{section.3.2}%
 \contentsline {chapter}{\numberline {4}Yaesu-G5500 Rotor}{19}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Azimut und Elevation}{19}{section.4.1}%
 \contentsline {chapter}{\numberline {5}Quadrifilare Helix Antenne (QFH)}{21}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Funktionsweise}{21}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Design}{21}{section.5.2}%
@@ -49,4 +50,4 @@
 \contentsline {chapter}{\numberline {12}Anhang}{39}{chapter.12}%
 \contentsline {chapter}{\numberline {13}Perspektiven}{41}{chapter.13}%
 \contentsline {chapter}{\numberline {14}Literaturverzeichnis}{43}{chapter.14}%
-\contentsline {chapter}{\nonumberline Literatur}{45}{chapter*.46}%
+\contentsline {chapter}{\nonumberline Literatur}{45}{chapter*.47}%
