@@ -17,6 +17,41 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global}
+  \entry{calculator_jcoppens}{online}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{Antenas - Helix - Javascript on-line calculator}
+    \verb{url}
+    \verb https://jcoppens.com/ant/helix/calc.en.php
+    \endverb
+    \verb{file}
+    \verb Antenas - Helix - Javascript on-line calculator:C\:\\Users\\gabri\\Zo
+    \verb tero\\storage\\R6QDUEP3\\calc.en.html:text/html
+    \endverb
+    \field{urlday}{27}
+    \field{urlmonth}{02}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{calculator_daycounter}{online}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{title}{Helical Antenna Design Calculator}
+    \verb{url}
+    \verb https://www.daycounter.com/Calculators/Helical-Antenna-Design-Calcula
+    \verb tor.phtml
+    \endverb
+    \verb{file}
+    \verb Helical Antenna Design Calculator:C\:\\Users\\gabri\\Zotero\\storage\
+    \verb \MDZZX7RN\\Helical-Antenna-Design-Calculator.html:text/html
+    \endverb
+    \field{urlday}{22}
+    \field{urlmonth}{02}
+    \field{urlyear}{2024}
+  \endentry
+
   \entry{helixWebsite}{online}{}
     \field{labeltitlesource}{title}
     \field{sortinit}{H}

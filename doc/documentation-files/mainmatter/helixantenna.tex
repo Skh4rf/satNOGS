@@ -1,27 +1,46 @@
 \chapter{Helixantenne}
 Die zweite aufgebaute Antenne ist eine monofilare Helixantenne. Dieser Antennentyp ist gerichtet, was bedeutet, dass sie in eine bestimmte Richtung einen höheren Antennengewinn im Vergleich zu anderen Richtungen hat. Sie ist eine der einfachsten Antennenarten um eine zirkulare Polarisation zu erzielen. Kombiniert mit ihrer hohen Bandbreite macht sie das zu einer attraktiven Option zum Nachbau und zur Verwendung in der Satellitenkommunikation.
 
-Für die in dieser Diplomarbeit konstruierte Helixantenne wurden die folgenden Parameter gewählt.
+Für die in dieser Diplomarbeit konstruierte Helixantenne wurden die folgenden Vorgaben gewählt.
 
-\begin{tabular}{|l|l|}
+\begin{center}
+	\begin{tabular}{|c|c|}
 	\textbf{Parameter} & \textbf{Wert}\\
 	Resonanzfrequenz & 433MHz\\
 	Windungen & 6\\
-	Abstand zwischen Windungen & $0,25\lambda$
+	Abstand zwischen Windungen & $0,25\lambda$\\
+	Polarisationsart & RHCP\\
+	Betriebsmodus & Axial-Modus
 \end{tabular}
+\end{center}
+
+Wobei $"$RHCP$"$ $"$Right Hand Circularily Polarized$"$ bedeutet. Für mehr Informationen zur zirkularen Polarisation wird auf den Abschnitt $"$\ref{subsec:pol} Polarisation$"$ verwiesen.
 
 \section{Design}
-Durch den Einsatz im Freien muss die Helixantenne einige Anforderungen erfüllen. Beispielsweise dürfen wichtige Strukturelemente unter UV-Einwirkung nicht brüchig werden, es darf sich durch Regen kein Wasser stauen und sie muss starken Windböen standhalten. 
+Durch den Einsatz im Freien muss die Helixantenne einige Anforderungen erfüllen. Beispielsweise dürfen wichtige Strukturelemente unter UV-Einwirkung nicht brüchig werden, es darf sich durch Regen kein Wasser stauen und sie muss starkem Wind standhalten. 
 
-Um die Helixantenne zu designen wurden Online-Rechner verwendet REFERENZEN. Folgende Ergebnisse konnten erhalten werden:
+Um die Helixantenne zu designen wurden Online-Rechner verwendet \cite{calculator_daycounter, calculator_jcoppens}.
 
-GRAFIK
+\begin{center}
+	\begin{tabular}{|c|c|}
+	\textbf{Parameter} & \textbf{Wert} \\
+	Wellenlänge &  692.8mm\\
+	Durchmesser (intern) & 235.7mm\\
+	Abstand zwischen den Windungen & 173.2mm\\
+	Gesamthöhe & 1039.2mm\\
+	minimaler Reflektor-Durchmesser & 429.5mm
+\end{tabular}
+\end{center}
 
-Mithilfe dieser Werte konnte eine erste Näherung für die Antenne konstruiert werden. 
+Mithilfe dieser Werte wurde eine erste Näherung für die Antenne konstruiert. 
 
-GRAFIK
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{../ref/Erste Helixnäherung v0.png}
+	\label{fig:ersteHelixnäherung}
+\end{figure}
 
-Diese konnte mithilfe von CENOS-Simulation-Suite simuliert werden. Für die Werte, welche aus dem Rechner erhalten wurden, resultierten folgende Ergebnisse.
+Diese wurde mithilfe von CENOS-Simulation-Suite simuliert. Für die Helixantenne wurden folgende Werte und Diagramme erhalten.
 
 S11-Parameter
 SWR
@@ -109,11 +128,32 @@ Da die Höhe der Helix variabel ist, lässt sich überprüfen ob der Abstand der
 Tests im Freien, Messungen an Satelliten
 
 \section{Erweiterung der Helixantenne als Array}
-Nun wird die Helixantenne durch drei weitere, identische, Helixantennen erweitert, welche zusammen ein Array bilden. Hierbei ist der Abstand zwischen den einzelnen Antennen 
+Nun wird die Helixantenne durch drei weitere, identische, Helixantennen erweitert, welche zusammen ein Array bilden. Hierbei ist der Abstand zwischen den einzelnen Antennen von Relevanz um den Gesamtgewinn zu maximieren.
+Der Gesamtgewinn eines Antennenarrays bestehend aus vier identischen Helixantennen liegt in der Theorie bei dem vierfachen Antennengewinn einer einzelnen Wendelantenne, bzw. einer Helixantenne mit der vierfachen Windungszahl, also $4*6=24$.
+
+Hierfür muss ein Gerüst designt und aufgebaut werden, welches vier solcher Antennen halten kann, sowie die neu entstehende Impedanz der Zusammenschaltung dieser Antenne angepasst werden. Anschließend müssen Tests durchgeführt werden, die den verbesserten Antennengewinn der Antenne belegen.
 
 \subsection{Gerüst}
+
+MATERIALLISTE
+
+Als Gerüst wurde die Form eines $"$H$"$ gewählt, da hierdurch das vom Rotor benötigte Moment minimiert wird [QUELLE]. 
+
+BILD DES GERÜSTS
+
+Um eine komplette elektrische Isolierung der Antennen vom Gerüst zu ermöglichen, kommen Teflonplatten zum Einsatz. Diese verbinden die Antennen mit dem Aluminium-Vierkantprofil.
+
+BILD DER VERBINDUNG
+
 effektive apertur, Fusion Modelle, Zeichnungen
 
 \subsection{Anpassung}
+Da sich der Eingangswiderstand ändert, wenn vier solcher Antennen zusammen geschaltet werden, muss ein Anpassungsglied zwischen Koaxialkabel und Antennen eingesetzt werden. Hierbei wird ein $\frac{\lambda}{4}$-Anpasstopf verwendet. Dieser besteht aus einem Innenleiter sowie Außenleiter und hat, wie der Name schon sagt, eine Länge von einer Viertel-Wellenlänge. Der Anpasstopf verhält sich wie ein Koaxialkabel, allerdings kann durch das Verhältnis des Durchmessers zwischen Außenleiter und Innenleiter die zwischen den beiden Elementen herrschende Kapazität verändert werden. Dadurch kann diese Konstruktion wie ein LC-Anpassnetzwerk verwendet werden. Hierdurch kann folglich auch der Wellenwiderstand verändert werden. 
+
+MATHEMATISCHE ERKLÄRUNG
+
+Somit kann der Wellenwiderstand passend für ein Koaxialkabel mit einem Wellenwiderstand von 50$\Omega$ eingestellt werden.
 
 \subsection{Test}
+
+Tests mit anderer Antenne im freien Feld

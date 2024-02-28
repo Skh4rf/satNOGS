@@ -24,49 +24,48 @@ Database file #1: thesis-blx.bib
 Database file #2: references.bib
 Warning--I didn't find a database entry for "Adams"
 Warning--I didn't find a database entry for "Hertz"
-Warning--I didn't find a database entry for "FaradayRotation"
 Biblatex version: 3.19
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 5 entries,
+You've used 7 entries,
             6399 wiz_defined-function locations,
-            1232 strings with 9707 characters,
-and the built_in function-call counts, 36420 in all, are:
-= -- 1962
-> -- 2625
-< -- 189
-+ -- 2658
-- -- 2202
-* -- 1892
-:= -- 5049
+            1240 strings with 10181 characters,
+and the built_in function-call counts, 42715 in all, are:
+= -- 2076
+> -- 3163
+< -- 249
++ -- 3144
+- -- 2684
+* -- 2118
+:= -- 5664
 add.period$ -- 0
-call.type$ -- 5
-change.case$ -- 42
-chr.to.int$ -- 176
-cite$ -- 8
-duplicate$ -- 2715
-empty$ -- 2665
+call.type$ -- 7
+change.case$ -- 50
+chr.to.int$ -- 224
+cite$ -- 12
+duplicate$ -- 3328
+empty$ -- 3309
 format.name$ -- 183
-if$ -- 5831
+if$ -- 6807
 int.to.chr$ -- 0
-int.to.str$ -- 8
+int.to.str$ -- 10
 missing$ -- 0
-newline$ -- 118
+newline$ -- 153
 num.names$ -- 137
-pop$ -- 1489
+pop$ -- 2125
 preamble$ -- 1
-purify$ -- 53
+purify$ -- 59
 quote$ -- 0
-skip$ -- 813
+skip$ -- 989
 stack$ -- 0
-substring$ -- 4097
-swap$ -- 628
-text.length$ -- 175
-text.prefix$ -- 4
+substring$ -- 4299
+swap$ -- 855
+text.length$ -- 223
+text.prefix$ -- 6
 top$ -- 1
-type$ -- 158
+type$ -- 226
 warning$ -- 0
-while$ -- 422
+while$ -- 466
 width$ -- 0
-write$ -- 114
-(There were 3 warnings)
+write$ -- 147
+(There were 2 warnings)
