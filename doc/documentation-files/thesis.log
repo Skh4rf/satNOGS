@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.25)  28 FEB 2024 01:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.25)  28 FEB 2024 08:28
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1427,11 +1427,7 @@ LaTeX Font Info:    Trying to load font information for T1+bch on input line 11
 (C:\Users\jakob\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1bch.fd
 File: t1bch.fd 2004/10/18 font definitions for T1/bch.
 )
-(thesis.aux
-
-LaTeX Warning: Label `fig:Wndg_aufgerollt' multiply defined.
-
-)
+(thesis.aux)
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 117.
@@ -2012,7 +2008,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 102--109
 [11]) (mainmatter/Theory/qha-theory.tex [12])
 (mainmatter/Theory/helix-theory.tex [13]
 
-Package caption Warning: \label without proper reference on input line 9.
+Package caption Warning: \label without proper reference on input line 27.
 See the caption package documentation for explanation.
 
 
@@ -2062,15 +2058,15 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-<../ref/Azimuth-Altitude_schematic_satellit.png, id=327, 1027.84pt x 989.6975pt
+<../ref/Azimuth-Altitude_schematic_satellit.png, id=326, 1027.84pt x 989.6975pt
 >
 File: ../ref/Azimuth-Altitude_schematic_satellit.png Graphic file (type png)
 <use ../ref/Azimuth-Altitude_schematic_satellit.png>
 Package pdftex.def Info: ../ref/Azimuth-Altitude_schematic_satellit.png  used o
 n input line 8.
-(pdftex.def)             Requested size: 170.71652pt x 164.38034pt.
+(pdftex.def)             Requested size: 147.95424pt x 142.4529pt.
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-2.
+3.
 (C:\Users\jakob\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -2080,7 +2076,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 )
 (mainmatter/qfh-antenna.tex
-Overfull \hbox (11.0427pt too wide) in paragraph at lines 12--1
+Overfull \hbox (11.0427pt too wide) in paragraph at lines 13--1
 [][]$\T1/lmtt/m/n/12 https : / / de . wikipedia . org / wiki / Azimut # /media 
 / Datei : Azimuth-[]Altitude _
  []
@@ -2273,9 +2269,6 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -2288,10 +2281,10 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40671 strings out of 476315
- 788082 string characters out of 5787196
+ 40672 strings out of 476315
+ 788114 string characters out of 5787196
  1864068 words of memory out of 5000000
- 59958 multiletter control sequences out of 15000+600000
+ 59959 multiletter control sequences out of 15000+600000
  631014 words of font info for 244 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,13n,145p,10930b,2216s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2311,7 +2304,7 @@ blic/lm/lmtt12.pfb><C:/Users/jakob/AppData/Local/Programs/MiKTeX/fonts/type1/pu
 blic/tex-gyre/qhvb.pfb><C:/Users/jakob/AppData/Local/Programs/MiKTeX/fonts/type
 1/public/tex-gyre/qhvr.pfb><C:/Users/jakob/AppData/Local/Programs/MiKTeX/fonts/
 type1/urw/helvetic/uhvr8a.pfb>
-Output written on thesis.pdf (56 pages, 797089 bytes).
+Output written on thesis.pdf (56 pages, 796514 bytes).
 PDF statistics:
  703 PDF objects out of 1000 (max. 8388607)
  158 named destinations out of 1000 (max. 500000)

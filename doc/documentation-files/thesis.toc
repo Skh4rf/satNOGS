@@ -24,7 +24,7 @@
 \contentsline {chapter}{\numberline {3}Aufsetzen der Bodenstation}{17}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Code}{17}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Erklärung}{17}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Yaesu-G5500 Rotor}{19}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Rotor}{19}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Azimut und Elevation}{19}{section.4.1}%
 \contentsline {chapter}{\numberline {5}Quadrifilare Helix Antenne (QFH)}{21}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Funktionsweise}{21}{section.5.1}%
