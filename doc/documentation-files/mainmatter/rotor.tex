@@ -1,7 +1,7 @@
 \chapter{Rotor}
 Rotoren werden in der Antennentechnik eingesetzt, um die Kommunikation mit nicht-geostationären Satelliten zu ermöglichen, wobei Antennentypen mit hoher Richtwirkung verwendet werden (z.B. Helix-Antenne). In der Regel wird durch diese Methode eine höhere Verstärkung erzielt, als es mit Antennen möglich ist, welche eine größere Abdeckung von Richtungen aufweisen und daher keine Nachführung erfordern. 
 \section{Azimut und Elevation}
-Die Ausrichtung des Rotors und somit auch die der Antenne wird mithilfe der Angabe von zwei Winkel - Azimut und Elevation - im Gradmaß des astronomischen Horizont-Koordinatensystem angegeben, wobei das Azimut der auszurichtenden Himmelsrichtung und die Elevation der vertikalen Ausrichtung entspricht. Beide Winkelscheitel sind dabei durch Position des Rotors definiert. Als Referenzschenkel für das Azimut dient die Linie vom Winkelscheitel nach Norden. Der Referenzschenkel für die Elevation bildet der Zenit am Ort des Rotors. Die Elevation entspricht somit dem Komplementärwinkel vom Referenzschenkel zur Linie welche den Winkelscheitel mit dem auszurichtenden Punkt verbindet.
+Die Ausrichtung des Rotors und somit auch der Antenne erfolgt durch die Angabe von zwei Winkeln - Azimut und Elevation - im Gradmaß des astronomischen Horizont-Koordinatensystems. Dabei entspricht das Azimut der auszurichtenden Himmelsrichtung und die Elevation der vertikalen Ausrichtung. Beide Winkelscheitelpunkte werden durch die Position des Rotors definiert. Als Referenzlinie für das Azimut dient die Linie vom Winkelscheitelpunkt nach Norden. Die Referenzlinie für die Elevation bildet der Zenit am Standort des Rotors. Die Elevation entspricht somit dem Komplementärwinkel vom Referenzschenkel zur Linie welche den Winkelscheitel mit dem auszurichtenden Punkt verbindet.
 
 \begin{figure}[H]
 	\centering
@@ -10,4 +10,47 @@ Die Ausrichtung des Rotors und somit auch die der Antenne wird mithilfe der Anga
 	\caption{Azimut und Elevation Darstellung}
 \end{figure}
 
-\url{https://de.wikipedia.org/wiki/Azimut#/media/Datei:Azimuth-Altitude_schematic.svg}
+\section{Yaesu G-5500DC Rotor}
+Das Yaesu G-5500DC System \footcite{noauthor_yaesu_nodate} besteht aus einem Azimut- und einem Elevation-Rotor sowie dem dazugehörigen Controller. Es ermöglicht die manuelle sowie digital gesteuerte Rotation einer unidirektionalen Antenne im Bereich von 0° bis 450° Azimut und 0° bis 180° Elevation.
+
+\subsection{Spezifikationen}
+\begin{tabular}{ l l }
+	\textbf{Spannungsversorgung:} & 110-120 oder 200-240 VAC \\ 
+	\textbf{Motorspannung:} & 22 VDC \\ 
+	\textbf{Rotationszeit} (ca.): & Elevation (180°): 65 Sekunden ± 20\% \\
+	& Azimut (360°): 60 Sekunden ± 20\% \\
+	\textbf{maximaler Dauerbetrieb:} & 3 Minuten \\
+	\textbf{Drehmoment:} & Elevation: 12 kgf*m (117.68 Nm)\\
+	& Azimut: 6 kgf*m (58.84 Nm)\\
+	\textbf{Bremsmoment:} & Elevation: 40 kgf*m (392.27 Nm) \\ &
+	Azimut: 40 kgf*m (392.27 Nm) \\
+	\textbf{vertikale Belastung:} & 200 kg \\
+	\textbf{Ausrichtungsgenauigkeit:} & ± 4\% \\
+	\textbf{Windfläche:} & 1 m²\\
+	\textbf{Mastdurchmesser:} & 38-63 mm \\
+	\textbf{Auslegerdurchmesser:} & 32-43 mm \\
+	\textbf{Gewicht} (ca.): & Rotoren: 8 kg \\
+	& Controller: 3 kg
+\end{tabular}
+
+\subsection{Installation des Rotors}
+\subsubsection{Steuerleitung}
+Für die Ansteuerung der Rotoren werden diese jeweils mit einem 7-Pol-Rundsteckverbinder zum Controller verbunden, wovon 5 Pole verwendet werden. Die Funktion der einzelnen Pins wird im Datenblatt nicht näher beschrieben, konnte allerdings durch Messungen wie folgt bestimmt werden:
+
+\begin{tabular}{| c | l | l |}
+	\hline
+	\textbf{Pin} & \textbf{Elevation-Funktion} & \textbf{Azimut-Funktion} \\
+	\hline
+	1 & UP Schalter (open collector) & RIGHT Schalter (open collector)\\
+	\hline
+	2 & DOWN Schalter (open collector) & LEFT Schalter (open collector) \\
+	\hline
+	3 & \multicolumn{2}{| c |}{analoger Ausgang (0.5 V bis 4.5 V)} \\
+	\hline
+	4 & \multicolumn{2}{| c |}{analoger Input (0V bis 5V)} \\
+	\hline
+	5 & \multicolumn{2}{| c |}{analoge Masse} \\
+	\hline
+\end{tabular}
+
+Die Bestimmung der aktuellen Ausrichtung des Rotors erfolgt über einen von der Rotation des Rotors abhängigen Potentiometer welcher die von Pin 3 zur Verfügung gestellte Spannung teilt. Je nach Ausrichtung ändert sich somit die Spannung am Schleifer des Potentiometers welcher mit Pin 4 verbunden ist.
