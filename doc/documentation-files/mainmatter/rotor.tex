@@ -12,7 +12,7 @@ Die Ausrichtung des Rotors und somit auch der Antenne erfolgt durch die Angabe v
 \end{figure}
 
 \section{Yaesu G-5500DC Rotor}
-Das Yaesu G-5500DC System \cite{noauthor_yaesu_nodate} besteht aus einem Azimut- und einem Elevation-Rotor sowie dem dazugehörigen Controller. Es ermöglicht die manuelle sowie digital gesteuerte Rotation einer unidirektionalen Antenne im Bereich von 0° bis 450° Azimut und 0° bis 180° Elevation.
+Das Yaesu G-5500DC System \cite{noauthor_yaesu_nodate} besteht aus einem Azimut- und einem Elevation-Rotor sowie dem dazugehörigen Controller und ermöglicht eine gesteuerte Rotation einer unidirektionalen Antenne im Bereich von 0° bis 450° Azimut und 0° bis 180° Elevation.
 
 \subsection{Spezifikationen}
 \begin{tabular}{ l l }
@@ -35,23 +35,71 @@ Das Yaesu G-5500DC System \cite{noauthor_yaesu_nodate} besteht aus einem Azimut-
 \end{tabular}
 
 \subsection{Installation des Rotors}
-\subsubsection{Steuerleitung}
+\subsubsection{Azimut- und Elevationsrotor verbinden}
+Um das Yaesu G-5500DC System möglichst Modular anwenden zu können, werden seine Rotoren separat geliefert und müssen für die Anwendung in unserem Fall mithilfe eines mitgelieferten U-Profils wie im Datenblatt beschrieben verbunden werden.
+
+\begin{figure}[H]
+	\cite{noauthor_yaesu_nodate}
+	\centering
+	\includegraphics[width=6cm]{../ref/RotorInstallationAzimut.png}
+	\label{fig:Rotor_Installation_Azimut_U-Bracket}
+	\caption{Azimut Rotor mit U-Profil verbinden}
+\end{figure}
+
+\begin{figure}[H]
+	\cite{noauthor_yaesu_nodate}
+	\centering
+	\includegraphics[width=6cm]{../ref/RotorInstallationElevation.png}
+	\label{fig:Rotor_Installation_Elevation_U-Bracket+Azimut}
+	\caption{Elevation Rotor mit U-Profil und Azimut Rotor verbinden}
+\end{figure}
+
+
+
+\subsubsection{Kontrollkabel vorbereiten und anschließen}
 Für die Ansteuerung der Rotoren werden diese jeweils mit einem 7-Pol-Rundsteckverbinder zum Controller verbunden, wovon 5 Pole verwendet werden. Die Funktion der einzelnen Pins wird im Datenblatt \cite{noauthor_yaesu_nodate} nicht näher beschrieben, konnte allerdings durch Messungen wie folgt bestimmt werden:
 
+Tabelle unbedingt überarbeiten!!!
+\newline
 \begin{tabular}{| c | l | l |}
 	\hline
 	\textbf{Pin} & \textbf{Elevation-Funktion} & \textbf{Azimut-Funktion} \\
 	\hline
-	1 & UP Schalter (open collector) & RIGHT Schalter (open collector)\\
+	1 & \multicolumn{2}{| c |}{analoger Ausgang (5V)} \\
 	\hline
-	2 & DOWN Schalter (open collector) & LEFT Schalter (open collector) \\
+	2 & \multicolumn{2}{| c |}{analoger Input (0V bis 5V)} \\
 	\hline
-	3 & \multicolumn{2}{| c |}{analoger Ausgang (0.5 V bis 4.5 V)} \\
+	3 & \multicolumn{2}{| c |}{analoge Masse} \\
 	\hline
-	4 & \multicolumn{2}{| c |}{analoger Input (0V bis 5V)} \\
+	4 & UP Schalter (open collector) & RIGHT Schalter (open collector)\\
 	\hline
-	5 & \multicolumn{2}{| c |}{analoge Masse} \\
+	5 & DOWN Schalter (open collector) & LEFT Schalter (open collector) \\
 	\hline
 \end{tabular}
 
-Die Bestimmung der aktuellen Ausrichtung des Rotors erfolgt über einen von der Rotation des Rotors abhängigen Potentiometer welcher die von Pin 3 zur Verfügung gestellte Spannung teilt. Je nach Ausrichtung ändert sich somit die Spannung am Schleifer des Potentiometers welcher mit Pin 4 verbunden ist. Die Spannung an Pin 4 entspricht somit proportional der Ausrichtung des jeweiligen Rotors.
+Die Pinbelegung für den 7-Pol-Rundstecker ist im Datenblatt wie folgt angegeben:
+
+\begin{figure}[H]
+	\cite{noauthor_yaesu_nodate}
+	\centering
+	\includegraphics[width=5cm]{../ref/RotorSteckerPinbelegung.png}
+	\label{fig:Rotor_Stecker_Pinbelegung}
+	\caption{Pinbelegung 7-Pol-Rundstecker (Ansicht vorne)}
+\end{figure}
+
+Für die verwendeten Kabel wird im Datenblatt ein Leiterquerschnitt von mindestens 0.5 Quadratmillimeter bei Kabellängen unter 40 Metern und 0.75 Quadratmillimeter bei Kabellängen über 40 Metern vorgeschrieben. Um die Dichtheit der über das Kabel gestülpten Gummikappe zu gewährleisten muss der Außendurchmesser des Kabels zwischen 8.6 bis 10.5 Millimeter betragen.
+ 
+Entsprechend der Pinbelegung im Datenblatt werden die Kabel am anderen Ende mit den Schraubterminal am Rotor Controller verbunden:
+\begin{figure}[H]
+	\cite{noauthor_yaesu_nodate}
+	\centering
+	\includegraphics[width=5cm]{../ref/RotorInstallationScrewTerminal.png}
+	\label{fig:Rotor_Schraubterminal}
+	\caption{Pinbelegung Schraubterminal}
+\end{figure}
+
+\subsubsection{Erstinbetriebnahme und Kalibrieren des Rotors}
+
+\subsection {Azimut und Elevation bestimmen}
+Die Bestimmung der aktuellen Ausrichtung des Rotors erfolgt über einen von der Rotation des Rotors abhängigen Potentiometer welcher die von Pin 1 zur Verfügung gestellte Spannung teilt. Je nach Ausrichtung ändert sich somit die Spannung am Schleifer des Potentiometers welcher mit Pin 2 verbunden ist. Die Spannung an Pin 2 entspricht somit proportional der Ausrichtung des jeweiligen Rotors.
+
