@@ -1,5 +1,5 @@
 \chapter{Helixantenne}
-Die zweite aufgebaute Antenne ist eine monofilare Helixantenne. Dieser Antennentyp ist gerichtet, was bedeutet, dass sie in eine bestimmte Richtung einen höheren Antennengewinn im Vergleich zu anderen Richtungen hat. Sie ist eine der einfachsten Antennenarten um eine zirkulare Polarisation zu erzielen. Kombiniert mit ihrer hohen Bandbreite macht sie das zu einer attraktiven Option zum Nachbau und zur Verwendung in der Satellitenkommunikation.
+Die zweite aufgebaute Antenne ist eine monofilare Helixantenne. Dieser Antennentyp ist gerichtet, was bedeutet, dass sie in eine bestimmte Richtung einen höheren Antennengewinn als in andere Richtungen hat. Sie ist eine der einfachsten Antennenarten um eine zirkulare Polarisation zu erzielen. Kombiniert mit ihrer hohen Bandbreite macht sie das zu einer attraktiven Option zum Nachbau und zur Verwendung in der Satellitenkommunikation. \cite{helixWebsite}
 
 Für die in dieser Diplomarbeit konstruierte Helixantenne wurden die folgenden Vorgaben gewählt.
 
@@ -32,29 +32,37 @@ Um die Helixantenne zu designen wurden Online-Rechner verwendet \cite{calculator
 \end{tabular}
 \end{center}
 
-Mithilfe dieser Werte wurde eine erste Näherung für die Antenne konstruiert. 
+Mithilfe dieser Werte wurde die erste Wendelantenne in Fusion 360 konstruiert. 
 
-\begin{figure}
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{../ref/Erste Helixnäherung v0.png}
 	\label{fig:ersteHelixnäherung}
+	\caption{Das CAD-Modell für die Helixantenne mit den berechneten Werten}
 \end{figure}
 
-Diese wurde mithilfe von CENOS-Simulation-Suite simuliert. Für die Helixantenne wurden folgende Werte und Diagramme erhalten.
+Diese wurde mithilfe von CENOS-Simulation-Suite für einen Frequenzbereich von [FREQUENZBEREICH] simuliert. Die Ergebnisse gaben Aufschluss über die Performance der Antenne in einer idealen Umgebung.
 
 S11-Parameter
 SWR
 Abstrahlverhalten 2D
 Abstrahlverhalten 3D
 
-Um die Resonanzfrequenz der Helixantenne zu verschieben wurde der Durchmesser der Spirale verändert. Eine Resonanzfrequenz von 433MHz konnte mit einem Helix-Durchmesser von 270mm erreicht werden. Der Reflektor wurde aus der Theorie mit ca. $\frac{3\lambda}{4}$ festgelegt, was einem Durchmesser von 520mm entspricht.
+Es wurde der Schluss gezogen, dass die Resonanzfrequenz zu weit über dem gewünschten Wert von 433MHz liegt. Diese lässt sich durch Veränderung des Durchmessers der Spirale oder des Abstandes zwischen den Windungen verändern.
+
+Durch das Abändern des Durchmessers konnte die gewünschte Resonanzfrequenz von 433MHz mit einem Helix-Durchmesser von 270mm erreicht werden. Der Reflektor wurde aus der Theorie mit ca. $\frac{3\lambda}{4}$ festgelegt, was einem Durchmesser von ungefähr 520mm entspricht.
 
 Es ist wichtig anzumerken, dass der Steigungswinkel der Spirale hierbei ca. 11,5° beträgt. Dies bedeutet, dass die Steigung von dem relativ engen Idealbereich zwischen 12° und 14° abweicht.
 
 \section{Realisierung}
-Die Helixantenne besteht theoretisch aus nur zwei Bauteilen: der Spirale und dem Reflektor. Für die Simulation genügte dieses Modell, allerdings werden in der Realität Strukturelemente benötigt um diese zu befestigen.
+Die Helixantenne besteht aus nur zwei Bauteilen: der Spirale und dem Reflektor. Für die Simulation genügt dieses Modell, allerdings werden in der Realität Strukturelemente benötigt um diese zu befestigen.
 
-BILD DER HELIXANTENNE
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=10cm]{../ref/Helixantenne-real.jpg}
+	\caption{Reale Helixantenne}
+	\label{fig:helix-real}
+\end{figure}
 
 MATERIALLISTE
 \begin{itemize}
@@ -65,71 +73,132 @@ MATERIALLISTE
 	\item Aluminiumplatte
 \end{itemize}
 
-Das PVC-Rohr in das die Abstandhalter gesteckt sind, ist UV-stabilisiert. Wäre der Kunststoff nicht gegen UV-Strahlung geschützt, so würde dieser nach einer Zeit spröde und würde zusammenbrechen.
+Das schwarze PVC-Stützrohr ist UV-stabilisiert. Wäre der Kunststoff nicht gegen UV-Strahlung geschützt, so würde dieser nach einer Zeit spröde und strukturell unzuverlässig.
 
-ZEICHNUNG DES ROHRES
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{../ref/0025-Spiral-Antenne_St_tzrohr_Bohrungen.pdf}
+	\caption{Der Bohrplan des PVC-Rohres}
+	\label{fig:PVCU-Rohr-Bohrplan}
+\end{figure}
 
-Wie an der Zeichnung zu erkennen ist, wurden Löcher mit einem Abstand von [ABSTAND] und einem Durchmesser von 11mm gebohrt. Diese schaffen genug Platz für die Seitenelemente welche einen Durchmesser von 10mm aufweisen. Das Rohr besitzt weiters zwei Löcher am unteren Ende. Diese dienen dazu Das Rohr am Rohrflansch mithilfe von Schrauben zu montieren. 
+Wie an der Zeichnung zu erkennen ist, wurden Löcher mit einem Abstand von 86,6mm und einem Durchmesser von 11mm gebohrt. Diese schaffen genug Platz für die Seitenelemente welche einen Durchmesser von 10mm aufweisen. Um das Rohr mithilfe des Rohrflansches an der Reflektorplatte zu montieren wurden zwei Löcher mit M10-Gewinde gebohrt. 
 
-Die Abstandhalter sind hierbei jeweils mit 90° voneinander separiert um eine möglichst große Stabilität in allen Lagen zu ermöglichen. Das gewählte Material ist hierbei Teflon bzw. PTFE, da es eine sehr niedrige elektrische Permittivität besitzt. Das $\epsilon\textsubscript{r}$ von PTFE ist rund 2,2, während das von Luft ca. 1 ist. Teflon ist zwar ein relativ weicher Kunststoff, allerdings erhöht die Anordnung der Seitenelemente die strukturelle Stabilität der Konstruktion MISSING REFERENCE. Da PTFE ein Hochleistungskunststoff ist, eignet dieser sich bestens für den Einsatz im Freien.
+Das gewählte Material ist PTFE, da es eine sehr niedrige elektrische Permittivität besitzt. Das ist wichtig, da die Spirale, welche die Resonanzfrequenz der Helixantenne bestimmt, so gut wie möglich von kapazitiven Einflüssen geschützt sein sollte. Das $\epsilon\textsubscript{r}$ von PTFE ist rund 2,2, während das von Luft ca. 1 ist \cite{lipinski_polytetrafluorethylen_nodate,noauthor_dielektrizitatskonstante_nodate}. Teflon ist zwar ein relativ weicher Kunststoff, allerdings erhöht die Anordnung der Seitenelemente die strukturelle Stabilität der Konstruktion. Da PTFE UV-beständig ist, eignet dieser sich bestens für den Einsatz im Freien.
 
-BILD VON OBEN
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{../ref/Abstandhalter final Zeichnung v2.pdf}
+	\caption{Zeichnung des Abstandhalters}
+	\label{fig:Abstandhalter-Zeichnung}
+\end{figure}
 
-ZEICHNUNG ABSTANDHALTER
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{../ref/Abstandhalter-real.jpg}
+	\caption{Realer Abstandhalter}
+	\label{fig:Abstandhalter-real}
+\end{figure}
 
-An der Zeichnung lässt sich erkennen, dass ein Außengewinde ungefähr bis zur Mitte der Teflonstange geschnitten ist. Der Stab wird mit dem Gewinde zuerst in die Löcher des PVC-Rohres gesteckt, damit dieser von vorne und hinten mit Muttern an das Rohr geschraubt werden kann.
+An der Zeichnung sowie an dem realen Bauteil lässt sich erkennen, dass das Außengewinde ungefähr bis zur Mitte der Teflonstange geschnitten ist. Der Stab wird mit dem Gewinde zuerst in die Löcher des PVC-Rohres gesteckt, damit dieser von vorne und hinten mit M10-Kunststoffmuttern an das Rohr geschraubt werden kann.
 
-BILD DER BEFESTIGUNG
+%BILD MUSS NOCH GEÄNDERT WERDEN (Bild der Befestigung)
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{../ref/Abstandhalter final Zeichnung v2.pdf}
+	\caption{Befestigung der Abstandhalter am PVC-Rohr}
+	\label{fig:Abstandhalter-Befestigung}
+\end{figure}
 
-Von der anderen Seite wird ein Loch mit einem Durchmesser von 5mm (M6 Gewinde) gebohrt. An dieses Kernloch werden UV-stabilisierte Rohrschellen montiert. Diese tolerieren Rohrdurchmesser von bis zu 18mm. Durch die Verwendung von Rohrschellen vereinfacht sich die Montage der Spirale auf ein einfaches Einschnappen in die Rohrschellen.
+In die gegenüberliegende Seite des Außengewindes wird ein Loch mit einem Durchmesser von 5mm für ein M6-Gewinde gebohrt. Mithilfe der entsprechenden Schrauben werden UV-stabilisierte Rohrschellen an dem Seitenelement montiert. Diese tolerieren Rohrdurchmesser von bis zu 18mm. Durch die Verwendung von Rohrschellen vereinfacht sich die Montage der Spirale auf ein einfaches Einschnappen des Rohres.
 
-BILD DER ROHRSCHELLEN
+%Korrektes Bild fehlt
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{../ref/Abstandhalter final Zeichnung v2.pdf}
+	\caption{Zusammengefügtes Seitenelement}
+	\label{fig:Seitenelement-komplett}
+\end{figure}
 
-Außerdem lässt sich der Abstand der Spirale zum Reflektor verändern, wodurch eine Verbesserung der Richtcharakteristik bzw. des maximalen Antennengewinns erzielt werden könnte.
+Der Rohrflansch bildet das Bindeelement zwischen dem PVC-Rohr und der Reflektorplatte. Dieser hat einen Innendurchmesser von 51mm, und eine Wandstärke von 4mm. Dadurch wird genug Toleranz geboten damit das PVC-Rohr sicher verschraubt werden kann. 
 
-Der Rohrflansch bildet das Bindeelement zwischen dem PVC-Rohr und der Reflektorplatte. Der Rohrflansch hat einen Innendurchmesser von 51mm, und eine Wandstärke von 4mm.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{../ref/Antenne-Rohrflansch.jpg}
+	\caption{Rohrflansch zur Befestigung des PVC-Rohres}
+	\label{fig:Rohrflansch-Antenne}
+\end{figure}
 
-BILD DES ROHRFLANSCHES
+Der Rohrflansch besteht aus einem Rohr, in welches zwei durchgehende Löcher mit einem Durchmesser von 11mm gebohrt wurden, und einer Platte in die ebenfalls zwei Löcher mit einem Durchmesser von 13,5mm gebohrt wurden. Die Platte und das Rohr werden aneinander geschweißt. Das resultierende Bauteil bildet das Bindeglied zwischen Reflektor und PVC-Rohr.
 
-Er besteht aus einem Rohr, in welches zwei durchgehende Löcher mit einem Durchmesser von [DURCHMESSER] gebohrt wurden, und einer Platte in die ebenfalls zwei Löcher mit einem Durchmesser von [DURCHMESSER] gebohrt wurden. Die Platte und das Rohr werden aneinander geschweißt. Die Platte des Rohrflansches verbindet den Reflektor, und das Aluminiumrohr verbindet das PVC-Rohr.
+%Korrektes Bild fehlt (Verbindung zwischen Rohrflansch und Reflektor)
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{../ref/Abstandhalter final Zeichnung v2.pdf}
+	\caption{Befestigung des Rohrflansches}
+	\label{fig:Rohrflansch-Antenne-Verbindung}
+\end{figure}
 
-Für den Reflektor wurde eine runde Aluminiumplatte gewählt. Für die reale Konstruktion wurden Löcher in den äußeren Rand der Platte gelasert, um den Luftwiderstand zu reduzieren. Diese müssen kleiner als $\frac{\lambda}{7}$ sein, um unerwünschte Störungen zu vermeiden.
+%NOCH UMZUFORMULIEREN
+Für den Reflektor wurde eine runde Aluminiumplatte gewählt. Für die reale Konstruktion wurden Löcher in den äußeren Rand der Platte gelasert, um den Luftwiderstand zu reduzieren. Diese sollten kleiner als $\frac{\lambda}{7}$ sein, um unerwünschte Störungen zu vermeiden.
 
-BILD DER REFLEKTORPLATTE
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{../ref/Reflektor.jpg}
+	\caption{Reflektor der Wendelantenne}
+	\label{fig:Reflektor}
+\end{figure}
 
-In der Mitte des Reflektors werden zwei Löcher mit einem Durchmesser von [DURCHMESSER] gebohrt an denen der Rohrflansch befestigt wird. 
+In der Mitte des Reflektors werden zwei Löcher mit einem Durchmesser von 13,5mm gebohrt an denen der Rohrflansch befestigt wird. 
 
-Die Helix wurde real ebenso gebogen wie in der Simulation. Es wurde ein Aluminiumrohr mit einem Außendurchmesser von 18mm und einer Wandstärke von 2mm verwendet. Das Rohr hat eine Länge von [LÄNGE] und wurde zu einer Spirale gebogen, welche einen Durchmesser von 270mm, eine Höhe von [HÖHE] und konsequent eine Steigung von 11,5° oder einen Abstand zwischen den Windungen von 172,5mm hat.
+Die Helix wurde real ebenso gebogen wie in der Simulation. Es wurde ein Aluminiumrohr mit einem Außendurchmesser von 18mm und einer Wandstärke von 2mm verwendet. Das Rohr hat eine Länge von ca. 5,2m und wurde zu einer Spirale gebogen, welche einen Durchmesser von 270mm, eine Höhe von ca. 1039,2mm und konsequent eine Steigung von 11,5° beziehungsweise einen Abstand zwischen den Windungen von 172,5mm hat.
 
-BILD DER HELIX
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=5cm]{../ref/Spirale.jpg}
+	\caption{Das Herzstück der Wendelantenne: Die Helix}
+	\label{fig:Spirale}
+\end{figure}
 
-Um die Helixantenne wasserdicht zu gestalten wurden kurze Aluminiumrundlinge auf das Helixrohr geschweißt. Am unteren Ende der Helix, an der der Innenleiter des Koaxialkabels befestigt wird, wurde ein Gewinde in die Metallplatte geschnitten.
+Um die Helixantenne wasserdicht zu machen wurden kurz abgeschnittene Aluminiumrundlinge auf die Öffnungen des Helixrohres geschweißt. Am unteren Ende der Helix, an der der Innenleiter des Koaxialkabels befestigt wird, ist ein Gewinde in die Metallplatte geschnitten.
 
-BILD DES RUNDLINGS	
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{../ref/Deckel-oben.jpg}
+	\caption{Aufgeschweißter Aluminiumrundling oben}
+	\label{fig:Deckel-Helix-Oben}
+\end{figure}
 
-Mithilfe dieses Gewindes kann ein Kabel mithilfe eines Ringkabelschuhs und einer Schraube montiert werden.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{../ref/Anschluss-unten.jpg}
+	\caption{Aufgeschweißter Aluminiumrundling unten (Befestigung des Innenleiters)}
+	\label{fig:Deckel-Helix-Unten}
+\end{figure}
 
-Um die PVC-Rohre wasserdicht zu gestalten wurden Abdeckungen 3D-gedruckt. Diese wurden mithilfe des Filaments DuraPro ASA gedruckt. Dieses Filament besitzt UV- sowie Wetterfestigkeit, was es zu einer guten Option für dieses Anwendungsgebiet macht.
+Mithilfe dieses Gewindes kann ein Kabel durch einen Ringkabelschuh und eine Schraube montiert, und am Innenleiter der BNC-Buchse angelötet werden.
 
-BILD DER ABDECKUNG
+Um die PVC-Rohre vor Wasser zu schützen wurden Abdeckungen 3D-gedruckt. Durch die Verwendung eines speziellen Filaments vom Typ DuraPro ASA, ist das Resultat eine UV-resistente Rohrabdeckung. Durch diese Eigenschaft eignet sich dieses Filament exzellent für den Einsatz im Freien.
 
-Der Anschluss für das Koaxialkabel (BNC-Buchse) wurde nach der Lieferung der einzelnen Bauteile montiert. Er wurde direkt unter dem Ende der Helix platziert. 
+%Abdeckung fehlt
 
-Aufbau (Teflon Abstandhalter, PVC-Rohr, Spirale, Reflektor) Fusion Modelle, Zeichnungen
+Die BNC-Buchse befindet sich direkt unter dem Ende der Spirale. Der Innenleiter wird, wie bereits erwähnt, an der Helix befestigt. Der Außenleiter wird mit dem Reflektor verschraubt.
 
-Spirale gebogen, Reflektor gelasert, UV-stabilisiertes PVC-Rohr, Befestigungsmethode, Anpassstreifen?, Verschlüsse (3D-Druck), BNC-Buchse, Befestigung des Kabels an der Helix, Befestigung des PVC-Rohrs am Reflektor
+%FEHLT: Bild der Buchse
 
 \section{Anpassung}
-Um eine einzelne Helixantenne anzupassen gibt es verschiedene Möglichkeiten. Eine weit verbreitete Option ist es, einen entsprechend dimensionierten Blechstreifen mit einer Länge von $\frac{\lambda}{4}$ entlang des unteren Endes der Helix zu montieren. Dieser agiert als Resonanztransformator und soll die Impedanz der Antenne auf einen Wert von 50$\Omega$ senken.
+Um eine einzelne Helixantenne anzupassen gibt es verschiedene Möglichkeiten. Eine weit verbreitete Option ist es, einen entsprechend dimensionierten Blechstreifen mit einer Länge von $\frac{\lambda}{4}$ entlang des unteren Endes der Helix zu montieren. Dieser agiert als Resonanztransformator und soll die Impedanz der Antenne auf einen Wert von 50$\Omega$ senken. Die Bandbreite der Wendelantenne bleibt bei dieser Anpassungsmethode erhalten.
 
-Da die Höhe der Helix variabel ist, lässt sich überprüfen ob der Abstand der Helix zum Reflektor von Relevanz für eine erfolgreiche Anpassung ist. 
+Eine andere Möglichkeit, die Antenne anzupassen ist ein sogenannter $"$Power-Combiner$"$. Dieses Bauteil erlaubt es, Antennen mit einem Eingangswiderstand von 50 $\Omega$ zusammen zu schalten. Der springende Punkt bei dieser Art ist es, dass die Anpassung über rein reele Bauteile geschieht. Dies ermöglicht es, die Bandbreite der Antenne beizubehalten.
+
+
 
 \section{Tests}
 Tests im Freien, Messungen an Satelliten
 
 \section{Erweiterung der Helixantenne als Array}
-Nun wird die Helixantenne durch drei weitere, identische, Helixantennen erweitert, welche zusammen ein Array bilden. Hierbei ist der Abstand zwischen den einzelnen Antennen von Relevanz um den Gesamtgewinn zu maximieren.
-Der Gesamtgewinn eines Antennenarrays bestehend aus vier identischen Helixantennen liegt in der Theorie bei dem vierfachen Antennengewinn einer einzelnen Wendelantenne, bzw. einer Helixantenne mit der vierfachen Windungszahl, also $4*6=24$.
+Nun wird die Helixantenne durch drei weitere identische Helixantennen erweitert, welche zusammen ein Array bilden. Hierbei ist der Abstand zwischen den einzelnen Antennen von Relevanz um den Gesamtgewinn zu maximieren.
+Der Antennengewinn eines Antennenarrays bestehend aus vier identischen Helixantennen liegt in der Theorie bei dem vierfachen Antennengewinn einer einzelnen Wendelantenne, bzw. einer Helixantenne mit der vierfachen Windungszahl, also $4*6=24$.
 
 Hierfür muss ein Gerüst designt und aufgebaut werden, welches vier solcher Antennen halten kann, sowie die neu entstehende Impedanz der Zusammenschaltung dieser Antenne angepasst werden. Anschließend müssen Tests durchgeführt werden, die den verbesserten Antennengewinn der Antenne belegen.
 
@@ -137,18 +206,35 @@ Hierfür muss ein Gerüst designt und aufgebaut werden, welches vier solcher Ant
 
 MATERIALLISTE
 
-Als Gerüst wurde die Form eines $"$H$"$ gewählt, da hierdurch das vom Rotor benötigte Moment minimiert wird [QUELLE]. 
+Als Gerüst wurde die Form eines $"$H$"$ gewählt. Da der Schwerpunkt des Gerüsts im Mittelpunkt liegt, wird das vom Rotor benötigte Moment minimiert. 
 
-BILD DES GERÜSTS
+%Gegenüberstellung zu realem Gerüst
+\begin{figure}[h!]
+	\centering
+	\includegraphics[keepaspectratio=true,scale=0.5]{../ref/0000-Gesamtbaugruppe_Rahmen.pdf}
+	\caption{Bauplan des Gerüsts}
+	\label{fig:Gerüst}
+\end{figure}
 
 Um eine komplette elektrische Isolierung der Antennen vom Gerüst zu ermöglichen, kommen Teflonplatten zum Einsatz. Diese verbinden die Antennen mit dem Aluminium-Vierkantprofil.
 
+\begin{figure}[H]
+	\begin{minipage}[b]{.4\linewidth} % [b] => Ausrichtung an \caption
+		\includegraphics[width=\linewidth]{../ref/Teflon-Platte.jpg}
+		\caption{Verbindende Teflonplatte}
+		\label{fig:Teflonplatte}
+	\end{minipage}
+	\hspace{.1\linewidth}% Abstand zwischen Bilder
+	\begin{minipage}[b]{.4\linewidth} % [b] => Ausrichtung an \caption
+		\includegraphics[width=\linewidth]{../ref/Isolierplatte.pdf}
+		\caption{Zeichnung der Teflonplatte}
+	\end{minipage}
+\end{figure}
+
 BILD DER VERBINDUNG
 
-effektive apertur, Fusion Modelle, Zeichnungen
-
 \subsection{Anpassung}
-Da sich der Eingangswiderstand ändert, wenn vier solcher Antennen zusammen geschaltet werden, muss ein Anpassungsglied zwischen Koaxialkabel und Antennen eingesetzt werden. Hierbei wird ein $\frac{\lambda}{4}$-Anpasstopf verwendet. Dieser besteht aus einem Innenleiter sowie Außenleiter und hat, wie der Name schon sagt, eine Länge von einer Viertel-Wellenlänge. Der Anpasstopf verhält sich wie ein Koaxialkabel, allerdings kann durch das Verhältnis des Durchmessers zwischen Außenleiter und Innenleiter die zwischen den beiden Elementen herrschende Kapazität verändert werden. Dadurch kann diese Konstruktion wie ein LC-Anpassnetzwerk verwendet werden. Hierdurch kann folglich auch der Wellenwiderstand verändert werden. 
+Da sich der Eingangswiderstand ändert, wenn vier solcher Antennen zusammen geschaltet werden, muss ein Anpassungsglied zwischen Koaxialkabel und Antennen eingesetzt werden. Hierbei wird ein $\frac{\lambda}{4}$-Anpasstopf verwendet. Dieser besteht aus einem Innenleiter sowie Außenleiter und hat, wie der Name schon sagt, eine Länge von einer Viertel-Wellenlänge. Der Anpasstopf verhält sich wie ein Koaxialkabel. Es kann durch das Verhältnis des Durchmessers zwischen Außenleiter und Innenleiter die zwischen den beiden Elementen bestehende Kapazität verändert werden. Dadurch kann diese Konstruktion wie ein LC-Anpassnetzwerk verwendet werden. Hierdurch kann folglich auch der Wellenwiderstand verändert werden. 
 
 MATHEMATISCHE ERKLÄRUNG
 
