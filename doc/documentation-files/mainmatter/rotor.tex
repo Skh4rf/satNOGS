@@ -98,8 +98,12 @@ Entsprechend der Pinbelegung im Datenblatt werden die Kabel am anderen Ende mit 
 	\caption{Pinbelegung Schraubterminal}
 \end{figure}
 
-\subsubsection{Erstinbetriebnahme und Kalibrieren des Rotors}
+\subsubsection{Erstinbetriebnahme und kalibrieren der Anzeigen}
+Wurden alle Kabel wie beschrieben mit Controller und Rotor verbunden, so kann, nach der Versorgung des Controllers mit Netzspannung, über die DOWN, UP, LEFT und RIGHT Tasten der Rotor manuell bewegt werden. 
+\newline
+\newline
+Für die  Nullkalibrierung wird der Controller ausgeschaltet und die Anzeigenadel über die Schraube auf der Vorderseite unter der jeweiligen Anzeige auf den linken Rand ausgerichtet. Für die Anpassung der Vollaussteuerung der Azimut-Anzeige wird der Controller eingeschalten und der Rotor mithilfe der manuellen Bedientasten bis zum Endschalter nach links gedreht. Die Ausrichtung wird anschließend am Azimut-Rotor, mithilfe von zum Beispiel Klebeband, markiert. Daraufhin wird der Rotor anhand der manuellen Bedientasten nach rechts gedreht, bis er nach einer ganzen Umdrehung wieder den vorher markierten Punkt erreicht. Die Anzeigenadel auf der Azimut-Anzeige sollte sich nun bei 360° befinden, was durch das FULL SCALE ADJ Potentiometer über dem Azimut Schraubterminal auf der Rückseite des Controllers eingestellt werden kann. Für die Kalibrierung des Elevation-Rotor wird dieser mithilfe der manuellen Bedientasten nach oben geschwenkt bis die Ausrichtung genau 180° beträgt. Die Anzeigenadel auf der Elevation-Anzeige sollte sich nun auch bei 180° befinden, was durch das FULL SCALE ADJ Potentiometer über dem Elevation Schraubterminal auf der Rückseite des Controllers eingestellt werden kann.
 
 \subsection {Azimut und Elevation bestimmen}
-Die Bestimmung der aktuellen Ausrichtung des Rotors erfolgt über einen von der Rotation des Rotors abhängigen Potentiometer welcher die von Pin 1 zur Verfügung gestellte Spannung teilt. Je nach Ausrichtung ändert sich somit die Spannung am Schleifer des Potentiometers welcher mit Pin 2 verbunden ist. Die Spannung an Pin 2 entspricht somit proportional der Ausrichtung des jeweiligen Rotors.
+Die Bestimmung der aktuellen Ausrichtung des Rotors erfolgt über einen von der Rotation des Rotors abhängigen Potentiometer welcher die von Pin 1 zur Verfügung gestellte Spannung teilt. Je nach Ausrichtung ändert sich somit die Spannung am Schleifer des Potentiometers welcher mit Pin 2 verbunden ist. Die Spannung an Pin 2 entspricht somit proportional der Ausrichtung des jeweiligen Rotors. Diese Tatsache wurde durch messtechnische Untersuchungen festgestellt.
 
