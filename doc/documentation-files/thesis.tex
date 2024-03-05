@@ -111,31 +111,45 @@
 % ********************************************************* 
 % THESIS CONTENT
 % *********************************************************
-
-
-
 \begin{document}
 % -------------------------- 
 % Front matter
 % --------------------------
+
+\setcounter{tocdepth}{2}		% define depth of toc
+
 \pagenumbering{roman}
 \pagestyle{empty}				            % no header or footers
 \AddToShipoutPicture*{\TitleBackground}     % adding background picture
 \maketitle                                  % making the title
 \input{frontbackmatter/titlepage.tex}
-    \clearpage
+\clearpage
 
 \pagestyle{plain}
-\input{frontbackmatter/quotes.tex}        % INCLUDE Quotes
 \input{frontbackmatter/eidesstattliche_erklärung.tex}
+\input{frontbackmatter/abkürzungen+hinweise.tex}
+\tableofcontents				% display table of contents
+\newpage
+\input{frontbackmatter/documentation-de.tex}
+\newpage
+\input{frontbackmatter/documentation-en.tex}
+\newpage
+\input{frontbackmatter/summary.tex}
+\newpage
 \input{frontbackmatter/abstract.tex}      % INCLUDE Abstract
+\newpage
+\input{frontbackmatter/pflichtenheft.tex}
+\newpage
+\input{frontbackmatter/tätigkeiten.tex}
+\newpage
+\input{frontbackmatter/quotes.tex}        % INCLUDE Quotes
+\newpage
 \input{frontbackmatter/preface.tex}       % INCLUDE Preface
     \clearpage
 
 
-\setcounter{tocdepth}{2}		% define depth of toc
-\tableofcontents				% display table of contents
-    \clearpage
+
+
 
 % -------------------------- 
 % Main matter
@@ -162,7 +176,11 @@
 % Back matter
 % --------------------------
 \input{frontbackmatter/bibliography.tex}
-
+\input{frontbackmatter/Fortschrittsbericht.tex}
+\input{frontbackmatter/Anhang.tex}
+\input{frontbackmatter/group-protocol.tex}
+\input{frontbackmatter/project-structure.tex}
+\input{frontbackmatter/anmeldung.tex}
 
 % ********************************************************* 
 % END OF THESIS
