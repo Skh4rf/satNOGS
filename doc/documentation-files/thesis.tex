@@ -10,27 +10,163 @@
 \newcommand{\thesisTheme}{HTLR-Elektronik} % to colortheme and titlepage image
 
 
+\documentclass[hidelinks,12pt,a4paper,twoside]{report}
+\usepackage{Rusch-Vorlage}
+%TITELBLATT FÜR RUSCH
+%---------------------------------------------------------
+\pagestyle{fancy}
+% Kopf- und Fußzeile
+% ------------------
+% Kopfzeile: links: Logo HTL Rankweil; mitte: Schulbezeichnung; rechts: Logo HTL
+\lhead{\hspace{0.2cm} \includegraphics[height=1.04cm]{../ref/HTL_Rankweil_logo.png}}
+\chead{\textbf{HTBLuVA  Rankweil} 
+	\\[0.05in]
+	\footnotesize{\textit{Höhere Lehranstalt für Elektronik und Technische Informatik}}}
+\rhead{\includegraphics[height=1.04cm]{../ref/HTL_Rankweil_logo.png} \hspace{0.2cm}}
+
+% Fußzeile
+\fancyfoot{} 
+
+
+\begin{document}
+	% Titelseite
+	\begin{center}
+		\textbf {\huge {\uppercase {Diplomarbeit}}}
+		\par \large {Gesamtprojekt}
+		\par \textbf {\huge {\uppercase {Thema}}}
+		\vspace{0.3cm}
+		\linebreak
+		\includegraphics[frame, height=6cm]{../ref/HTL_Rankweil_logo.png}
+	\end{center}
+	
+	\vfill % damit der folgende am Blattende positioniert wird
+	
+	
+	\begin{minipage}[t] {0.4\textwidth}
+		\textbf{Teammitglieder:} \\
+		\emplLastA \\
+		\emplLastB \\
+	\end{minipage}
+	\begin{minipage}[t] {0.4\textwidth}
+		\textbf{Betreuer:} \\		
+		\supervisor \\
+	\end{minipage}
+	
+	\par Rankweil, am \PrintDate \\		
+	
+	\noindent\rule{\textwidth}{0.4pt}
+	Abgabevermerk:
+	\linebreak
+	
+	\begin{tabular}{p{7cm}C{6cm}}
+		\hspace{1cm} DA original, am \PrintDate & ........................................ \\ 
+		& \supervisor \\ [2.5em]
+		
+		\hspace{1cm} DA digital, am \PrintDate & ........................................ \\ 
+		& \supervisor \\
+	\end{tabular}
+	
+	
+	% Leere Seite
+	\newpage
+	
+	% ab jetzt andere Fußzeile
+	%\fancyhead{}
+	%\renewcommand{\headrulewidth}{0.0pt}
+	\SecAuth{\emplLastA, \emplLastB} % festlegen der Verfasser dieses Kapitels
+	
+	\pagenumbering{Roman}
+	\fancyfoot[LE,RO]{\thepage}
+	\fancyfoot[LO,RE]{\DADate~\textbar~\diplomatitle~\textbar ~\@SecAuth}
+	\renewcommand{\footrulewidth}{0.4pt} % anzeigen Separator-Strich in der Fußzeile (standardmäßig deaktiviert)
+	
+	\setcounter{tocdepth}{2}		% define depth of toc
+	
+	\pagenumbering{roman}
+	\pagestyle{empty}				            % no header or footers
+	%\AddToShipoutPicture*{\TitleBackground}     % adding background picture
+	%\maketitle                                  % making the title
+	%\input{frontbackmatter/titlepage.tex}
+	%\clearpage
+	\newpage
+	
+	\pagestyle{plain}
+	\input{frontbackmatter/eidesstattliche_erklärung.tex}
+	\input{frontbackmatter/abkürzungen+hinweise.tex}
+	\tableofcontents				% display table of contents
+	\newpage
+	\input{frontbackmatter/documentation-de.tex}
+	\newpage
+	\input{frontbackmatter/documentation-en.tex}
+	\newpage
+	\input{frontbackmatter/summary.tex}
+	\newpage
+	\input{frontbackmatter/abstract.tex}      % INCLUDE Abstract
+	\newpage
+	\input{frontbackmatter/pflichtenheft.tex}
+	\newpage
+	\input{frontbackmatter/tätigkeiten.tex}
+	\newpage
+	\input{frontbackmatter/preface.tex}       % INCLUDE Preface
+	\clearpage
+	\input{frontbackmatter/quotes.tex}        % INCLUDE Quotes
+	\newpage
+	
+	% -------------------------- 
+	% Main matter
+	% --------------------------
+	\pagenumbering{arabic}			% arabic page numbering
+	\setcounter{page}{1}			% set page counter
+	%\pagestyle{maincontentstyle} 	% fancy header and footer
+	
+	\input{mainmatter/introduction.tex} % INCLUDE Introduction
+	
+	\input{mainmatter/gs-setup.tex}		% INCLUDE Groundstation setup
+	\input{mainmatter/rotor.tex}
+	\input{mainmatter/qfh-antenna.tex}
+	\input{mainmatter/helixantenna.tex}
+	\input{mainmatter/mechanics.tex}
+	
+	\input{mainmatter/discussion.tex}   % INCLUDE Discussion
+	\input{mainmatter/conclusion.tex}   % INCLUDE Conclusion
+	\input{mainmatter/perspectives.tex} % INCLUDE Perspectives
+	
+	
+	% -------------------------- 
+	% Back matter
+	% --------------------------
+	\input{frontbackmatter/bibliography.tex}
+	\input{frontbackmatter/Fortschrittsbericht.tex}
+	\input{frontbackmatter/Anhang.tex}
+	\input{frontbackmatter/group-protocol.tex}
+	\input{frontbackmatter/project-structure.tex}
+	\input{frontbackmatter/anmeldung.tex}
+%---------------------------------------------------------
+
+
+
+
 % *********************************************************
 % DOCUMENT CLASS
 % *********************************************************
-\documentclass[%
-	paper=A4,					% paper size
-	12pt,						% font size
-	twoside=true,				% two-sided printing
-	openright,					% doublepage cleaning ends up right side
-	parskip=full,				% spacing value / method for paragraphs
-	chapterprefix=true,			% prefix for chapter marks
-	headings=normal,			% size of headings
-	bibliography=totoc,			% include bib in toc
-	listof=totoc,				% include listof entries in toc
-	titlepage=on,				% own page for each title page
-	captions=tableabove,		% display table captions above the float env
-	draft=false,				% value for draft version
-	abstract=on,                % abstract title on/off
-]{scrreprt}
-\usepackage[utf8]{inputenc}
-\usepackage[german]{babel}     % adjust the language
-\usepackage{enumitem}
+
+%DOCUMENT CLASS CURRENTLY DISABLED FOR RUSCH VORLAGE
+%\documentclass[%
+%	paper=A4,					% paper size
+%	12pt,						% font size
+%	twoside=true,				% two-sided printing
+%	openright,					% doublepage cleaning ends up right side
+%	parskip=full,				% spacing value / method for paragraphs
+%	chapterprefix=true,			% prefix for chapter marks
+%	headings=normal,			% size of headings
+%	bibliography=totoc,			% include bib in toc
+%	listof=totoc,				% include listof entries in toc
+%	titlepage=on,				% own page for each title page
+%	captions=tableabove,		% display table captions above the float env
+%	draft=false,				% value for draft version
+%	abstract=on,                % abstract title on/off
+%]{scrreprt}
+
 \setlist{nosep}
 
 % **************************************************
@@ -67,117 +203,56 @@
 % PACKAGES
 % *********************************************************
 
-\usepackage[					% UCPH thesis style
-    figuresep=colon,        
-    sansserif=false,        
-    hangfigurecaption=false,
-    hangsection=true,       
-    hangsubsection=true,    
-    colorize=full,          
-    colortheme={\thesisTheme},  % ucph, sund, science, hum, etc.?
-    bibsys=bibtex,
-    bibfile=references,       % defines your .bib file
-    bibstyle=authoryear,        % refer to https://bit.ly/2YsvIJz
-]{ucphthesis}
-\hypersetup{					% setup the hyperref-package options
-	pdftitle={\thesisTitle},	% 	- title (PDF meta)
-	pdfsubject={\thesisSubject},% 	- subject (PDF meta)
-	pdfauthor={\thesisName},	% 	- author (PDF meta)
-	plainpages=false,			% 	-
-	colorlinks=false,			% 	- colorize links
-	pdfborder={0 0 0},			% 	-
-	breaklinks=true,			% 	- allow line break inside links
-	bookmarksnumbered=true,		%
-	bookmarksopen=true			%
-    }
-    
-    \usepackage[
-    backend=bibtex,
-    style=numeric,
-    ]{biblatex}
+%modernes Layout
 
-\addbibresource{references.bib} %Imports bibliography file
+%\usepackage[					% UCPH thesis style
+%    figuresep=colon,        
+%    sansserif=false,        
+%    hangfigurecaption=false,
+%    hangsection=true,       
+%    hangsubsection=true,    
+%    colorize=full,          
+%    colortheme={\thesisTheme},  % ucph, sund, science, hum, etc.?
+%    bibsys=bibtex,
+%    bibfile=references,       % defines your .bib file
+%    bibstyle=authoryear,        % refer to https://bit.ly/2YsvIJz
+%]{ucphthesis}
+
+%\hypersetup{					% setup the hyperref-package options
+%	pdftitle={\thesisTitle},	% 	- title (PDF meta)
+%	pdfsubject={\thesisSubject},% 	- subject (PDF meta)
+%	pdfauthor={\thesisName},	% 	- author (PDF meta)
+%	plainpages=false,			% 	-
+%	colorlinks=false,			% 	- colorize links
+%	pdfborder={0 0 0},			% 	-
+%	breaklinks=true,			% 	- allow line break inside links
+%	bookmarksnumbered=true,		%
+%	bookmarksopen=true			%
+ %   }
+    
+%\addbibresource{references.bib} %Imports bibliography file
 
 % *********************************************************
 % Cover page content
 % *********************************************************
-\subject{\vspace{4.5cm} \thesisSubject}
-\title{\thesisTitle}
-\subtitle{\thesisSubtitle}
-\author{\thesisName \\
-        \small{Betreuer: {\thesisInternalSupervisor}}
-    }
-\date{\thesisDate}
+%\subject{\vspace{4.5cm} \thesisSubject}
+%\title{\thesisTitle}
+%\subtitle{\thesisSubtitle}
+%\author{\thesisName \\
+%        \small{Betreuer: {\thesisInternalSupervisor}}
+%    }
+%\date{\thesisDate}
 
 
 % ********************************************************* 
 % THESIS CONTENT
 % *********************************************************
-\begin{document}
+%\begin{document}
 % -------------------------- 
 % Front matter
 % --------------------------
 
-\setcounter{tocdepth}{2}		% define depth of toc
 
-\pagenumbering{roman}
-\pagestyle{empty}				            % no header or footers
-\AddToShipoutPicture*{\TitleBackground}     % adding background picture
-\maketitle                                  % making the title
-\input{frontbackmatter/titlepage.tex}
-\clearpage
-
-\pagestyle{plain}
-\input{frontbackmatter/eidesstattliche_erklärung.tex}
-\input{frontbackmatter/abkürzungen+hinweise.tex}
-\tableofcontents				% display table of contents
-\newpage
-\input{frontbackmatter/documentation-de.tex}
-\newpage
-\input{frontbackmatter/documentation-en.tex}
-\newpage
-\input{frontbackmatter/summary.tex}
-\newpage
-\input{frontbackmatter/abstract.tex}      % INCLUDE Abstract
-\newpage
-\input{frontbackmatter/pflichtenheft.tex}
-\newpage
-\input{frontbackmatter/tätigkeiten.tex}
-\newpage
-\input{frontbackmatter/preface.tex}       % INCLUDE Preface
-\clearpage
-\input{frontbackmatter/quotes.tex}        % INCLUDE Quotes
-\newpage
-
-% -------------------------- 
-% Main matter
-% --------------------------
-\pagenumbering{arabic}			% arabic page numbering
-\setcounter{page}{1}			% set page counter
-\pagestyle{maincontentstyle} 	% fancy header and footer
-
-\input{mainmatter/introduction.tex} % INCLUDE Introduction
-
-\input{mainmatter/gs-setup.tex}		% INCLUDE Groundstation setup
-\input{mainmatter/rotor.tex}
-\input{mainmatter/qfh-antenna.tex}
-\input{mainmatter/helixantenna.tex}
-\input{mainmatter/mechanics.tex}
-
-\input{mainmatter/discussion.tex}   % INCLUDE Discussion
-\input{mainmatter/conclusion.tex}   % INCLUDE Conclusion
-\input{mainmatter/perspectives.tex} % INCLUDE Perspectives
-
-
-% -------------------------- 
-% Back matter
-% --------------------------
-\input{frontbackmatter/bibliography.tex}
-\input{frontbackmatter/Fortschrittsbericht.tex}
-\input{frontbackmatter/Anhang.tex}
-\input{frontbackmatter/group-protocol.tex}
-\input{frontbackmatter/project-structure.tex}
-\input{frontbackmatter/anmeldung.tex}
 
 % ********************************************************* 
 % END OF THESIS
