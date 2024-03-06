@@ -1,5 +1,5 @@
 % Preamble (Angaben gelten für das ganze Dokument)
-% Hilfe für Bibtex Einträge: https://www.literatur-generator.de
+% Hilfe für tex Einträge: https://www.literatur-generator.de
 % ------------------------------------------------
 % rote Umrandungen bei Verlinkungen entfernen: hidelinks
 % 12pt als Standardschriftgröße
@@ -38,9 +38,9 @@
 
 \usepackage{longtable}						% Unterstützung für mehrseitige Tabellen
 
-\usepackage[backend=bibtex,citestyle=numeric, bibstyle=verbose]{biblatex} %mehrsprachiges Bibliotheks(Literatur-)verzeichnis
+\usepackage[backend=bibtex,citestyle=numeric, bibstyle=numeric]{biblatex}
+\bibliography{references} %mehrsprachiges Bibliotheks(Literatur-)verzeichnis
 \usepackage[babel,german=guillemets]{csquotes} %deutsches Anführungszeichen
-\addbibresource{references.bib}
 
 \usepackage{blindtext} 						% Blindtext
 \usepackage{url} 							% Formatierung von URLs
