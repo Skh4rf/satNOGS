@@ -39,7 +39,7 @@
 \usepackage{longtable}						% Unterstützung für mehrseitige Tabellen
 
 \usepackage[backend=bibtex,citestyle=numeric, bibstyle=numeric]{biblatex}
-\bibliography{references} %mehrsprachiges Bibliotheks(Literatur-)verzeichnis
+\bibliography{references.bib} %mehrsprachiges Bibliotheks(Literatur-)verzeichnis
 \usepackage[babel,german=guillemets]{csquotes} %deutsches Anführungszeichen
 
 \usepackage{blindtext} 						% Blindtext
@@ -185,8 +185,8 @@
 % kapitelweise Nummerierung
 \let\oldsection\section
 \let\oldsubsection\subsection
-\renewcommand{\section}{\counterwithin{figure}{section}\oldsection}
-\renewcommand{\subsection}{\counterwithin{figure}{subsection}\oldsubsection}
+\renewcommand{\section}{\counterwithout{figure}{section}\oldsection}
+\renewcommand{\subsection}{\counterwithout{figure}{subsection}\oldsubsection}
 
 \let\oldsectionL\section
 \let\oldsubsectionL\subsection

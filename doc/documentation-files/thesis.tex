@@ -12,6 +12,7 @@
 
 \documentclass[hidelinks,12pt,a4paper,twoside]{report}
 \usepackage{Rusch-Vorlage}
+\counterwithout{figure}{chapter} 
 %TITELBLATT FÜR RUSCH
 %---------------------------------------------------------
 \pagestyle{fancy}
@@ -28,7 +29,7 @@
 \fancyfoot{} 
 
 
-\begin{document}
+\begin{document}	
 	% Titelseite
 	\begin{center}
 		\textbf {\huge {\uppercase {Diplomarbeit}}}
@@ -136,11 +137,15 @@
 	% Back matter
 	% --------------------------
 	\input{frontbackmatter/bibliography.tex}
+	\newpage
+	\listoffigures
+	\newpage
 	\input{frontbackmatter/Fortschrittsbericht.tex}
 	\input{frontbackmatter/Anhang.tex}
 	\input{frontbackmatter/group-protocol.tex}
 	\input{frontbackmatter/project-structure.tex}
 	\input{frontbackmatter/anmeldung.tex}
+	
 %---------------------------------------------------------
 
 
