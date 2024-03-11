@@ -1,7 +1,7 @@
 \section{grundlegende Antennentheorie}
 \label{sec:basic-ant}
 \subsection{Antennenfeldzonen}
-Das von einer Antenne abgestrahlte Feld lässt sich in 3 verschiedene Regionen einteilen: das Nahfeld, das Übergangsfeld (Fresnel-Region) und das Fernfeld (Fraunhofer-Region)\cite{antenna_field_zones}.\\
+Das von einer Antenne abgestrahlte Feld lässt sich in 3 verschiedene Regionen einteilen: das Nahfeld, das Übergangsfeld (Fresnel-Region) und das Fernfeld (Fraunhofer-Region).\\
 
 Je nach Literatur erfolgt der Übergang zwischen den Feldzonen fließend. Eine Möglichkeit die Zonen einzuteilen ist in der nachfolgenden Tabelle einzusehen.
 
@@ -17,7 +17,7 @@ Je nach Literatur erfolgt der Übergang zwischen den Feldzonen fließend. Eine M
 
 Das Nahfeld ist darin besonders, dass das elektrische und magnetische Feld mit unterschiedlichen Faktoren in Abhängigkeit der Entfernung abnehmen. Im Übergangsfeld nehmen das elektrische und magnetische Feld zwar mit dem gleichen Faktor ab, jedoch unterscheiden Sie sich noch in der Phase und Amplitude.\\
 
-Im Gegensatz zum reaktiven Nahfeld wird beim Fernfeld Wirkleistung abgestrahlt. Hierbei sind die elektrische und magnetische Komponente der Welle in Phase und nehmen im gleichen Maß ab.\\
+Im Gegensatz zum reaktiven Nahfeld wird beim Fernfeld Wirkleistung abgestrahlt. Hierbei sind die elektrische und magnetische Komponente der Welle in Phase und nehmen im gleichen Maß ab\cite{antenna_field_zones}.\\
 
 Da unsere Diplomarbeit einen Fokus auf die Satellitentechnik hat, ist für dieses Dokument nur das Fernfeld relevant. 
 
@@ -37,7 +37,7 @@ Die Polarisationsart wird von der Ausrichtung des Vektors der elektrischen Felds
 	\item Zirkulare Polarisation
 	Der Betrag des elektrischen Feldstärkevektors ist konstant. Der Feldstärkevektor rotiert in einer Spirale um den in Ausbreitungsrichtung weisenden Vektor. Ein Spiralumlauf ist nach der Wellenlänge $\lambda$ vollendet.
 	\item Elliptische Polarisation
-	Betrag sowie Richtung des elektrischen Feldstärkevektors ändern sich laufend. Bei der Rotation beschreibt der Vektor eine Ellipse.
+	Betrag sowie Richtung des elektrischen Feldstärkevektors ändern sich laufend. Bei der Rotation beschreibt der Vektor eine Ellipse\cite[p. 70]{Kraus-2002-AntennasB}.
 \end{enumerate}
 
 Für diese Diplomarbeit liegt der Fokus auf der zirkularen Polarisation. Diese ist in der Satellitenkommunikationstechnik äußerst beliebt, da sie Immunität vor den störenden Effekten in der Ionosphäre, spezieller der Faraday Rotation, bieten.
@@ -49,7 +49,7 @@ Die Faraday Rotation ist ein Effekt, welcher elektromagnetische Strahlung $"$rot
 \subsubsection{Antennengewinn}
 Als Antennengewinn wird die $"$bündelnde$"$ Eigenschaft einer gerichteten Antenne im Vergleich zu einer Bezugsantenne bezeichnet. Hierbei ist die Vergleichsantenne meist ein Kugelstrahler.\\
 
-Der Gewinn der Antenne berechnet sich mit dem Verhältnis der maximalen Empfangsleistung der gerichteten Antenne zu der des Kugelstrahlers. Wird als Bezugsantenne der Kugelstrahler verwendet, so wird die Empfangsleistung mit dem Index 'i' versehen um dies zu kennzeichnen.
+Der Gewinn der Antenne berechnet sich mit dem Verhältnis der maximalen Empfangsleistung der gerichteten Antenne zu der des Kugelstrahlers\cite[26]{Kraus-2002-AntennasB}.
 
 \begin{equation}
 	G=\frac{P_{max}}{P_{i}}
@@ -66,10 +66,10 @@ Wobei $\rho$ der Reflexionsfaktor ist. Der Reflexionsfaktor kann auch der Streum
 
 
 \subsubsection{effektive Antennenfläche}
-Die effektive Antennenfläche ist das Verhältnis zwischen der Leistung welche von der Antenne aufgenommen und an eine angeschlossene Last abgegeben wird zu der Leistung welche die eingehende Welle liefert. Sie wird in $m^2$ angegeben.
+Die effektive Antennenfläche ist das Verhältnis zwischen der Leistung welche von der Antenne aufgenommen und an eine angeschlossene Last abgegeben wird zu der Leistung welche die eingehende Welle liefert. Sie wird in $m^2$ angegeben \cite[p. 29]{Kraus-2002-AntennasB,effective_aperture}.
 
 \subsubsection{Halbwertsbreite}
-Zur Bestimmung der Halbwertsbreite ist die Hauptkeule des Abstrahldiagramms einer Antenne von Relevanz. Die Halbwertsbreite ist hierbei der Öffnungswinkel, der geformt wird, wenn die Amplitude der Hauptkeule auf 50 Prozent oder um 3dB abgesunken ist.
+Zur Bestimmung der Halbwertsbreite ist die Hauptkeule des Abstrahldiagramms einer Antenne von Relevanz. Die Halbwertsbreite ist hierbei der Öffnungswinkel, der geformt wird, wenn die Amplitude der Hauptkeule auf 50 Prozent oder um 3dB abgesunken ist \cite{half-power-beam-width}.
 
 \subsubsection{Eingangsimpedanz}
 Die Eingangsimpedanz einer Antenne ist eine wichtige Größe in der Antennentechnik. Dies liegt daran, dass die Antenne meist auf ein Koaxialkabel mit einem Wellenwiderstand von 50$\Omega$ angepasst werden muss. Dies kann durch verschiedene Anpassungstechniken erreicht werden, wie z.B. ein LC-Anpassungsnetzwerk oder Übertragungsleitungen. 
@@ -78,7 +78,7 @@ Die Eingangsimpedanz einer Antenne ist eine wichtige Größe in der Antennentech
 Der S11 Parameter beschreibt, wie viel eines Signals an dem Tor eines Vierpols reflektiert wird. Hierbei wird das Verhältnis zwischen hinlaufender Welle und rücklaufender Welle aufgestellt. Mithilfe dieses Parameters kann auf die Qualität der Impedanzanpassung geschlossen werden. Je niedriger der Wert, desto besser die Anpassung. Der S11 Parameter wird üblicherweise in dB angegeben MISSING REFERENCE.
 
 \subsection{Richtcharakteristik und Richtdiagramm}
-Die Richtcharakteristik beschreibt das Abstrahlverhalten einer Antenne. Hierbei wird die unter einem bestimmten Winkel ($\theta$, $\phi$) auftretende Feldstärke auf einen Maximalwert bezogen.
+Die Richtcharakteristik beschreibt das Abstrahlverhalten einer Antenne. Hierbei wird die unter einem bestimmten Winkel ($\theta$, $\phi$) auftretende Feldstärke auf einen Maximalwert bezogen\cite[p. 20]{Kraus-2002-AntennasB}.
 
 \begin{equation}
 	C(\theta, \phi)=\frac{E(\theta, \phi)}{E_{max}}
@@ -89,7 +89,7 @@ Wobei $\theta$ der Elevationswinkel (vertikal Winkel) und $\phi$ den Azimutwinke
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{../ref/Richtdiagramm_Beispiel}
-	\caption{Richtdiagramm einer stark bündelnden Antenne}
+	\caption{Richtdiagramm einer stark bündelnden Antenne\cite{richtdiagramm_beispiel}}
 	\label{fig:Richtdiagramm Beispiel}
 \end{figure}
 
@@ -112,10 +112,11 @@ Der Abstand vom Boden spielt ebenfalls eine kritische Rolle und hat großen Einf
 \subsection{Baluns}
 Um Baluns zu verstehen muss vorerst der Unterschied zwischen symmetrischen und unsymmetrischen Leitungen verstanden werden. 
 
-Eine unsymmetrische Leitung besteht aus einem Hauptleiter und einer Masseleitung, welche oft als Schild vor Störstrahlung verwendet wird. Jedoch ist das Kabel nicht nur gegen externe Strahlung geschützt, das Kabel selbst strahlt ebenfalls nicht. Das wohl bekannteste Beispiel hierfür sind Koaxialkabel. Eine symmetrische Leitung hingegen besitzt keinen Mantel und kann strahlen SOURCE. Ein Beispiel für eine symmetrische Antenne ist eine QHA (Quadrifilare Helixantenne). Da symmetrische Antennen meist durch unsymmetrische Kabel (Koaxialkabel) betrieben werden, entsteht ein Problem. Es können Mantelwellen auf dem Koaxialkabel auftreten, was dazu führt, dass das Kabel strahlt. Außerdem wird dadurch das Abstrahlverhalten der Antenne beeinflusst, was die Funktion der Antenne beeinträchtigt. Um diese Nebeneffekte zu kompensieren werden Baluns eingesetzt.
+Eine unsymmetrische Leitung besteht aus einem Hauptleiter und einer Masseleitung, welche oft als Schild vor Störstrahlung verwendet wird. Jedoch ist das Kabel nicht nur gegen externe Strahlung geschützt, das Kabel selbst strahlt ebenfalls nicht. Das wohl bekannteste Beispiel hierfür sind Koaxialkabel. Eine symmetrische Leitung hingegen besitzt keinen Mantel und kann strahlen SOURCE. Ein Beispiel für eine symmetrische Antenne ist eine QHA (Quadrifilare Helixantenne). Da symmetrische Antennen meist durch unsymmetrische Kabel (Koaxialkabel) betrieben werden, entsteht ein Problem. Es können Mantelwellen auf dem Koaxialkabel auftreten, was dazu führt, dass das Kabel strahlt. Außerdem wird dadurch das Abstrahlverhalten der Antenne beeinflusst, was die Funktion der Antenne beeinträchtigt. Um diese Nebeneffekte zu kompensieren werden Baluns eingesetzt\cite{balun}.
 
 \subsubsection{Mantelwellensperre}
 Eine Mantelwellensperre ist wie folgt aufgebaut:
+
 
 
 Sie unterdrückt Mantelwellen, welche negative Auswirkungen auf das Abstrahlverhalten der Antenne haben. Der Nachteil ist, dass sie schwach gegen statische Entladungen ist, da keine galvanische Isolierung existiert, wie beim Transformator. Sie ist für Anwendungen geeignet, in denen galvanische Isolierung nicht von allzu großer Relevanz ist.
