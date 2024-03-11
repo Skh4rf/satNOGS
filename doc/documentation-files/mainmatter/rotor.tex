@@ -106,3 +106,14 @@ Für die  Nullkalibrierung wird der Controller ausgeschaltet und die Anzeigenade
 \subsection {Azimut und Elevation bestimmen}
 Die Bestimmung der aktuellen Ausrichtung des Rotors erfolgt über einen von der Rotation des Rotors abhängigen Potentiometer welcher die von Pin 1 zur Verfügung gestellte Spannung teilt. Je nach Ausrichtung ändert sich somit die Spannung am Schleifer des Potentiometers welcher mit Pin 2 verbunden ist. Die Spannung an Pin 2 entspricht somit proportional der Ausrichtung des jeweiligen Rotors. Diese Tatsache wurde durch messtechnische Untersuchungen festgestellt.
 
+\section{Emulation des digitalen Computer Control Interface GS232A}
+Um den Rotor digital über eine serielle Schnittstelle mit dem Computer steuern zu können, wird das GS232A Interface benötigt welches mit einem 9-Pol DIN-Stecker zum G-5500DC verbunden wird.
+\begin{figure}[H]
+	\cite{noauthor_yaesu_nodate}
+	\centering
+	\includegraphics[width=5cm]{../ref/GS232_Prinzipschaltbild.png}
+	\label{fig:Rotor_Prinzipschaltbild}
+	\caption{Anschlussdiagramm der digitalen Rotorsteuerung}
+\end{figure}
+Aus finanziellen Gründen wird das GS232A mit einem Arduino Uno und entsprechendem zusätzlicher 
+
