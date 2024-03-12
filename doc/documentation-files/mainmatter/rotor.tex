@@ -101,13 +101,13 @@ Entsprechend der Pinbelegung im Datenblatt werden die Kabel am anderen Ende mit 
 \subsubsection{Erstinbetriebnahme und kalibrieren der Anzeigen}
 Wurden alle Kabel wie beschrieben mit Controller und Rotor verbunden, so kann, nach der Versorgung des Controllers mit Netzspannung, über die DOWN, UP, LEFT und RIGHT Tasten der Rotor manuell bewegt werden. 
 \newline
-Für die  Nullkalibrierung wird der Controller ausgeschaltet und die Anzeigenadel über die Schraube auf der Vorderseite unter der jeweiligen Anzeige auf den linken Rand ausgerichtet. Für die Anpassung der Vollaussteuerung der Azimut-Anzeige wird der Controller eingeschalten und der Rotor mithilfe der manuellen Bedientasten bis zum Endschalter nach links gedreht. Die Ausrichtung wird anschließend am Azimut-Rotor, mithilfe von zum Beispiel Klebeband, markiert. Daraufhin wird der Rotor anhand der manuellen Bedientasten nach rechts gedreht, bis er nach einer ganzen Umdrehung wieder den vorher markierten Punkt erreicht. Die Anzeigenadel auf der Azimut-Anzeige sollte sich nun bei 360° befinden, was durch das FULL SCALE ADJ Potentiometer über dem Azimut Schraubterminal auf der Rückseite des Controllers eingestellt werden kann. Für die Kalibrierung des Elevation-Rotor wird dieser mithilfe der manuellen Bedientasten nach oben geschwenkt bis die Ausrichtung genau 180° beträgt. Die Anzeigenadel auf der Elevation-Anzeige sollte sich nun auch bei 180° befinden, was durch das FULL SCALE ADJ Potentiometer über dem Elevation Schraubterminal auf der Rückseite des Controllers eingestellt werden kann.
+Für die  Nullkalibrierung wird der Controller ausgeschaltet und die Anzeigenadel über die Schraube auf der Vorderseite unter der jeweiligen Anzeige auf den linken Rand ausgerichtet. Für die Anpassung der Vollaussteuerung der Azimut-Anzeige wird der Controller eingeschaltet und der Rotor mithilfe der manuellen Bedientasten bis zum Endschalter nach links gedreht. Die Ausrichtung wird anschließend am Azimut-Rotor, mithilfe von zum Beispiel Klebeband, markiert. Daraufhin wird der Rotor anhand der manuellen Bedientasten nach rechts gedreht, bis er nach einer ganzen Umdrehung wieder den vorher markierten Punkt erreicht. Die Anzeigenadel auf der Azimut-Anzeige sollte sich nun bei 360° befinden, was durch das FULL SCALE ADJ Potentiometer über dem Azimut Schraubterminal auf der Rückseite des Controllers eingestellt werden kann. Für die Kalibrierung des Elevation-Rotor wird dieser mithilfe der manuellen Bedientasten nach oben geschwenkt bis die Ausrichtung genau 180° beträgt. Die Anzeigenadel auf der Elevation-Anzeige sollte sich nun auch bei 180° befinden, was durch das FULL SCALE ADJ Potentiometer über dem Elevation Schraubterminal auf der Rückseite des Controllers eingestellt werden kann.
 
 \subsection {Azimut und Elevation bestimmen}
 Die Bestimmung der aktuellen Ausrichtung des Rotors erfolgt über einen von der Rotation des Rotors abhängigen Potentiometer welcher die von Pin 1 zur Verfügung gestellte Spannung teilt. Je nach Ausrichtung ändert sich somit die Spannung am Schleifer des Potentiometers welcher mit Pin 2 verbunden ist. Die Spannung an Pin 2 entspricht somit proportional der Ausrichtung des jeweiligen Rotors. Diese Tatsache wurde durch messtechnische Untersuchungen festgestellt.
 
-\section{Emulation des digitalen Computer Control Interface GS232A}
-Um den Rotor digital über eine serielle Schnittstelle mit dem Computer steuern zu können, wird das GS232A Interface benötigt welches mit einem 9-Pol DIN-Stecker zum G-5500DC verbunden wird.
+\section{Emulation des digitalen Computer Control Interface GS232A/B}
+Um den Rotor digital über eine serielle Schnittstelle mit dem Computer steuern zu können, wird das GS232A/B Interface benötigt. Dieses wird über einen 9-Pol DIN-Stecker mit dem G-5500DC Controller verbunden. 
 \begin{figure}[H]
 	\cite{noauthor_yaesu_nodate}
 	\centering
@@ -115,5 +115,106 @@ Um den Rotor digital über eine serielle Schnittstelle mit dem Computer steuern 
 	\label{fig:Rotor_Prinzipschaltbild}
 	\caption{Anschlussdiagramm der digitalen Rotorsteuerung}
 \end{figure}
-Aus finanziellen Gründen wird das GS232A mit einem Arduino Uno und entsprechendem zusätzlicher 
+Aus finanziellen Gründen wird das GS232A/B mit einem Arduino Uno und entsprechender zusätzlicher Hardware emuliert. Der Preis von € 579,-- für ein GS232B Interface \cite{noauthor_yaesuinterface_nodate} konnte durch den Selbstbau mit Gesamtkosten von € 27,30 um € 551,70 gesenkt werden.
+
+\subsection{Funktionsweise des GS232A/B}
+Um das GS232A/B Interface emulieren zu können, bedarf es einer genaueren Betrachtung seiner Funktionsweise und die der beiden Schnittstellen. Diese werden im Datenblatt des Yaesu GS232A/B sowie dem Yaesu G-5500DC \cite{noauthor_yaesu_nodate} erläutert.
+
+\subsubsection{Emulation der seriellen Schnittstelle}
+Eine der beiden zu emulierenden Schnittstellen ist die serielle Schnittstelle welche das Interface mit dem Computer verbindet. Basierend auf dem RS232 Protokoll mit einem 8N1 (8 Datenbits ohne Parität und einem Stopbit) Format werden über diese Schnittstelle Befehle für Aktionen oder Messungen vom Computer an das Interface gesendet. Die Baudrate wurde bei der Emulation softwaretechnisch auf 9600 fixiert und kann im Gegensatz zum Original nicht über DIP-Schalter eingestellt werden. Für die Kommunikation verfügt das GS233A/B über einen eigenen Befehlssatz der wie folgt lautet:
+
+\begin{tabular}{| c | l |}
+	\hline
+	\textbf{Befehl} & \textbf{Funktion} \\
+	\hline
+	B & Elevation abfragen \\
+	\hline
+	C & Azimut abfragen \\
+	\hline
+	C2 & Azimut und Elevation abfragen \\
+	\hline
+	S & alle Rotationen stoppen \\
+	\hline
+	A & Azimut Rotation stoppen \\
+	\hline
+	E & Elevation Rotation stoppen \\
+	\hline
+	L & Azimut kontinuierlich nach links rotieren (CCW) \\
+	\hline
+	R & Azimut kontinuierlich nach rechts rotieren (CW) \\
+	\hline 
+	D & Elevation kontinuierlich nach unten rotieren \\
+	\hline 
+	U & Elevation kontinuierlich nach oben rotieren \\
+	\hline
+	Mxxx & zu Azimut rotieren (xxx Azimut in Grad) \\
+	\hline
+	Wxxx yyy & zu Azimut und Elevation rotieren (xxx = Azimut in Grad, yyy = Elevation in Grad) \\
+	\hline
+	X1 & Azimut Rotationsgeschwindigkeit 1 (langsam)\\
+	\hline
+	X2 & Azimut Rotationsgeschwindigkeit 2 \\
+	\hline
+	X3 & Azimut Rotationsgeschwindigkeit 3 \\
+	\hline
+	X4 & Azimut Rotationsgeschwindigkeit 4 (schnell)\\
+	\hline
+	O & Azimut Offset kalibrieren \\
+	\hline 
+	F & Azimut Vollaussteuerung kalibrieren \\
+	\hline
+	O2 & Elevation Offset kalibrieren \\
+	\hline
+	F2 & Elevation Vollaussteuerung kalibrieren \\
+	\hline 
+	P36 & zu 360 Grad Modus wechseln \\
+	\hline 
+	P45 & zu 450 Grad Modus wechseln \\
+	\hline 
+	Z & zwischen Nord- und Südazimut wechseln \\
+	\hline
+	H & Hilfe \\
+	\hline
+\end{tabular}
+
+\subsubsection{Emulation der analogen Schnittstelle}
+Die Funktionsweise der analogen Schnittstelle, welche über den 8-Pol DIN-Stecker zum G-5500DC Controller verbunden ist, wird im Datenblatt des Rotors \cite{noauthor_yaesu_nodate} wie folgt beschrieben:
+
+\begin{tabular}{| c | l |}
+	\hline
+	\textbf{Pin} & \textbf{Funktion} \\
+	\hline
+	1 & liefert 2 bis 4.5 VDC (entspricht 0° bis 180° Elevation) \\
+	\hline
+	2 & 15.6 VDC mit Pin 8 (Masse) verbinden um nach rechts zu rotieren (CW) \\
+	\hline
+	3 & 15.6 VDC mit Pin 8 (Masse) verbinden um nach oben zu rotieren \\
+	\hline
+	4 & 15.6 VDC mit Pin 8 (Masse) verbinden um nach links zu rotieren (CCW) \\
+	\hline
+	5 & 15.6 VDC mit Pin 8 (Masse) verbinden um nach oben zu rotieren \\
+	\hline
+	6 & liefert 2 bis 4.5 VDC (entspricht 0° bis 450° Azimut) \\
+	\hline
+	7 & liefert 8 bis 13.5 VDC mit maximal 100mA \\
+	\hline
+	8 & Masse \\
+	\hline
+\end{tabular}
+
+Die Pinbelegung, am Beispiel einer DIN-Buchse, entspricht folgender Grafik: 
+\begin{figure}[H]
+	\cite{noauthor_yaesu_nodate}
+	\centering
+	\includegraphics[width=5cm]{../ref/RotorInterfacePinbelegung.png}
+	\label{fig:Rotor_Interface_Pinbelegung}
+	\caption{Pinbelegung 8-Pol DIN-Buchse (Ansicht vorne)}
+\end{figure}
+
+Diese Informationen genügen um nun mithilfe eines Arduinos und entsprechendem Shield (zusätzliche Platine die auf den Arduino aufgesetzt wird) das GS232A/B Interface zu emulieren.
+
+\subsection{Software}
+
+
+
 
