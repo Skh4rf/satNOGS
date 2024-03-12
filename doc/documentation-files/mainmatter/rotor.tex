@@ -211,10 +211,89 @@ Die Pinbelegung, am Beispiel einer DIN-Buchse, entspricht folgender Grafik:
 	\caption{Pinbelegung 8-Pol DIN-Buchse (Ansicht vorne)}
 \end{figure}
 
-Diese Informationen genügen um nun mithilfe eines Arduinos und entsprechendem Shield (zusätzliche Platine die auf den Arduino aufgesetzt wird) das GS232A/B Interface zu emulieren.
+Diese Informationen genügen um nun mithilfe eines Arduino Uno und entsprechendem Shield (zusätzliche Platine die auf den Arduino aufgesetzt wird) das GS232A/B Interface zu emulieren.
 
 \subsection{Software}
+Die softwaremäßige Implementierung der Emulation basiert auf dem K3NG Rotator Controller Code \cite{good_k3ngk3ng_rotator_controller_2024} welcher Grundkonstrukte für unterschiedlichste Rotoren und Anwendungen beinhaltet. Diese Software bedient die beiden Schnittstellen und führt diesbezüglich Aktionen entsprechend der vorhergehenden Beschreibung der Funktionsweise des GS232A/B aus. Folgende Konfigurationen und Änderungen wurden an der Software vorgenommen um den benötigten Anforderungen zu entsprechen:
 
+\subsubsection{Änderungen in rotator\_features.h}
+In der rotator\_features.h müssen 2 Änderung vorgenommen werden. Die erste Änderung teilt dem Programm mit, dass neben einem Azimut-Rotor auch ein Elevation-Rotor vorhanden ist und dessen Position über eine Spannung am Schleifer eines Potentiometer bestimmt wird. Dazu müssen folgende Präprozessordirektiven dem Programm hinzugefügt werden:
+
+\definecolor{officegreen}{rgb}{0.0, 0.5, 0.0}
+\lstset{
+	tabsize=3,
+	frame=single,
+	rulesepcolor=\color{gray},
+	xleftmargin=20pt,
+	framexleftmargin=15pt,
+	keywordstyle=\color{blue}\bf,
+	commentstyle=\color{officegreen},
+	stringstyle=\color{red},
+	numbers=left,
+	numberstyle=\tiny,
+	numbersep=5pt,
+	breaklines=true,
+	showstringspaces=false,
+	basicstyle=\footnotesize,
+	emph={str},emphstyle={\color{magenta}}}
+\begin{lstlisting}[language=C++]
+#define FEATURE_ELEVATION_CONTROL
+#define FEATURE_EL_POSITION_POTENTIOMETER
+\end{lstlisting}
+
+Die zweite Änderung deaktiviert die standardmäßig aktivierte Unterstützung für die Verwendung eines Displays. Dazu ist es notwendig folgende Präprozessordirektiven zu löschen oder auszukommentieren.
+\begin{lstlisting}[language=C++]
+//#define OPTION_DISPLAY_STATUS
+//#define OPTION_DISPLAY_HEADING
+//#define OPTION_DISPLAY_HEADING_AZ_ONLY
+//#define OPTION_DISPLAY_HEADING_EL_ONLY
+//#define OPTION_DISPLAY_HHMM_CLOCK
+//#define OPTION_DISPLAY_GPS_INDICATOR 
+//#define OPTION_DISPLAY_MOON_OR_SUN_OR_SAT_TRACKING_CONDITIONAL
+//#define OPTION_DISPLAY_VERSION_ON_STARTUP
+\end{lstlisting}
+
+\subsubsection{Änderungen in rotator\_pins.h}
+Um das Layout eines Arduino-Shields zu erleichtern werden Pin 8 und Pin 7 wie folgt vertauscht:
+\begin{lstlisting}[language=C++]
+#define rotate_up 7
+#define rotate_ccw 8
+\end{lstlisting}
+
+Somit können aus dieser Datei folgende Funktionen für entsprechende Pins des Arduino Uno entnommen werden:
+
+\begin{tabular}{| c | c | l |}
+	\hline
+	\textbf{Pin} & \textbf{Pin-Mode} & \textbf{Funktion} \\
+	\hline
+	6 & GPIO-Output & nach rechts Rotieren (Steuersignal für OC-Treiber) \\
+	\hline
+	7 & GPIO-Output & nach oben Rotieren (Steuersignal für OC-Treiber) \\
+	\hline
+	8 & GPIO-Output & nach links Rotieren (Steuersignal für OC-Treiber) \\
+	\hline
+	9 & GPIO-Output & nach unten Rotieren (Steuersignal für OC-Treiber) \\
+	\hline
+	A0 & ADC (Eingang) & misst die analoge Azimut-Spannung \\
+	\hline
+	A1 & ADC (Eingang) & misst die analoge Elevation-Spannung \\
+	\hline
+\end{tabular}
+
+\subsubsection{Änderung in rotator\_settings.h}
+In der rotator\_settings.h Datei wird der Azimut Startpunkt auf 0° gesetzt. Das bedeutet der Azimut wird in 0° bis 450° und nicht wie standardmäßig implementiert in -180° bis 360° angegeben.
+\begin{lstlisting}[language=C++]
+#define AZIMUTH_STARTING_POINT_EEPROM_INITIALIZE 0
+\end{lstlisting}
+
+\subsubsection{Änderung in rotator\_debug\_log\_activation.h}
+Aufgrund des beschränkten Programmspeicherplatzes auf dem Arduino muss der Debug Dump deaktiviert werden. Dazu ist es notwendig die folgende Präprozessordirektive zu löschen oder auszukommentieren.
+\begin{lstlisting}[language=C++]
+// #define DEBUG_DUMP
+\end{lstlisting}
+
+\subsection{Hardware}
+d
 
 
 
