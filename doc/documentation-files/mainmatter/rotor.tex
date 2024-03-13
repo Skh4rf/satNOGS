@@ -1,5 +1,5 @@
 \chapter{Rotor}
-Rotoren werden in der Antennentechnik eingesetzt, um die Kommunikation mit nicht-geostationären Satelliten zu ermöglichen, wobei Antennentypen mit hoher Richtwirkung verwendet werden (z.B. Helix-Antenne). In der Regel wird durch diese Methode eine höhere Verstärkung erzielt, als es mit Antennen möglich ist, welche eine größere Abdeckung von Richtungen aufweisen und daher keine Nachführung erfordern. 
+Rotoren werden in der Antennentechnik eingesetzt, um die Kommunikation mit nicht-geostationären Satelliten zu ermöglichen, wobei Antennentypen mit hoher Richtwirkung verwendet werden (z.B. Helix-Antenne). In der Regel wird durch diese Methode eine höhere Gewinn erzielt, als es mit Antennen möglich ist, welche eine größere Abdeckung von Richtungen aufweisen und daher keine Nachführung erfordern. 
 \section{Azimut und Elevation}
 Die Ausrichtung des Rotors und somit auch der Antenne erfolgt durch die Angabe von zwei Winkeln - Azimut und Elevation - im Gradmaß des astronomischen Horizont-Koordinatensystems \cite{noauthor_astronomische_nodate}. Dabei entspricht das Azimut der auszurichtenden Himmelsrichtung und die Elevation der vertikalen Ausrichtung. Beide Winkelscheitelpunkte werden durch die Position des Rotors definiert. Als Referenzlinie für das Azimut dient die Linie vom Winkelscheitelpunkt nach Norden. Die Referenzlinie für die Elevation bildet der Zenit am Standort des Rotors. Die Elevation entspricht somit dem Komplementärwinkel vom Referenzschenkel zur Linie welche den Winkelscheitel mit dem auszurichtenden Punkt verbindet.
 
@@ -192,7 +192,7 @@ Die Funktionsweise der analogen Schnittstelle, welche über den 8-Pol DIN-Stecke
 	\hline
 	4 & 15.6 VDC mit Pin 8 (Masse) verbinden um nach links zu rotieren (CCW) \\
 	\hline
-	5 & 15.6 VDC mit Pin 8 (Masse) verbinden um nach oben zu rotieren \\
+	5 & 15.6 VDC mit Pin 8 (Masse) verbinden um nach unten zu rotieren \\
 	\hline
 	6 & liefert 2 bis 4.5 VDC (entspricht 0° bis 450° Azimut) \\
 	\hline
@@ -211,7 +211,7 @@ Die Pinbelegung, am Beispiel einer DIN-Buchse, entspricht folgender Grafik:
 	\caption{Pinbelegung 8-Pol DIN-Buchse (Ansicht vorne)}
 \end{figure}
 
-Diese Informationen genügen um nun mithilfe eines Arduino Uno und entsprechendem Shield (zusätzliche Platine die auf den Arduino aufgesetzt wird) das GS232A/B Interface zu emulieren.
+Diese Informationen genügen um nun mithilfe eines Arduino Uno und entsprechendem Arduino-Shield (zusätzliche Platine die auf den Arduino Uno aufgesetzt wird) das GS232A/B Interface zu emulieren.
 
 \subsection{Software}
 Die softwaremäßige Implementierung der Emulation basiert auf dem K3NG Rotator Controller Code \cite{good_k3ngk3ng_rotator_controller_2024} welcher Grundkonstrukte für unterschiedlichste Rotoren und Anwendungen beinhaltet. Diese Software bedient die beiden Schnittstellen und führt diesbezüglich Aktionen entsprechend der vorhergehenden Beschreibung der Funktionsweise des GS232A/B aus. Folgende Konfigurationen und Änderungen wurden an der Software vorgenommen um den benötigten Anforderungen zu entsprechen:
@@ -254,7 +254,7 @@ Die zweite Änderung deaktiviert die standardmäßig aktivierte Unterstützung f
 \end{lstlisting}
 
 \subsubsection{Änderungen in rotator\_pins.h}
-Um das Layout eines Arduino-Shields zu erleichtern werden Pin 8 und Pin 7 wie folgt vertauscht:
+Um das Layout des Arduino-Shields zu vereinfachen, werden Pin 8 und Pin 7 wie folgt vertauscht:
 \begin{lstlisting}[language=C++]
 #define rotate_up 7
 #define rotate_ccw 8
@@ -287,13 +287,104 @@ In der rotator\_settings.h Datei wird der Azimut Startpunkt auf 0° gesetzt. Das
 \end{lstlisting}
 
 \subsubsection{Änderung in rotator\_debug\_log\_activation.h}
-Aufgrund des beschränkten Programmspeicherplatzes auf dem Arduino muss der Debug Dump deaktiviert werden. Dazu ist es notwendig die folgende Präprozessordirektive zu löschen oder auszukommentieren.
+Aufgrund des beschränkten Programmspeicherplatzes auf dem Arduino Uno muss der Debug Dump deaktiviert werden. Dazu ist es notwendig die folgende Präprozessordirektive zu löschen oder auszukommentieren.
 \begin{lstlisting}[language=C++]
 // #define DEBUG_DUMP
 \end{lstlisting}
 
 \subsection{Hardware}
-d
+Bezüglich der Hardware wird ein sogenanntes Arduino-Shield entworfen welches über korrekt platzierte Stiftleisten einfach auf den Arduino Uno aufgesteckt werden kann. Eine Schaltung sowie ein PCB-Layout für diesen Anwendungsfall wurden bereits von Mitgliedern der "librespacefoundation"  veröffentlicht \cite{noauthor_librespacefoundation_nodate}, können aber aufgrund falsch dimensionierter Bauteilwerte und nicht richtig platzierten Bauteilen nur als grober Leitfaden verwendet werden. Die aus diesem Grund selbstentworfene Schaltung kann in zwei Blöcke unterteilt werden: die Filterung der Messsignale und die Ausgangstreiber für die Steuerung des Rotors.  
 
+\subsubsection{Filtern der Messsignale}
+Der erste Hardwareblock sorgt für die Entstörung der mit den ADC-Pins zu verbindenden Signale mithilfe eines Tiefpasses. Dieser soll Wechselspannungsanteile und hochfrequente Störungen aus dem Signal filtern. Obwohl in diesem Anwendungsfall eine derartige Störung sehr unwahrscheinlich ist, wird sie prophylaktisch Implementiert. Für den Tiefpass mit den Bauteilwerten $R=1k\Omega $ und $C=10nF$ ergibt sich mit ${f}_{g}=\frac{1}{2\cdot \pi \cdot R\cdot C}$ eine Grenzfrequenz von ${f}_{g}=15.9kHz$.
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=7cm]{../ref/SchematicEntstörungGS232.png}
+	\label{fig:Schaltung_Entstörung_Arduino-Shield}
+	\caption{Arduino-Shield: Entstörung der Messsignale}
+\end{figure}
 
+Die Bezeichner V und H stehen für Vertikal und Horizontal und sind mit den Pins 1 und 6 der analogen Schnittstelle verbunden.
+
+\subsubsection{Ausgangstreiber}
+Die Aufgabe der Ausgangstreiber ist es, die Signale, die zur Steuerung des Rotors dienen, auf Masse schalten zu können. Dazu werden vier Open-Collector Treiber benötigt, für welche ein PN2222A NPN-Transistor verwendet wird. Für die Dimensionierung des Basis- und Kollektor-Widerstands werden folgende Parameter aus dem Datenblatt des PN2222A \cite{noauthor_pn2222a_nodate} berücksichtigt: 
+
+\begin{tabular}{| c | l | c | c | c |}
+	\hline
+	\textbf{Symbol} & \textbf{Parameter} & \textbf{Min.} & \textbf{Max.} & \textbf{Einheit} \\
+	\hline
+	${V}_{CEO}$ & Kollektor-Emitter Spannung & - & 40 & V \\
+	\hline
+	${I}_{C}$ & Kollektorstrom & - & 1.0 & A \\
+	\hline
+	${V}_{BE}$ & Basis-Emitter Sättigungsspannung & 0.6 & 1.2 & V \\
+	\hline
+	${h}_{FE}$ & DC Stromverstärkung & 50 & - & - \\
+	\hline
+\end{tabular}
+
+In dieser Anwendung bestimmt der Kollektorwiderstand den maximalen Kollektorstrom des Transistors. Es ist erforderlich, dass dieser maximale Kollektorstrom im leitenden Zustand des Transistors größer ist als der minimal erforderliche Strom, der benötigt wird, um vom Yeasu G-5500DC Controller als Masse-Verbindung erkannt zu werden. Weil dieser Wert im Datenblatt nicht beschrieben wird, musste er messtechnisch bestimmt werden und beträgt mindestens 3mA um ein stabiles Schaltverhalten zu garantieren. Die Spannung am Kollektorwiderstand beträgt $U=15.6V$, und die Spannung am Kollektor des Transistors im leitenden Zustand nahezu Null. Mit einem Kollektorwiderstand von $R_C=3.6k\Omega$ wird somit ein Kollektorstrom von $I_C=\frac{U}{R_C}=\frac{15.6V}{3.6k\Omega}=4.3mA$ erreicht was diese Anforderung erfüllt. Auch die maximale Kollektor-Emitter Spannung sowie der maximale Kollektorstrom werden somit nicht überschritten. 
+
+Die zweite Bedingung die erreicht werden muss um den Ausgangstreiber erfolgreich auf Masse zu schalten ist die Sättigung des Transistors. Dazu muss der Basisstrom $I_B$ mindestens $\frac{I_C}{h_{FE}}=80\mu A$ betragen. Mit einem Basiswiderstand von $R_B=1k\Omega$ wird diese Anforderung mit $I_B=\frac{U_{GPIO}-V_{BE}}{R_B}=\frac{5V-1.2V}{1k\Omega}=3.8mA$, wobei $U_{GPIO}$ der Ausgangsspannung des Pins am Arduino Uno entspricht, mehr als ausreichend erfüllt. 
+
+Zuzüglich Kondensatoren zur Entstörung der Treiber-Eingänge ergibt sich dadurch folgende Schaltung:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=10cm]{../ref/SchematicAusgangstreiberGS232.png}
+	\label{fig:Schaltung_Ausgangstreiber_Arduino-Shield}
+	\caption{Arduino-Shield: Ausgangstreiber}
+\end{figure}
+
+Die Bezeichner D (Down), L (Left), U (Up) und R (Right) sind mit Pin 5, 4, 3 und 2 mit der analogen Schnittstelle verbunden.
+
+\subsubsection{Schaltplan}
+Mit diesen zwei Hauptblöcken als Grundlage ergibt sich folgender Gesamtschaltplan:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{../ref/SchematicFullGS232.png}
+	\label{fig:Schaltung__Arduino-Shield}
+	\caption{Arduino-Shield: Gesamtschaltplan}
+\end{figure}
+
+\subsubsection{Platinenentwurf}
+Basierend auf dem Schaltplan wurde folgende Platine entworfen:
+\begin{figure}[H]
+	\begin{minipage}[b]{.4\linewidth} % [b] => Ausrichtung an \caption
+		\includegraphics[width=\linewidth]{../ref/PCBArduinoShieldGS232.png}
+		\label{fig:PCB_Arduino-Shield_vorne}
+		\caption{Arduino-Shield: 3D-Render PCB (Ansicht oben)}
+	\end{minipage}
+	\hspace{.1\linewidth}% Abstand zwischen Bilder
+	\begin{minipage}[b]{.4\linewidth} % [b] => Ausrichtung an \caption
+		\includegraphics[width=\linewidth]{../ref/PCBArduinoShieldBackGS232.png}
+		\label{fig:PCB_Arduino-Shield_hinten}
+		\caption{Arduino-Shield: 3D-Render PCB (Ansicht unten)}
+	\end{minipage}
+\end{figure}
+
+\subsection{Ergebnis}
+Das Ergebnis der Emulation des digitalen Computer Interface GS232A/B ist eine funktionstüchtiges Arduino-Shield sowie der dazugehörige Arduino mit entsprechender Software:
+\begin{figure}[H]
+	\begin{minipage}[b]{.4\linewidth} % [b] => Ausrichtung an \caption
+		\includegraphics[width=\linewidth]{../ref/PCB_Unten_GS232.jpeg}
+		\label{fig:PCB_Arduino-Shield_unten_Bestueckt}
+		\caption{Arduino-Shield: Bestückt (Ansicht unten)}
+	\end{minipage}
+	\hspace{.1\linewidth}% Abstand zwischen Bilder
+	\begin{minipage}[b]{.4\linewidth} % [b] => Ausrichtung an \caption
+		\includegraphics[width=\linewidth]{../ref/PCB_Oben_02_GS232.jpeg}
+		\label{fig:PCB_Arduino-Shield_oben_Bestueckt}
+		\caption{Arduino-Shield: Bestückt (Ansicht oben)}
+	\end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=15cm]{../ref/PCB_Seite_GS232.jpeg}
+	\label{fig:Schaltung_Ausgangstreiber_Arduino-Shield}
+	\caption{GS232A/B Emulator (Arduino und Shield)}
+\end{figure}
+
+Hinweis: Aufgrund eines - in der Zwischenzeit behobenen - Fehlers im Entwurf der Platine ist war Pin 1 der digitalen Schnittstelle mit Masse behoben. In den Bildern ist zu sehen wie dieser Fehler mit dem Durchbohren der Leiterbahn und einer Drahtbrücke behoben wurde.
