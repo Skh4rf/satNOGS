@@ -50,12 +50,12 @@ Abstrahlverhalten 3D
 
 Es wurde der Schluss gezogen, dass die Resonanzfrequenz zu weit über dem gewünschten Wert von 433MHz liegt. Diese lässt sich durch Veränderung des Durchmessers der Spirale oder des Abstandes zwischen den Windungen verändern.
 
-Durch das Abändern des Durchmessers konnte die gewünschte Resonanzfrequenz von 433MHz mit einem Helix-Durchmesser von 270mm erreicht werden. Der Reflektor wurde aus der Theorie mit ca. $\frac{3\lambda}{4}$ festgelegt, was einem Durchmesser von ungefähr 520mm entspricht.
+Durch das Abändern des Durchmessers konnte die gewünschte Resonanzfrequenz von 433MHz mit einem Helix-Durchmesser von 270mm erreicht werden. Der Reflektor wurde aus der Theorie mit ca. $\frac{3\lambda}{4}$ festgelegt \cite{Kraus-2002-AntennasB}, was einem Durchmesser von ungefähr 520mm entspricht.
 
 Es ist wichtig anzumerken, dass der Steigungswinkel der Spirale hierbei ca. 11,5° beträgt. Dies bedeutet, dass die Steigung von dem relativ engen Idealbereich zwischen 12° und 14° abweicht.
 
 \section{Realisierung}
-Die Helixantenne besteht aus nur zwei Bauteilen: der Spirale und dem Reflektor. Für die Simulation genügt dieses Modell, allerdings werden in der Realität Strukturelemente benötigt um diese zu befestigen.
+Die Helixantenne benötigt zur Funktion nur zwei Bauteile: die Spirale und der Reflektor. Für die Simulation genügt dieses Modell, allerdings werden in der Realität Strukturelemente benötigt um diese zu befestigen.
 
 \begin{figure}[H]
 	\centering
@@ -65,8 +65,6 @@ Die Helixantenne besteht aus nur zwei Bauteilen: der Spirale und dem Reflektor. 
 \end{figure}
 
 MATERIALLISTE
-
-
 
 \begin{itemize}
 	\item PVC-Rohr
@@ -242,6 +240,19 @@ Da sich der Eingangswiderstand ändert, wenn vier solcher Antennen zusammen gesc
 Der Anpassstreifen wurde mit zwei einzelnen Blechstreifen an dem unteren Ende der Helix angeschraubt.
 
 BILD DER MONTAGE
+
+Um nun vier Helixantennen zusammenzuschalten wird ein $\lambda/4$-Anpasstopf benötigt. Dieser verhält sich ähnlich wie ein Koaxialkabel, wobei das Verhältnis der Durchmesser zwischen Innenleiter und Außenleiter die Kapazität festlegt. Hierdurch kann der Wellenwiderstand angepasst werden.
+
+BERECHNUNG
+
+\cite{admin_lambda4_2016}
+
+Es wurde hierbei die Variante mit einem viereckigen Außenleiter und einem runden Innenleiter angewendet, da sich die BNC-Buchsen an dem Vierkantrohr besser befestigen lassen.\\
+Wird in die zuvor genannten Formeln eingesetzt, so erhält man die folgenden Ergebnisse.
+
+BERECHNUNG
+
+
 
 \subsection{Test}
 
