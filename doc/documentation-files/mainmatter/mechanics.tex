@@ -42,19 +42,19 @@ Im Zuge dieses Kennzeichnungsprozesses ergibt sich folgende Zuordnung:
 	\hline
 	Schaltschrank & -A01 & Schuko 2 & +A01-X02 \\
 	\hline
-	Helix-Gerüst QUERVERWEIS & -A03 & Rotor (Azimut) QUERVERWEIS & +A03-M01 \\
+	Helix-Gerüst (\ref{subsec:helix_geruest}) & -A03 & Rotor (Azimut) (\ref{sec:yaesug5500dc}) & +A03-M01 \\
 	\hline
-	QFH-Antenne QUERVERWEIS & -T01 & Rotor (Elevation) QUERVERWEIS & +A03-M02 \\
+	QFH-Antenne (\ref{chap:qfh}) & -T01 & Rotor (Elevation) (\ref{sec:yaesug5500dc}) & +A03-M02 \\
 	\hline
-	Raspberry PI 4 QUERVERWEIS & +A01-A02 & RF-Power-Combiner QUERVERWEIS & +A03-T04 \\
+	Raspberry Pi 4 QUERVERWEIS & +A01-A02 & RF-Power-Combiner (\ref{chap:helix}) & +A03-T04 \\
 	\hline
-	Rotor-Controller QUERVERWEIS & +A01-K01 & Helix 1 QUERVERWEIS & +A03-T11 \\
+	Rotor-Controller (\ref{sec:yaesug5500dc}) & +A01-K01 & Helix-Antenne 1 (\ref{chap:helix}) & +A03-T11 \\
 	\hline
-	GS232-Interface (Emulation) QUERVERWEIS & +A01-K02 & Helix 2 QUERVERWEIS & +A03-T12 \\
+	GS232-Interface Emulation (\ref{sec:gs232emulation}) & +A01-K02 & Helix-Antenne 2 (\ref{chap:helix}) & +A03-T12 \\
 	\hline
-	SDR QUERVERWEIS & +A01-K03 & Helix 3 QUERVERWEIS & +A03-T13 \\
+	SDR QUERVERWEIS & +A01-K03 & Helix-Antenne 3 (\ref{chap:helix}) & +A03-T13 \\
 	\hline
-	Netzteil & +A01-T03 & Helix 4 QUERVERWEIS & +A03-T14 \\
+	Netzteil & +A01-T03 & Helix-Antenne 4 (\ref{chap:helix}) & +A03-T14 \\
 	\hline
 	Netzkabel & +A01-W01 & Antennenkabel Helix 1 & +A03-W08 \\
 	\hline
@@ -75,14 +75,14 @@ Im Zuge dieses Kennzeichnungsprozesses ergibt sich folgende Zuordnung:
 Die in vorhergehenden Kapiteln noch nicht erwähnten Betriebsmittel und ihre Funktion werden nun im Zuge dieses Kapitels erläutert. 
 
 \section{Schaltschrank (+A01)}
-Das Herzstück der Empfangsstation bildet der Schaltschrank, beziehungsweise sein Inhalt. Die Aufgabe des Schaltschranks ist es, abgesehen von der Antennen, dem Rotor und des LNAs alle weiteren Komponenten der Empfangsstation vor UV-Strahlung und Wetter zu schützen. Ein weitere positiver Effekt der sich dadurch ergibt, ist die Flexibilität die ein solcher Schaltschrank bietet. Positionswechsel der Bodenstation erfordern somit nur den Transport der Antenne und des Schaltschranks und können mit geringerer Anzahl an ein- und ausstecken der Kabel durchgeführt werden.
+Die Aufgabe des Schaltschranks ist es, abgesehen von der Antennen, dem Rotor und des LNAs alle weiteren Komponenten der Empfangsstation vor UV-Strahlung und Wetter zu schützen. Ein weitere positiver Effekt der sich dadurch ergibt, ist die Flexibilität die ein solcher Schaltschrank bietet. Positionswechsel der Bodenstation erfordern somit nur den Transport der Antenne und des Schaltschranks und können mit geringerer Anzahl an ein- und ausstecken der Kabel durchgeführt werden.
 
-Als Schaltschrank wird ein Stahlblech-Wandgehäuse der Argentina Reihe des Unternehmens IDE ELECTRIC, S.L. mit 400mm Höhe, 400mm Breite und 250mm Tiefe außen verwendet. Mit einer im Datenblatt \cite{ide_electric_sl_datenblatt_nodate} angegebenen IP66 Schutzklasse und UV-Schutz-Beschichtung erfüllt er die Voraussetzungen, um den von der Umwelt ausgehenden mechanischen Belastungen standzuhalten. Die erste Kennziffer der IP66 Schutzklasse garantiert Staubdichtigkeit und die zweite Kennziffer Schutz gegen starkes Strahlwasser und Überflutung \cite{lienig_elektronische_2014} (Seite 53).
+Als Schaltschrank wird ein Stahlblech-Wandgehäuse der Argentina Reihe des Unternehmens IDE ELECTRIC, S.L. mit Außenmaßen von 400mm Höhe, 400mm Breite und 250mm Tiefe verwendet. Mit einer im Datenblatt \cite{ide_electric_sl_datenblatt_nodate} angegebenen IP66 Schutzklasse und UV-Schutz-Beschichtung erfüllt er die Voraussetzungen, um den von der Umwelt ausgehenden mechanischen Belastungen standzuhalten. Die erste Kennziffer der IP66 Schutzklasse garantiert Staubdichtigkeit und die zweite Kennziffer Schutz gegen starkes Strahlwasser und Überflutung \cite{lienig_elektronische_2014} (Seite 53).
 
 \subsection{Befestigung der Komponenten}
-Zur Befestigung der Komponenten dient eine mit dem Schaltschrank mitgelieferte 2 Millimeter Montageplatte aus verzinktem Stahlblech. Für die Montage der Schuko-Steckdosen, des Netzteils, der GS232-Emulation und des Raspberry Pi 4 wird auf dieses Stahlblech eine DIN-Schiene geschraubt, welche das einfache Aufstecken dieser Komponenten ermöglicht. Für den den Arduino Uno der GS232-Emulation und den Raspberry Pi 4 wurden dafür passende Gehäuse erworben. Die Schuko-Steckdosen und das Netzteil sind bereits für diese Montageart kompatibel. 
+Zur Befestigung der Komponenten dient eine mit dem Schaltschrank mitgelieferte 2 Millimeter Montageplatte aus verzinktem Stahlblech. Für die Montage der Schuko-Steckdosen, des Netzteils, der GS232-Emulation und des Raspberry Pi 4 wird auf dieses Stahlblech eine DIN-Schiene geschraubt, welche das einfache Aufstecken dieser Komponenten ermöglicht. Für den Arduino Uno der GS232-Emulation und den Raspberry Pi 4 wurden dafür passende Gehäuse erworben. Die Schuko-Steckdosen und das Netzteil sind bereits für diese Montageart kompatibel. 
 
-Der Rotor-Controller ist die einzige Komponente im Schaltschrank welche nicht über eine DIN-Schiene befestigt ist. Für die Befestigung des Rotors wurde mithilfe eines 2 Millimeter dicken Eisenblechs ein Regal gebogen auf welchem der Rotor-Controller Platz findet. Um den Controller gegen verrutschen zu sichern wird er mithilfe eines gebogenen viereckigen Eisenringes festgespannt. Der Vorteil dieser Befestigung ist, dass das Gehäuse des Rotor-Controllers nicht modifiziert werden musste, der Rotor-Controller mit wenig Aufwand aus dem Schaltschrank entfernt werden kann und dennoch fixiert an seinem Platz ist.
+Der Rotor-Controller ist die einzige Komponente im Schaltschrank welche nicht über eine DIN-Schiene befestigt wird. Für die Befestigung des Rotors wurde mithilfe eines 2 Millimeter dicken Eisenblechs ein Regal gebogen auf welchem der Rotor-Controller Platz findet. Um den Controller gegen verrutschen zu sichern wird er mithilfe eines gebogenen viereckigen Eisenringes festgespannt. Der Vorteil dieser Befestigung ist, dass das Gehäuse des Rotor-Controllers nicht modifiziert werden musste, der Rotor-Controller mit wenig Aufwand aus dem Schaltschrank entfernt werden kann und dennoch fixiert an seinem Platz ist. Um die Sicherheit der Anwender und Anwenderinnen des Schaltschrankes zu gewährleisten, ist dieser zusätzlich an zwei Erdungspunkten mit dem Schutzleiter des Netzkabels verbunden.
 
 \begin{figure}[H]
 	\centering
@@ -128,6 +128,17 @@ Das Ergebnis ist ein modular platzierbarer und vielseitiger Schaltschrank:
 		\caption{Schaltschrank stehend (Ansicht hinten)}
 	\end{minipage}
 \end{figure}
+
+\section{Prinzipschaltbild}
+\begin{landscape}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\linewidth]{../ref/Prinzipschaltplan.jpg}
+		\caption{Prinzipschaltplan der Empfangsstation}
+		\label{fig:prinzipschaltplan}
+	\end{figure}
+\end{landscape}
+	
 
 
 

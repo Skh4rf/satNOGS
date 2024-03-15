@@ -12,6 +12,7 @@ Die Ausrichtung des Rotors und somit auch der Antenne erfolgt durch die Angabe v
 \end{figure}
 
 \section{Yaesu G-5500DC Rotor}
+\label{sec:yaesug5500dc}
 Das Yaesu G-5500DC System \cite{noauthor_yaesu_nodate} besteht aus einem Azimut- und einem Elevation-Rotor sowie dem dazugehörigen Controller und ermöglicht eine gesteuerte Rotation einer unidirektionalen Antenne im Bereich von 0° bis 450° Azimut und 0° bis 180° Elevation.
 
 \subsection{Spezifikationen}
@@ -105,6 +106,7 @@ Für die  Nullkalibrierung wird der Controller ausgeschaltet und die Anzeigenade
 Die Bestimmung der aktuellen Ausrichtung des Rotors erfolgt über einen von der Rotation des Rotors abhängigen Potentiometer welcher die von Pin 1 zur Verfügung gestellte Spannung teilt. Je nach Ausrichtung ändert sich somit die Spannung am Schleifer des Potentiometers welcher mit Pin 2 verbunden ist. Die Spannung an Pin 2 entspricht somit proportional der Ausrichtung des jeweiligen Rotors. Diese Tatsache wurde durch messtechnische Untersuchungen festgestellt.
 
 \section{Emulation des digitalen Computer Control Interface GS232A/B}
+\label{sec:gs232emulation}
 Um den Rotor digital über eine serielle Schnittstelle mit dem Computer steuern zu können, wird das GS232A/B Interface benötigt. Dieses wird über einen 9-Pol DIN-Stecker mit dem G-5500DC Controller verbunden. 
 \begin{figure}[H]
 	\cite{noauthor_yaesu_nodate}
