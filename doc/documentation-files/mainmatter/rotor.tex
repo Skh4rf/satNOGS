@@ -1,12 +1,12 @@
 \chapter{Rotor}
-Rotoren werden in der Antennentechnik eingesetzt, um die Kommunikation mit nicht-geostationären Satelliten zu ermöglichen, wobei Antennentypen mit hoher Richtwirkung verwendet werden (z.B. Helix-Antenne). In der Regel wird durch diese Methode eine höhere Gewinn erzielt, als es mit Antennen möglich ist, welche eine größere Abdeckung von Richtungen aufweisen und daher keine Nachführung erfordern. 
+Rotoren werden in der Antennentechnik eingesetzt, um die Kommunikation mit nicht-geostationären Satelliten zu ermöglichen, wobei Antennentypen mit hoher Richtwirkung verwendet werden (z.B. Helix-Antenne). In der Regel wird durch diese Methode eine höherer Gewinn erzielt, als es mit Antennen möglich ist, welche eine größere Abdeckung von Richtungen aufweisen und daher keine Nachführung erfordern. 
 \section{Azimut und Elevation}
 Die Ausrichtung des Rotors und somit auch der Antenne erfolgt durch die Angabe von zwei Winkeln - Azimut und Elevation - im Gradmaß des astronomischen Horizont-Koordinatensystems \cite{noauthor_astronomische_nodate}. Dabei entspricht das Azimut der auszurichtenden Himmelsrichtung und die Elevation der vertikalen Ausrichtung. Beide Winkelscheitelpunkte werden durch die Position des Rotors definiert. Als Referenzlinie für das Azimut dient die Linie vom Winkelscheitelpunkt nach Norden. Die Referenzlinie für die Elevation bildet der Zenit am Standort des Rotors. Die Elevation entspricht somit dem Komplementärwinkel vom Referenzschenkel zur Linie welche den Winkelscheitel mit dem auszurichtenden Punkt verbindet.
 
 \begin{figure}[H]
 	\cite{twcarlson_azimuth_2020}
 	\centering
-	\includegraphics[width=5.2cm]{../ref/Azimuth-Altitude_schematic_satellit.png}
+	\includegraphics[width=4.5cm]{../ref/Azimuth-Altitude_schematic_satellit.png}
 	\label{fig:Azimut_Elevation_Schematic}
 	\caption{Azimut und Elevation Darstellung}
 \end{figure}
@@ -57,23 +57,21 @@ Um das Yaesu G-5500DC System möglichst Modular anwenden zu können, werden sein
 
 
 \subsubsection{Kontrollkabel vorbereiten und anschließen}
-Für die Ansteuerung der Rotoren werden diese jeweils mit einem 7-Pol-Rundsteckverbinder zum Controller verbunden, wovon 5 Pole verwendet werden. Die Funktion der einzelnen Pins wird im Datenblatt \cite{noauthor_yaesu_nodate} nicht näher beschrieben, konnte allerdings durch Messungen wie folgt bestimmt werden:
+Für die Ansteuerung der Rotoren werden diese jeweils mit einem 7-Pol-Rundsteckverbinder zum Controller verbunden, wovon 5 Pole verwendet werden. Die Funktion der einzelnen Pins wird im Datenblatt \cite{noauthor_yaesu_nodate} nicht näher beschrieben, wurde allerdings messtechnisch wie folgt bestimmt:
 
-Tabelle unbedingt überarbeiten!!!
-\newline
 \begin{tabular}{| c | l | l |}
 	\hline
 	\textbf{Pin} & \textbf{Elevation-Funktion} & \textbf{Azimut-Funktion} \\
 	\hline
-	1 & \multicolumn{2}{| c |}{analoger Ausgang (5V)} \\
+	1 & \multicolumn{2}{ c |}{analoger Ausgang (5V)} \\
 	\hline
-	2 & \multicolumn{2}{| c |}{analoger Input (0V bis 5V)} \\
+	2 & \multicolumn{2}{ c |}{analoger Input (0V bis 5V)} \\
 	\hline
-	3 & \multicolumn{2}{| c |}{analoge Masse} \\
+	3 & \multicolumn{2}{ c |}{analoge Masse} \\
 	\hline
-	4 & UP Schalter (open collector) & RIGHT Schalter (open collector)\\
+	4 & UP Signal & RIGHT Signal \\
 	\hline
-	5 & DOWN Schalter (open collector) & LEFT Schalter (open collector) \\
+	5 & DOWN Signal & LEFT Signal \\
 	\hline
 \end{tabular}
 
@@ -87,9 +85,9 @@ Die Pinbelegung für den 7-Pol-Rundstecker ist im Datenblatt wie folgt angegeben
 	\caption{Pinbelegung 7-Pol-Rundstecker (Ansicht vorne)}
 \end{figure}
 
-Für die verwendeten Kabel wird im Datenblatt ein Leiterquerschnitt von mindestens 0.5 Quadratmillimeter bei Kabellängen unter 40 Metern und 0.75 Quadratmillimeter bei Kabellängen über 40 Metern vorgeschrieben. Um die Dichtheit der über das Kabel gestülpten Gummikappe zu gewährleisten muss der Außendurchmesser des Kabels zwischen 8.6 bis 10.5 Millimeter betragen.
+Für die verwendeten Kabel wird im Datenblatt ein Leiterquerschnitt von mindestens 0.5 Quadratmillimeter bei Kabellängen unter 40 Metern und 0.75 Quadratmillimeter bei Kabellängen über 40 Metern vorgeschrieben. Um die Dichtheit der über das Kabel gestülpten Gummikappe zu gewährleisten muss der Außendurchmesser des Kabels zwischen 8.6 und 10.5 Millimeter betragen.
  
-Entsprechend der Pinbelegung im Datenblatt werden die Kabel am anderen Ende mit den Schraubterminal am Rotor Controller verbunden:
+Entsprechend der Pinbelegung im Datenblatt werden die Kabel am anderen Ende mit den Schraubterminals am Rotor Controller verbunden:
 \begin{figure}[H]
 	\cite{noauthor_yaesu_nodate}
 	\centering
@@ -101,7 +99,7 @@ Entsprechend der Pinbelegung im Datenblatt werden die Kabel am anderen Ende mit 
 \subsubsection{Erstinbetriebnahme und kalibrieren der Anzeigen}
 Wurden alle Kabel wie beschrieben mit Controller und Rotor verbunden, so kann, nach der Versorgung des Controllers mit Netzspannung, über die DOWN, UP, LEFT und RIGHT Tasten der Rotor manuell bewegt werden. 
 \newline
-Für die  Nullkalibrierung wird der Controller ausgeschaltet und die Anzeigenadel über die Schraube auf der Vorderseite unter der jeweiligen Anzeige auf den linken Rand ausgerichtet. Für die Anpassung der Vollaussteuerung der Azimut-Anzeige wird der Controller eingeschaltet und der Rotor mithilfe der manuellen Bedientasten bis zum Endschalter nach links gedreht. Die Ausrichtung wird anschließend am Azimut-Rotor, mithilfe von zum Beispiel Klebeband, markiert. Daraufhin wird der Rotor anhand der manuellen Bedientasten nach rechts gedreht, bis er nach einer ganzen Umdrehung wieder den vorher markierten Punkt erreicht. Die Anzeigenadel auf der Azimut-Anzeige sollte sich nun bei 360° befinden, was durch das FULL SCALE ADJ Potentiometer über dem Azimut Schraubterminal auf der Rückseite des Controllers eingestellt werden kann. Für die Kalibrierung des Elevation-Rotor wird dieser mithilfe der manuellen Bedientasten nach oben geschwenkt bis die Ausrichtung genau 180° beträgt. Die Anzeigenadel auf der Elevation-Anzeige sollte sich nun auch bei 180° befinden, was durch das FULL SCALE ADJ Potentiometer über dem Elevation Schraubterminal auf der Rückseite des Controllers eingestellt werden kann.
+Für die  Nullkalibrierung wird der Controller ausgeschaltet und die Anzeigenadel über die Schraube auf der Vorderseite unter der jeweiligen Anzeige auf den linken Rand ausgerichtet. Für die Anpassung der Vollaussteuerung der Azimut-Anzeige wird der Controller eingeschaltet und der Rotor mithilfe der manuellen Bedientasten bis zum Endschalter nach links gedreht. Die Ausrichtung wird anschließend am Azimut-Rotor, mithilfe von zum Beispiel Klebeband, markiert. Daraufhin wird der Rotor anhand der manuellen Bedientasten nach rechts gedreht, bis er nach einer ganzen Umdrehung wieder den vorher markierten Punkt erreicht. Die Anzeigenadel auf der Azimut-Anzeige sollte sich nun bei 360° befinden, was durch das FULL SCALE ADJ Potentiometer über dem Azimut-Schraubterminal auf der Rückseite des Controllers eingestellt werden kann. Für die Kalibrierung des Elevation-Rotors wird dieser mithilfe der manuellen Bedientasten nach oben geschwenkt bis die Ausrichtung genau 180° beträgt. Die Anzeigenadel auf der Elevation-Anzeige sollte sich nun auch bei 180° befinden, was durch das FULL SCALE ADJ Potentiometer über dem Elevation-Schraubterminal auf der Rückseite des Controllers eingestellt werden kann.
 
 \subsection {Azimut und Elevation bestimmen}
 Die Bestimmung der aktuellen Ausrichtung des Rotors erfolgt über einen von der Rotation des Rotors abhängigen Potentiometer welcher die von Pin 1 zur Verfügung gestellte Spannung teilt. Je nach Ausrichtung ändert sich somit die Spannung am Schleifer des Potentiometers welcher mit Pin 2 verbunden ist. Die Spannung an Pin 2 entspricht somit proportional der Ausrichtung des jeweiligen Rotors. Diese Tatsache wurde durch messtechnische Untersuchungen festgestellt.
@@ -118,10 +116,10 @@ Um den Rotor digital über eine serielle Schnittstelle mit dem Computer steuern 
 Aus finanziellen Gründen wird das GS232A/B mit einem Arduino Uno und entsprechender zusätzlicher Hardware emuliert. Der Preis von € 579,-- für ein GS232B Interface \cite{noauthor_yaesuinterface_nodate} konnte durch den Selbstbau mit Gesamtkosten von € 27,30 um € 551,70 gesenkt werden.
 
 \subsection{Funktionsweise des GS232A/B}
-Um das GS232A/B Interface emulieren zu können, bedarf es einer genaueren Betrachtung seiner Funktionsweise und die der beiden Schnittstellen. Diese werden im Datenblatt des Yaesu GS232A/B sowie dem Yaesu G-5500DC \cite{noauthor_yaesu_nodate} erläutert.
+Um das GS232A/B Interface emulieren zu können, bedarf es einer genaueren Betrachtung seiner Funktionsweise und jener der beiden Schnittstellen. Diese werden im Datenblatt des Yaesu GS232A/B sowie dem Yaesu G-5500DC \cite{noauthor_yaesu_nodate} erläutert.
 
 \subsubsection{Emulation der seriellen Schnittstelle}
-Eine der beiden zu emulierenden Schnittstellen ist die serielle Schnittstelle welche das Interface mit dem Computer verbindet. Basierend auf dem RS232 Protokoll mit einem 8N1 (8 Datenbits ohne Parität und einem Stopbit) Format werden über diese Schnittstelle Befehle für Aktionen oder Messungen vom Computer an das Interface gesendet. Die Baudrate wurde bei der Emulation softwaretechnisch auf 9600 fixiert und kann im Gegensatz zum Original nicht über DIP-Schalter eingestellt werden. Für die Kommunikation verfügt das GS233A/B über einen eigenen Befehlssatz der wie folgt lautet:
+Eine der beiden zu emulierenden Schnittstellen ist die serielle Schnittstelle welche das Interface mit dem Computer verbindet. Basierend auf dem RS232 Protokoll, mit einem 8N1 (8 Datenbits ohne Parität und einem Stopbit) Format, werden über diese Schnittstelle Befehle für Aktionen oder Messungen vom Computer an das Interface gesendet. Die Baudrate wurde bei der Emulation softwaretechnisch auf 9600 fixiert und kann im Gegensatz zum Original nicht über DIP-Schalter eingestellt werden. Für die Kommunikation verfügt das GS232A/B über einen eigenen Befehlssatz der wie folgt lautet:
 
 \begin{tabular}{| c | l |}
 	\hline
@@ -178,7 +176,7 @@ Eine der beiden zu emulierenden Schnittstellen ist die serielle Schnittstelle we
 \end{tabular}
 
 \subsubsection{Emulation der analogen Schnittstelle}
-Die Funktionsweise der analogen Schnittstelle, welche über den 8-Pol DIN-Stecker zum G-5500DC Controller verbunden ist, wird im Datenblatt des Rotors \cite{noauthor_yaesu_nodate} wie folgt beschrieben:
+Die Funktionsweise der analogen Schnittstelle, welche über den 8-Pol DIN-Stecker zum G-5500DC Controller verbunden ist, beziehungsweise der einzelnen Pins, wird im Datenblatt des Rotors \cite{noauthor_yaesu_nodate} wie folgt beschrieben:
 
 \begin{tabular}{| c | l |}
 	\hline
@@ -202,7 +200,7 @@ Die Funktionsweise der analogen Schnittstelle, welche über den 8-Pol DIN-Stecke
 	\hline
 \end{tabular}
 
-Die Pinbelegung, am Beispiel einer DIN-Buchse, entspricht folgender Grafik: 
+Die Pinbelegung, am Beispiel einer Buchse (weiblich), entspricht folgender Grafik: 
 \begin{figure}[H]
 	\cite{noauthor_yaesu_nodate}
 	\centering
@@ -211,7 +209,7 @@ Die Pinbelegung, am Beispiel einer DIN-Buchse, entspricht folgender Grafik:
 	\caption{Pinbelegung 8-Pol DIN-Buchse (Ansicht vorne)}
 \end{figure}
 
-Diese Informationen genügen um nun mithilfe eines Arduino Uno und entsprechendem Arduino-Shield (zusätzliche Platine die auf den Arduino Uno aufgesetzt wird) das GS232A/B Interface zu emulieren.
+Diese Informationen genügen, um nun mithilfe eines Arduino Uno und entsprechendem Arduino-Shield (zusätzliche Platine die auf den Arduino Uno aufgesetzt wird) das GS232A/B Interface zu emulieren.
 
 \subsection{Software}
 Die softwaremäßige Implementierung der Emulation basiert auf dem K3NG Rotator Controller Code \cite{good_k3ngk3ng_rotator_controller_2024} welcher Grundkonstrukte für unterschiedlichste Rotoren und Anwendungen beinhaltet. Diese Software bedient die beiden Schnittstellen und führt diesbezüglich Aktionen entsprechend der vorhergehenden Beschreibung der Funktionsweise des GS232A/B aus. Folgende Konfigurationen und Änderungen wurden an der Software vorgenommen um den benötigten Anforderungen zu entsprechen:
@@ -293,7 +291,7 @@ Aufgrund des beschränkten Programmspeicherplatzes auf dem Arduino Uno muss der 
 \end{lstlisting}
 
 \subsection{Hardware}
-Bezüglich der Hardware wird ein sogenanntes Arduino-Shield entworfen welches über korrekt platzierte Stiftleisten einfach auf den Arduino Uno aufgesteckt werden kann. Eine Schaltung sowie ein PCB-Layout für diesen Anwendungsfall wurden bereits von Mitgliedern der "librespacefoundation"  veröffentlicht \cite{noauthor_librespacefoundation_nodate}, können aber aufgrund falsch dimensionierter Bauteilwerte und nicht richtig platzierten Bauteilen nur als grober Leitfaden verwendet werden. Die aus diesem Grund selbstentworfene Schaltung kann in zwei Blöcke unterteilt werden: die Filterung der Messsignale und die Ausgangstreiber für die Steuerung des Rotors.  
+Bezüglich der Hardware wird ein sogenanntes Arduino-Shield entworfen welches über korrekt platzierte Stiftleisten einfach auf den Arduino Uno aufgesteckt werden kann. Eine Schaltung sowie ein PCB-Layout für diesen Anwendungsfall wurden bereits von Mitgliedern der "librespacefoundation"  veröffentlicht \cite{noauthor_librespacefoundation_nodate}, können aber aufgrund falsch dimensionierter Bauteilwerte und nicht richtig platzierten Bauteilen nur als grober Leitfaden verwendet werden. Die aus diesem Grund selbstentworfene Schaltung, kann in zwei Blöcke unterteilt werden: die Filterung der Messsignale und die Ausgangstreiber für die Steuerung des Rotors.  
 
 \subsubsection{Filtern der Messsignale}
 Der erste Hardwareblock sorgt für die Entstörung der mit den ADC-Pins zu verbindenden Signale mithilfe eines Tiefpasses. Dieser soll Wechselspannungsanteile und hochfrequente Störungen aus dem Signal filtern. Obwohl in diesem Anwendungsfall eine derartige Störung sehr unwahrscheinlich ist, wird sie prophylaktisch Implementiert. Für den Tiefpass mit den Bauteilwerten $R=1k\Omega $ und $C=10nF$ ergibt sich mit ${f}_{g}=\frac{1}{2\cdot \pi \cdot R\cdot C}$ eine Grenzfrequenz von ${f}_{g}=15.9kHz$.
@@ -324,9 +322,9 @@ Die Aufgabe der Ausgangstreiber ist es, die Signale, die zur Steuerung des Rotor
 	\hline
 \end{tabular}
 
-In dieser Anwendung bestimmt der Kollektorwiderstand den maximalen Kollektorstrom des Transistors. Es ist erforderlich, dass dieser maximale Kollektorstrom im leitenden Zustand des Transistors größer ist als der minimal erforderliche Strom, der benötigt wird, um vom Yeasu G-5500DC Controller als Masse-Verbindung erkannt zu werden. Weil dieser Wert im Datenblatt nicht beschrieben wird, musste er messtechnisch bestimmt werden und beträgt mindestens 3mA um ein stabiles Schaltverhalten zu garantieren. Die Spannung am Kollektorwiderstand beträgt $U=15.6V$, und die Spannung am Kollektor des Transistors im leitenden Zustand nahezu Null. Mit einem Kollektorwiderstand von $R_C=3.6k\Omega$ wird somit ein Kollektorstrom von $I_C=\frac{U}{R_C}=\frac{15.6V}{3.6k\Omega}=4.3mA$ erreicht was diese Anforderung erfüllt. Auch die maximale Kollektor-Emitter Spannung sowie der maximale Kollektorstrom werden somit nicht überschritten. 
+In dieser Anwendung bestimmt der Kollektorwiderstand den maximalen Kollektorstrom des Transistors. Es ist erforderlich, dass dieser maximale Kollektorstrom im leitenden Zustand des Transistors größer ist als der minimal erforderliche Strom, der benötigt wird, um vom Yeasu G-5500DC Controller als Masse-Verbindung erkannt zu werden. Weil dieser Wert im Datenblatt nicht beschrieben wird, musste er messtechnisch bestimmt werden und beträgt mindestens 3mA um ein stabiles Schaltverhalten zu garantieren. Die Spannung am Kollektorwiderstand beträgt $U=15.6V$, und die Spannung am Kollektor des Transistors im leitenden Zustand nahezu Null. Mit einem Kollektorwiderstand von $R_C=3.6k\Omega$ wird somit ein Kollektorstrom von $I_C=\frac{U}{R_C}=\frac{15.6V}{3.6k\Omega}=4.3mA$ erreicht, was diese Anforderung erfüllt. Auch die maximale Kollektor-Emitter Spannung sowie der maximale Kollektorstrom werden dadurch nicht überschritten. 
 
-Die zweite Bedingung die erreicht werden muss um den Ausgangstreiber erfolgreich auf Masse zu schalten ist die Sättigung des Transistors. Dazu muss der Basisstrom $I_B$ mindestens $\frac{I_C}{h_{FE}}=80\mu A$ betragen. Mit einem Basiswiderstand von $R_B=1k\Omega$ wird diese Anforderung mit $I_B=\frac{U_{GPIO}-V_{BE}}{R_B}=\frac{5V-1.2V}{1k\Omega}=3.8mA$, wobei $U_{GPIO}$ der Ausgangsspannung des Pins am Arduino Uno entspricht, mehr als ausreichend erfüllt. 
+Die zweite Bedingung die erreicht werden muss um den Ausgangstreiber erfolgreich auf Masse zu schalten, ist die Sättigung des Transistors. Dazu muss der Basisstrom $I_B$ mindestens $\frac{I_C}{h_{FE}}=\frac{4.3mA}{50}=80\mu A$ betragen. Mit einem Basiswiderstand von $R_B=1k\Omega$ wird diese Anforderung mit $I_B=\frac{U_{GPIO}-V_{BE}}{R_B}=\frac{5V-1.2V}{1k\Omega}=3.8mA$, wobei $U_{GPIO}$ der Ausgangsspannung des Pins am Arduino Uno entspricht, mehr als ausreichend erfüllt. 
 
 Zuzüglich Kondensatoren zur Entstörung der Treiber-Eingänge ergibt sich dadurch folgende Schaltung:
 
@@ -365,7 +363,7 @@ Basierend auf dem Schaltplan wurde folgende Platine entworfen:
 \end{figure}
 
 \subsection{Ergebnis}
-Das Ergebnis der Emulation des digitalen Computer Interface GS232A/B ist eine funktionstüchtiges Arduino-Shield sowie der dazugehörige Arduino mit entsprechender Software:
+Das Ergebnis der Emulation des digitalen Computer Interface GS232A/B ist eine funktionstüchtiges Arduino-Shield, sowie der dazugehörige Arduino mit entsprechender Software:
 \begin{figure}[H]
 	\begin{minipage}[b]{.4\linewidth} % [b] => Ausrichtung an \caption
 		\includegraphics[width=\linewidth]{../ref/PCB_Unten_GS232.jpeg}
@@ -387,4 +385,4 @@ Das Ergebnis der Emulation des digitalen Computer Interface GS232A/B ist eine fu
 	\caption{GS232A/B Emulator (Arduino und Shield)}
 \end{figure}
 
-Hinweis: Aufgrund eines - in der Zwischenzeit behobenen - Fehlers im Entwurf der Platine ist war Pin 1 der digitalen Schnittstelle mit Masse behoben. In den Bildern ist zu sehen wie dieser Fehler mit dem Durchbohren der Leiterbahn und einer Drahtbrücke behoben wurde.
+Hinweis: Aufgrund eines - in der Zwischenzeit behobenen - Fehlers im Entwurf der Platine war Pin 1 der digitalen Schnittstelle mit Masse verbunden. In den Bildern ist zu sehen wie dieser Fehler mit dem Durchbohren der Leiterbahn und einer Drahtbrücke behoben wurde.
