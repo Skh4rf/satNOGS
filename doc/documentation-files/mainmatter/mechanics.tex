@@ -129,9 +129,58 @@ Das Ergebnis ist ein modular platzierbarer und vielseitiger Schaltschrank:
 	\end{minipage}
 \end{figure}
 
-\section{Prinzipschaltbild}
+\section{Netzteil (+A01-T03)}
+Für die Stromversorgung des Raspberry Pi 4 sowie des im GS232A/B verbauten Arduino Uno wird das Schaltnetzteil S8VK-G01505 der OMRON Corporation verwendet. Das Netzteil kann mit einer Eingangsspannung von 100 bis 240 Volt und 50 Hertz betrieben werden und sorgt für eine Ausgangsspannung von 5 Volt. Mit einer maximalen Ausgangsleistung von  15 Watt ist es ausreichend groß dimensioniert um sowohl den Raspberry Pi 4 \cite{noauthor_power_nodate} als auch den Arduino Uno \cite{noauthor_r3_nodate} mit Strom zu versorgen. \cite{noauthor_s8vk-g01505_nodate}
+
+\section{Netzkabel (+A01-W01)}
+Das Netzkabel, mit einer Länge von 4.6 Metern außerhalb des Schaltschranks, versorgt die gesamte Empfangsstation mit Energie. Voraussetzung zum Betrieb der Empfangsstation ist es also, das Netzkabel mit einer Spannungsquelle (100 bis 120 oder 200 bis 240 Volt und 50 Hz) zu verbinden. Das verwendete Kabel ist ein H07BQ-F 3G1.5 der PATELEC Group \cite{noauthor_cables_nodate} und weißt dankt dem verwendeten Mantelmaterial Polyurethan eine gute UV-Beständigkeit auf \cite{noauthor_polyurethan_nodate}.
+
+\section{USB-Kabel (+A01-W02)}
+Das USB-Kabel ist ein USB-A zu USB-B Kabel und verbindet den Raspberry Pi 4 (USB-A) mit dem Arduino Uno (USB-B) der GS232-Interface Emulation. Abgesehen von der Kommunikation zwischen dem Raspberry Pi 4 und dem Arduino Uno, erfolgt auch die Stromversorgung des Arduinos über das USB-Kabel. Es handelt sich bei dem USB-Kabel um ein handelsübliches Kabel aus dem Eigenbestand ohne spezielle Eigenschaften, da es im Schaltschrank keinerlei mechanischen Belastung ausgesetzt ist.
+
+\section{5V-Kabel (+A01-W03)}
+Die Aufgabe des 5V-Kabels ist die Energieübertragung vom Netzteil zum Raspberry Pi 4. Die verwendete rot, schwarze Zwillingsleitung wird dazu vom Ausgang des Netzteils zu den auf dem Gehäuse des Netzteils angebrachten Verbindungsklemmen geführt. Der Zwischenschritt über die Verbindungsklemmen ermöglicht somit nicht nur eine leichteres Ein- und Ausbauen der Komponenten, sondern fördert auch die Skalierbarkeit im Bezug auf den Einbau weiterer elektronischer Komponenten welche eine 5 Volt Versorgungsspannung benötigen.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.25\linewidth]{../ref/Anschlussklemmen5V.jpeg}
+	\caption{Anschlussklemmen 5 Volt Versorgung}
+	\label{fig:anschlussklemmen}
+\end{figure}
+
+\section{DIN-Kabel (+A01-W04)}
+Als DIN-Kabel wird in diesem Fall jenes Kabel bezeichnet, welches zur Verbindung der GS232-Interface Emulation zum G-5500DC Controller verwendet wird und an einem Ende einen 8-Pol DIN-Rundstecker aufweist. Die Zuordnung der Farben des Kabels zu den PIN-Nummern des Steckers, welche im Kapitel \ref{subsubsec:emulation_analoge_schnittstelle} genauer erläutert wurde, sowie die Zuordnung zu den Bezeichnungen auf dem Arduino-Shield, welche im Kapitel \ref{subsec:hardware} erklärt wurde, lautet wie folgt:
+
+\begin{tabular}{c|c|c}
+	\textbf{Farbe} & \textbf{Pin-Nummer} & \textbf{Bezeichnung am Arduino-Shield} \\
+	\hline
+	Grün & 1 & V \\
+	Gelb & 2 & R \\
+	Grau & 3 & U \\
+	Weiß & 4 & L \\
+	Blau & 5 & D \\
+	Pink & 6 & H \\
+	Rot & 7 & Vin \\
+	Braun & 8 & GND \\
+\end{tabular}
+
+\section{Azimut-Kabel (+A01-W05)}
+\label{sec:azimutkabel}
+Das Azimut-Kabel dient zur Steuerung und Messung des Azimut-Rotors und wird im Kapitel \ref{subsubsec:kontrollkabel} als Kontrollkabel bezeichnet und seine Funktion genauer beschrieben. Mit einem Leiterquerschnitt von je 1.5 Millimetern erfüllt es die in Kapitel \ref{subsubsec:kontrollkabel} genannten Vorgaben und ist aufgrund des UV-Stabilisierten Außenmantels aus Polyvinylchlorid auch gegen irreparable Schäden durch Sonneneinstrahlung geschützt. Die Länge des Kabels außerhalb des Schaltschranks beträgt 4.8 Meter. 
+
+\section{Schuko 1 (+A01-X01)}
+\label{sec:schuko1}
+Die Schutzkontaktsteckdose dient der Energieversorgung von Geräten mit Netzstecker. Das verwendete Modell SD35DEA des Unternehmen SHC GmbH verfügt über eine grüne Status-LED, die leuchtet, sobald das Netzkabel des Schaltschranks an eine Energiequelle angeschlossen wird. Die Schutzkontaktsteckdose Schuko 1 ist als Reserve für mögliche weitere Geräte oder für temporäre Anwendungen wie z.B. das Laden eines Notebooks oder dem Ausleuchten des Schaltschranks eingebaut.
+
+\section{Schuko 2 (+A01-X02)}
+Die Schutzkontaktsteckdose Schuko 2 weist dieselben technischen Eigenschaften wie die Schutzkontaktsteckdose 1, welche in Kapitel \ref{sec:schuko1} beschrieben wird, auf. Die Schutzkontaktsteckdose Schuko 2 ist für die Energieversorgung des Yeasu G-5500DC Controllers vorgesehen, kann allerdings auch für jegliche andere Geräte verwendet werden.
+
+\section{Elevation-Kabel (+A01-W06)}
+Das Elevation-Kabel ist das Pendant zum Azimut-Kabel und dient der Steuerung und Messung des Elevation-Rotors. Die Eigenschaften entsprechen dem Kapitel \ref{sec:azimutkabel}.
+
+\section{Prinzipschaltplan}
 \begin{landscape}
-	\begin{figure}[H]
+	\begin{figure}
 		\centering
 		\includegraphics[width=\linewidth]{../ref/Prinzipschaltplan.jpg}
 		\caption{Prinzipschaltplan der Empfangsstation}

@@ -58,6 +58,7 @@ Um das Yaesu G-5500DC System möglichst Modular anwenden zu können, werden sein
 
 
 \subsubsection{Kontrollkabel vorbereiten und anschließen}
+\label{subsubsec:kontrollkabel}
 Für die Ansteuerung der Rotoren werden diese jeweils mit einem 7-Pol-Rundsteckverbinder zum Controller verbunden, wovon 5 Pole verwendet werden. Die Funktion der einzelnen Pins wird im Datenblatt \cite{noauthor_yaesu_nodate} nicht näher beschrieben, wurde allerdings messtechnisch wie folgt bestimmt:
 
 \begin{tabular}{| c | l | l |}
@@ -178,6 +179,7 @@ Eine der beiden zu emulierenden Schnittstellen ist die serielle Schnittstelle we
 \end{tabular}
 
 \subsubsection{Emulation der analogen Schnittstelle}
+\label{subsubsec:emulation_analoge_schnittstelle}
 Die Funktionsweise der analogen Schnittstelle, welche über den 8-Pol DIN-Stecker zum G-5500DC Controller verbunden ist, beziehungsweise der einzelnen Pins, wird im Datenblatt des Rotors \cite{noauthor_yaesu_nodate} wie folgt beschrieben:
 
 \begin{tabular}{| c | l |}
@@ -293,6 +295,7 @@ Aufgrund des beschränkten Programmspeicherplatzes auf dem Arduino Uno muss der 
 \end{lstlisting}
 
 \subsection{Hardware}
+\label{subsec:hardware}
 Bezüglich der Hardware wird ein sogenanntes Arduino-Shield entworfen welches über korrekt platzierte Stiftleisten einfach auf den Arduino Uno aufgesteckt werden kann. Eine Schaltung sowie ein PCB-Layout für diesen Anwendungsfall wurden bereits von Mitgliedern der "librespacefoundation"  veröffentlicht \cite{noauthor_librespacefoundation_nodate}, können aber aufgrund falsch dimensionierter Bauteilwerte und nicht richtig platzierten Bauteilen nur als grober Leitfaden verwendet werden. Die aus diesem Grund selbstentworfene Schaltung, kann in zwei Blöcke unterteilt werden: die Filterung der Messsignale und die Ausgangstreiber für die Steuerung des Rotors.  
 
 \subsubsection{Filtern der Messsignale}
