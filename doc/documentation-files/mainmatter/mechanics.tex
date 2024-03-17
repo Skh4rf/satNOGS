@@ -37,45 +37,49 @@ Zur weiteren Differenzierung werden Ortskennzeichen angewandt. Die verwendeten S
 
 Im Zuge dieses Kennzeichnungsprozesses ergibt sich folgende Zuordnung:
 
-\begin{tabular}{|l|c||l|c|}
-	\hline
-	\textbf{Betriebsmittel} & \textbf{Kennzeichnung} & \textbf{Betriebsmittel} & \textbf{Kennzeichnung} \\
-	\hline
-	Schaltschrank & -A01 & Schuko 2 & +A01-X02 \\
-	\hline
-	Helix-Gerüst (\ref{subsec:helix_geruest}) & -A03 & Rotor (Azimut) (\ref{sec:yaesug5500dc}) & +A03-M01 \\
-	\hline
-	QFH-Antenne (\ref{chap:qfh}) & -T01 & Rotor (Elevation) (\ref{sec:yaesug5500dc}) & +A03-M02 \\
-	\hline
-	Raspberry Pi 4 QUERVERWEIS & +A01-A02 & RF-Power-Combiner (\ref{chap:helix}) & +A03-T04 \\
-	\hline
-	Rotor-Controller (\ref{sec:yaesug5500dc}) & +A01-K01 & Helix-Antenne 1 (\ref{chap:helix}) & +A03-T11 \\
-	\hline
-	GS232-Interface Emulation (\ref{sec:gs232emulation}) & +A01-K02 & Helix-Antenne 2 (\ref{chap:helix}) & +A03-T12 \\
-	\hline
-	SDR QUERVERWEIS & +A01-K03 & Helix-Antenne 3 (\ref{chap:helix}) & +A03-T13 \\
-	\hline
-	Netzteil & +A01-T03 & Helix-Antenne 4 (\ref{chap:helix}) & +A03-T14 \\
-	\hline
-	Netzkabel & +A01-W01 & Antennenkabel Helix 1 & +A03-W08 \\
-	\hline
-	USB-Kabel & +A01-W02 & Antennenkabel Helix 2 & +A03-W09 \\
-	\hline
-	5V-Kabel & +A01-W03 & Antennenkabel Helix 3 & +A03-W10 \\
-	\hline
-	DIN-Kabel & +A01-W04 & Antennenkabel Helix 4 & +A03-W11 \\
-	\hline
-	Azimut-Kabel & +A01-W05 & Antennenkabel Array & +A03-W12 \\
-	\hline
-	Elevation-Kabel & +A01-W06 & LNA  & +T01-T02 \\
-	\hline
-	Schuko1 & +A01-X01 & Antennen-Kabel & +T01-W07 \\
-	\hline
-\end{tabular}
+\begin{table}
+	\small
+	\begin{tabular}{|l|c||l|c|}
+		\hline
+		\textbf{Betriebsmittel} & \textbf{Kennzeichnung} & \textbf{Betriebsmittel} & \textbf{Kennzeichnung} \\
+		\hline
+		Schaltschrank (\ref{sec:Schaltschrank}) & -A01 & Schuko 2 (\ref{sec:schuko2}) & +A01-X02 \\
+		\hline
+		Helix-Gerüst (\ref{subsec:helix_geruest}) & -A03 & Rotor (Azimut) (\ref{sec:yaesug5500dc}) & +A03-M01 \\
+		\hline
+		QFH-Antenne (\ref{chap:qfh}) & -T01 & Rotor (Elevation) (\ref{sec:yaesug5500dc}) & +A03-M02 \\
+		\hline
+		Raspberry Pi 4 (\ref{chap:gs-setup}) & +A01-A02 & RF-Power-Combiner (\ref{chap:helix}) & +A03-T04 \\
+		\hline
+		Rotor-Controller (\ref{sec:yaesug5500dc}) & +A01-K01 & Helix-Antenne 1 (\ref{chap:helix}) & +A03-T11 \\
+		\hline
+		GS232-Interface (\ref{sec:gs232emulation}) & +A01-K02 & Helix-Antenne 2 (\ref{chap:helix}) & +A03-T12 \\
+		\hline
+		SDR (\ref{sec:sdr}) & +A01-K03 & Helix-Antenne 3 (\ref{chap:helix}) & +A03-T13 \\
+		\hline
+		Netzteil (\ref{sec:Netzteil}) & +A01-T03 & Helix-Antenne 4 (\ref{chap:helix}) & +A03-T14 \\
+		\hline
+		Netzkabel (\ref{sec:Netzkabel}) & +A01-W01 & Antennenkabel Helix 1 (\ref{sec:Antennenkabel-Helix}) & +A03-W08 \\
+		\hline
+		USB-Kabel (\ref{sec:USB-Kabel}) & +A01-W02 & Antennenkabel Helix 2 (\ref{sec:Antennenkabel-Helix}) & +A03-W09 \\
+		\hline
+		5V-Kabel (\ref{sec:5V-Kabel}) & +A01-W03 & Antennenkabel Helix 3 (\ref{sec:Antennenkabel-Helix}) & +A03-W10 \\
+		\hline
+		DIN-Kabel (\ref{sec:DIN-Kabel}) & +A01-W04 & Antennenkabel Helix 4 (\ref{sec:Antennenkabel-Helix}) & +A03-W11 \\
+		\hline
+		Azimut-Kabel (\ref{sec:azimutkabel}) & +A01-W05 & Antennenkabel Array (\ref{sec:Antennenkabel-Helix}) & +A03-W12 \\
+		\hline
+		Elevation-Kabel (\ref{sec:Elevation-Kabel}) & +A01-W06 & LNA  (\ref{sec:LNA}) & +T01-T02 \\
+		\hline
+		Schuko1 (\ref{sec:schuko1}) & +A01-X01 & Antennen-Kabel (\ref{sec:Antennen-Kabel-QFH}) & +T01-W07 \\
+		\hline
+	\end{tabular}
+\end{table}
 
 Die in vorhergehenden Kapiteln noch nicht erwähnten Betriebsmittel und ihre Funktion werden nun im Zuge dieses Kapitels erläutert. 
 
-\section{Schaltschrank (+A01)}
+\section{Schaltschrank}
+\label{sec:Schaltschrank}
 Die Aufgabe des Schaltschranks ist es, abgesehen von der Antennen, dem Rotor und des LNAs alle weiteren Komponenten der Empfangsstation vor UV-Strahlung und Wetter zu schützen. Ein weitere positiver Effekt der sich dadurch ergibt, ist die Flexibilität die ein solcher Schaltschrank bietet. Positionswechsel der Bodenstation erfordern somit nur den Transport der Antenne und des Schaltschranks und können mit geringerer Anzahl an ein- und ausstecken der Kabel durchgeführt werden.
 
 Als Schaltschrank wird ein Stahlblech-Wandgehäuse der Argentina Reihe des Unternehmens IDE ELECTRIC, S.L. mit Außenmaßen von 400mm Höhe, 400mm Breite und 250mm Tiefe verwendet. Mit einer im Datenblatt \cite{ide_electric_sl_datenblatt_nodate} angegebenen IP66 Schutzklasse und UV-Schutz-Beschichtung erfüllt er die Voraussetzungen, um den von der Umwelt ausgehenden mechanischen Belastungen standzuhalten. Die erste Kennziffer der IP66 Schutzklasse garantiert Staubdichtigkeit und die zweite Kennziffer Schutz gegen starkes Strahlwasser und Überflutung \cite{lienig_elektronische_2014} (Seite 53).
@@ -130,16 +134,23 @@ Das Ergebnis ist ein modular platzierbarer und vielseitiger Schaltschrank:
 	\end{minipage}
 \end{figure}
 
-\section{Netzteil (+A01-T03)}
+\section{SDR}
+\label{sec:sdr}
+
+\section{Netzteil}
+\label{sec:Netzteil}
 Für die Stromversorgung des Raspberry Pi 4 sowie des im GS232A/B verbauten Arduino Uno wird das Schaltnetzteil S8VK-G01505 der OMRON Corporation verwendet. Das Netzteil kann mit einer Eingangsspannung von 100 bis 240 Volt und 50 Hertz betrieben werden und sorgt für eine Ausgangsspannung von 5 Volt. Mit einer maximalen Ausgangsleistung von  15 Watt ist es ausreichend groß dimensioniert um sowohl den Raspberry Pi 4 \cite{noauthor_power_nodate} als auch den Arduino Uno \cite{noauthor_r3_nodate} mit Strom zu versorgen. \cite{noauthor_s8vk-g01505_nodate}
 
-\section{Netzkabel (+A01-W01)}
-Das Netzkabel, mit einer Länge von 4.6 Metern außerhalb des Schaltschranks, versorgt die gesamte Empfangsstation mit Energie. Voraussetzung zum Betrieb der Empfangsstation ist es also, das Netzkabel mit einer Spannungsquelle (100 bis 120 oder 200 bis 240 Volt und 50 Hz) zu verbinden. Das verwendete Kabel ist ein H07BQ-F 3G1.5 der PATELEC Group \cite{noauthor_cables_nodate} und weißt dankt dem verwendeten Mantelmaterial Polyurethan eine gute UV-Beständigkeit auf \cite{noauthor_polyurethan_nodate}.
+\section{Netzkabel}
+\label{sec:Netzkabel}
+Das Netzkabel, mit einer Länge von 4.6 Metern außerhalb des Schaltschranks, versorgt die gesamte Empfangsstation mit Energie. Voraussetzung zum Betrieb der Empfangsstation ist es also, das Netzkabel mit einer Spannungsquelle (100 bis 120 oder 200 bis 240 Volt und 50 Hz) zu verbinden. Das verwendete Kabel ist ein H07BQ-F 3G1.5 der PATELEC Group \cite{noauthor_cables_nodate} und weißt dank dem verwendeten Mantelmaterial Polyurethan eine gute UV-Beständigkeit auf \cite{noauthor_polyurethan_nodate}.
 
-\section{USB-Kabel (+A01-W02)}
+\section{USB-Kabel}
+\label{sec:USB-Kabel}
 Das USB-Kabel ist ein USB-A zu USB-B Kabel und verbindet den Raspberry Pi 4 (USB-A) mit dem Arduino Uno (USB-B) der GS232-Interface Emulation. Abgesehen von der Kommunikation zwischen dem Raspberry Pi 4 und dem Arduino Uno, erfolgt auch die Stromversorgung des Arduinos über das USB-Kabel. Es handelt sich bei dem USB-Kabel um ein handelsübliches Kabel aus dem Eigenbestand ohne spezielle Eigenschaften, da es im Schaltschrank keinerlei mechanischen Belastung ausgesetzt ist.
 
-\section{5V-Kabel (+A01-W03)}
+\section{5V-Kabel}
+\label{sec:5V-Kabel}
 Die Aufgabe des 5V-Kabels ist die Energieübertragung vom Netzteil zum Raspberry Pi 4. Die verwendete rot, schwarze Zwillingsleitung wird dazu vom Ausgang des Netzteils zu den auf dem Gehäuse des Netzteils angebrachten Verbindungsklemmen geführt. Der Zwischenschritt über die Verbindungsklemmen ermöglicht somit nicht nur eine leichteres Ein- und Ausbauen der Komponenten, sondern fördert auch die Skalierbarkeit im Bezug auf den Einbau weiterer elektronischer Komponenten welche eine 5 Volt Versorgungsspannung benötigen.
 
 \begin{figure}[H]
@@ -149,7 +160,8 @@ Die Aufgabe des 5V-Kabels ist die Energieübertragung vom Netzteil zum Raspberry
 	\label{fig:anschlussklemmen}
 \end{figure}
 
-\section{DIN-Kabel (+A01-W04)}
+\section{DIN-Kabel}
+\label{sec:DIN-Kabel}
 Als DIN-Kabel wird in diesem Fall jenes Kabel bezeichnet, welches zur Verbindung der GS232-Interface Emulation zum G-5500DC Controller verwendet wird und an einem Ende einen 8-Pol DIN-Rundstecker aufweist. Die Zuordnung der Farben des Kabels zu den PIN-Nummern des Steckers, welche im Kapitel \ref{subsubsec:emulation_analoge_schnittstelle} genauer erläutert wurde, sowie die Zuordnung zu den Bezeichnungen auf dem Arduino-Shield, welche im Kapitel \ref{subsec:hardware} erklärt wurde, lautet wie folgt:
 
 \begin{tabular}{c|c|c}
@@ -165,24 +177,28 @@ Als DIN-Kabel wird in diesem Fall jenes Kabel bezeichnet, welches zur Verbindung
 	Braun & 8 & GND \\
 \end{tabular}
 
-\section{Azimut-Kabel (+A01-W05)}
+\section{Azimut-Kabel}
 \label{sec:azimutkabel}
 Das Azimut-Kabel dient zur Steuerung und Messung des Azimut-Rotors und wird im Kapitel \ref{subsubsec:kontrollkabel} als Kontrollkabel bezeichnet und seine Funktion genauer beschrieben. Mit einem Leiterquerschnitt von je 1.5 Millimetern erfüllt es die in Kapitel \ref{subsubsec:kontrollkabel} genannten Vorgaben und ist aufgrund des UV-Stabilisierten Außenmantels aus Polyvinylchlorid auch gegen irreparable Schäden durch Sonneneinstrahlung geschützt. Die Länge des Kabels außerhalb des Schaltschranks beträgt 4.8 Meter. 
 
-\section{Elevation-Kabel (+A01-W06)}
+\section{Elevation-Kabel}
+\label{sec:Elevation-Kabel}
 Das Elevation-Kabel ist das Pendant zum Azimut-Kabel und dient der Steuerung und Messung des Elevation-Rotors. Die Eigenschaften entsprechen dem Kapitel \ref{sec:azimutkabel}.
 
-\section{Schuko 1 (+A01-X01)}
+\section{Schuko 1}
 \label{sec:schuko1}
 Die Schutzkontaktsteckdose dient der Energieversorgung von Geräten mit Netzstecker. Das verwendete Modell SD35DEA des Unternehmen SHC GmbH verfügt über eine grüne Status-LED, die leuchtet, sobald das Netzkabel des Schaltschranks an eine Energiequelle angeschlossen wird. Die Schutzkontaktsteckdose Schuko 1 ist als Reserve für mögliche weitere Geräte oder für temporäre Anwendungen wie z.B. das Laden eines Notebooks oder dem Ausleuchten des Schaltschranks eingebaut.
 
-\section{Schuko 2 (+A01-X02)}
+\section{Schuko 2}
+\label{sec:schuko2}
 Die Schutzkontaktsteckdose Schuko 2 weist dieselben technischen Eigenschaften wie die Schutzkontaktsteckdose 1, welche in Kapitel \ref{sec:schuko1} beschrieben wird, auf. Die Schutzkontaktsteckdose Schuko 2 ist für die Energieversorgung des Yeasu G-5500DC Controllers vorgesehen, kann allerdings auch für jegliche andere Geräte verwendet werden.
 
-\section{Antennenkabel Helix und Array (+A03-W09 bis W12)}
+\section{Antennenkabel Helix und Array}
+\label{sec:Antennenkabel-Helix}
 Die Antennenkabel +A03-W09 bis W12 des Typ RG58 C/U führen von den Antennen zum RF-Combiner mit einer Länge von insgesamt 1.25m pro Kabel. Entsprechend der RG58 C/U Bezeichnung weisen die Kabel einen Wellenwiderstand von 50 Ohm sowie \cite{noauthor_rg_nodate} eine Dämpfung von 0.3 Dezibel pro Meter bei 400 Megahertz \cite{noauthor_vergleich_nodate}. 
 
-\section{LNA (+T01-T02)}
+\section{LNA}
+\label{sec:LNA}
 Die Leistung einer Antenne lässt sich in einer Gütezahl angeben die als gain-to-noise-temperature, kurz G/T, bezeichnet wird. Diese G/T ist eine positive Zahl die mit steigender Performanz der Antenne zunimmt. Um diese zu verbessern muss entweder der Gewinn der Antenne vergrößert oder der relative Rauschanteil im Signal verringert werden. Weil das Vergrößern des Gewinns einer omnidirektionalen Antenne sich als sehr schwierig gestaltet und in den meisten Fällen in einer gerichteten Antenne mündet, muss der Rauschanteil abnehmen. Um dies zu tun wird das Wideband LNA von RTL-SDR.com in der Signalkette direkt nach der Antenne verwendet. Im Vergleich zum SDR, welches ursprünglich alleine die Aufgabe hatte das Signal der Antenne zu Verstärken, weist das Wideband LNA mit 0.52 Dezibel bei 800 MHz eine sehr geringe Rauschzahl auf. \cite{noauthor_new_nodate} \cite{noauthor_omnidirectional_nodate}
 
 \begin{figure}[H]
@@ -194,7 +210,8 @@ Die Leistung einer Antenne lässt sich in einer Gütezahl angeben die als gain-t
 
 Die Verstärkung des Wideband LNAs entspricht laut gezeigter Grafik des Herstellers etwa 22.5 Dezibel bei 433 Megahertz.
 
-\section{Antennen-Kabel (+T01-W07)}
+\section{Antennen-Kabel}
+\label{sec:Antennen-Kabel-QFH}
 Das Antennen-Kabel +T01-W07 wird für die Verbindung des SDR mit dem Ausgang des LNAs verwendet und weist eine Länge von insgesamt 3 Metern auf. Das Kabel entspricht dem Typ RG174 und weist somit neben einer Wellenimpedanz von 50 Ohm eine Streckendämpfung von 0.7 Dezibel pro Meter bei 432 Megahertz auf \cite{noauthor_dunnes_nodate}.
 
 \section{Prinzipschaltplan}
@@ -292,4 +309,6 @@ Durch das Klicken auf eine Observation öffnet sich eine weitere Seite die sowoh
 
 Ist im Wasserfalldiagramm ein dem Transmitter-Mode entsprechendes Signal zu erkennen, so kann die Observation dementsprechend über die mit \textbf{1} markierten Buttons bewertet werden.
 
+\section{SDR-Server starten}
 
+\section{geeignete Gain ermitteln}
