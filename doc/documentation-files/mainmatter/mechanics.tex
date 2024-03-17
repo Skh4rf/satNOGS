@@ -210,18 +210,86 @@ Der nachfolgende Prinzipschaltplan dient dem Zweck, Anwenderinnen und Anwendern 
 \end{landscape}
 
 \section{Observation planen}
+\subsection{Voraussetzung}
 Um eine Observation mit der Empfangsstation planen zu können, wird Benutzerkonto im SatNOGS Netzwerk mit der entsprechenden Berechtigung benötigt. Folgende Matrix erläutert die möglichen Aktionen die gemäß der Art des Benutzerkontos durchgeführt werden können.
 
 \begin{figure} [H]
 	\centering
 	\includegraphics[width=\linewidth]{../ref/network_permission_matrix.png}
-	\caption{SatNOGS Netzwerkberechtigungsmatrix}
+	\caption{SatNOGS Netzwerkberechtigungsmatrix \cite{noauthor_operation_nodate}}
 	\label{fig:networkpermissionmatrix}
 \end{figure}
 
+\subsection{Observation auswählen}
+Auf der Seite der Empfangsstation (hier: https://network.satnogs.org/stations/3307/) können über den Reiter \textbf{Future Passes}  die in der Zukunft passierenden Satelliten angezeigt werden.
 
-	
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=\linewidth]{../ref/schedule_observation_futurepass.png}
+	\caption{Landingpage HTLR-UHF(Test) Empfangsstation \cite{noauthor_satnogs_nodate}}
+	\label{fig:htrl-uhf(test)landingpage}
+\end{figure}
 
+Die folgende Abbildung zeigt die zukünftig passierenden Satelliten und ausgewählte Informationen über die potenzielle Observation.
 
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=\linewidth]{../ref/schedule_observation_infos.png}
+	\caption{HTLR-UHF(Test) Empfangsstation - zukünftige Passierungen \cite{noauthor_satnogs_nodate}}
+	\label{fig:htrl-uhf(test)futurepasses}
+\end{figure}
+
+Entsprechend der Beschriftung geben die Informationen Aufschluss über folgende Eigenschaften:
+
+\textbf{1}: Status der bereits betätigten Observation. Wobei Grün für Erfolgreich, Orange für unbewertet, Rot für Fehlgeschlagen und Blau für zukünftig steht.\newline
+
+\textbf{2}: Beginn des Signalempfangs (AOS - Acquisition of Signal) \newline
+
+\textbf{3}: Zeitpunkt des Signalverlusts (LOS - Loss of Signal) \newline
+
+\textbf{4}: von oben nach unten: Azimut zum Zeitpunkt AOS, Azimut zum Zeitpunk der geringsten Entfernung vom Satellit zur Empfangsstation, Azimut zum Zeitpunkt LOS \newline
+
+\textbf{5}: Der Polar-Plot zeigt den Elevationswinkel (Entfernung zum Mittelpunkt) sowie den Azimutalwinkel (Angegeben durch die Himmelsrichtungen) während der Observation an. Der grüne Punkt Kennzeichnet den AOS-Zeitpunkt und der rote Punkt den LOS-Zeitpunkt.
+
+Über den mit \textbf{6} markierten Button kann die Observation in einem weiteren Fenster, wie in nachfolgender Grafik gezeigt, konfiguriert und durchgeführt werden.
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=\linewidth]{../ref/schedule_observation_schedule.png}
+	\caption{HTLR-UHF(Test) Empfangsstation - Observation konfigurieren und starten} \cite{noauthor_satnogs_nodate}
+	\label{fig:htrl-uhf(test)configureobservation}
+\end{figure}
+
+Das mit \textbf{1} markierte Dropdown-Menü zeigt den zur Observation ausgewählten Satelliten an und über das mit \textbf{2} markierte können die vorhandenen Sender des Satelliten angezeigt und ausgewählt werden. Mithilfe der mit \textbf{4} markierten Eingabefelder kann Start- und Endzeitpunkt der Observation konfiguriert werden. Das mit \textbf{3} markierte Feld zeigt die zur Observation ausgewählte Empfangsstation an. Mit einem Klick auf den mit \textbf{5} markierten Button \textbf{Schedule} wird die Observation geplant und startet automatisch zum konfigurierten Zeitpunkt.
+
+\subsection{Observation auswerten}
+Um die Observationen einer Empfangsstation anzuzeigen wird auf den in der nächsten Grafik mit \textbf{1} markierten Button auf der Landingpage der Empfangsstation gedrückt.
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=\linewidth]{../ref/show_observation.png}
+	\caption{HTLR-UHF(Test) Empfangsstation - Observationen anzeigen} \cite{noauthor_satnogs_nodate}
+	\label{fig:htrl-uhf(test)showobservations}
+\end{figure}
+
+Die somit erschienene Übersicht zeigt alle mit dieser Station getätigten und zukünftigen Observationen an.
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=.75\linewidth]{../ref/overview_observations.png}
+	\caption{HTLR-UHF(Test) Empfangsstation - Übersicht Observationen} \cite{noauthor_satnogs_nodate}
+	\label{fig:htrl-uhf(test)overviewobservations}
+\end{figure}
+
+Durch das Klicken auf eine Observation öffnet sich eine weitere Seite die sowohl die allgemeinen Informationen zur Observation als auch die Ergebnis in Form eines Wasserfalldiagramms, einer Audiospur sowie dekodierter Daten enthält. 
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=\linewidth]{../ref/vet_observation.png}
+	\caption{HTLR-UHF(Test) Empfangsstation - Observation auswerten} \cite{noauthor_satnogs_nodate}
+	\label{fig:htrl-uhf(test)vetobservation}
+\end{figure}
+
+Ist im Wasserfalldiagramm ein dem Transmitter-Mode entsprechendes Signal zu erkennen, so kann die Observation dementsprechend über die mit \textbf{1} markierten Buttons bewertet werden.
 
 
