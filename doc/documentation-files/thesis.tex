@@ -11,8 +11,11 @@
 
 \documentclass[hidelinks,12pt,a4paper,twoside]{report}
 \usepackage{Rusch-Vorlage}
+
 \bibliography{references.bib} %mehrsprachiges Bibliotheks(Literatur-)verzeichnis
+
 \counterwithout{figure}{chapter} 
+\counterwithout{equation}{chapter}
 %TITELBLATT FÜR RUSCH
 %---------------------------------------------------------
 \pagestyle{fancy}
@@ -32,8 +35,8 @@
 \usepackage{listings}
 \usepackage{color}
 \usepackage{lscape}
+\begin{document}
 
-\begin{document}	
 	% Titelseite
 	\begin{center}
 		\textbf {\huge {\uppercase {Diplomarbeit}}}
