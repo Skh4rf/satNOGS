@@ -2,6 +2,7 @@
 Als Empfangsstation wird das Gesamtsystem bezeichnet welches alle Komponenten beinhaltet die für den Empfang von Satellitendaten benötigt werden. In diesem Kapitel soll das Zusammenspiel der Komponenten und die Funktionsweise bisher noch unbehandelter Komponenten geklärt werden.
 
 \section{Betriebsmittelkennzeichnung}
+\label{sec:bmk}
 Um alle Objekte innerhalb des Systems jederzeit eindeutig identifizieren zu können werden diese nach OVE EN IEC 81346-2 einer Referenzkennzeichnung unterzogen. Die benötigten Kennbuchstaben sind:
 
 \begin{tabular}{|c|l|}
@@ -104,7 +105,7 @@ Der Schaltschrank verfügt an der Außenseite über keinerlei Anschlüsse. Die K
 Die unbeschriftete Schraubverbindung in der Abbildung dient als Reserve für mögliche Erweiterungen.
 
 \subsection{Standfüße}
-Um den Schaltschrank flexibel platzieren zu können wurden zwei Standfüße aus 8 Millimeter Eisenblech zusammengeschweißt und mit Gummifüßen versehen. 
+Um den Schaltschrank flexibel platzieren zu können wurden zwei Standfüße aus 10 Millimeter Chromstahlblech zusammengeschweißt und mit Gummifüßen versehen. 
 
 \begin{figure}[H]
 	\centering
@@ -168,6 +169,9 @@ Als DIN-Kabel wird in diesem Fall jenes Kabel bezeichnet, welches zur Verbindung
 \label{sec:azimutkabel}
 Das Azimut-Kabel dient zur Steuerung und Messung des Azimut-Rotors und wird im Kapitel \ref{subsubsec:kontrollkabel} als Kontrollkabel bezeichnet und seine Funktion genauer beschrieben. Mit einem Leiterquerschnitt von je 1.5 Millimetern erfüllt es die in Kapitel \ref{subsubsec:kontrollkabel} genannten Vorgaben und ist aufgrund des UV-Stabilisierten Außenmantels aus Polyvinylchlorid auch gegen irreparable Schäden durch Sonneneinstrahlung geschützt. Die Länge des Kabels außerhalb des Schaltschranks beträgt 4.8 Meter. 
 
+\section{Elevation-Kabel (+A01-W06)}
+Das Elevation-Kabel ist das Pendant zum Azimut-Kabel und dient der Steuerung und Messung des Elevation-Rotors. Die Eigenschaften entsprechen dem Kapitel \ref{sec:azimutkabel}.
+
 \section{Schuko 1 (+A01-X01)}
 \label{sec:schuko1}
 Die Schutzkontaktsteckdose dient der Energieversorgung von Geräten mit Netzstecker. Das verwendete Modell SD35DEA des Unternehmen SHC GmbH verfügt über eine grüne Status-LED, die leuchtet, sobald das Netzkabel des Schaltschranks an eine Energiequelle angeschlossen wird. Die Schutzkontaktsteckdose Schuko 1 ist als Reserve für mögliche weitere Geräte oder für temporäre Anwendungen wie z.B. das Laden eines Notebooks oder dem Ausleuchten des Schaltschranks eingebaut.
@@ -175,10 +179,27 @@ Die Schutzkontaktsteckdose dient der Energieversorgung von Geräten mit Netzstec
 \section{Schuko 2 (+A01-X02)}
 Die Schutzkontaktsteckdose Schuko 2 weist dieselben technischen Eigenschaften wie die Schutzkontaktsteckdose 1, welche in Kapitel \ref{sec:schuko1} beschrieben wird, auf. Die Schutzkontaktsteckdose Schuko 2 ist für die Energieversorgung des Yeasu G-5500DC Controllers vorgesehen, kann allerdings auch für jegliche andere Geräte verwendet werden.
 
-\section{Elevation-Kabel (+A01-W06)}
-Das Elevation-Kabel ist das Pendant zum Azimut-Kabel und dient der Steuerung und Messung des Elevation-Rotors. Die Eigenschaften entsprechen dem Kapitel \ref{sec:azimutkabel}.
+\section{Antennenkabel Helix und Array (+A03-W09 bis W12)}
+Die Antennenkabel +A03-W09 bis W12 des Typ RG58 C/U führen von den Antennen zum RF-Combiner mit einer Länge von insgesamt 1.25m pro Kabel. Entsprechend der RG58 C/U Bezeichnung weisen die Kabel einen Wellenwiderstand von 50 Ohm sowie \cite{noauthor_rg_nodate} eine Dämpfung von 0.3 Dezibel pro Meter bei 400 Megahertz \cite{noauthor_vergleich_nodate}. 
+
+\section{LNA (+T01-T02)}
+Die Leistung einer Antenne lässt sich in einer Gütezahl angeben die als gain-to-noise-temperature, kurz G/T, bezeichnet wird. Diese G/T ist eine positive Zahl die mit steigender Performanz der Antenne zunimmt. Um diese zu verbessern muss entweder der Gewinn der Antenne vergrößert oder der relative Rauschanteil im Signal verringert werden. Weil das Vergrößern des Gewinns einer omnidirektionalen Antenne sich als sehr schwierig gestaltet und in den meisten Fällen in einer gerichteten Antenne mündet, muss der Rauschanteil abnehmen. Um dies zu tun wird das Wideband LNA von RTL-SDR.com in der Signalkette direkt nach der Antenne verwendet. Im Vergleich zum SDR, welches ursprünglich alleine die Aufgabe hatte das Signal der Antenne zu Verstärken, weist das Wideband LNA mit 0.52 Dezibel bei 800 MHz eine sehr geringe Rauschzahl auf. \cite{noauthor_new_nodate} \cite{noauthor_omnidirectional_nodate}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.75\linewidth]{../ref/wideband_lna_gain.png}
+	\caption{Verstärkung des Wideband LNAs in Abhängigkeit der Frequenz \cite{noauthor_new_nodate}}
+	\label{fig:wideband_lna_gain}
+\end{figure}
+
+Die Verstärkung des Wideband LNAs entspricht laut gezeigter Grafik des Herstellers etwa 22.5 Dezibel bei 433 Megahertz.
+
+\section{Antennen-Kabel (+T01-W07)}
+Das Antennen-Kabel +T01-W07 wird für die Verbindung des SDR mit dem Ausgang des LNAs verwendet und weist eine Länge von insgesamt 3 Metern auf. Das Kabel entspricht dem Typ RG174 und weist somit neben einer Wellenimpedanz von 50 Ohm eine Streckendämpfung von 0.7 Dezibel pro Meter bei 432 Megahertz auf \cite{noauthor_dunnes_nodate}.
 
 \section{Prinzipschaltplan}
+Der nachfolgende Prinzipschaltplan dient dem Zweck, Anwenderinnen und Anwendern einen guten Überblick über die verbaute Hardware und dessen Verkabelung zu bekommen. Hierzu wurden die, im Rahmen der Betriebsmittelkennzeichnung in Kapitel \ref{sec:bmk}, festgelegten Kennzeichnungen im Prinzipschaltplan berücksichtigt, sowie die Komponenten in Realität dementsprechend beschriftet.
+
 \begin{landscape}
 	\begin{figure}
 		\centering
@@ -187,6 +208,18 @@ Das Elevation-Kabel ist das Pendant zum Azimut-Kabel und dient der Steuerung und
 		\label{fig:prinzipschaltplan}
 	\end{figure}
 \end{landscape}
+
+\section{Observation planen}
+Um eine Observation mit der Empfangsstation planen zu können, wird Benutzerkonto im SatNOGS Netzwerk mit der entsprechenden Berechtigung benötigt. Folgende Matrix erläutert die möglichen Aktionen die gemäß der Art des Benutzerkontos durchgeführt werden können.
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=\linewidth]{../ref/network_permission_matrix.png}
+	\caption{SatNOGS Netzwerkberechtigungsmatrix}
+	\label{fig:networkpermissionmatrix}
+\end{figure}
+
+
 	
 
 
