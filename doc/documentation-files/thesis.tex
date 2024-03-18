@@ -1,5 +1,6 @@
 %% LLT: Turn off some annoying warnings...
 \RequirePackage{silence}
+\RequirePackage{fancyhdr}
 \WarningFilter{titlesec}{Non standard sectioning command}
 \WarningFilter{scrreprt}{Usage of package}
 \WarningFilter{scrreprt}{Activating an ugly workaround}
@@ -29,7 +30,7 @@
 \rhead{\includegraphics[height=1.04cm]{../ref/HTL_Rankweil_logo.png} \hspace{0.2cm}}
 
 % Fußzeile
-\fancyfoot{} 
+\fancyfoot{}
 \usepackage{listings}
 \usepackage{geometry}
 \usepackage{listings}
@@ -99,7 +100,7 @@
 	%\clearpage
 	\newpage
 	
-	\pagestyle{plain}
+
 	\input{frontbackmatter/eidesstattliche_erklärung.tex}
 	\input{frontbackmatter/abkürzungen+hinweise.tex}
 	\tableofcontents				% display table of contents
@@ -127,6 +128,7 @@
 	\pagenumbering{arabic}			% arabic page numbering
 	\setcounter{page}{1}			% set page counter
 	%\pagestyle{maincontentstyle} 	% fancy header and footer
+	\pagestyle{plain}
 	
 	\input{mainmatter/introduction.tex} % INCLUDE Introduction
 	\newpage
@@ -146,7 +148,6 @@
 	\input{mainmatter/conclusion.tex}   % INCLUDE Conclusion
 	\newpage
 	\input{mainmatter/perspectives.tex} % INCLUDE Perspectives
-	
 	
 	% -------------------------- 
 	% Back matter
