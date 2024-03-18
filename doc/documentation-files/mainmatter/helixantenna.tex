@@ -80,20 +80,21 @@ Die Helixantenne benötigt zur Funktion nur zwei Bauteile: die Spirale und den R
 	\hline
 	2 & Teflon-Rundlinge & \O 10mm 2m & UV-resistent & 4x \\
 	\hline
-	3 & Aluminiumrohr & 18x2mm 5,2m & & 4x \\
+	3 & PVC-Rohrschelle & toleriert 16-18mm & UV-stabilisiert & 44x \\
 	\hline
-	4 & Runde Aluminiumplatte & \O 520x3mm & & 4x \\
+	4 & Aluminiumrohr & 18x2mm 5,2m & & 4x \\
 	\hline
-	5 & Rohrflansch (Antenne) & \O innen 51mm &  & 4x \\
+	5 & Runde Aluminiumplatte & \O 520x3mm & & 4x \\
 	\hline
-	6 & Rohrflansch (Struktur) & \O innen 45mm &  & 2x \\
+	6 & Rohrflansch (Antenne) & \O innen 51mm &  & 4x \\
 	\hline
-	6 & Rohrflansch (Struktur) & \O innen 45mm &  & 2x \\
+	7 & Linsenkopf Kunststoffschrauben & M6x10mm &  & 44x \\
 	\hline
-	7 & Linsenkopf Kunststoffschrauben & M6x10mm &  & 11x \\
+	8 & Sechskant Kunststoffmuttern & M10 &  & 88x \\
 	\hline
-	6 & Kunststoffmuttern & M10 &  & 22x \\
 \end{tabular}
+
+\textbf{Anmerkung: Die Menge gilt für vier Helixantennen.}
 
 Auf dem PVC-Rohr wird die Helix der Antenne montiert, dieses ist UV-stabilisiert. Wäre der Kunststoff nicht gegen UV-Strahlung geschützt, so würde dieser nach einer Zeit spröde und strukturell unzuverlässig.
 
@@ -108,7 +109,7 @@ Das gewählte Material ist PTFE, da es eine sehr niedrige elektrische Permittivi
 	\caption{Realer Abstandhalter}
 \end{figure}
 
-An dem realen Bauteil lässt sich erkennen, dass das Außengewinde ungefähr bis zur Hälfte der Teflonstange geschnitten ist. Der Stab wird mit dem Gewinde zuerst in die Löcher des PVC-Rohres gesteckt, damit dieser von vorne und hinten mit M10-Kunststoffmuttern an das Rohr geschraubt werden kann.
+Ein Abstandhalter ist ungefähr 150mm lang, das Außengewinde wird bis zur Hälfte der Teflonstange geschnitten. Der Stab wird mit dem Gewinde zuerst in die Löcher des PVC-Rohres gesteckt, damit dieser von vorne und hinten mit M10-Kunststoffmuttern an das Rohr geschraubt werden kann.
 
 In die andere Seite des Abstandhalters wird ein Loch mit einem Durchmesser von 5mm für ein M6-Gewinde gebohrt. Mithilfe der entsprechenden Schrauben werden UV-stabilisierte Rohrschellen an dem Seitenelement montiert. Diese tolerieren Rohrdurchmesser von bis zu 18mm. Durch die Verwendung von Rohrschellen vereinfacht sich die Montage der Spirale auf ein einfaches Einschnappen des Rohres.
 
@@ -125,11 +126,11 @@ In die andere Seite des Abstandhalters wird ein Loch mit einem Durchmesser von 5
 	\caption{Links: Befestigung des Abstandhalters am Rohr. Rechts: Eingeschnappter Abstandhalter an der Spirale}
 \end{figure}
 
-Der Rohrflansch bildet das Bindeelement zwischen dem PVC-Rohr und der Reflektorplatte. Dieser hat einen Innendurchmesser von 51mm, und eine Wandstärke von 4mm. Dadurch wird genug Toleranz geboten damit das PVC-Rohr sicher verschraubt werden kann. 
+Der Rohrflansch bildet das Bindeelement zwischen dem PVC-Rohr und der Reflektorplatte. Dieser hat einen Innendurchmesser von 51mm, und eine Wandstärke von 4mm. Es wird folglich 1mm an Toleranz geboten, damit das PVC-Rohr montiert werden kann. 
 
 Der Rohrflansch besteht aus einem Rohr, in welches zwei durchgehende Löcher mit einem Durchmesser von 11mm gebohrt wurden, und einer Platte in die ebenfalls zwei Löcher mit einem Durchmesser von 13,5mm gebohrt wurden. Die Platte und das Rohr werden aneinander geschweißt. Das resultierende Bauteil bildet das Bindeglied zwischen Reflektor und PVC-Rohr.
 
-Für den Reflektor wurde eine runde Aluminiumplatte gewählt. Für die reale Konstruktion wurden Löcher in den äußeren Rand der Platte gelasert, um den Luftwiderstand zu reduzieren. Um eventuelle Störungen durch spezifische Maße wie beispielsweise $\frac{\lambda}{4}$ zu vermeiden, wurden die Löcher um einiges kleiner als $\frac{\lambda}{4}$ gewählt.
+Für den Reflektor wurde eine runde Aluminiumplatte gewählt. Für die reale Konstruktion wurden Löcher in den äußeren Rand der Platte gelasert, um den Luftwiderstand zu reduzieren. Um eventuelle Störungen durch spezifische Maße wie beispielsweise $\frac{\lambda}{4}$ zu vermeiden, wurden die Löcher um einiges kleiner als dieses Maß dimensioniert.
 
 \begin{figure}[H]
 	\begin{minipage}[b]{.4\linewidth} % [b] => Ausrichtung an \caption
@@ -141,7 +142,7 @@ Für den Reflektor wurde eine runde Aluminiumplatte gewählt. Für die reale Kon
 		\includegraphics[width=\linewidth]{../ref/Reflektor.jpg}
 		\label{fig:Reflektor}
 	\end{minipage}
-	\caption{Die Befestigung des Rohrflansches an dem Reflektor sowie der Reflektor selbst}
+	\caption{Reflektor (rechts) im Vergleich mit dem daran befestigten Rohrflansch (links)}
 \end{figure}
 
 In der Mitte des Reflektors werden vier Löcher mit einem Durchmesser von 13,5mm gebohrt an denen der Rohrflansch befestigt wird. 
@@ -155,7 +156,7 @@ Die Helix wurde mit denselben Maßen gefertigt, welche in der Simulation ermitte
 	\label{fig:Spirale}
 \end{figure}
 
-Um die Helixantenne wasserdicht zu machen wurden kurz abgeschnittene Aluminium-Rundlinge auf die Öffnungen der Spirale geschweißt. Am unteren Ende der Helix, an der der Innenleiter des Koaxialkabels befestigt wird, wurde ein Gewinde in den Aluminiumrundling geschnitten.
+Um die Helixantenne wasserdicht zu machen wurden kurz abgeschnittene Aluminium-Rundlinge auf die Öffnungen der Spirale geschweißt. Am unteren Ende der Helix, an der der Innenleiter des Koaxialkabels befestigt wird, wurde ein Gewinde in den Aluminium-Rundling geschnitten.
 
 \begin{figure}[h!]
 	\begin{minipage}[b]{.4\linewidth} % [b] => Ausrichtung an \caption
@@ -174,7 +175,7 @@ Mithilfe dieses Gewindes kann ein Kabel durch eine Schraube montiert, und am Inn
 
 Um die PVC-Rohre vor Wasser zu schützen wurden Abdeckungen 3D-gedruckt. Durch die Verwendung eines speziellen Filaments vom Typ DuraPro ASA, ist das Resultat eine UV-resistente Rohrabdeckung. Durch diese Eigenschaft eignet sich dieses Filament exzellent für den Einsatz im Freien.
 
-\begin{figure}[h!]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=5cm]{../ref/Abdeckung-PVC-Rohr.jpg}
 	\caption{Die Abdeckung des PVC-Rohres}
@@ -212,6 +213,13 @@ Die Breite des Blechstreifens wurde empirisch ermittelt und wurde mit 6cm festge
 Nun wird die Helixantenne durch drei weitere identische Helixantennen erweitert, welche zusammen ein Array bilden. Hierbei ist der Abstand zwischen den einzelnen Antennen von Relevanz um den Gesamtgewinn zu maximieren.
 Der Antennengewinn eines Antennenarrays bestehend aus vier identischen Helixantennen liegt in der Theorie bei dem vierfachen Antennengewinn einer einzelnen Wendelantenne, bzw. einer Helixantenne mit der vierfachen Windungszahl, also $4*6=24$ \cite[p. 319]{Kraus-2002-AntennasB}.
 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[angle=270,width=5cm]{../ref/Antennenarray2.jpg}
+	\caption{Das fertige Helixantennen-Array}
+	\label{fig:helixantennen-array}
+\end{figure}
+
 Hierfür muss ein Gerüst designt und aufgebaut werden, welches vier solcher Antennen halten kann, sowie die neu entstehende Impedanz der Zusammenschaltung dieser Antenne angepasst werden. Anschließend müssen Tests durchgeführt werden, die den verbesserten Antennengewinn der Antenne belegen.
 
 \subsection{Gerüst}
@@ -224,13 +232,56 @@ Hierfür muss ein Gerüst designt und aufgebaut werden, welches vier solcher Ant
 	\hline
 	2 & Aluminium-Vierkantrohr & 60x100x3mm 0,9m & 2x \\
 	\hline
+	6 & Rohrflansch (Struktur) & \O innen 45mm & 2x\\
+	\hline
 \end{tabular}
 
-Als Gerüst wurde die Form eines $"$H$"$ gewählt. Hierdurch liegt der Masseschwerpunkt der Gesamtkonstruktion nur knapp über dem Mittelpunkt, was das zur Rotation benötigte Moment verringert. Um dies zu beweisen lässt sich die Formel für das mechanische Moment betrachten.
+Als Gerüst wurde die Form eines $"$H$"$ gewählt. Hierdurch liegt der Massenmittelpunkt der Gesamtkonstruktion nur knapp über dem Mittelpunkt des Rotors, was das zur Rotation benötigte Moment verringert. Um dies zu beweisen lässt sich die Formel für das mechanische Moment betrachten.
 \begin{equation}
-	M=F*r
+	M=F*r*\sin(\alpha)
+	\label{form:drehmoment}
 \end{equation}
-Hierbei ist r die Länge des Hebels, und in diesem Kontext der Abstand des Schwerpunktes der Konstruktion zum Mittelpunkt. Je näher der Schwerpunkt am Mittelpunkt ist, desto weniger Moment wird benötigt, um die Konstruktion zu bewegen.
+Hierbei ist r die Länge des Hebels, und in diesem Kontext der Abstand des Schwerpunktes der Konstruktion zum Mittelpunkt. Je näher der Schwerpunkt am Mittelpunkt ist, desto weniger Moment wird benötigt, um die Konstruktion zu bewegen. Dies lässt sich mit einer Grafik visualisieren.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=7cm]{../ref/Drehmoment.png}
+	\caption{Das Drehmoment visualisiert.}
+	\label{fig:mechanische-moment}
+\end{figure}
+
+Um das mechanische Drehmoment in beliebigen Lagen zu berechnen werden einige zusätzliche Informationen benötigt, wie die Masse und der Massenmittelpunkt der Konstruktion.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=7cm]{../ref/Massenmittelpunkt.png}
+	\caption{Das Massenzentrum der Konstruktion}
+	\label{fig:massenmittelpunkt}
+\end{figure}
+
+Es ist ersichtlich, dass sich der Massenmittelpunkt 262,705mm über dem oberen Ende des Strukturrohres befindet. Um daraus folgt, dass der Massenmittelpunkt $\frac{42mm}{2}+262,705mm=283,705mm$ über dem Mittelpunkt des Rotors befindet. Die Masse der Gesamtkonstruktion beträgt 23,32kg.
+
+Aus diesen Informationen lässt sich nun das benötigte Moment für das Bewegen des Rotors in verschiedenen Lagen berechnen.
+
+Der Hersteller des Rotors hat für den Stellungswinkel des Elevationsmotors die Reichweite 0-180° festgelegt. Um den Stellungswinkel direkt in Formel \ref{form:drehmoment} einsetzen zu können, müssen entweder 90° des Winkels abgezogen werden, oder der $-\cos(\alpha)$ verwendet werden. Hier wurde letztere Methode angewendet.
+
+\begin{equation}
+	M=F*r*(-\cos(\alpha))
+\end{equation}
+
+Nun kann ein Graph erzeugt werden, welcher das benötigte Moment in Abhängigkeit der Elevationsmotor-Stellung darstellt. Es ist anzumerken, dass die Effekte des Trägheitsmoments nicht berücksichtigt werden. Negative Werte repräsentieren das Drehmoment in die entgegengesetzte Richtung.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=5cm]{../ref/Rotationsmoment Elevation.png}
+	\caption{Verlauf des Rotationsmoments über die Winkel 0-180°}
+	\label{fig:verlauf-trägheitsmoment}
+\end{figure}
+
+Wie zu erwarten ist, ist das benötigte Rotationsmoment dann maximal, wenn der Rotor im 0° bzw. 180° Winkel steht. 
+\begin{equation}
+	M=23,32kg*9,81\frac{m}{s^2}*0,262705m*\sin(90°)=60,1Nm
+\end{equation}
 
 \begin{figure}[H]
 	\begin{minipage}[b]{.4\linewidth} % [b] => Ausrichtung an \caption
@@ -247,7 +298,8 @@ Hierbei ist r die Länge des Hebels, und in diesem Kontext der Abstand des Schwe
 
 Um eine komplette elektrische Isolierung der Antennen vom Gerüst zu ermöglichen, kommen Teflonplatten zum Einsatz. Diese verbinden die Antennen mit dem Aluminium-Vierkantprofil.
 
-\begin{figure}[h!]
+\begin{figure}[H]
+	\centering
 	\includegraphics[width=5cm]{../ref/Teflon-Platte.jpg}
 	\caption{Verbindende Teflonplatte}
 	\label{fig:Teflonplatte}
@@ -256,23 +308,23 @@ Um eine komplette elektrische Isolierung der Antennen vom Gerüst zu ermögliche
 \subsection{Anpassung}
 Da sich der Eingangswiderstand ändert, wenn vier solcher Antennen zusammen geschaltet werden, muss ein Anpassungsglied zwischen Koaxialkabel und Antennen eingesetzt werden. Hierfür wird ein $\lambda/4$-Anpasstopf gebaut. Dieser verhält sich ähnlich wie ein Koaxialkabel, wobei das Verhältnis der Durchmesser zwischen Innenleiter und Außenleiter die Kapazität festlegt. Hierdurch kann der Wellenwiderstand angepasst werden.
 
-\begin{figure}
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{../ref/Prinzip-Anpasstopf.png}
 	\label{fig:prinzip-anpasstopf}
 	\caption{Querschnitt einer $\frac{\lambda}{4}$-Anpassleitung}
 \end{figure}
 
-Hierbei ist d der Durchmesser des Innenleiters und D der Durchmesser des Außenleiters. Der Innenleiter ist $\frac{\lambda}{4}$ lang.
+Hierbei ist d der äußere Durchmesser des Innenleiters und D der innere Durchmesser des Außenleiters. Der Innenleiter ist $\frac{\lambda}{4}$ lang.
 
 Für eine verlustlose $\frac{\lambda}{4}$-Leitung gilt:
 \begin{equation}
 	Z_E=\frac{(Z_W)^2}{Z_A}	
 \end{equation}
 
-Wobei $Z_E$ Der Eingangswiderstand des Anpasstopfes ist, $Z_A$ der Abschlusswiderstand und $Z_W$ der Wellenwiderstand der $\frac{\lambda}{4}$ Leitung.
+Wobei $Z_E$ Der Eingangswiderstand des Anpasstopfes ist, $Z_A$ der Abschlusswiderstand und $Z_W$ der Wellenwiderstand der $\frac{\lambda}{4}$ Leitung \cite{admin_lambda4_2016}.
 
-Um die Leitung korrekt zu dimensionieren muss zuerst der Wellenwiderstand ermittelt werden. Alle vier Helixantennen haben einen Antennenwiderstand von ca. 50$\Omega$. Werden diese parallel geschalten, so ergibt sich ein Gesamtwiderstand von 12,5$\Omega$. Da ein Koaxialkabel mit einem Wellenwiderstand von 50$\Omega$ verwendet wird, ist der Widerstand $Z_E$ 50$\Omega$. Somit ergibt sich durch umformen auf den Wellenwiderstand und einsetzen der Werte das nachfolgende Ergebnis.
+Um die Leitung korrekt zu dimensionieren muss zuerst der Wellenwiderstand ermittelt werden. Alle vier Helixantennen haben einen Antennenwiderstand von ca. 50$\Omega$. Werden diese parallel geschalten, so ergibt sich ein Gesamtwiderstand von 12,5$\Omega$. Da ein Koaxialkabel mit einem Wellenwiderstand von 50$\Omega$ verwendet wird, ist der Widerstand $Z_E$ 50$\Omega$. Somit ergibt sich durch umformen auf den Wellenwiderstand und einsetzen der Werte das nachfolgende Ergebnis \cite{admin_lambda4_2016}.
 
 \begin{equation}
 	Z_W=\sqrt{Z_E*Z_A}=\sqrt{12,5\Omega*50\Omega}=25\Omega
@@ -281,22 +333,23 @@ Um die Leitung korrekt zu dimensionieren muss zuerst der Wellenwiderstand ermitt
 Nun kann die Leitung dimensioniert werden. Es wurde ein viereckiger Außenleiter gewählt, da dies die Montage der BNC-Stecker vereinfacht. Um die Maße für die Leitung zu ermitteln, muss zuerst entweder der Durchmesser des Außenleiters oder des Innenleiters angenommen werden. Da ein 20x1.5mm Vierkantprofil verfügbar war, wurde dies als Außenleiter angenommen. Da der Innendurchmesser des Vierkantrohrs für die Kapazität relevant ist, wird $D=20mm-2*1,5mm=17mm$ gewählt. Daraus folgt für den Innenleiter:
 
 \begin{equation}
-	d=\frac{1,08*D}{10^(\frac{Z_W}{138})}=\frac{1,08*17}{10^(\frac{25}{138})}=12,09mm
+	d=\frac{1,08*D}{10^{\frac{Z_W}{138}}}=\frac{1,08*17}{10^{\frac{25}{138}}}=12,09mm
 \end{equation}
-\cite{admin_lambda4_2016}
 
-Es wird ein Kupferrohr mit einem Durchmesser von 12mm gewählt.
+
+Es wird ein Kupferrohr mit einem Durchmesser von 12mm gewählt \cite{admin_lambda4_2016}.
 
 Da die Maße feststehen, kann der Anpasstopf konstruiert werden. Es wurden als Addition Abdeckungen 3D-gedruckt.
 
-\begin{figure}[h!]
-	\begin{minipage}[b]{.4\linewidth} % [b] => Ausrichtung an \caption
-		\includegraphics[keepaspectratio=true,scale=0.5]{../ref/Lambda_4-Anpasstopf v1.png}
+\begin{figure}[H]
+	\centering
+	\begin{minipage}[b]{.2\linewidth} % [b] => Ausrichtung an \caption
+		\includegraphics[width=\linewidth]{../ref/Lambda_4-Anpasstopf v1.png}
 		\label{fig:Anpassleitung-Render}
 	\end{minipage}
 	\hspace{.1\linewidth}% Abstand zwischen Bilder
-	\begin{minipage}[b]{.4\linewidth} % [b] => Ausrichtung an \caption
-		\includegraphics{../ref/Gerüst.jpg}
+	\begin{minipage}[b]{.2\linewidth} % [b] => Ausrichtung an \caption
+		\includegraphics[width=\linewidth]{../ref/Anpasstopf-real.jpeg}
 		\label{fig:Anpassleitung-real}
 	\end{minipage}
 	\caption{Gegenüberstellung des Renders zur realen Anpassleitung}
