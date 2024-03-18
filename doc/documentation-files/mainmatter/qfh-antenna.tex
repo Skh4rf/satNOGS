@@ -30,7 +30,7 @@ Mithilfe der Werte wurde folgendes 3D-Model der Antenne zur Simulation entworfen
 	\label{fig:qfh_render}
 \end{figure}
 
-Die Simulationsergebnisse der Antenne zeigen, dass sie bei einer Frequenz von 465 Megahertz die beste Performanz besitzt in Bezug auf die Anpassung besitzt. Bei dieser Frequenz erreicht sie eine Rückflussdämpfung von etwas unter -16 Dezibel, was sich mit den Ergebnissen vieler Antennen dieser Bauart deckt \cite{noauthor_qfh_nodate} \cite{keller_quadrifilar_2015}.
+Die Simulationsergebnisse der Antenne zeigen, dass sie bei einer Frequenz von 465 Megahertz die beste Performanz in Bezug auf die Anpassung besitzt. Bei dieser Frequenz erreicht sie eine Rückflussdämpfung von etwas unter -16 Dezibel, was sich mit den Ergebnissen vieler Antennen dieser Bauart deckt \cite{noauthor_qfh_nodate} \cite{keller_quadrifilar_2015}.
 
 \begin{figure} [H]
 	\centering
@@ -136,7 +136,7 @@ Da die QHA eine symmetrische Antenne ist, weist die fertige QHA vier Wicklungen 
 	\label{fig:fertig_qha}
 \end{figure}
 
-Für die Anpassung der QHA relevant waren vorallem die Länge des abisolierten und nicht geschirmten Antennenkabels und die Form der Schleifen. Durch das minimieren der abisolierten Länge des Antennenkabels sowie das leichte korrigieren der Form der Schleifen konnte eine Rückflüssdämpfung von -17.44 Dezibel bei einer Frequenz von 433 Megahertz erreicht werden, wie im nachfolgenden Kapitel \ref{sec:messungen_qha} zu sehen ist. Die Mantelwellensperre nahm keinen Einfluss auf die Anpassung und die Ergebnisse blieben mit und ohne Mantelwellensperre nahezu dieselben. 
+Für die Anpassung der QHA relevant waren vorallem die Länge des abisolierten und nicht geschirmten Antennenkabels und die Form der Schleifen. Durch das minimieren der abisolierten Länge des Antennenkabels sowie das leichte korrigieren der Form der Schleifen konnte eine Rückflussdämpfung von -17.44 Dezibel bei einer Frequenz von 433 Megahertz erreicht werden, wie im nachfolgenden Kapitel (\ref{sec:messungen_qha}) zu sehen ist. Die Mantelwellensperre nahm keinen Einfluss auf die Anpassung und die Ergebnisse blieben mit und ohne Mantelwellensperre nahezu dieselben. 
 
 \section{Messungen}
 \label{sec:messungen_qha}
@@ -148,14 +148,21 @@ Für die Anpassung der QHA relevant waren vorallem die Länge des abisolierten u
 	\label{fig:fertig_qha}
 \end{figure}
 
-Die Messung zeigt eine maximale Rückflussdämpfung bei fast genau 433 Megahertz. Die Rückflussdämpfung bei 433 Megahertz beträgt -17.44 Dezibel. Das Smith-Diagramm gibt Aufschluss darüber, dass die Antenne bei 433 Megahertz mit 52.26 Ohm Wirkwiderstand und 8.85 Ohm Blindwiderstand leichte induktive Eigenschaften aufweist.
+Die Messung zeigt eine maximale Rückflussdämpfung bei fast genau 433 Megahertz. Die Rückflussdämpfung bei 433 Megahertz beträgt -17.44 Dezibel. Für eine minimale Rückflussdämpfung von -10 Dezibel ergibt sich eine Bandbreite von etwa 422 bis 442 Megahertz. Das Smith-Diagramm gibt Aufschluss darüber, dass die Antenne bei 433 Megahertz mit 52.26 Ohm Wirkwiderstand und 8.85 Ohm Blindwiderstand leichte induktive Eigenschaften aufweist.
 
 \section{Test}
 Um die Funktionalität der QHA zu beweisen wurden mehrere Observationen durchgeführt. Dabei wurde das Signal der QHA zusätzlich mithilfe des im späteren Kapitel \ref{sec:LNA} erläuterten LNA verstärkt.
 
 Die Observationen wurden am durchgeführt vom 11. bis zum 14. März 2024 an den Koordinaten 47.44983098163626, 9.833138913740827 auf einer Höhe von 730 Metern über dem Meeresspiegel.  Die Ergebnisse der Observationen, die zum Test der Funktionalität durchgeführt wurden, können unter folgendem Link aufgerufen werden:\newline \url{https://network.satnogs.org/observations/?norad=&start=2024-02-01+17%3A17&end=2024-03-15+17%3A17&observer=&station=3307&transmitter_mode=&transmitter_uuid=&page=1}
 
-Mit 45 empfangenen Paketen empfing die Observation mit der Nummer 9196747 des Satelliten \"98959 - SONATE-2\" und dem Sender \"Mode U - GMSK9k6 - AX.25 G3RUH - Telemetry\" die meisten Datenpakete. Die Daten wurden am 14. März 2024 von 00:16:04 bis 00:23:36 (UTC) empfangen. Die nachfolgende Abbildung zeigt das Wasserfalldiagramm sowie das erste dekodierte Datenpaket im HEX und AX.25 Format.
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=.1\linewidth]{../ref/qha_duringob.jpg}
+	\caption{QHA während der Observationen}
+	\label{fig:qha_duringobs}
+\end{figure}
+
+Mit 45 empfangenen Paketen empfing die Observation mit der Nummer 9196747 des Satelliten \glqq 98959 - SONATE-2\grqq{}  und dem Sender \glqq Mode U - GMSK9k6 - AX.25 G3RUH - Telemetry\grqq{} die meisten Datenpakete. Die Daten wurden am 14. März 2024 von 00:16:04 bis 00:23:36 (UTC) empfangen. Die nachfolgende Abbildung zeigt das Wasserfalldiagramm sowie das erste dekodierte Datenpaket im HEX und AX.25 Format.
 
 \begin{figure} [H]
 	\centering

@@ -134,8 +134,29 @@ Das Ergebnis ist ein modular platzierbarer und vielseitiger Schaltschrank:
 	\end{minipage}
 \end{figure}
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.5\linewidth]{../ref/schaltschrank_innen.jpeg}
+	\caption{Innenansicht des fertig verkabelten Schaltschranks}
+	\label{fig:schaltschrankinnen}
+\end{figure}
+
 \section{SDR}
 \label{sec:sdr}
+Der Begriff SDR (Software Defined Radio) umfasst Konzepte für Hochfrequenz-Sender und -Empfänger. SDRs ersetzen traditionelle Hardwarekomponenten durch Software, um Signale zu empfangen, zu demodulieren und zu verarbeiten. Anstatt spezieller Hardware für jede Funkkommunikationsart zu benötigen, kann ein SDR flexibel über Software konfiguriert werden, um verschiedene Frequenzen und Modulationsarten zu unterstützen. Durch die Digitalisierung des Funkempfangs ermöglicht ein SDR eine breite Palette von Anwendungen und verbesserte Flexibilität bei der Signalverarbeitung. \cite{noauthor_sdr_nodate}
+
+Das für diese Empfangsstation verwendete SDR ist das RTL-SDR Blog v3 mit folgenden Spezifikationen:
+
+\begin{tabular}{cl}
+	\textbf{Bandbreite} & bis zu 2.4 Megahertz \\
+	\textbf{ADC} & RTL2832U 8-Bit \\
+	\textbf{Frequenzbereich} & 500 Kilohertz bis 1766 Megahertz \\
+	\textbf{typischer Eingangswiderstand} & 50 Ohm \\
+	\textbf{typische Stromaufnahme} & 270 bis 280 Milliampere \\
+	\textbf{steuerbares Bias-T} & Ja (4.5 Volt) \\
+\end{tabular}
+
+Das RTL-SDR Blog v3 wird über einen USB-B Stecker zum Raspberry Pi 4 verbunden und verfügt über einen SMA-Stecker für den Anschluss der Antenne.\cite{noauthor_rtl-sdr_nodate}
 
 \section{Netzteil}
 \label{sec:Netzteil}
@@ -209,6 +230,22 @@ Die Leistung einer Antenne lässt sich in einer Gütezahl angeben die als gain-t
 \end{figure}
 
 Die Verstärkung des Wideband LNAs entspricht laut gezeigter Grafik des Herstellers etwa 22.5 Dezibel bei 433 Megahertz.
+
+Um das LNA vor den Belastungen der Natur zu schützen wird dieses in ein kompaktes wasserdichtes Aluminiumgehäuse mit zwei Kabelverschraubungen für die beiden Antennenkabel verbaut. 
+
+ \begin{figure}[H]
+ 	\begin{minipage}[b]{.4\linewidth}
+ 		\includegraphics[width=\linewidth]{../ref/LNA.jpeg}
+ 		\label{fig:LNA}
+ 		\caption{Wideband LNA}
+ 	\end{minipage}
+ 	\hspace{.1\linewidth}% Abstand zwischen Bilder
+ 	\begin{minipage}[b]{.4\linewidth} % [b] => Ausrichtung an \caption
+ 		\includegraphics[width=\linewidth]{../ref/LNA_Box.jpeg}
+ 		\label{fig:lnabox}
+ 		\caption{Aluminiumgehäuse für das LNA}
+ 	\end{minipage}
+ \end{figure}
 
 \section{Antennen-Kabel}
 \label{sec:Antennen-Kabel-QFH}
@@ -310,5 +347,28 @@ Durch das Klicken auf eine Observation öffnet sich eine weitere Seite die sowoh
 Ist im Wasserfalldiagramm ein dem Transmitter-Mode entsprechendes Signal zu erkennen, so kann die Observation dementsprechend über die mit \textbf{1} markierten Buttons bewertet werden. Diese Evaluation ist von größer Bedeutung für die Betreiber des Satelliten um dessen Funktionstüchtigkeit zu Überwachen.
 
 \section{SDR-Server starten}
+Für die Fehlerbehebung und das ermitteln der idealen Gain des SDRs ist es vorteilhaft dieses manuell Bedienen zu können. Eine Möglichkeit dies zu tun ist das exportieren der lokal vorhandenen SoapySDR-Geräte, zu welchen auch das RTL-SDR Blog v3 gehört, über das Netzwerk mithilfe des SoapySDRServer. Um diesen SoapySDRServer zu starten muss in SSH des Raspberry Pi 4 lediglich der Befehl \textbf{SoapySDRServer --bind="0.0.0.0:55132"} ausgeführt werden. \cite{noauthor_soapysdrserver1_nodate}
+
+Wurde der SoapySDRServer auf dem Raspberry Pi 4 gestartet, so kann auf einem weiteren Gerät welches mit demselben Netzwerk verbunden ist, eine geeignete SDR-Software (zum Beispiel CubicSDR) ausgeführt werden, dass die Steuerung des SDRs ermöglicht.
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=\linewidth]{../ref/OberflaecheCubicSDR.png}
+	\caption{Oberfläche von CubicSDR}
+	\label{fig:cubicsdr}
+\end{figure}
+
 
 \section{geeignete Gain ermitteln}
+Bei zunehmender Gain-Einstellung eines Empfangssystems wie einem Software Defined Radio (SDR) steigt der Rauschpegel, der auch als "Noise Floor" bezeichnet wird. Der Noise Floor fungiert als Maß für das Hintergrundrauschen innerhalb des Systems und beschreibt die Gesamtheit aller unerwünschten Signale und Störungen, die vom Empfänger erfasst werden.
+
+Durch die Erhöhung des Gains wird nicht nur das Nutzsignal verstärkt, sondern auch das Rauschen. Da das Rauschen unabhängig von der Signalstärke immer vorhanden ist, wird es proportional verstärkt, wenn der Gain erhöht wird. Infolgedessen steigt der Rauschpegel im Verhältnis zum Nutzsignal an, was zu einer Erhöhung des Noise Floors führt. Diese Erhöhung kann die Empfindlichkeit des Empfängers beeinträchtigen und die Fähigkeit, schwache Signale von Hintergrundrauschen zu unterscheiden, einschränken. Somit ist es von entscheidender Bedeutung, den Gain des Empfangssystems mit Bedacht einzustellen, um eine optimale Signalqualität zu gewährleisten.
+
+Dazu eignet sich die manuelle Steuerung des SDRs über Software-Programme wie CubicSDR. Mithilfe des dort vorhandenen Schiebereglers für die Gain, wird diese solange angehoben bis der Rauschpegel deutlich steigt. In nachfolgender Abbildung ist deutlich zu sehen wie der Rauschpegel ab einer Verstärkung von 30dB deutlich zunimmt. Die Gain des SDRs sollte dementsprechend nicht über 30dB betragen um auch schwache Signale vom Hintergrundrauschen unterscheiden zu können. 
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=\linewidth]{../ref/noiseflooradjustment.png}
+	\caption{Beispielgrafik für den Rauschpegel verschiedener Gains}
+	\label{fig:noiseflooradjustment}
+\end{figure}
