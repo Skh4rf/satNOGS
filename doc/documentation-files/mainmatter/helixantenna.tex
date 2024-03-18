@@ -246,7 +246,7 @@ Hierbei ist r die Länge des Hebels, und in diesem Kontext der Abstand des Schwe
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=7cm]{../ref/Drehmoment.png}
-	\caption{Das Drehmoment visualisiert.}
+	\caption{Das Drehmoment visualisiert}
 	\label{fig:mechanische-moment}
 \end{figure}
 
@@ -274,11 +274,11 @@ Nun kann ein Graph erzeugt werden, welcher das benötigte Moment in Abhängigkei
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=5cm]{../ref/Rotationsmoment Elevation.png}
-	\caption{Verlauf des Rotationsmoments über die Winkel 0-180°}
-	\label{fig:verlauf-trägheitsmoment}
+	\caption{Verlauf des Drehmoments über die Winkel 0-180°}
+	\label{fig:verlauf-drehmoment}
 \end{figure}
 
-Wie zu erwarten ist, ist das benötigte Rotationsmoment dann maximal, wenn der Rotor im 0° bzw. 180° Winkel steht. 
+Es ist zu erwarten, dass das benötigte Rotationsmoment dann maximal ist, wenn der Rotor im 0° bzw. 180° Winkel steht. 
 \begin{equation}
 	M=23,32kg*9,81\frac{m}{s^2}*0,262705m*\sin(90°)=60,1Nm
 \end{equation}
@@ -355,6 +355,32 @@ Da die Maße feststehen, kann der Anpasstopf konstruiert werden. Es wurden als A
 	\caption{Gegenüberstellung des Renders zur realen Anpassleitung}
 \end{figure}
 
-\subsection{Test}
+\subsection{Messungen}
+Um die Qualität des Antennenarrays zu überprüfen, wurde am Ausgang der $\frac{\lambda}{4}$-Anpassleitung gemessen. Hierbei werden der S11-Parameter, das SWR sowie das Smith-Diagramm analysiert, um qualitativ festzustellen, ob das Antennenarray funktionsfähig ist.
 
-Tests mit anderer Antenne im freien Feld
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=10cm]{../ref/Array-S11.jpg}
+	\label{fig:array-S11}
+	\caption{S11-Parameter des Arrays}
+\end{figure}
+
+Anhand des S11-Parameters lässt sich feststellen, dass dieser mit einem Wert von ca. -20dB in einem relativ guten Bereich liegt.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=10cm]{../ref/Array-SWR.jpg}
+	\label{fig:array-SWR}
+	\caption{SWR des Arrays}
+\end{figure}
+
+Mithilfe des SWRs kann ebenfalls auf die Güte der Anpassung geschlossen werden. Hier liegt der Wert ungefähr bei 1,2, was ein akzeptabler Wert ist.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=10cm]{../ref/Array-Smith.jpg}
+	\label{fig:array-Smith}
+	\caption{Smith-Diagramm des Arrays}
+\end{figure}
+
+Am Smith-Diagramm ist zu erkennen, dass die Eingangsimpedanz der Antenne kaum imaginär ist und mit 42 Ohm relativ gut im Mittelpunkt des Smith-Diagramms liegt.
