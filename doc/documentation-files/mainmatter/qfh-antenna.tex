@@ -1,11 +1,11 @@
 \chapter{Quadrifilare Helixantenne (QFH)}
 \label{chap:qfh}
-Die Quadrifilare Helixantenne ist eine Abwandlung der monofilaren Helixantenne und unterscheidet sich von dieser in mehreren wichtigen Punkten.
+Die quadrifilare Helixantenne ist eine Abwandlung der monofilaren Helixantenne und unterscheidet sich von dieser in mehreren wichtigen Punkten.
 
-Zum einen ist sie um einiges kleiner als die monofilare Helix. Zum anderen wird sie als omnidirektionale Antenne für Satellitenkommunikation verwendet, da sie, wie die monofilare Helixantenne, zirkular polarisiert ist. Sie zeigt entlang des Horizonts sowie direkt nach oben einen besseren Antennengewinn als in andere Richtungen.
+Zum einen ist sie um einiges kleiner als die monofilare Helixantenne, zum anderen wird sie als omnidirektionale Antenne für Satellitenkommunikation verwendet, da sie, wie die monofilare Helixantenne, zirkular polarisiert ist. Die quadrifilare Helixantenne zeigt entlang des Horizonts sowie direkt nach oben einen besseren Antennengewinn als in andere Richtungen.
 
 \section{Design}
-Das Design der QFH muss einigen Anforderungen entsprechen. Neben den Anforderungen die eigentliche Funktion zu erfüllen, scilicet für eine Frequenz von 433 Megahertz ein möglichst quasi-isotropes Abstrahlverhalten nach oben aufzuweisen und auf 50 Ohm angepasst zu sein, den Anforderungen durch die Natur gerecht zu werden. Dabei wird ein besonderes Augenmerk auf die UV-Resistenz und den Korrosionsschutz gelegt. 
+Das Design der QFH muss verschiedenen Anforderungen entsprechen. Neben der Anforderung die eigentliche Funktion zu erfüllen, scilicet für eine Frequenz von 433 Megahertz ein möglichst quasi-isotropes Abstrahlverhalten nach oben aufzuweisen und auf 50 Ohm angepasst zu sein, sollte die Antennen ebenfalls Belastungen die von der Natur ausgehen standhalten. Dabei wird ein besonderes Augenmerk auf die UV-Resistenz und den Korrosionsschutz gelegt. 
 
 Um Richtwerte für die Dimensionen einer QFH im 70cm-Band zu erhalten, wurde das Online-Tool unter \url{https://jcoppens.com/ant/qfh/calc.en.php} zur Dimensionierung von Antennen eingesetzt. Es ergeben sich dadurch folgende Werte:
 
@@ -21,7 +21,7 @@ Um Richtwerte für die Dimensionen einer QFH im 70cm-Band zu erhalten, wurde das
 	\end{tabular}
 \end{center}
 
-Mithilfe der Werte wurde folgendes 3D-Model der Antenne zur Simulation entworfen. Es gilt dabei zu erwähnen, dass, angetrieben von wissenschaftlicher Neugier, die QHA entgegen der typischen Konstruktion mit Kupferrohren aus Aluminiumstreifen und Aluminiumrundstäben simuliert und gefertigt wird. 
+Mittels dieser Werte wurde folgendes 3D-Model der Antenne zur Simulation entworfen. Es gilt hierbei zu erwähnen, dass, angetrieben von wissenschaftlicher Neugier, die QHA entgegen der typischen Konstruktion mit Kupferrohren aus Aluminiumstreifen und Aluminiumrundstäben simuliert und gefertigt wird. 
 
 \begin{figure} [H]
 	\centering
@@ -30,7 +30,7 @@ Mithilfe der Werte wurde folgendes 3D-Model der Antenne zur Simulation entworfen
 	\label{fig:qfh_render}
 \end{figure}
 
-Die Simulationsergebnisse der Antenne zeigen, dass sie bei einer Frequenz von 465 Megahertz die beste Performanz in Bezug auf die Anpassung besitzt. Bei dieser Frequenz erreicht sie eine Rückflussdämpfung von etwas unter -16 Dezibel, was sich mit den Ergebnissen vieler Antennen dieser Bauart deckt \cite{noauthor_qfh_nodate} \cite{keller_quadrifilar_2015}.
+Die Simulationsergebnisse der Antenne zeigen, dass sie bei einer Frequenz von 465 Megahertz die beste Performanz in Bezug auf die Anpassung besitzt. Bei dieser Frequenz erreicht sie eine Rückflussdämpfung von etwas unter -16 Dezibel, was sich mit den Ergebnissen vieler Antennen dieser Bauart deckt \cite{keller_quadrifilar_2015} \cite{noauthor_qfh_nodate}.
 
 \begin{figure} [H]
 	\centering
@@ -39,7 +39,7 @@ Die Simulationsergebnisse der Antenne zeigen, dass sie bei einer Frequenz von 46
 	\label{fig:s11_old_qfh}
 \end{figure}
 
-Die Form des Abstrahlverhaltens sowie der maximale Gewinn mit 4.13 Dezibel entsprechen ebenfalls typischer Werte für eine QHA \cite{keller_quadrifilar_2015}.
+Die Form des Abstrahlverhaltens sowie der maximale Gewinn mit 4.13 Dezibel entsprechen ebenfalls typischen Werten für eine QHA \cite{keller_quadrifilar_2015}.
 
 \begin{figure} [H]
 	\centering
@@ -50,7 +50,7 @@ Die Form des Abstrahlverhaltens sowie der maximale Gewinn mit 4.13 Dezibel entsp
 
 Durch gezielte Anpassung der Durchmesser und Längen einzelner Schleifen sowie zahlreicher Simulationen wurden mithilfe dieser Informationen Werte ermittelt, die eine optimale Leistung bei etwas unter den gewünschten 433 Megahertz erzielen. Eine leicht überdimensionierte Auslegung erleichtert die spätere Feinabstimmung, da es einfacher ist, Bauteile zu verkleinern, als sie zu vergrößern.
 
-Daraus ergeben sich die folgenden finalen Werte:
+Die finalen Werte belaufen sich auf:
 
 \begin{center}
 	\begin{tabular}{|c|c|c|}
@@ -82,7 +82,7 @@ Bei der Simulation dieser Werte ergibt sich eine Rückflussdämpfung von -13.7 D
 
 \section{Realisierung}
 Für die Realisierung der Helixantenne werden folgende Materialien benötigt:\newline
-- 4 Streifen mit 10x2 Millimeter Querschnitt aus Aluminiumblech für die Schleifen (jeweils mindestens 300 Millimeter lang)\newline
+- 4x Streifen aus Aluminiumblech mit 10x2 Millimeter Querschnitt für die Schleifen (jeweils mindestens 300 Millimeter lang)\newline
 - 1x Aluminiumrundstab mit 10 Millimeter Durchmesser und 103.1 Millimeter Länge für den unteren Verbinder der großen Schleife\newline
 - 1x Aluminiumrundstab mit 10 Millimeter Durchmesser und 97.9 Millimeter Länge für den unteren Verbinder der kleinen Schleife\newline
 - 2x Aluminiumrundstab mit 10 Millimeter Durchmesser und 41.55 Millimeter Länge für den oberen Verbinder der großen Schleife\newline
@@ -91,7 +91,7 @@ Für die Realisierung der Helixantenne werden folgende Materialien benötigt:\ne
 - 4x M4x10 Messingschrauben als Lötpunkt für das Antennenkabel \newline
 - 1x 400 Millimeter langes UV-beständiges PVC-Rohr mit 40 Millimeter Außendurchmesser und 3 Millimeter Wanddurchmesser.
 
-Für das Biegen der Aluminiumstreifen wurden mithilfe eines 3D-Druckers Schablonen gefertigt um welche die Streifen gebogen werden können. 
+Für das Biegen der Aluminiumstreifen werden mithilfe eines 3D-Druckers Schablonen gefertigt, um welche die Streifen gebogen werden können. 
 
 \begin{figure} [H]
 	\centering
@@ -105,11 +105,11 @@ Die Aluminiumrundstäbe werden auf beiden Seiten mit einem M4-Gewinde versehen.
 \begin{figure} [H]
 	\centering
 	\includegraphics[width=.25\linewidth]{../ref/qfh_separator.jpeg}
-	\caption{Beispiel eines fertigen Aluminiumrundstab}
+	\caption{Beispiel eines fertigen Aluminiumrundstabs}
 	\label{fig:separator_qha}
 \end{figure}
 
-Die Aluminiumstäbe wurden mithilfe von 2-Komponenten Epoxidkleber in den gebohrten Löchern des PVC-Rohrs befestigt. Das Antennenkabel wurde entsprechend der nachfolgenden Abbildung an die Messingschrauben angelötet. 
+Mit einem 2-Komponenten Epoxidkleber werden die Aluminiumstäbe in den gebohrten Löchern des PVC-Rohrs befestigt. Das Antennenkabel wird entsprechend der nachfolgenden Abbildung an die Messingschrauben angelötet. 
 
 \begin{figure} [H]
 	\centering
@@ -118,7 +118,7 @@ Die Aluminiumstäbe wurden mithilfe von 2-Komponenten Epoxidkleber in den gebohr
 	\label{fig:feedpoint_qha}
 \end{figure}
 
-Vor eindringendem Regenwasser wird das Antennenkabel mithilfe eines 3D-gedrucktem Deckel für das PVC-Rohr geschützt. 
+Vor eindringendem Regenwasser wird das Antennenkabel durch einen 3D-gedruckten Deckel für das PVC-Rohr geschützt.
 
 \begin{figure} [H]
 	\centering
@@ -136,7 +136,7 @@ Da die QHA eine symmetrische Antenne ist, weist die fertige QHA vier Wicklungen 
 	\label{fig:fertig_qha}
 \end{figure}
 
-Für die Anpassung der QHA relevant waren vorallem die Länge des abisolierten und nicht geschirmten Antennenkabels und die Form der Schleifen. Durch das minimieren der abisolierten Länge des Antennenkabels sowie das leichte korrigieren der Form der Schleifen konnte eine Rückflussdämpfung von -17.44 Dezibel bei einer Frequenz von 433 Megahertz erreicht werden, wie im nachfolgenden Kapitel (\ref{sec:messungen_qha}) zu sehen ist. Die Mantelwellensperre nahm keinen Einfluss auf die Anpassung und die Ergebnisse blieben mit und ohne Mantelwellensperre nahezu dieselben. 
+Für die Anpassung der QHA relevant sind vor allem die Länge des abisolierten und nicht geschirmten Antennenkabels und die Form der Schleifen. Durch das Minimieren der abisolierten Länge des Antennenkabels sowie das leichte Korrigieren der Form der Schleifen konnte eine Rückflussdämpfung von -17.44 Dezibel bei einer Frequenz von 433 Megahertz erreicht werden, siehe Kapitel (\ref{sec:messungen_qha}). Die Mantelwellensperre nahm keinen Einfluss auf die Anpassung und die Ergebnisse blieben mit und ohne Mantelwellensperre nahezu dieselben. 
 
 \section{Messungen}
 \label{sec:messungen_qha}
@@ -148,7 +148,7 @@ Für die Anpassung der QHA relevant waren vorallem die Länge des abisolierten u
 	\label{fig:fertig_qha}
 \end{figure}
 
-Die Messung zeigt eine maximale Rückflussdämpfung bei fast genau 433 Megahertz. Die Rückflussdämpfung bei 433 Megahertz beträgt -17.44 Dezibel. Für eine minimale Rückflussdämpfung von -10 Dezibel ergibt sich eine Bandbreite von etwa 422 bis 442 Megahertz. Das Smith-Diagramm gibt Aufschluss darüber, dass die Antenne bei 433 Megahertz mit 52.26 Ohm Wirkwiderstand und 8.85 Ohm Blindwiderstand leichte induktive Eigenschaften aufweist.
+Die Messung zeigt eine maximale Rückflussdämpfung von -17.4 Dezibel bei fast genau 433 Megahertz. Für eine minimale Rückflussdämpfung von -10 Dezibel ergibt sich eine Bandbreite von etwa 422 bis 442 Megahertz. Das Smith-Diagramm gibt Aufschluss darüber, dass die Antenne bei 433 Megahertz mit 52.26 Ohm Wirkwiderstand und 8.85 Ohm Blindwiderstand leichte induktive Eigenschaften aufweist.
 
 \subsection{qualitative Charakterisierung}
 Zur Charakterisierung der QHA wurde mithilfe eines einfachen Dipols und einem HackRF One als Sender die Antenne aus verschiedenen Richtungen angestrahlt. Mithilfe des SDRs wurde die von der Antenne empfangene Leistung ermittelt. Aufgrund der unbekannten Sendeleistung des HackRF One, welcher nur über eine VGA die bei der Sendefrequenz maximale Sendeleistung kontrolliert, kann keine Aussage über die gesendete Leistung getroffen werden. Dementsprechend beschreiben die nachfolgenden Abstrahldiagramme nur relativ das Abstrahlverhalten der QHA und geben keinen Aufschluss über den wirklichen Gewinn der Antenne. Die dargestellten Werte entsprechen der Differenz der minimal empfangenen Leistung mit -105 dBm und dem Wert der empfangenen Liestung der entsprechenden Ausrichtung. Die Y-Achse entspricht der Vertikalen, die X-Achse der Richtung des Verbindungselements der großen Schleife und die Z-Achse der Richtung des Verbindungselements der kleinen Schleife. Auch die empfangenen Leistungen sollten nur als grobe Messwerte betrachtet werden, da das SDR keinen vollwertigen und kalibrierten Spectrum-Analyzer ersetzen kann. 
@@ -236,9 +236,9 @@ Die nachfolgende Tabelle zeigt die Ergebnisse der Messungen des YZ-Strahlungsmus
 Deutlich erkennbar bei der Betrachtung des gemessenen Strahlungsmusters ist, dass die QHA, im Vergleich zur Simulation, den besten Gewinn in die um 180 Grad verschobene Richtung, also 270 Grad, aufweist. Wird das simulierte Strahlungsmuster allerdings um 180 Grad gedreht, so sind die Formen nahezu identisch. Auch das Minimum bei etwa 225 Grad in der Simulation ist somit bei 45 Grad in der Messung deutlich zu erkennen. 
 
 \section{Test}
-Um die Funktionalität der QHA nachzuweisen wurden mehrere Observationen durchgeführt. Dabei wurde das Signal der QHA zusätzlich mithilfe des im späteren Kapitel \ref{sec:LNA} erläuterten LNA verstärkt. Wichtig zu erwähnen ist, dass die zum Test durchgeführten Messungen vor der Charakterisierung der QHA stattgefunden haben und die Ausrichtung der QHA entsprechend der Simulationsergebnisse vorgenommen wurde. Das trotzdem sehr gute Signale empfangen wurden, könnte durch den dennoch guten Gewinn mit dieser Ausrichtung oder Reflexionen an der Erdoberfläche begründet sein. 
+Um die Funktionalität der QHA nachzuweisen wurden mehrere Observationen durchgeführt. Dabei wurde das Signal der QHA zusätzlich mit dem im späteren Kapitel \ref{sec:LNA} erläuterten LNA verstärkt. Wichtig zu erwähnen ist, dass die zum Test durchgeführten Messungen vor der Charakterisierung der QHA stattgefunden haben und die Ausrichtung der QHA entsprechend der Simulationsergebnisse vorgenommen wurde. Das trotzdem sehr gute Signale empfangen wurden, könnte durch den dennoch guten Gewinn mit dieser Ausrichtung oder Reflexionen an der Erdoberfläche begründet sein. 
 
-Die Observationen wurden vom 11. bis zum 14. März 2024, an den Koordinaten 47.44983098163626, 9.833138913740827 (Hof 417, 6861 Alberschwende) und auf einer Höhe von 730 Metern über dem Meeresspiegel durchgeführt.  Die Ergebnisse der Observationen, die zum Test der Funktionalität durchgeführt wurden, können unter folgendem Link aufgerufen werden:\newline \url{https://network.satnogs.org/observations/?norad=&start=2024-02-01+17%3A17&end=2024-03-15+17%3A17&observer=&station=3307&transmitter_mode=&transmitter_uuid=&page=1}
+Die Observationen wurden vom 11. März 2024 bis zum 14. März 2024, an den Koordinaten 47.44983098163626, 9.833138913740827 (Hof 417, 6861 Alberschwende) auf einer Höhe von 730 Metern über dem Meeresspiegel, durchgeführt. Die Ergebnisse dieser Observationen können unter folgendem Link aufgerufen werden:\newline \url{https://network.satnogs.org/observations/?norad=&start=2024-02-01+17%3A17&end=2024-03-15+17%3A17&observer=&station=3307&transmitter_mode=&transmitter_uuid=&page=1}
 
 \begin{figure} [H]
 	\centering
@@ -247,7 +247,7 @@ Die Observationen wurden vom 11. bis zum 14. März 2024, an den Koordinaten 47.4
 	\label{fig:qha_duringobs}
 \end{figure}
 
-Mit 45 empfangenen Paketen empfing die Observation mit der Nummer 9196747 des Satelliten \glqq 98959 - SONATE-2\grqq{}  und dem Sender \glqq Mode U - GMSK9k6 - AX.25 G3RUH - Telemetry\grqq{} die meisten Datenpakete. Die Daten wurden am 14. März 2024 von 00:16:04 bis 00:23:36 (UTC) empfangen. Die nachfolgende Abbildung zeigt das Wasserfalldiagramm sowie das erste dekodierte Datenpaket im HEX und AX.25 Format.
+Mit 45 empfangenen Paketen empfing die Observation mit der Nummer 9196747 des Satelliten \glqq 98959 - SONATE-2\grqq{}  und dem Sender \glqq Mode U - GMSK9k6 - AX.25 G3RUH - Telemetry\grqq{} die meisten Datenpakete. Die Daten wurden am 14. März 2024 von 00:16:04 bis 00:23:36 (UTC) empfangen. Die Abbildung \ref{fig:qha_successfull_observation} zeigt das Wasserfalldiagramm sowie das erste dekodierte Datenpaket im HEX und AX.25 Format.
 
 \begin{figure} [H]
 	\centering

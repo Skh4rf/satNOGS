@@ -143,12 +143,12 @@ Das Ergebnis ist ein modular platzierbarer und vielseitiger Schaltschrank:
 
 \section{SDR}
 \label{sec:sdr}
-SDRs ersetzen traditionelle Hardwarekomponenten für Hochfrequenzsender und -empfänger durch Software, um Signale zu empfangen, zu demodulieren und zu verarbeiten. Anstatt spezieller Hardware für jede Funkkommunikationsart zu benötigen, kann ein SDR flexibel über eine Software konfiguriert werden, um verschiedene Frequenzen und Modulationsarten zu unterstützen. Durch die Digitalisierung des Funkempfangs ermöglicht ein SDR eine breite Palette von Anwendungen und verbesserte Flexibilität bei der Signalverarbeitung. \cite{noauthor_sdr_nodate}
+SDRs ersetzen traditionelle Hardwarekomponenten für Hochfrequenzsender und -empfänger durch Software, um Signale zu empfangen, zu demodulieren und zu verarbeiten. Anstatt spezielle Hardware für jede Funkkommunikationsart zu benötigen, kann ein SDR flexibel über eine Software konfiguriert werden und somit verschiedene Frequenzen und Modulationsarten unterstützen. Durch die Digitalisierung des Funkempfangs ermöglicht ein SDR eine breite Palette von Anwendungen und verbesserte Flexibilität bei der Signalverarbeitung. \cite{noauthor_sdr_nodate}
 
 Das für diese Empfangsstation verwendete SDR ist das RTL-SDR Blog v3 mit folgenden Spezifikationen:
 \begin{table}
 	\centering
-	\begin{tabular}{cl}
+	\begin{tabular}{ll}
 		\textbf{Bandbreite} & bis zu 2.4 Megahertz \\
 		\textbf{ADC} & RTL2832U 8-Bit \\
 		\textbf{Frequenzbereich} & 500 Kilohertz bis 1766 Megahertz \\
@@ -280,7 +280,7 @@ Um eine Observation mit der Empfangsstation planen zu können, wird ein Benutzer
 \end{figure}
 
 \subsection{Observation auswählen}
-Auf der Seite der Empfangsstation (hier: https://network.satnogs.org/stations/3307/) können über den Reiter \textbf{Future Passes}  die in der Zukunft passierenden Satelliten angezeigt werden.
+Auf der Seite der Empfangsstation (hier: https://network.satnogs.org/stations/3307/) können über den Reiter \glqq Future Passes\grqq{}  die in der Zukunft passierenden Satelliten angezeigt werden.
 
 \begin{figure} [H]
 	\centering
@@ -300,15 +300,15 @@ Die folgende Abbildung zeigt die zukünftig passierenden Satelliten und ausgewä
 
 Entsprechend der Beschriftung geben die Informationen Aufschluss über folgende Eigenschaften:
 
-\textbf{1}: Status der bereits betätigten Observation. Wobei Grün für Erfolgreich, Orange für unbewertet, Rot für Fehlgeschlagen und Blau für zukünftig steht.\newline
+\textbf{1}: Status bereits getätigter Observation. Wobei Grün für erfolgreich, Orange für unbewertet, Rot für fehlgeschlagen und Blau für zukünftig steht.\newline
 
 \textbf{2}: Beginn des Signalempfangs (AOS - Acquisition of Signal) \newline
 
 \textbf{3}: Zeitpunkt des Signalverlusts (LOS - Loss of Signal) \newline
 
-\textbf{4}: von oben nach unten: Azimut zum Zeitpunkt AOS, Azimut zum Zeitpunk der geringsten Entfernung vom Satellit zur Empfangsstation, Azimut zum Zeitpunkt LOS \newline
+\textbf{4}: Von oben nach unten: Azimut zum Zeitpunkt AOS, Azimut zum Zeitpunk der geringsten Entfernung vom Satellit zur Empfangsstation, Azimut zum Zeitpunkt LOS \newline
 
-\textbf{5}: Der Polar-Plot zeigt den Elevationswinkel (Entfernung zum Mittelpunkt) sowie den Azimutalwinkel (Angegeben durch die Himmelsrichtungen) während der Observation an. Der grüne Punkt Kennzeichnet den AOS-Zeitpunkt und der rote Punkt den LOS-Zeitpunkt.
+\textbf{5}: Der Polar-Plot zeigt den Elevationswinkel (Entfernung zum Mittelpunkt) sowie den Azimutalwinkel (Angegeben durch die Himmelsrichtungen) während der Observation an. Der grüne Punkt kennzeichnet den AOS-Zeitpunkt und der rote Punkt den LOS-Zeitpunkt.
 
 Über den mit \textbf{6} markierten Button kann die Observation in einem weiteren Fenster, wie in nachfolgender Grafik gezeigt, konfiguriert und durchgeführt werden.
 
@@ -319,10 +319,10 @@ Entsprechend der Beschriftung geben die Informationen Aufschluss über folgende 
 	\label{fig:htrl-uhf(test)configureobservation}
 \end{figure}
 
-Das mit \textbf{1} markierte Dropdown-Menü zeigt den zur Observation ausgewählten Satelliten an und über das mit \textbf{2} markierte können die vorhandenen Sender des Satelliten angezeigt und ausgewählt werden. Mithilfe der mit \textbf{4} markierten Eingabefelder kann Start- und Endzeitpunkt der Observation konfiguriert werden. Das mit \textbf{3} markierte Feld zeigt die zur Observation ausgewählte Empfangsstation an. Mit einem Klick auf den mit \textbf{5} markierten Button \textbf{Schedule} wird die Observation geplant und startet automatisch zum konfigurierten Zeitpunkt.
+Das mit \textbf{1} markierte Dropdown-Menü zeigt den zur Observation ausgewählten Satelliten an und über das mit \textbf{2} Dropdown-Menü markierte können die vorhandenen Sender des Satelliten angezeigt sowie ausgewählt werden. Mithilfe der mit \textbf{4} markierten Eingabefelder kann Start- und Endzeitpunkt der Observation konfiguriert werden. Das mit \textbf{3} markierte Feld zeigt die zur Observation ausgewählte Empfangsstation an. Mit einem Klick auf den mit \textbf{5} markierten Button \textbf{Schedule} wird die Observation geplant und startet automatisch zum konfigurierten Zeitpunkt.
 
 \subsection{Observation auswerten}
-Um die Observationen einer Empfangsstation anzuzeigen wird auf den in der nächsten Grafik mit \textbf{1} markierten Button auf der Landingpage der Empfangsstation gedrückt.
+Um die Observationen einer Empfangsstation anzuzeigen, wird auf den in Abbildung \ref{fig:htrl-uhf(test)showobservations} mit \textbf{1} markierten Button auf der Landingpage der Empfangsstation gedrückt.
 
 \begin{figure} [H]
 	\centering
@@ -331,7 +331,7 @@ Um die Observationen einer Empfangsstation anzuzeigen wird auf den in der nächs
 	\label{fig:htrl-uhf(test)showobservations}
 \end{figure}
 
-Die somit erschienene Übersicht zeigt alle mit dieser Station getätigten und zukünftigen Observationen an.
+Die somit erscheinende Übersicht zeigt alle mit dieser Station getätigten und zukünftigen Observationen an.
 
 \begin{figure} [H]
 	\centering
@@ -340,7 +340,7 @@ Die somit erschienene Übersicht zeigt alle mit dieser Station getätigten und z
 	\label{fig:htrl-uhf(test)overviewobservations}
 \end{figure}
 
-Durch das Klicken auf eine Observation öffnet sich eine weitere Seite die sowohl die allgemeinen Informationen zur Observation als auch die Ergebnis in Form eines Wasserfalldiagramms, einer Audiospur sowie dekodierter Daten enthält. 
+Durch das Klicken auf eine Observation öffnet sich eine weitere Seite, die sowohl die allgemeinen Informationen zur Observation als auch die Ergebnisse in Form eines Wasserfalldiagramms, einer Audiospur sowie von dekodierten Daten enthält. 
 
 \begin{figure} [H]
 	\centering
@@ -352,9 +352,9 @@ Durch das Klicken auf eine Observation öffnet sich eine weitere Seite die sowoh
 Ist im Wasserfalldiagramm ein dem Transmitter-Mode entsprechendes Signal zu erkennen, so kann die Observation dementsprechend über die mit \textbf{1} markierten Buttons bewertet werden. Diese Evaluation ist von größer Bedeutung für die Betreiber des Satelliten um dessen Funktionstüchtigkeit zu Überwachen.
 
 \section{SDR-Server starten}
-Für die Fehlerbehebung und das ermitteln der idealen Gain des SDRs ist es vorteilhaft dieses manuell Bedienen zu können. Eine Möglichkeit dies zu tun ist das exportieren der lokal vorhandenen SoapySDR-Geräte, zu welchen auch das RTL-SDR Blog v3 gehört, über das Netzwerk mithilfe des SoapySDRServer. Um diesen SoapySDRServer zu starten muss in SSH des Raspberry Pi 4 lediglich der Befehl \textbf{SoapySDRServer --bind="0.0.0.0:55132"} ausgeführt werden. \cite{noauthor_soapysdrserver1_nodate}
+Für die Fehlerbehebung und das Ermitteln der idealen Gain des SDRs ist es vorteilhaft, dieses manuell Bedienen zu können. Eine Möglichkeit hierfür ist das Exportieren der lokal vorhandenen SoapySDR-Geräte, zu welchen auch das RTL-SDR Blog v3 gehört, über das Netzwerk mithilfe eines SoapySDR-Server. Um diesen SoapySDRServer zu starten muss in der SSH des Raspberry Pi 4 lediglich der Befehl \glqq SoapySDRServer --bind="0.0.0.0:55132"\grqq{} ausgeführt werden. \cite{noauthor_soapysdrserver1_nodate}
 
-Wurde der SoapySDRServer auf dem Raspberry Pi 4 gestartet, so kann auf einem weiteren Gerät welches mit demselben Netzwerk verbunden ist, eine geeignete SDR-Software (zum Beispiel CubicSDR) ausgeführt werden, dass die Steuerung des SDRs ermöglicht.
+Wurde der SoapySDRServer auf dem Raspberry Pi 4 gestartet, so kann auf einem weiteren Gerät, welches mit demselben Netzwerk verbunden ist, eine geeignete SDR-Software (zum Beispiel CubicSDR) ausgeführt werden, welches die Steuerung des SDRs ermöglicht.
 
 \begin{figure} [H]
 	\centering
@@ -364,16 +364,16 @@ Wurde der SoapySDRServer auf dem Raspberry Pi 4 gestartet, so kann auf einem wei
 \end{figure}
 
 
-\section{geeignete Gain ermitteln}
-Bei zunehmender Gain-Einstellung eines Empfangssystems wie einem Software Defined Radio (SDR) steigt der Rauschpegel, der auch als "Noise Floor" bezeichnet wird. Der Noise Floor fungiert als Maß für das Hintergrundrauschen innerhalb des Systems und beschreibt die Gesamtheit aller unerwünschten Signale und Störungen, die vom Empfänger erfasst werden.
+\section{Geeignete Gain ermitteln}
+Bei zunehmender Gain-Einstellung eines Empfangssystems wie einem SDR steigt der Rauschpegel, der auch als "Noise Floor" bezeichnet wird, an. Der Noise Floor fungiert als Maß für das Hintergrundrauschen innerhalb des Systems und beschreibt die Gesamtheit aller unerwünschten Signale und Störungen, die vom Empfänger erfasst werden.
 
-Durch die Erhöhung des Gains wird nicht nur das Nutzsignal verstärkt, sondern auch das Rauschen. Da das Rauschen unabhängig von der Signalstärke immer vorhanden ist, wird es proportional verstärkt, wenn der Gain erhöht wird. Infolgedessen steigt der Rauschpegel im Verhältnis zum Nutzsignal an, was zu einer Erhöhung des Noise Floors führt. Diese Erhöhung kann die Empfindlichkeit des Empfängers beeinträchtigen und die Fähigkeit, schwache Signale von Hintergrundrauschen zu unterscheiden, einschränken. Somit ist es von entscheidender Bedeutung, den Gain des Empfangssystems mit Bedacht einzustellen, um eine optimale Signalqualität zu gewährleisten.
+Somit wird durch die Erhöhung des Gains nicht nur das Nutzsignal verstärkt, sondern auch das Rauschen. Da das Rauschen unabhängig von der Signalstärke immer vorhanden ist, wird es proportional verstärkt, wenn der Gain erhöht wird. Infolgedessen steigt der Rauschpegel im Verhältnis zum Nutzsignal an, was zu einer Erhöhung des Noise Floors führt. Diese Erhöhung kann die Empfindlichkeit des Empfängers beeinträchtigen und die Fähigkeit, schwache Signale von Hintergrundrauschen zu unterscheiden, einschränken. Folglich ist es von entscheidender Bedeutung, den Gain des Empfangssystems mit Bedacht einzustellen, um eine optimale Signalqualität zu gewährleisten.
 
-Dazu eignet sich die manuelle Steuerung des SDRs über Software-Programme wie CubicSDR. Mithilfe des dort vorhandenen Schiebereglers für die Gain, wird diese solange angehoben bis der Rauschpegel deutlich steigt. In nachfolgender Abbildung ist deutlich zu sehen wie der Rauschpegel ab einer Verstärkung von 30dB deutlich zunimmt. Die Gain des SDRs sollte dementsprechend nicht über 30dB betragen um auch schwache Signale vom Hintergrundrauschen unterscheiden zu können. 
+Dazu eignet sich die manuelle Steuerung des SDRs über Software-Programme wie CubicSDR. Mithilfe des dort vorhandenen Schiebereglers für die Gain, wird diese solange angehoben bis der Rauschpegel deutlich steigt. In nachfolgender Abbildung ist deutlich zu sehen wie der Rauschpegel ab einer Verstärkung von 30dB signifikant zunimmt. Die Gain des SDRs sollte dementsprechend nicht über 30dB betragen, um auch schwache Signale vom Hintergrundrauschen unterscheiden zu können. 
 
 \begin{figure} [H]
 	\centering
 	\includegraphics[width=\linewidth]{../ref/noiseflooradjustment.png}
-	\caption{Beispielgrafik für den Rauschpegel verschiedener Gains}
+	\caption{Beispielgrafik für den Rauschpegel verschiedener Gains \cite{noauthor_omnidirectional_nodate}}
 	\label{fig:noiseflooradjustment}
 \end{figure}

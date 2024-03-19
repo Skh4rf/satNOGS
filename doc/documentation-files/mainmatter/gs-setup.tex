@@ -26,7 +26,7 @@ Mithilfe des Befehls \glqq sudo satnogs-setup\grqq{} öffnet sich das Hauptmenü
 Wurden alle Einstellungen vorgenommen, so können diese mit Wurde bei der Installation ein Passwort eingegeben\glqq Apply\grqq{} angewendet und gespeichert werden.
 
 \subsection{Einstellungen}
-Wird im Hauptmenü der Reiter \textbf{Basic} mit \textbf{Enter} ausgewählt, so erscheint folgendes Fenster über welches alle grundlegenden Einstellungen zum Betrieb einer Empfangsstation vorgenommen werden können.
+Wird im Hauptmenü der Reiter \glqq Basic\grqq{} mit \glqq Enter\grqq{} ausgewählt, erscheint folgendes Fenster über welches alle grundlegenden Einstellungen zum Betrieb einer Empfangsstation vorgenommen werden können.
 
 \begin{figure} [H]
 	\centering
@@ -36,45 +36,45 @@ Wird im Hauptmenü der Reiter \textbf{Basic} mit \textbf{Enter} ausgewählt, so 
 \end{figure}
 
 \subsubsection{SATNOGS\textunderscore API\textunderscore TOKEN}
-Der API-Schlüssel, welcher mit dem SatNOGS-Benutzerkonto verknüpft ist, wird von der Empfangsstation benötigt sich gegenüber der SatNOGS-Datenbank zu identifizieren und authentifizieren. Er kann auf dem Benutzerprofil der SatNOGS-Netzwerk Webseite durch das Klicken auf den in der folgenden Grafik mit 1 markierten Button an der mit 2 markierten Stelle abgelesen werden.
+Der API-Schlüssel, welcher mit dem SatNOGS-Benutzerkonto verknüpft ist, wird zur Identifizierung sowie Authentifizierung gegenüber der SatNOGS-Datenbank benötigt. Er kann auf dem Benutzerprofil der SatNOGS-Netzwerk Webseite durch das Klicken auf den in der folgenden Grafik mit 1 markierten Button an der mit 2 markierten Stelle abgelesen werden.
 
 \begin{figure} [H]
 	\centering
 	\includegraphics[width=.75\linewidth]{../ref/apitoken.png}
-	\caption{SatNOGS-Netwerk Homepage: API-Schüssel ermitteln}
+	\caption{SatNOGS-Netwerk Homepage: API-Schüssel ermitteln \cite{noauthor_satnogsdashboard_nodate}}
 	\label{fig:apikey}
 \end{figure}
 
 \subsubsection{SATNOGS\textunderscore SOAPY\textunderscore RX\textunderscore DEVICE}
-Mithilfe dieses Einstellungsparameters wird dem SatNOGS Client das verwendete SDR mitgeteilt. In diesem Fall entspricht das SDR dem, im späteren Kapitel \ref{sec:sdr} genauer Erläuterten, RTL-SDR Blog v3 und die dementsprechende einzugebende Treiber-Kennzeichnung lautet \textbf{driver=rtlsdr} \cite{noauthor_satnogsclient_nodate}. Weitere Treiber-Kennzeichnungen können auf der Software Defined Radio Seite des SatNOGS Wiki \cite{noauthor_software_nodate} nachgeschlagen werden.
+Mithilfe dieses Einstellungsparameters wird dem SatNOGS Client das verwendete SDR mitgeteilt. In diesem Fall entspricht das SDR dem, im Kapitel \ref{sec:sdr} genauer erläuterten, RTL-SDR Blog v3. Die dementsprechend einzugebende Treiber-Kennzeichnung lautet \glqq driver=rtlsdr\grqq{} \cite{noauthor_satnogsclient_nodate}. Weitere Treiber-Kennzeichnungen können auf der Software Defined Radio Seite des SatNOGS Wiki nachgeschlagen werden \cite{noauthor_software_nodate}.
 
 \subsubsection{SATNOGS\textunderscore ANTENNA}
-Über diesen Einstellungsparameter wird entsprechend dem verwendeten SDR und dem passenden Parameter der Modus des SDRs konfiguriert. Für das RTL-SDR Blog v3 entspricht das dem Parameter \textbf{RX} \cite{noauthor_satnogsclient_nodate}. Entsprechende Parameter für weitere SDR Typen können auf der Software Defined Radio Seite des SatNOGS Wiki \cite{noauthor_software_nodate} nachgeschlagen werden. 
+Über diesen Einstellungsparameter wird entsprechend dem verwendeten SDR und dem passenden Parameter der Modus des SDRs konfiguriert. Für das RTL-SDR Blog v3 entspricht das dem Parameter \textbf{RX} \cite{noauthor_satnogsclient_nodate}. Entsprechende Parameter für weitere SDR Typen können auf der Software Defined Radio Seite des SatNOGS Wiki nachgeschlagen werden \cite{noauthor_software_nodate}. 
 
 \subsubsection{SATNOGS\textunderscore RX\textunderscore SAMP\textunderscore RATE}
-Dieser Parameter legt die Abtastrate des SDRs fest. Für das RTL-SDR Blog v3 wird eine Abtastrate von 2.048 Megasamples pro Sekunde empfohlen \cite{noauthor_satnogsclient_nodate}, was über den Parameter 2.048e6 eingestellt werden kann. Auch hier finden sich für andere SDRs Informationen auf der Software Defined Radio Seite des SatNOGS Wiki \cite{noauthor_software_nodate}. 
+Dieser Parameter legt die Abtastrate des SDRs fest. Für das RTL-SDR Blog v3 wird eine Abtastrate von 2.048 Megasamples pro Sekunde empfohlen \cite{noauthor_satnogsclient_nodate}, was über den Parameter 2.048e6 eingestellt werden kann. Auch hier finden sich für weitere SDRs Informationen auf der Software Defined Radio Seite des SatNOGS Wiki \cite{noauthor_software_nodate}. 
 
 \subsubsection{SATNOGS\textunderscore STATION\textunderscore ELEV}
-Für diesen Parameter ist es notwendig die Höhenlage der Empfangsstation zu ermitteln. Es empfiehlt sich dazu eine interaktive topografische Karte, wie de-at.topographic-map.com, zu verwenden. Für den Standort der HTL Rankweil entspricht dieser Wert, was zugleich auch dem Parameter entspricht, 459 Meter. Dieser Wert wird für die Berechnungen der passierenden Satelliten und dessen Elevation- und Azimutalwinkel verwendet.
+Für diesen Parameter ist es notwendig, die Höhenlage der Empfangsstation zu ermitteln. Dazu empfiehlt sich die Verwendung einer interaktiven topografischen Karte wie \url{http://www.de-at.topographic-map.com}. Der für den Standort der HTL Rankweil ermittelte Wert, welcher auch dem Parameter entspricht, beträgt 459 Meter. Dieser Wert wird für die Berechnungen der passierenden Satelliten und dessen Elevation- und Azimutalwinkel verwendet.
 
 \subsubsection{SATNOGS\textunderscore STATION\textunderscore ID}
-Die Station-ID wird zur eindeutigen Identifikation der Empfangsstation im SatNOGS-Netzwerk verwendet und kann auf der Seite des Benutzerprofils auf der Homepage des SatNOGS-Netzwerks abgelesen werden. 
+Die Station-ID wird zur eindeutigen Identifikation der Empfangsstation im SatNOGS-Netzwerk verwendet. Sie kann auf der Seite des Benutzerprofils auf der Homepage des SatNOGS-Netzwerks abgelesen werden. 
 
 \begin{figure} [H]
 	\centering
 	\includegraphics[width=.75\linewidth]{../ref/stationid.png}
-	\caption{SatNOGS-Netzwerk Homepage: Station-ID ermitteln}
+	\caption{SatNOGS-Netzwerk Homepage: Station-ID ermitteln \cite{noauthor_satnogsdashboard_nodate}}
 	\label{fig:stationid}
 \end{figure}
 
 \subsubsection{SATNOGS\textunderscore STATION\textunderscore LAT}
-Dieser Parameter gibt den Breitengrad der Position der Empfangsstation an. Dieser Wert wird für die Berechnungen der passierenden Satelliten und dessen Elevation- und Azimutalwinkel verwendet.
+Dieser Parameter gibt den Breitengrad der Position der Empfangsstation an. Er wird für die Berechnungen der passierenden Satelliten und dessen Elevation- und Azimutalwinkel verwendet.
 
 \subsubsection{SATNOGS\textunderscore STATION\textunderscore LON}
-Dieser Parameter gibt den Längengrad der Position der Empfangstation an. Dieser Wert wird für die Berechnungen der passierenden Satelliten und dessen Elevation- und Azimutalwinkel verwendet.
+Dieser Parameter gibt den Längengrad der Position der Empfangstation an. Er wird ebenfalls für die Berechnungen der passierenden Satelliten und dessen Elevation- und Azimutalwinkel verwendet.
 
-\section{erweiterte Konfiguration} 
-Wird im Hauptmenü der Reiter \textbf{Advanced} mit \textbf{Enter} ausgewählt, so erscheint folgendes Fenster über welches erweiterte Einstellungen vorgenommen werden können. 
+\section{Erweiterte Konfiguration} 
+Wird im Hauptmenü der Reiter \glqq Advanced\grqq{} mit \glqq Enter\grqq{} ausgewählt, erscheint das folgende Fenster über welches erweiterte Einstellungen vorgenommen werden können. 
 
 \begin{figure} [H]
 	\centering
@@ -83,10 +83,10 @@ Wird im Hauptmenü der Reiter \textbf{Advanced} mit \textbf{Enter} ausgewählt, 
 	\label{fig:advanced_settings}
 \end{figure}
 
-Die wichtigsten Einstellungen die hier vorgenommen werden können sind das definieren der Verstärkung des SDRs, das Einrichten einer Unterstützung für die Verwendung eines Rotors und das automatische Aktivieren von Bias-T während einer Observation.
+Die wichtigsten Einstellungen, die hier vorgenommen werden können, sind das Definieren der Verstärkung des SDRs, das Einrichten einer Unterstützung für die Verwendung eines Rotors und das automatische Aktivieren von Bias-T während einer Observation.
 
 \subsection{Verstärkung des SDRs einstellen}
-Um die Verstärkung des SDRs einzustellen müssen zuerst die möglichen Parameter ermittelt werden, was durch das ausführen des Befehls \textbf{rtl\textunderscore test} in der SSH gemacht werden kann. 
+Um die Verstärkung des SDRs einzustellen, müssen zuerst die möglichen Parameter ermittelt werden, was durch das Ausführen des Befehls \glqq rtl\textunderscore test\grqq{} in der SSH gemacht werden kann. 
 
 \begin{figure} [H]
 	\centering
@@ -95,29 +95,29 @@ Um die Verstärkung des SDRs einzustellen müssen zuerst die möglichen Paramete
 	\label{fig:supportedgain}
 \end{figure}
 
-Wurde aus der Ausgabe, wie in obiger Darstellung gezeigt, der gewünschte Wert der Verstärkung gewählt, so kann dieser in den erweiterten Einstellungen unter dem Reiter \textbf{Radio} mithilfe des Parameters \textbf{SATNOGS\textunderscore RF\textunderscore GAIN} eingestellt werden. 
+Wurde aus den ermittelten Gain Werten, wie in Abbildung \ref{fig:supportedgain} gezeigt, der gewünschte Wert der Verstärkung gewählt, so kann dieser in den erweiterten Einstellungen unter dem Reiter \glqq Radio\grqq{} mithilfe des Parameters \glqq SATNOGS\textunderscore RF\textunderscore GAIN\grqq{} eingestellt werden. 
 
 \subsection{Rotor-Unterstützung implementieren}
-Für die Implementierung einer Rotorsteuerung müssen in den erweiterten Einstellungen unter dem Reiter \textbf{Rotator} drei Parameter angepasst werden. 
+Für die Implementierung einer Rotorsteuerung müssen in den erweiterten Einstellungen unter dem Reiter \glqq Rotator\grqq{} drei Parameter angepasst werden. 
 
-Der erste Parameter \textbf{SATNOGS\textunderscore ROT\textunderscore ENABLED} aktiviert die Verwendung der konfigurierten Rotorsteuerung. 
+Der erste Parameter \glqq{}SATNOGS\textunderscore ROT\textunderscore ENABLED\grqq{} aktiviert die Verwendung der konfigurierten Rotorsteuerung. 
 
-Mithilfe des Parameters \textbf{SATNOGS\textunderscore ROT\textunderscore MODEL} wird das Model der Rotorsteuerung festgelegt. Im Fall der im späteren Kapitel \ref{sec:gs232emulation} erläuterten GS232A/B Steuerung wird für den Parameter \textbf{ROT\textunderscore MODEL\textunderscore GS232B} verwendet \cite{noauthor_satnogsclient_nodate}. 
+Mithilfe des Parameters \glqq SATNOGS\textunderscore ROT\textunderscore MODEL\grqq{} wird das Model der Rotorsteuerung festgelegt. Im Fall der im Kapitel \ref{sec:gs232emulation} erläuterten GS232A/B Steuerung wird für den Parameter \glqq ROT\textunderscore MODEL\textunderscore GS232B\grqq{} verwendet \cite{noauthor_satnogsclient_nodate}. 
 
-\textbf{SATNOGS\textunderscore ROT\textunderscore BAUD} legt die Baud-Rate der Kommunikation mit der Steuerung fest und beträgt im Fall der im späteren Kapitel \ref{sec:gs232emulation} erläuterten Steuerung 9600.
+\glqq SATNOGS\textunderscore ROT\textunderscore BAUD\grqq{} legt die Baud-Rate der Kommunikation mit der Steuerung fest. Sie beträgt im Fall der im Kapitel \ref{sec:gs232emulation} erläuterten Steuerung 9600.
 
 \subsection{Aktivieren von Bias-T}
-Das Aktivieren von Bias-T ist abhängig vom verwendeten SDR und wird nun nur für das RTL-SDR Blog v3 erläutert. Um die softwaremäßigen Voraussetzungen für die Verwendung von Bias-T am RTL-SDR Blog v3 zu erfüllen müssen im ersten Schritt folgende Befehle in der SSH ausgeführt werden:
-\newline 1. \textbf{sudo apt install cmake}
-\newline 2. \textbf{git clone https://github.com/rtlsdrblog/rtl\textunderscore biast}
-\newline 3. \textbf{cd rtl\textunderscore biast}
-\newline 4. \textbf{mkdir build}
-\newline 5. \textbf{cd build}
-\newline 6. \textbf{cmake ..}
-\newline 7. \textbf{make}
+Die Aktivierung von Bias-T ist abhängig vom verwendeten SDR. Sie wird nun nur für das RTL-SDR Blog v3 erläutert. Um die softwaremäßigen Voraussetzungen für die Verwendung von Bias-T am RTL-SDR Blog v3 zu erfüllen, müssen im ersten Schritt folgende Befehle in der SSH ausgeführt werden:
+\newline 1. \glqq sudo apt install cmake\grqq{}
+\newline 2. \glqq git clone https://github.com/rtlsdrblog/rtl\textunderscore biast\grqq{}
+\newline 3. \glqq cd rtl\textunderscore biast\grqq{}
+\newline 4. \glqq mkdir build\grqq{}
+\newline 5. \glqq cd build\grqq{}
+\newline 6. \glqq cmake ..\grqq{}
+\newline 7. \glqq make\grqq{}
 
-Diese Schritte ermöglichen die Kontrolle der Bias-T Funktion des RTL-SDR Blog v3 und müssen nur einmal durchgeführt werden. Sie ermöglichen die Kontrolle der Funktion über folgende Befehle:
-\newline Einschalten: \textbf{/rtl\textunderscore biast/build/src/rtl\textunderscore biast -b 1}
-\newline Ausschalten: \textbf{/rtl\textunderscore biast/build/src/rtl\textunderscore biast -b 0}
+Diese Schritte ermöglichen die Kontrolle der Bias-T Funktion des RTL-SDR Blog v3 und müssen nur einmal durchgeführt werden. Bias-T kann nun über folgende Befehle manuell gesteuert werden:
+\newline Einschalten: \glqq /rtl\textunderscore biast/build/src/rtl\textunderscore biast -b 1\grqq{}
+\newline Ausschalten: \glqq /rtl\textunderscore biast/build/src/rtl\textunderscore biast -b 0\grqq{}
 
-Diese Befehle können nun in den erweiterten Einstellungen unter dem Reiter Scripts als Pre- und Post-Observation Script festgelegt werden. Dazu wird der Einschalt- sowie Ausschaltbefehl mit \textbf{/home} am Anfang, aufgrund des Ursprungsverzeichnisses des SatNOGS Client, erweitert werden.
+Diese Befehle können nun in den erweiterten Einstellungen unter dem Reiter Scripts als Pre- und Post-Observation Script festgelegt werden. Dazu wird der Einschalt- sowie Ausschalt-Befehl mit \glqq /home\grqq{} , aufgrund des Ursprungsverzeichnisses des SatNOGS Client, am Anfang erweitert.
