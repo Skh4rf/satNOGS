@@ -75,7 +75,7 @@ Zur Bestimmung der Halbwertsbreite ist die Hauptkeule des Abstrahldiagramms eine
 Die Eingangsimpedanz einer Antenne ist eine wichtige Größe in der Antennentechnik. Dies liegt daran, dass die Antenne meist auf ein Koaxialkabel mit einem Wellenwiderstand von 50$\Omega$ angepasst werden muss. Dies kann durch verschiedene Anpassungstechniken erreicht werden, wie z.B. ein LC-Anpassungsnetzwerk oder Übertragungsleitungen. 
 
 \subsubsection{S11 Parameter}
-Der S11 Parameter beschreibt, wie viel eines Signals an dem Tor eines Vierpols reflektiert wird. Hierbei wird das Verhältnis zwischen hinlaufender Welle und rücklaufender Welle aufgestellt. Mithilfe dieses Parameters kann auf die Qualität der Impedanzanpassung geschlossen werden. Je niedriger der Wert, desto besser die Anpassung. Der S11 Parameter wird üblicherweise in dB angegeben MISSING REFERENCE.
+Der S11 Parameter beschreibt, wie viel eines Signals an dem Tor eines Vierpols reflektiert wird. Hierbei wird das Verhältnis zwischen hinlaufender Welle und rücklaufender Welle aufgestellt. Mithilfe dieses Parameters kann auf die Qualität der Impedanzanpassung geschlossen werden. Je niedriger der Wert, desto besser die Anpassung. Der S11 Parameter wird üblicherweise in dB angegeben \cite{noauthor_streuparameter_2023}.
 
 \subsection{Richtcharakteristik und Richtdiagramm}
 Die Richtcharakteristik beschreibt das Abstrahlverhalten einer Antenne. Hierbei wird die unter einem bestimmten Winkel ($\theta$, $\phi$) auftretende Feldstärke auf einen Maximalwert bezogen\cite[p. 20]{Kraus-2002-AntennasB}.
@@ -89,7 +89,7 @@ Wobei $\theta$ der Elevationswinkel (vertikal Winkel) und $\phi$ den Azimutwinke
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=7cm]{../ref/Richtdiagramm_Beispiel}
-	\caption{Richtdiagramm einer stark bündelnden Antenne\cite{richtdiagramm_beispiel}}
+	\caption{Richtdiagramm einer stark bündelnden Antenne \cite{richtdiagramm_beispiel}}
 	\label{fig:Richtdiagramm Beispiel}
 \end{figure}
 
@@ -97,7 +97,7 @@ Hierbei ist zu bemerken dass in Abbildung \ref{fig:Richtdiagramm Beispiel} entge
 
 Der größte Teil der Leistung ist naheliegend in der Hauptkeule zu finden, während es nötig ist die Neben-und Rückwärtskeulen möglichst klein zu halten, um unnötige Abstrahlung in die Umgebung zu vermeiden. Die Halbwertsbreite der Hauptkeule ist der Wert ab dem die Leistungsdichte auf die Hälfte abgesunken ist.\\
 
-Eine weitere wichtige Kenngröße bei Richtantennen ist das Vor-Rückwärtsverhältnis. Dies ist die Fähigkeit einer Richtantenne, Strahlung aus anderen Richtungen als der Hauptstrahlrichtung zu unterdrücken.
+Eine weitere wichtige Kenngröße bei Richtantennen ist das Vor-Rückwärtsverhältnis. Dies ist die Fähigkeit einer Richtantenne, Strahlung aus anderen Richtungen als der Hauptstrahlrichtung zu unterdrücken \cite{Kraus-2002-AntennasB}.
 
 \subsection{Einfluss der Erde auf das Richtdiagramm}
 Wird das Strahlungsdiagramm einer Antenne über dem Boden mit dem einer Antenne im Freiraum verglichen, lassen sich große Unterschiede erkennen. Der Boden dient als Reflektor wobei seine Reflexionseigenschaften von der Dielektrizitätskonstante sowie der Leitfähigkeit bestimmt werden.\\
@@ -106,22 +106,18 @@ Für die Reflexion elektromagnetischer Wellen am Erdboden trifft das Reflexionsg
 
 Die Polarisierung der verwendeten Antenne spielt eine entscheidende Rolle bei der Reflexion. Bei einer vertikal polarisierten Antenne ist der Stromverlauf von Spiegelbild und Original gleichphasig. Bei einer horizontal polarisierten Antenne hingegen ist der Stromverlauf zwischen Reflexion und Original gegenphasig.\\
 
-Der Abstand vom Boden spielt ebenfalls eine kritische Rolle und hat großen Einfluss auf das resultierende Richtdiagramm der Antenne. Wird beispielsweise ein Dipol $\frac{\lambda}{2}$ vom Boden entfernt aufgestellt, so verändert sich sein Richtdiagramm so sehr, dass aus der omnidirektionalen Antenne ein Strahler mit zwei Strahlungskeulen wird. 
+Der Abstand vom Boden spielt ebenfalls eine kritische Rolle und hat großen Einfluss auf das resultierende Richtdiagramm der Antenne. Wird beispielsweise ein Dipol $\frac{\lambda}{2}$ vom Boden entfernt aufgestellt, so verändert sich sein Richtdiagramm so sehr, dass aus der omnidirektionalen Antenne ein Strahler mit zwei Strahlungskeulen wird \cite{Kraus-2002-AntennasB}. 
 
 
 \subsection{Baluns}
 \label{subsec:baluns}
 Um Baluns zu verstehen muss vorerst der Unterschied zwischen symmetrischen und unsymmetrischen Leitungen verstanden werden. 
 
-Eine unsymmetrische Leitung besteht aus einem Hauptleiter und einer Masseleitung, welche oft als Schild vor Störstrahlung verwendet wird. Jedoch ist das Kabel nicht nur gegen externe Strahlung geschützt, das Kabel selbst strahlt ebenfalls nicht. Das wohl bekannteste Beispiel hierfür sind Koaxialkabel. Eine symmetrische Leitung hingegen besitzt keinen Mantel und kann strahlen SOURCE. Ein Beispiel für eine symmetrische Antenne ist eine QHA (Quadrifilare Helixantenne). Da symmetrische Antennen meist durch unsymmetrische Kabel (Koaxialkabel) betrieben werden, entsteht ein Problem. Es können Mantelwellen auf dem Koaxialkabel auftreten, was dazu führt, dass das Kabel strahlt. Außerdem wird dadurch das Abstrahlverhalten der Antenne beeinflusst, was die Funktion der Antenne beeinträchtigt. Um diese Nebeneffekte zu kompensieren werden Baluns eingesetzt\cite{balun}.
+Eine unsymmetrische Leitung besteht aus einem Hauptleiter und einer Masseleitung, welche oft als Schild vor Störstrahlung verwendet wird. Jedoch ist das Kabel nicht nur gegen externe Strahlung geschützt, das Kabel selbst strahlt ebenfalls nicht. Das wohl bekannteste Beispiel hierfür sind Koaxialkabel. Eine symmetrische Leitung hingegen besitzt keinen Mantel und kann strahlen SOURCE. Ein Beispiel für eine symmetrische Antenne ist eine QHA (Quadrifilare Helixantenne). Da symmetrische Antennen meist durch unsymmetrische Kabel (Koaxialkabel) betrieben werden, entsteht ein Problem. Es können Mantelwellen auf dem Koaxialkabel auftreten, was dazu führt, dass das Kabel strahlt. Außerdem wird dadurch das Abstrahlverhalten der Antenne beeinflusst, was die Funktion der Antenne beeinträchtigt. Um diese Nebeneffekte zu kompensieren werden Baluns eingesetzt \cite{balun}.
 
 \subsubsection{Mantelwellensperre}
-Eine Mantelwellensperre ist wie folgt aufgebaut:
-
-
-
-Sie unterdrückt Mantelwellen, welche negative Auswirkungen auf das Abstrahlverhalten der Antenne haben. Der Nachteil ist, dass sie schwach gegen statische Entladungen ist, da keine galvanische Isolierung existiert, wie beim Transformator. Sie ist für Anwendungen geeignet, in denen galvanische Isolierung nicht von allzu großer Relevanz ist.
+Eine Mantelwellensperre unterdrückt Mantelwellen, welche negative Auswirkungen auf das Abstrahlverhalten der Antenne haben. Der Nachteil ist, dass sie schwach gegen statische Entladungen ist, da keine galvanische Isolierung existiert, wie beim Transformator. Sie ist für Anwendungen geeignet, in denen galvanische Isolierung nicht von allzu großer Relevanz ist \cite{balun}.
 
 \subsubsection{Transformator}
-Der Transformator bietet mehrere Vorteile. Zum einen isoliert dieses Bauteil die Antenne galvanisch vom Rest des Netzwerkes, und zum anderen kann ein beliebiges Übersetzungsverhältnis gewählt werden. Der Transformator sollte gewählt werden, wenn ein guter Schutz gegen statische Entladungen gefordert ist. Allerdings ist anzumerken, dass der Transformator keinen Schutz gegen Mantelwellen bietet.
+Der Transformator bietet mehrere Vorteile. Zum einen isoliert dieses Bauteil die Antenne galvanisch vom Rest des Netzwerkes, und zum anderen kann ein beliebiges Übersetzungsverhältnis gewählt werden. Der Transformator sollte gewählt werden, wenn ein guter Schutz gegen statische Entladungen gefordert ist. Allerdings ist anzumerken, dass der Transformator keinen Schutz gegen Mantelwellen bietet \cite{balun}.
 
