@@ -44,26 +44,44 @@ Mithilfe dieser Werte wurde die erste Wendelantenne in Fusion 360 konstruiert.
 	\caption{Das CAD-Modell für die Helixantenne mit den berechneten Werten}
 \end{figure}
 
-Diese wurde mithilfe von CENOS-Simulation-Suite für einen Frequenzbereich von 400MHz bis 460MHz simuliert. Die Ergebnisse gaben Aufschluss über die Performance der Antenne in einer idealen Umgebung.
+Diese wurde mithilfe von CENOS-Simulation-Suite für einen Frequenzbereich von 400MHz bis 460MHz simuliert. Die Ergebnisse geben Aufschluss über die Performance der Antenne in einer idealen Umgebung.
 
-S11-Parameter
-SWR
-Abstrahlverhalten 2D
-Abstrahlverhalten 3D
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=10cm]{../ref/helix-naherung-S11.png}
+	\label{fig:ersteHelixnäherung-S11}
+	\caption{S11-Parameter der berechneten Helixantenne}
+\end{figure}
 
-Es wurde der Schluss gezogen, dass die Resonanzfrequenz zu weit über dem gewünschten Wert von 433MHz liegt. Diese lässt sich durch Veränderung des Durchmessers der Spirale oder des Abstandes zwischen den Windungen verändern.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=10cm]{../ref/helix-näherung-radiation-pattern.png}
+	\label{fig:ersteHelixnäherung-abstrahldiagramm}
+	\caption{Abstrahldiagramm der berechneten Helixantenne}
+\end{figure}
+
+Es wurde der Schluss gezogen, dass die Resonanzfrequenz zu weit unter dem gewünschten Wert von 433MHz liegt. Diese lässt sich durch Veränderung des Durchmessers der Spirale oder des Abstandes zwischen den Windungen verändern.
 
 Durch das Abändern des Durchmessers konnte die gewünschte Resonanzfrequenz von 433MHz mit einem Helix-Durchmesser von 270mm erreicht werden. Der Reflektor wurde aus der Theorie mit ca. $\frac{3\lambda}{4}$ festgelegt \cite{Kraus-2002-AntennasB}, was einem Durchmesser von ungefähr 520mm entspricht.
 
-S11-Parameter
-SWR
-Abstrahlverhalten 2D
-Abstrahlverhalten 3D
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=10cm]{../ref/helix-fertig-S11.png}
+	\label{fig:fertigeHelix-S11}
+	\caption{S11-Parameter der richtig dimensionierten Helixantenne}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=10cm]{../ref/helix-fertig-radiation-pattern.png}
+	\label{fig:fertigeHelix-Radiation}
+	\caption{Abstrahldiagramm der richtig dimensionierten Helixantenne}
+\end{figure}
 
 Es ist wichtig anzumerken, dass der Steigungswinkel der Spirale hierbei ca. 11,5° beträgt. Dies hat zur Folge, dass die Steigung von dem relativ engen Idealbereich zwischen 12° und 14° abweicht.
 
 \section{Realisierung}
-Die Helixantenne benötigt zur Funktion nur zwei Bauteile: die Spirale und den Reflektor. Für die Simulation genügt dieses Modell, allerdings werden in der Realität Strukturelemente benötigt um diese zu befestigen.
+Die Helixantenne benötigt zur Funktion nur zwei Bauteile: die Spirale und den Reflektor. Die Antenne funktioniert dann am Besten, wenn diese zwei Bauteile nicht von ihrer Umgebung beeinflusst werden. Hierfür muss darauf geachtet werden dass die Strukturelemente so wenig Kontakt mit der eigentlichen Antenne wie möglich haben. Um den Einfluss der Umgebung weiter zu verringern, werden spezielle Materialien mit einer niedrigen elektrischen Permittivität verwendet, beispielsweise Teflon, um kapazitive Einflüsse gering zu halten. 
 
 \begin{figure}[H]
 	\centering
@@ -72,7 +90,8 @@ Die Helixantenne benötigt zur Funktion nur zwei Bauteile: die Spirale und den R
 	\label{fig:helix-real}
 \end{figure}
 
-\begin{tabular}{|c|c|c|c|c|}
+\begin{table}
+	\begin{tabular}{|c|c|c|c|c|}
 	\hline
 	Nr. & Typ & Maße & Besonderheiten & Menge \\
 	\hline
@@ -88,13 +107,13 @@ Die Helixantenne benötigt zur Funktion nur zwei Bauteile: die Spirale und den R
 	\hline
 	6 & Rohrflansch (Antenne) & \O innen 51mm &  & 4x \\
 	\hline
-	7 & Linsenkopf Kunststoffschrauben & M6x10mm &  & 44x \\
+	7 & Linsenkopf Kunststoffschrauben & M6x15mm &  & 44x \\
 	\hline
 	8 & Sechskant Kunststoffmuttern & M10 &  & 88x \\
 	\hline
 \end{tabular}
-
-\textbf{Anmerkung: Die Menge gilt für vier Helixantennen.}
+\caption{Stückliste für vier Helixantennen}
+\end{table}
 
 Auf dem PVC-Rohr wird die Helix der Antenne montiert, dieses ist UV-stabilisiert. Wäre der Kunststoff nicht gegen UV-Strahlung geschützt, so würde dieser nach einer Zeit spröde und strukturell unzuverlässig.
 
@@ -224,7 +243,8 @@ Hierfür muss ein Gerüst designt und aufgebaut werden, welches vier solcher Ant
 
 \subsection{Gerüst}
 \label{subsec:helix_geruest}
-\begin{tabular}{|c|c|c|c|}
+\begin{table}
+	\begin{tabular}{|c|c|c|c|}
 	\hline
 	Nr. & Typ & Maße & Menge \\
 	\hline
@@ -232,9 +252,17 @@ Hierfür muss ein Gerüst designt und aufgebaut werden, welches vier solcher Ant
 	\hline
 	2 & Aluminium-Vierkantrohr & 60x100x3mm 0,9m & 2x \\
 	\hline
-	6 & Rohrflansch (Struktur) & \O innen 45mm & 2x\\
+	3 & Rohrflansch (Struktur) & \O innen 45mm & 2x\\
+	\hline
+	4 & Zylinderkopfschraube & \O M12x80mm & 4x\\
+	\hline
+	5 & Sechskantschraube & \O M10x20mm & 24x\\
+	\hline
+	6 & Linsenkopfschraube & \O M5x10mm & 16x\\
 	\hline
 \end{tabular}
+\caption{Stückliste Gerüst}
+\end{table}
 
 Als Gerüst wurde die Form eines $"$H$"$ gewählt. Hierdurch liegt der Massenmittelpunkt der Gesamtkonstruktion nur knapp über dem Mittelpunkt des Rotors, was das zur Rotation benötigte Moment verringert. Um dies zu beweisen lässt sich die Formel für das mechanische Moment betrachten.
 \begin{equation}
@@ -384,17 +412,3 @@ Mithilfe des SWRs kann ebenfalls auf die Güte der Anpassung geschlossen werden.
 \end{figure}
 
 Am Smith-Diagramm ist zu erkennen, dass die Eingangsimpedanz der Antenne kaum imaginär ist und mit 42 Ohm relativ gut im Mittelpunkt des Smith-Diagramms liegt.
-
-\section{Test}
-Um die Funktionalität des Helix-Arrays und des Rotors nachzuweisen, wurden mehrere Observationen durchgeführt. Dabei wurden die Signale der einzelnen Helix-Antennen mithilfe des $\lambda/4$-Anpasstopfes zu einem Signal zusammengeführt.
-
-Die Observationen wurden am 16. März 2024, an den Koordinaten 47.27139319984484, 9.63248486985336 (Negrellistraße 50, 6830 Rankweil), auf einer Höhe von 459 Metern über dem Meeresspiegel, durchgeführt.  Die Ergebnisse der Observationen, die zum Test der Funktionalität durchgeführt wurden, können unter folgendem Link aufgerufen werden:\newline \url{https://network.satnogs.org/observations/?norad=&start=2024-03-16+00%3A01&end=2024-03-17+20%3A59&observer=&station=3307&transmitter_mode=&transmitter_uuid=}
-
-Mit 29 empfangenen Paketen empfing die Observation mit der Nummer 9209920 des Satelliten \glqq 53106 - GREENCUBE\grqq{}  und dem Sender \glqq Mode U TLM 1k2 GMSK\grqq{} die meisten Datenpakete. Die Daten wurden am 16. März 2024 von 13:39:27 bis 13:51:27 (UTC) empfangen. Die nachfolgende Abbildung zeigt das Wasserfalldiagramm sowie das erste dekodierte Datenpaket im HEX und ASCII Format.
-
-\begin{figure} [H]
-	\centering
-	\includegraphics[width=\linewidth]{../ref/helix_successfull_observation.png}
-	\caption{Wasserfalldiagramm und erstes Datenpaket in HEX und ASCII Format der Observation 9209920 \cite{noauthor_satnogs_observation_helix_nodate}}
-	\label{fig:helix_successfull_observation}
-\end{figure}
