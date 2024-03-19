@@ -1,10 +1,10 @@
 \chapter{Einrichten des SatNOGS Client}
 \label{chap:gs-setup}
-Der SatNOGS Client bildet das Herzstück der gesamten Empfangsstation, ist für die Ausführung und Koordinierung der, mit der Empfangstation geplanten, Observationen zuständig und bildet die Schnittstelle zur SatNOGS Datenbank. Das SatNOGS-Client Script kann auf einer beliebigen Linux Distribution installiert und ausgeführt werden. Für die, wie in diesem Fall, Anwendung eines Raspberry Pi 4  Einplatinencomputers zur Ausführung des Client Scripts empfiehlt sich, dass speziell für den SatNOGS Client entwickelte Raspbian SatNOGS Image, zu verwenden. Dieses angepasste Image für das Raspbian Betriebssystem sorgt dafür, dass alle benötigten Softwarepakete und das SatNOGS setup script vorinstalliert vorinstalliert sind und der SSH-Server auf dem Raspberry Pi 4 aktiviert wird. Auf die Installation wird nicht näher eingegangen sondern auf die Anleitung im SatNOGS Wiki \cite{noauthor_raspberry_nodate} verwiesen. 
+Der SatNOGS Client bildet das Herzstück der gesamten Empfangsstation. Er ist für die Ausführung und Koordinierung der mit der Empfangstation geplanten Observationen zuständig und bildet die Schnittstelle zur SatNOGS Datenbank. Das SatNOGS Client Script kann auf einer beliebigen Linux Distribution installiert und ausgeführt werden. In diesem Fall empfiehlt es sich für die Anwendung eines Rasperry Pi 4 Einplatinencomputers zur Ausführung des Client Scripts, das speziell für den SatNOGS Client entwickelte Raspbian SatNOGS Image zu verwenden. Dieses angepasste Image für das Raspbian Betriebssystem sorgt dafür, dass alle benötigten Softwarepakete und das SatNOGS Setup Script vorinstalliert sind und der SSH-Server auf dem Raspberry Pi 4 aktiviert wird. Auf die Installation wird nicht näher eingegangen, sondern auf die Anleitung im SatNOGS Wiki \cite{noauthor_raspberry_nodate} verwiesen. 
 
-\section{grundlegende Konfiguration}
+\section{Grundlegende Konfiguration}
 \subsection{Verbinden zum Raspberry PI 4}
-Um Einstellungen am Raspberry Pi 4 vornehmen zu können wird auf diesen über SSH zugegriffen. Dazu muss das Gerät welches auf den Raspberry Pi 4 zugreift am besten mit dem selben Netzwerk verbunden sein wie der Raspberry selbst. Die einfachste Vorgehensweise um sich mit dieser Voraussetzung zum Raspberry Pi 4 über SSH zu verbinden, besteht mit einem Windows System darin, in der Eingabeaufforderung den Befehl \textbf{ssh *hostname*} auszuführen. Der Hostname wird im Zuge der Installation des Betriebssystems vergeben und lautet in diesem Fall \textbf{qfh}. Wurde ein Passwort im Zuge der Installation eingegeben, so erscheint anschießend eine Aufforderung dieses einzugeben. Nach der Eingabe wird bei erfolgreicher Verbindung folgende Information zurückgegeben:
+Um Einstellungen am Raspberry Pi 4 vornehmen zu können wird auf diesen über SSH zugegriffen. Dazu muss das Gerät, welches auf den Raspberry Pi 4 zugreift, am besten mit dem selben Netzwerk verbunden sein wie der Raspberry selbst. Die einfachste Vorgehensweise, um sich mit dieser Voraussetzung mit einem Windows System zum Raspberry Pi 4 über SSH zu verbinden, besteht darin, in der Eingabeaufforderung den Befehl \glqq ssh *hostname*\grqq{} auszuführen. Der Hostname wird im Zuge der Installation des Betriebssystems vergeben und lautet in diesem Fall \glqq qfh\grqq{}. Wurde bei der Installation ein Passwort eingegeben, so erscheint anschließend eine Aufforderung dieses einzugeben. Nach der Eingabe wird bei erfolgreicher Verbindung folgende Information zurückgegeben:
 
 \begin{figure} [H]
 	\centering
@@ -14,7 +14,7 @@ Um Einstellungen am Raspberry Pi 4 vornehmen zu können wird auf diesen über SS
 \end{figure}
 
 \subsection{Hauptmenü}
-Mithilfe des Befehls \textbf{sudo satnogs-setup} öffnet sich das Hauptmenü des SatNOGS Client über welches alle Einstellungen vorgenommen werden können.
+Mithilfe des Befehls \glqq sudo satnogs-setup\grqq{} öffnet sich das Hauptmenü des SatNOGS Client, über welches alle Einstellungen vorgenommen werden können.
 
 \begin{figure} [H]
 	\centering
@@ -23,7 +23,7 @@ Mithilfe des Befehls \textbf{sudo satnogs-setup} öffnet sich das Hauptmenü des
 	\label{fig:mainmenu}
 \end{figure}
 
-Wurden alle Einstellungen vorgenommen so können diese mit \textbf{Apply} angewendet und gespeichert und angewendet werden.
+Wurden alle Einstellungen vorgenommen, so können diese mit Wurde bei der Installation ein Passwort eingegeben\glqq Apply\grqq{} angewendet und gespeichert werden.
 
 \subsection{Einstellungen}
 Wird im Hauptmenü der Reiter \textbf{Basic} mit \textbf{Enter} ausgewählt, so erscheint folgendes Fenster über welches alle grundlegenden Einstellungen zum Betrieb einer Empfangsstation vorgenommen werden können.

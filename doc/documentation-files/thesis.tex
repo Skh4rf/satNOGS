@@ -58,8 +58,8 @@
 	
 	\begin{minipage}[t] {0.4\textwidth}
 		\textbf{Teammitglieder:} \\
-		Jakob Metzler \textbar{} 5AHEL \\
-		Gabriel Ritter \textbar{} 5AHEL \\
+		Metzler Jakob \textbar{} 5AHEL \\
+		Ritter Gabriel \textbar{} 5AHEL \\
 	\end{minipage}
 	\begin{minipage}[t] {0.4\textwidth}
 		\textbf{Betreuer:} \\		
@@ -95,8 +95,6 @@
 	\renewcommand{\footrulewidth}{0.4pt} % anzeigen Separator-Strich in der Fußzeile (standardmäßig deaktiviert)
 	
 	\setcounter{tocdepth}{2}		% define depth of toc
-	
-	\pagenumbering{roman}
 
 	%\AddToShipoutPicture*{\TitleBackground}     % adding background picture
 	%\maketitle                                  % making the title
@@ -104,11 +102,12 @@
 	%\clearpage
 	\newpage
 	
-
+	\fancypagestyle{plain}{...} 
 	\input{frontbackmatter/eidesstattliche_erklärung.tex}
 	\input{frontbackmatter/abkürzungen+hinweise.tex}
 	\tableofcontents				% display table of contents
 	\newpage
+	\pagenumbering{arabic}
 	\input{frontbackmatter/documentation-de.tex}
 	\newpage
 	\input{frontbackmatter/documentation-en.tex}
@@ -125,7 +124,6 @@
 	% -------------------------- 
 	% Main matter
 	% --------------------------
-	\pagenumbering{arabic}			% arabic page numbering
 	\setcounter{page}{1}			% set page counter
 	%\pagestyle{maincontentstyle} 	% fancy header and footer
 
