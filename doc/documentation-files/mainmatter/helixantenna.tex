@@ -46,19 +46,23 @@ Mithilfe dieser Werte wurde die erste Wendelantenne in Fusion 360 konstruiert.
 
 Diese wurde mithilfe von CENOS-Simulation-Suite für einen Frequenzbereich von 400MHz bis 460MHz simuliert. Die Ergebnisse geben Aufschluss über die Performance der Antenne in einer idealen Umgebung.
 
-\begin{figure}[h!]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=10cm]{../ref/helix-naherung-S11.png}
 	\label{fig:ersteHelixnäherung-S11}
 	\caption{S11-Parameter der berechneten Helixantenne}
 \end{figure}
 
-\begin{figure}[h!]
+An dem Verlauf des S11-Parameters über die Zeit ist zu erkennen, dass die einzelne Helixantenne eine relativ große Bandbreite von ca. 40 Megahertz aufweist (400 bis 440 Megahertz). Es ist bei Resonanzfrequenz ein Wert von -14,7dB auslesbar. 
+
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=10cm]{../ref/helix-näherung-radiation-pattern.png}
 	\label{fig:ersteHelixnäherung-abstrahldiagramm}
 	\caption{Abstrahldiagramm der berechneten Helixantenne}
 \end{figure}
+
+Das 3D-Abstrahldiagramm zeigt die charakteristische Richtwirkung der Helixantenne. Es sind die Hauptkeule sowie die Neben-und Rückkeule klar zu erkennen. Durch eine Gain von 12,6dBi in Vergleich zu einem idealen Kugelstrahler, ist die Verbesserung zu der zuvor aufgebauten QFH offensichtlich.
 
 Es wurde der Schluss gezogen, dass die Resonanzfrequenz zu weit unter dem gewünschten Wert von 433MHz liegt. Diese lässt sich durch Veränderung des Durchmessers der Spirale oder des Abstandes zwischen den Windungen verändern.
 
@@ -71,12 +75,16 @@ Durch das Abändern des Durchmessers konnte die gewünschte Resonanzfrequenz von
 	\caption{S11-Parameter der richtig dimensionierten Helixantenne}
 \end{figure}
 
+An dem Verlauf des S11-Parameters lässt sich eine sofortige Verbesserung des erzielten Maximalwerts erkennen. Der Wert des S11-Parameters bei Resonanz beträgt -19,5dB.
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=10cm]{../ref/helix-fertig-radiation-pattern.png}
 	\label{fig:fertigeHelix-Radiation}
 	\caption{Abstrahldiagramm der richtig dimensionierten Helixantenne}
 \end{figure}
+
+An dem 3D-Abstrahldiagramm ist zu erkennen, dass die Nebenkeulen prominenter sind als mit den zuvor festgelegten Maßen. Es ist eine maximale Direktivität von 12dB abgebildet.
 
 Es ist wichtig anzumerken, dass der Steigungswinkel der Spirale hierbei ca. 11,5° beträgt. Dies hat zur Folge, dass die Steigung von dem relativ engen Idealbereich zwischen 12° und 14° abweicht.
 
@@ -232,14 +240,20 @@ Die Breite des Blechstreifens wurde empirisch ermittelt und wurde mit 6cm festge
 Nun wird die Helixantenne durch drei weitere identische Helixantennen erweitert, welche zusammen ein Array bilden. Hierbei ist der Abstand zwischen den einzelnen Antennen von Relevanz um den Gesamtgewinn zu maximieren.
 Der Antennengewinn eines Antennenarrays bestehend aus vier identischen Helixantennen liegt in der Theorie bei dem vierfachen Antennengewinn einer einzelnen Wendelantenne, bzw. einer Helixantenne mit der vierfachen Windungszahl, also $4*6=24$ \cite[p. 319]{Kraus-2002-AntennasB}.
 
-\begin{figure}[h!]
-	\centering
-	\includegraphics[angle=270,width=5cm]{../ref/Antennenarray2.jpg}
-	\caption{Das fertige Helixantennen-Array}
-	\label{fig:helixantennen-array}
+\begin{figure}[H]
+	\begin{minipage}[b]{.4\linewidth} % [b] => Ausrichtung an \caption
+		\includegraphics[angle=270,width=\linewidth]{../ref/Antennenarray2.jpg}
+		\label{fig:helixantennen-array}
+	\end{minipage}
+	\hspace{.1\linewidth}% Abstand zwischen Bilder
+	\begin{minipage}[b]{.4\linewidth} % [b] => Ausrichtung an \caption
+		\includegraphics[width=\linewidth]{../ref/Antennen-Array-mit-Fußstand-Render.png}
+		\label{fig:helixantennen-array-render}
+	\end{minipage}
+	\caption{Gegenüberstellung des realen Antennenarrays zum Render}
 \end{figure}
 
-Hierfür muss ein Gerüst designt und aufgebaut werden, welches vier solcher Antennen halten kann, sowie die neu entstehende Impedanz der Zusammenschaltung dieser Antenne angepasst werden. Anschließend müssen Tests durchgeführt werden, die den verbesserten Antennengewinn der Antenne belegen.
+Hierfür muss ein Gerüst designt und aufgebaut werden, welches vier solcher Antennen halten kann, sowie die neu entstehende Impedanz, welche durch die Zusammenschaltung dieser Antennen entsteht, angepasst werden.
 
 \subsection{Gerüst}
 \label{subsec:helix_geruest}
@@ -393,7 +407,7 @@ Um die Qualität des Antennenarrays zu überprüfen, wurde am Ausgang der $\frac
 	\caption{S11-Parameter des Arrays}
 \end{figure}
 
-Anhand des S11-Parameters lässt sich feststellen, dass dieser mit einem Wert von ca. -20dB in einem relativ guten Bereich liegt.
+Anhand des S11-Parameters lässt sich feststellen, dass dieser mit einem Wert von ca. -20dB in einem relativ guten Bereich liegt. Es ist anzumerken, dass es Frequenzen gibt, bei denen S11-Parameter von bis zu -40dB möglich sind, allerdings ist mit -20dB schon ein qualitativ akzeptabler Datenempfang möglich.
 
 \begin{figure}[H]
 	\centering
@@ -402,7 +416,7 @@ Anhand des S11-Parameters lässt sich feststellen, dass dieser mit einem Wert vo
 	\caption{SWR des Arrays}
 \end{figure}
 
-Mithilfe des SWRs kann ebenfalls auf die Güte der Anpassung geschlossen werden. Hier liegt der Wert ungefähr bei 1,2, was ein akzeptabler Wert ist.
+Das SWR ist eine weitere Möglichkeit, die Qualität der Anpassung als Verhältnis zwischen hinlaufender Welle und rücklaufender Welle darzustellen.
 
 \begin{figure}[H]
 	\centering
@@ -411,12 +425,12 @@ Mithilfe des SWRs kann ebenfalls auf die Güte der Anpassung geschlossen werden.
 	\caption{Smith-Diagramm des Arrays}
 \end{figure}
 
-Am Smith-Diagramm ist zu erkennen, dass die Eingangsimpedanz der Antenne kaum imaginär ist und mit 42 Ohm relativ gut im Mittelpunkt des Smith-Diagramms liegt.
+Am Smith-Diagramm ist zu erkennen, dass die Eingangsimpedanz des Antennenarrays kaum imaginär ist und mit 42 Ohm relativ gut im Mittelpunkt des Smith-Diagramms liegt. Ideal wäre die Anpassung mit einem Wert von 50 Ohm und keinem Imaginärteil.
 
 \section{Test}
 Um die Funktionalität des Helix-Arrays und des Rotors nachzuweisen, wurden mehrere Observationen durchgeführt. Dabei wurden die Signale der einzelnen Helix-Antennen mithilfe des $\lambda/4$-Anpasstopfes zu einem Signal zusammengeführt.
 
-Die Observationen wurden am 16. März 2024, an den Koordinaten 47.27139319984484, 9.63248486985336 (Negrellistraße 50, 6830 Rankweil), auf einer Höhe von 459 Metern über dem Meeresspiegel, durchgeführt.  Die Ergebnisse der Observationen, die zum Test der Funktionalität durchgeführt wurden, können unter folgendem Link aufgerufen werden:\newline \url{https://network.satnogs.org/observations/?norad=&start=2024-03-16+00%3A01&end=2024-03-17+20%3A59&observer=&station=3307&transmitter_mode=&transmitter_uuid=}
+Die Observationen wurden am 16. März 2024, an den Koordinaten 47.27139319984484, 9.63248486985336 (Negrellistraße 50, 6830 Rankweil), auf einer Höhe von 459 Metern über dem Meeresspiegel, durchgeführt.  Die Ergebnisse der Observationen, die zum Test der Funktionalität durchgeführt wurden, können unter folgendem Link aufgerufen werden:\newline \url{https://network.satnogs.org/observations/?norad=&start=2024-03-16+00\%3A01\&end=2024-03-17+20\%3A59\&observer=\&station=3307\&transmitter_mode=\&transmitter_uuid=}
 
 Mit 29 empfangenen Paketen empfing die Observation mit der Nummer 9209920 des Satelliten \glqq 53106 - GREENCUBE\grqq{}  und dem Sender \glqq Mode U TLM 1k2 GMSK\grqq{} die meisten Datenpakete. Die Daten wurden am 16. März 2024 von 13:39:27 bis 13:51:27 (UTC) empfangen. Die nachfolgende Abbildung zeigt das Wasserfalldiagramm sowie das erste dekodierte Datenpaket im HEX und ASCII Format.
 
