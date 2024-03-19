@@ -150,8 +150,93 @@ Für die Anpassung der QHA relevant waren vorallem die Länge des abisolierten u
 
 Die Messung zeigt eine maximale Rückflussdämpfung bei fast genau 433 Megahertz. Die Rückflussdämpfung bei 433 Megahertz beträgt -17.44 Dezibel. Für eine minimale Rückflussdämpfung von -10 Dezibel ergibt sich eine Bandbreite von etwa 422 bis 442 Megahertz. Das Smith-Diagramm gibt Aufschluss darüber, dass die Antenne bei 433 Megahertz mit 52.26 Ohm Wirkwiderstand und 8.85 Ohm Blindwiderstand leichte induktive Eigenschaften aufweist.
 
+\subsection{qualitative Charakterisierung}
+Zur Charakterisierung der QHA wurde mithilfe eines einfachen Dipols und einem HackRF One als Sender die Antenne aus verschiedenen Richtungen angestrahlt. Mithilfe des SDRs wurde die von der Antenne empfangene Leistung ermittelt. Aufgrund der unbekannten Sendeleistung des HackRF One, welcher nur über eine VGA die bei der Sendefrequenz maximale Sendeleistung kontrolliert, kann keine Aussage über die gesendete Leistung getroffen werden. Dementsprechend beschreiben die nachfolgenden Abstrahldiagramme nur relativ das Abstrahlverhalten der QHA und geben keinen Aufschluss über den wirklichen Gewinn der Antenne. Die dargestellten Werte entsprechen der Differenz der minimal empfangenen Leistung mit -105 dBm und dem Wert der empfangenen Liestung der entsprechenden Ausrichtung. Die Y-Achse entspricht der Vertikalen, die X-Achse der Richtung des Verbindungselements der großen Schleife und die Z-Achse der Richtung des Verbindungselements der kleinen Schleife. Auch die empfangenen Leistungen sollten nur als grobe Messwerte betrachtet werden, da das SDR keinen vollwertigen und kalibrierten Spectrum-Analyzer ersetzen kann. 
+
+\subsubsection{XZ-Strahlungsmuster}
+Die nachfolgende Tabelle zeigt die Ergebnisse der Messungen des XZ-Strahlungsmusters, wobei 0 und 180 Grad auf der X-Achse und 90 und 270 Grad auf der Z-Achse.
+
+\begin{tabular}{|c|c|c|}
+	\hline
+	\textbf{Winkel (in Grad)} & \textbf{Differenz (zu -105 dBm)} & \textbf{Empfangene Leistung (in dBm)} \\
+	\hline
+	90 & 15,8 & -89,2 \\
+	\hline
+	45 & 14,2 & -90,8 \\
+	\hline
+	0 & 14 & -91 \\
+	\hline
+	315 & 14,9 & -90,1 \\
+	\hline
+	270 & 16 & -89 \\
+	\hline
+	225 & 14,5 & -90,5 \\
+	\hline
+	180 & 15 & -90 \\
+	\hline
+	135 & 16 & -89 \\
+	\hline
+\end{tabular}
+
+\begin{figure}[H]
+\begin{minipage}[b]{.4\linewidth} % [b] => Ausrichtung an \caption
+	\includegraphics[width=\linewidth]{../ref/XZmeasuredqfh.png}
+	\label{fig:XZradiationqfh}
+	\caption{qualitatives XZ-Strahlungsmuster der gebauten QHA}
+\end{minipage}
+\hspace{.1\linewidth}% Abstand zwischen Bilder
+\begin{minipage}[b]{.4\linewidth} % [b] => Ausrichtung an \caption
+	\includegraphics[width=\linewidth]{../ref/XZsimulationqfh.png}
+	\label{fig:XZradiationsim}
+	\caption{simuliertes XZ-Strahlungsmuster der QHA}
+\end{minipage}
+\end{figure}
+
+Im direkten Vergleich zwischen dem simulierten und gemessenen Strahlungsmuster ist eine grobe Übereinstimmung der Formen zu erkennen. Auffallend ist vor allem, dass sich das Strahlungsmuster der gebauten QHA um etwa 45° im Uhrzeigersinn verschoben hat. Diese Verschiebung könnte durch Abweichungen von der Simulation zur Realität aber auch durch Messungenauigkeiten begründet sein. 
+
+\subsubsection{YZ-Strahlungsmuster}
+Die nachfolgende Tabelle zeigt die Ergebnisse der Messungen des YZ-Strahlungsmusters, wobei der Winkel 90 Grad die Vertikale nach oben beschreibt.
+
+\begin{tabular}{|c|c|c|}
+	\hline
+	\textbf{Winkel (in Grad)} & \textbf{Differenz (zu -105 dBm)} & \textbf{empfangene Leistung (in dBm)} \\
+	\hline
+	90 & 15,8 & -89,2 \\
+	\hline
+	45 & 0 & -105 \\
+	\hline
+	0 & 17,7 & -87,3 \\
+	\hline
+	315 & 18,4 & -86,6 \\
+	\hline
+	270 & 24,7 & -80,3 \\
+	\hline
+	225 & 18,2 & -86,8 \\
+	\hline
+	180 & 17,9 & -87,1 \\
+	\hline
+	135 & 18,7 & -86,3 \\
+	\hline
+\end{tabular}
+
+\begin{figure}[H]
+	\begin{minipage}[b]{.4\linewidth} % [b] => Ausrichtung an \caption
+		\includegraphics[width=\linewidth]{../ref/YZmeasuredqfh.png}
+		\label{fig:YZradiationqfh}
+		\caption{qualitatives YZ-Strahlungsmuster der gebauten QHA}
+	\end{minipage}
+	\hspace{.1\linewidth}% Abstand zwischen Bilder
+	\begin{minipage}[b]{.4\linewidth} % [b] => Ausrichtung an \caption
+		\includegraphics[width=\linewidth]{../ref/YZsimulationqfh.png}
+		\label{fig:YZradiationsim}
+		\caption{simuliertes YZ-Strahlungsmuster der QHA}
+	\end{minipage}
+\end{figure}
+
+Deutlich erkennbar bei der Betrachtung des gemessenen Strahlungsmusters ist, dass die QHA, im Vergleich zur Simulation, den besten Gewinn in die um 180 Grad verschobene Richtung, also 270 Grad, aufweist. Wird das simulierte Strahlungsmuster allerdings um 180 Grad gedreht, so sind die Formen nahezu identisch. Auch das Minimum bei etwa 225 Grad in der Simulation ist somit bei 45 Grad in der Messung deutlich zu erkennen. 
+
 \section{Test}
-Um die Funktionalität der QHA nachzuweisen wurden mehrere Observationen durchgeführt. Dabei wurde das Signal der QHA zusätzlich mithilfe des im späteren Kapitel \ref{sec:LNA} erläuterten LNA verstärkt.
+Um die Funktionalität der QHA nachzuweisen wurden mehrere Observationen durchgeführt. Dabei wurde das Signal der QHA zusätzlich mithilfe des im späteren Kapitel \ref{sec:LNA} erläuterten LNA verstärkt. Wichtig zu erwähnen ist, dass die zum Test durchgeführten Messungen vor der Charakterisierung der QHA stattgefunden haben und die Ausrichtung der QHA entsprechend der Simulationsergebnisse vorgenommen wurde. Das trotzdem sehr gute Signale empfangen wurden, könnte durch den dennoch guten Gewinn mit dieser Ausrichtung oder Reflexionen an der Erdoberfläche begründet sein. 
 
 Die Observationen wurden vom 11. bis zum 14. März 2024, an den Koordinaten 47.44983098163626, 9.833138913740827 (Hof 417, 6861 Alberschwende) und auf einer Höhe von 730 Metern über dem Meeresspiegel durchgeführt.  Die Ergebnisse der Observationen, die zum Test der Funktionalität durchgeführt wurden, können unter folgendem Link aufgerufen werden:\newline \url{https://network.satnogs.org/observations/?norad=&start=2024-02-01+17%3A17&end=2024-03-15+17%3A17&observer=&station=3307&transmitter_mode=&transmitter_uuid=&page=1}
 
