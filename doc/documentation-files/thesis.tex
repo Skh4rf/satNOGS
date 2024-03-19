@@ -36,6 +36,8 @@
 \usepackage{listings}
 \usepackage{color}
 \usepackage{lscape}
+\usepackage{hhline}
+\usepackage{longtable}
 
 \begin{document}
 
@@ -54,8 +56,8 @@
 	
 	\begin{minipage}[t] {0.4\textwidth}
 		\textbf{Teammitglieder:} \\
-		\emplLastA \\
-		\emplLastB \\
+		Jakob Metzler \textbar{} 5AHEL \\
+		Gabriel Ritter \textbar{} 5AHEL \\
 	\end{minipage}
 	\begin{minipage}[t] {0.4\textwidth}
 		\textbf{Betreuer:} \\		
@@ -115,10 +117,6 @@
 	\newpage
 	\input{frontbackmatter/pflichtenheft.tex}
 	\newpage
-	\input{frontbackmatter/tätigkeiten.tex}
-	\newpage
-	\input{frontbackmatter/preface.tex}       % INCLUDE Preface
-	\clearpage
 	\input{frontbackmatter/quotes.tex}        % INCLUDE Quotes
 	\newpage
 	
@@ -142,16 +140,16 @@
 	\newpage
 	\input{mainmatter/mechanics.tex}
 	\newpage
-	
-	\input{mainmatter/discussion.tex}   % INCLUDE Discussion
+	\input{mainmatter/projectmanagement.tex}
 	\newpage
-	\input{mainmatter/conclusion.tex}   % INCLUDE Conclusion
+	\input{mainmatter/conclusion.tex}
 	\newpage
-	\input{mainmatter/perspectives.tex} % INCLUDE Perspectives
 	
 	% -------------------------- 
 	% Back matter
 	% --------------------------
+	\input{frontbackmatter/preface.tex}
+	\newpage
 	\input{frontbackmatter/bibliography.tex}
 	\newpage
 	\listoffigures
