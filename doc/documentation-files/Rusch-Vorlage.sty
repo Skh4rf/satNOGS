@@ -197,8 +197,8 @@
 
 \let\oldsectionT\section
 \let\oldsubsectionT\subsection
-\renewcommand{\section}{\counterwithin{table}{section}\oldsectionT}
-\renewcommand{\subsection}{\counterwithin{table}{subsection}\oldsubsectionT}
+\renewcommand{\section}{\counterwithout{table}{section}\oldsectionT}
+\renewcommand{\subsection}{\counterwithout{table}{subsection}\oldsubsectionT}
 
 
 
