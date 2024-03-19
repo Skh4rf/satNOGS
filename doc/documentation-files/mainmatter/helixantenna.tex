@@ -232,14 +232,20 @@ Die Breite des Blechstreifens wurde empirisch ermittelt und wurde mit 6cm festge
 Nun wird die Helixantenne durch drei weitere identische Helixantennen erweitert, welche zusammen ein Array bilden. Hierbei ist der Abstand zwischen den einzelnen Antennen von Relevanz um den Gesamtgewinn zu maximieren.
 Der Antennengewinn eines Antennenarrays bestehend aus vier identischen Helixantennen liegt in der Theorie bei dem vierfachen Antennengewinn einer einzelnen Wendelantenne, bzw. einer Helixantenne mit der vierfachen Windungszahl, also $4*6=24$ \cite[p. 319]{Kraus-2002-AntennasB}.
 
-\begin{figure}[h!]
-	\centering
-	\includegraphics[angle=270,width=5cm]{../ref/Antennenarray2.jpg}
-	\caption{Das fertige Helixantennen-Array}
-	\label{fig:helixantennen-array}
+\begin{figure}[H]
+	\begin{minipage}[b]{.4\linewidth} % [b] => Ausrichtung an \caption
+		\includegraphics[angle=270,width=\linewidth]{../ref/Antennenarray2.jpg}
+		\label{fig:helixantennen-array}
+	\end{minipage}
+	\hspace{.1\linewidth}% Abstand zwischen Bilder
+	\begin{minipage}[b]{.4\linewidth} % [b] => Ausrichtung an \caption
+		\includegraphics[width=\linewidth]{../ref/Antennen-Array-mit-Fußstand-Render.png}
+		\label{fig:helixantennen-array-render}
+	\end{minipage}
+	\caption{Gegenüberstellung des realen Antennenarrays zum Render}
 \end{figure}
 
-Hierfür muss ein Gerüst designt und aufgebaut werden, welches vier solcher Antennen halten kann, sowie die neu entstehende Impedanz der Zusammenschaltung dieser Antenne angepasst werden. Anschließend müssen Tests durchgeführt werden, die den verbesserten Antennengewinn der Antenne belegen.
+Hierfür muss ein Gerüst designt und aufgebaut werden, welches vier solcher Antennen halten kann, sowie die neu entstehende Impedanz, welche durch die Zusammenschaltung dieser Antennen entsteht, angepasst werden.
 
 \subsection{Gerüst}
 \label{subsec:helix_geruest}
