@@ -116,8 +116,16 @@
 	\newpage
 	\input{frontbackmatter/abstract.tex}      % INCLUDE Abstract
 	\newpage
+	
+	\SecAuth{\emplLastA}
+	\fancyfoot[LO,RE]{\DADate~\textbar~SatNOGS-Bodenstation~\textbar ~\@SecAuth}
+	
 	\input{frontbackmatter/pflichtenheft.tex}
 	\newpage
+	
+	\SecAuth{\emplLastA, \emplLastB}
+	\fancyfoot[LO,RE]{\DADate~\textbar~SatNOGS-Bodenstation~\textbar ~\@SecAuth}
+	
 	\input{frontbackmatter/quotes.tex}        % INCLUDE Quotes
 	\newpage
 	
@@ -127,27 +135,45 @@
 	\setcounter{page}{1}			% set page counter
 	%\pagestyle{maincontentstyle} 	% fancy header and footer
 
-	
+	\SecAuth{\emplLastB}
+	\fancyfoot[LO,RE]{\DADate~\textbar~SatNOGS-Bodenstation~\textbar ~\@SecAuth}
 	\input{mainmatter/introduction.tex} % INCLUDE Introduction
 	\newpage
+	\SecAuth{\emplLastA}
+	\fancyfoot[LO,RE]{\DADate~\textbar~SatNOGS-Bodenstation~\textbar ~\@SecAuth}
 	\input{mainmatter/gs-setup.tex}		% INCLUDE Groundstation setup
 	\newpage
+	\SecAuth{\emplLastA}
+	\fancyfoot[LO,RE]{\DADate~\textbar~SatNOGS-Bodenstation~\textbar ~\@SecAuth}
 	\input{mainmatter/rotor.tex}
 	\newpage
+	\SecAuth{\emplLastA}
+	\fancyfoot[LO,RE]{\DADate~\textbar~SatNOGS-Bodenstation~\textbar ~\@SecAuth}
 	\input{mainmatter/qfh-antenna.tex}
 	\newpage
+	\SecAuth{\emplLastB}
+	\fancyfoot[LO,RE]{\DADate~\textbar~SatNOGS-Bodenstation~\textbar ~\@SecAuth}
 	\input{mainmatter/helixantenna.tex}
 	\newpage
+	\SecAuth{\emplLastA}
+	\fancyfoot[LO,RE]{\DADate~\textbar~SatNOGS-Bodenstation~\textbar ~\@SecAuth}
 	\input{mainmatter/mechanics.tex}
 	\newpage
+	\SecAuth{\emplLastA}
+	\fancyfoot[LO,RE]{\DADate~\textbar~SatNOGS-Bodenstation~\textbar ~\@SecAuth}
 	\input{mainmatter/projectmanagement.tex}
 	\newpage
+	\SecAuth{\emplLastA}
+	\fancyfoot[LO,RE]{\DADate~\textbar~SatNOGS-Bodenstation~\textbar ~\@SecAuth}
 	\input{mainmatter/conclusion.tex}
 	\newpage
 	
 	% -------------------------- 
 	% Back matter
 	% --------------------------
+	\SecAuth{\emplLastA, \emplLastB}
+	\fancyfoot[LO,RE]{\DADate~\textbar~SatNOGS-Bodenstation~\textbar ~\@SecAuth}
+	
 	\input{frontbackmatter/preface.tex}
 	\newpage
 	\listoffigures
