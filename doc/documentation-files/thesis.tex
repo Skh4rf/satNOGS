@@ -112,14 +112,17 @@
 	\newpage
 	\input{frontbackmatter/documentation-en.tex}
 	\newpage
+	\SecAuth{\emplLastA}
+	\fancyfoot[LO,RE]{\DADate~\textbar~SatNOGS-Bodenstation~\textbar ~\@SecAuth}
 	\input{frontbackmatter/summary.tex}
+	\SecAuth{\emplLastA}
+	\fancyfoot[LO,RE]{\DADate~\textbar~SatNOGS-Bodenstation~\textbar ~\@SecAuth}
 	\newpage
 	\input{frontbackmatter/abstract.tex}      % INCLUDE Abstract
 	\newpage
 	
 	\SecAuth{\emplLastA}
 	\fancyfoot[LO,RE]{\DADate~\textbar~SatNOGS-Bodenstation~\textbar ~\@SecAuth}
-	
 	\input{frontbackmatter/pflichtenheft.tex}
 	\newpage
 	
@@ -176,11 +179,18 @@
 	
 	\input{frontbackmatter/preface.tex}
 	\newpage
+	\addcontentsline{toc}{chapter}{10 Abbildungsverzeichnis}
 	\listoffigures
+	\setcounter{chapter}{10}
 	\newpage
 	\input{frontbackmatter/bibliography.tex}
 	\newpage
+	\SecAuth{\emplLastA}
+	\fancyfoot[LO,RE]{\DADate~\textbar~SatNOGS-Bodenstation~\textbar ~\@SecAuth}
 	\input{frontbackmatter/Fortschrittsbericht.tex}
+	\newpage
+	\SecAuth{\emplLastA, \emplLastB}
+	\fancyfoot[LO,RE]{\DADate~\textbar~SatNOGS-Bodenstation~\textbar ~\@SecAuth}
 	\input{frontbackmatter/Anhang.tex}
 	\input{frontbackmatter/group-protocol.tex}
 	\input{frontbackmatter/project-structure.tex}

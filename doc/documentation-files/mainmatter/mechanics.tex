@@ -5,40 +5,47 @@ Als Empfangsstation wird das Gesamtsystem bezeichnet, welches alle Komponenten b
 \label{sec:bmk}
 Um alle Objekte innerhalb des Systems jederzeit eindeutig identifizieren zu können, werden diese nach OVE EN IEC 81346-2 einer Referenzkennzeichnung unterzogen. Die benötigten Kennbuchstaben sind:
 
-\begin{tabular}{|c|l|}
-	\hline
-	\textbf{Kennbuchstabe} & \textbf{Zweck oder Aufgabe nach EN IEC 81346-2} \\
-	\hline
-	A & zwei oder mehr Zwecke - kein identifizierbarer Hauptzweck \\
-	\hline
-	K & Verarbeiten von Signalen oder Informationen \\
-	\hline
-	M & Bereitstellen von mechanischer Energie zu Antriebszwecken \\
-	\hline
-	T & Umwandeln von Energie unter Beibehaltung der Energieart \\
-	\hline
-	W & Leiten oder Führen von Energie \\
-	\hline
-	X & Verbinden von Objekten \\
-	\hline
-\end{tabular}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|l|}
+		\hline
+		\textbf{Kennbuchstabe} & \textbf{Zweck oder Aufgabe nach EN IEC 81346-2} \\
+		\hline
+		A & zwei oder mehr Zwecke - kein identifizierbarer Hauptzweck \\
+		\hline
+		K & Verarbeiten von Signalen oder Informationen \\
+		\hline
+		M & Bereitstellen von mechanischer Energie zu Antriebszwecken \\
+		\hline
+		T & Umwandeln von Energie unter Beibehaltung der Energieart \\
+		\hline
+		W & Leiten oder Führen von Energie \\
+		\hline
+		X & Verbinden von Objekten \\
+		\hline
+	\end{tabular}
+\end{table}
 
 Zur weiteren Differenzierung werden Ortskennzeichen angewandt. Die verwendeten Symbole und ihre Bedeutung lauten dadurch:
 
-\begin{tabular}{|c|l|}
-	\hline
-	\textbf{Symbol} & \textbf{Bedeutung} \\
-	\hline
-	- & Betriebsmittel \\
-	\hline
-	+ & Ort \\
-	\hline
-\end{tabular}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|l|}
+		\hline
+		\textbf{Symbol} & \textbf{Bedeutung} \\
+		\hline
+		- & Betriebsmittel \\
+		\hline
+		+ & Ort \\
+		\hline
+	\end{tabular}
+\end{table}
 
 Im Zuge dieses Kennzeichnungsprozesses ergibt sich folgende Zuordnung:
 
 \begin{table}
 	\small
+	\centering
 	\begin{tabular}{|l|c||l|c|}
 		\hline
 		\textbf{Betriebsmittel} & \textbf{Kennzeichnung} & \textbf{Betriebsmittel} & \textbf{Kennzeichnung} \\
@@ -80,9 +87,9 @@ Die in vorhergehenden Kapiteln noch nicht erwähnten Betriebsmittel und ihre Fun
 
 \section{Schaltschrank}
 \label{sec:Schaltschrank}
-Die Aufgabe des Schaltschranks ist es, alle Komponenten der Empfangsstation, abgesehen von der Antenne, dem Rotor und des LNAs, vor UV-Strahlung und Wetter zu schützen. Ein weiterer positiver Effekt ist die Flexibilität, die ein solcher Schaltschrank bietet. Positionswechsel der Bodenstation erfordern somit nur den Transport der Antenne und des Schaltschranks und können mit geringerer Anzahl an Umstecken der Kabel durchgeführt werden.
+Die Aufgabe des Schaltschranks ist es, alle Komponenten der Empfangsstation, abgesehen von der Antenne, dem Rotor und des LNAs, vor UV-Strahlung und Wetter zu schützen. Ein weiterer positiver Effekt ist die Flexibilität, die ein solcher Schaltschrank bietet. Positionswechsel der Bodenstation erfordern somit nur den Transport der Antenne(n) und des Schaltschranks und können mit geringerer Anzahl an Umstecken der Kabel durchgeführt werden.
 
-Als Schaltschrank wird ein Stahlblech-Wandgehäuse der Argentina Reihe des Unternehmens IDE ELECTRIC, S.L. mit Außenmaßen von 400mm Höhe, 400mm Breite und 250mm Tiefe verwendet. Mit einer im Datenblatt \cite{ide_electric_sl_datenblatt_nodate} angegebenen IP66 Schutzklasse und UV-Schutz-Beschichtung erfüllt er die Voraussetzungen, um den von der Umwelt ausgehenden mechanischen Belastungen standzuhalten. Die erste Kennziffer der IP66 Schutzklasse garantiert Staubdichtigkeit und die zweite Kennziffer Schutz gegen starkes Strahlwasser und Überflutung \cite{lienig_elektronische_2014}.
+Als Schaltschrank wird ein Stahlblech-Wandgehäuse der Argentina Reihe des Unternehmens IDE ELECTRIC, S.L. mit Außenmaßen von 400mm Höhe, 400mm Breite und 250mm Tiefe verwendet. Mit einer im Datenblatt \cite{ide_electric_sl_datenblatt_nodate} angegebenen IP66 Schutzklasse und UV-Schutz-Beschichtung erfüllt er die Voraussetzungen, um den von der Umwelt ausgehenden mechanischen Belastungen standzuhalten. Die erste Kennziffer der IP66 Schutzklasse garantiert Staubdichtigkeit und die zweite Kennziffer Schutz gegen starkes Strahlwasser und Überflutung \cite[p. 53]{lienig_elektronische_2014}.
 
 \subsection{Befestigung der Komponenten}
 Zur Befestigung der Komponenten dient eine mit dem Schaltschrank mitgelieferte 2 Millimeter Montageplatte aus verzinktem Stahlblech. Für die Montage der Schuko-Steckdosen, des Netzteils, der GS232-Emulation und des Raspberry Pi 4 wird auf dieses Stahlblech eine DIN-Schiene geschraubt, welche das einfache Aufstecken dieser Komponenten ermöglicht. Für den Arduino Uno der GS232-Emulation und den Raspberry Pi 4 wurden dafür passende Gehäuse erworben. Die Schuko-Steckdosen und das Netzteil sind bereits für diese Montageart kompatibel. 
@@ -106,7 +113,7 @@ Der Schaltschrank verfügt an der Außenseite über keinerlei Anschlüsse. Die K
 	\label{fig:schaltschrankanschluesse}
 \end{figure}
 
-Die unbeschriftete Schraubverbindung in der Abbildung dient als Reserve für mögliche Erweiterungen.
+Die unbeschriftete Schraubverbindung in Abbildung \ref{fig:schaltschrankanschluesse} dient als Reserve für mögliche Erweiterungen.
 
 \subsection{Standfüße}
 Um den Schaltschrank flexibel platzieren zu können, werden zwei Standfüße aus 10 Millimeter Chromstahlblech zusammengeschweißt und mit Gummifüßen versehen. 
@@ -146,7 +153,7 @@ Das Ergebnis ist ein modular platzierbarer und vielseitiger Schaltschrank:
 SDRs ersetzen traditionelle Hardwarekomponenten für Hochfrequenzsender und -empfänger durch Software, um Signale zu empfangen, zu demodulieren und zu verarbeiten. Anstatt spezielle Hardware für jede Funkkommunikationsart zu benötigen, kann ein SDR flexibel über eine Software konfiguriert werden und somit verschiedene Frequenzen und Modulationsarten unterstützen. Durch die Digitalisierung des Funkempfangs ermöglicht ein SDR eine breite Palette von Anwendungen und verbesserte Flexibilität bei der Signalverarbeitung. \cite{noauthor_sdr_nodate}
 
 Das für diese Empfangsstation verwendete SDR ist das RTL-SDR Blog v3 mit folgenden Spezifikationen:
-\begin{table}
+\begin{table}[H]
 	\centering
 	\begin{tabular}{ll}
 		\textbf{Bandbreite} & bis zu 2.4 Megahertz \\
@@ -158,7 +165,7 @@ Das für diese Empfangsstation verwendete SDR ist das RTL-SDR Blog v3 mit folgen
 	\end{tabular}
 \end{table}
 
-Das RTL-SDR Blog v3 wird über einen USB-B Stecker zum Raspberry Pi 4 verbunden und verfügt über einen SMA-Stecker für den Anschluss der Antenne.\cite{noauthor_rtl-sdr_nodate}
+Das RTL-SDR Blog v3 wird über einen USB-B Stecker zum Raspberry Pi 4 verbunden und verfügt über einen SMA-Stecker für den Anschluss der Antenne. \cite{noauthor_rtl-sdr_nodate}
 
 \section{Netzteil}
 \label{sec:Netzteil}
@@ -166,7 +173,7 @@ Für die Stromversorgung des Raspberry Pi 4 sowie des im GS232A/B verbauten Ardu
 
 \section{Netzkabel}
 \label{sec:Netzkabel}
-Das Netzkabel, mit einer Länge von 4.6 Metern außerhalb des Schaltschranks, versorgt die gesamte Empfangsstation mit Energie. Voraussetzung zum Betrieb der Empfangsstation ist es demnach, das Netzkabel mit einer Spannungsquelle (100 bis 120 oder 200 bis 240 Volt und 50 Hz) zu verbinden. Das verwendete Kabel ist ein H07BQ-F 3G1.5 der PATELEC Group \cite{noauthor_cables_nodate} und weist dank dem verwendeten Mantelmaterial Polyurethan eine gute UV-Beständigkeit auf \cite{noauthor_polyurethan_nodate}.
+Das Netzkabel, mit einer Länge von 4.6 Metern außerhalb des Schaltschranks, versorgt die gesamte Empfangsstation mit Energie. Voraussetzung zum Betrieb der Empfangsstation ist es demnach, das Netzkabel mit einer Spannungsquelle (100 Volt bis 120 Volt und 50 Hz oder 200 Volt bis 240 Volt und 50 Hz) zu verbinden. Das verwendete Kabel ist ein H07BQ-F 3G1.5 der PATELEC Group \cite{noauthor_cables_nodate} und weist dank dem verwendeten Mantelmaterial Polyurethan eine gute UV-Beständigkeit auf \cite{noauthor_polyurethan_nodate}.
 
 \section{USB-Kabel}
 \label{sec:USB-Kabel}
@@ -205,11 +212,11 @@ Als DIN-Kabel wird in diesem Fall jenes Kabel bezeichnet, welches zur Verbindung
 
 \section{Azimut-Kabel}
 \label{sec:azimutkabel}
-Das Azimut-Kabel dient zur Steuerung und Messung des Azimut-Rotors. Als Kontrollkabel bezeichnet wird seine Funktion im Kapitel \ref{subsubsec:kontrollkabel} beschrieben. Mit einem Leiterquerschnitt von je 1.5 Millimetern erfüllt es die in Kapitel \ref{subsubsec:kontrollkabel} genannten Vorgaben und ist aufgrund des UV-stabilisierten Außenmantels aus Polyvinylchlorid auch gegen irreparable Schäden durch Sonneneinstrahlung geschützt. Die Länge des Kabels außerhalb des Schaltschranks beträgt 4.8 Meter. 
+Das Azimut-Kabel dient zur Steuerung und Messung der Ausrichtung des Azimut-Rotors. Als Kontrollkabel bezeichnet wird seine Funktion im Kapitel \ref{subsubsec:kontrollkabel} beschrieben. Mit einem Leiterquerschnitt von je 1.5 Millimetern erfüllt es die in Kapitel \ref{subsubsec:kontrollkabel} genannten Vorgaben und ist aufgrund des UV-stabilisierten Außenmantels aus Polyvinylchlorid auch gegen irreparable Schäden durch Sonneneinstrahlung geschützt. Die Länge des Kabels außerhalb des Schaltschranks beträgt 4.8 Meter. 
 
 \section{Elevation-Kabel}
 \label{sec:Elevation-Kabel}
-Das Elevation-Kabel ist das Pendant zum Azimut-Kabel und dient der Steuerung und Messung des Elevation-Rotors. Die Eigenschaften entsprechen dem im Kapitel \ref{sec:azimutkabel} beschriebenen Eigenschaften des Azimut-Kabel.
+Das Elevation-Kabel ist das Pendant zum Azimut-Kabel und dient der Steuerung und Messung der Ausrichtung des Elevation-Rotors. Die Eigenschaften entsprechen dem im Kapitel \ref{sec:azimutkabel} beschriebenen Eigenschaften des Azimut-Kabel.
 
 \section{Schuko 1}
 \label{sec:schuko1}
@@ -217,7 +224,7 @@ Die Schutzkontaktsteckdose dient der Energieversorgung von Geräten mit Netzstec
 
 \section{Schuko 2}
 \label{sec:schuko2}
-Die Schutzkontaktsteckdose Schuko 2 weist dieselben technischen Eigenschaften wie die Schutzkontaktsteckdose 1, welche in Kapitel \ref{sec:schuko1} beschrieben wird, auf und ist für die Energieversorgung des Yeasu G-5500DC Controllers vorgesehen, kann allerdings auch für jegliche andere Geräte verwendet werden.
+Die Schutzkontaktsteckdose Schuko 2 weist dieselben technischen Eigenschaften wie die Schutzkontaktsteckdose Schuko 1, welche in Kapitel \ref{sec:schuko1} beschrieben wird, auf und ist für die Energieversorgung des Yeasu G-5500DC Controllers vorgesehen, kann allerdings auch für jegliche andere Geräte verwendet werden.
 
 \section{Antennenkabel Helix und Array}
 \label{sec:Antennenkabel-Helix}
@@ -234,7 +241,7 @@ Die Leistung einer Antenne lässt sich in einer Gütezahl angeben, die als gain-
 	\label{fig:wideband_lna_gain}
 \end{figure}
 
-Die Verstärkung des Wideband LNAs entspricht laut gezeigter Grafik des Herstellers etwa 22.5 Dezibel bei 433 Megahertz.
+Die Verstärkung des Wideband LNAs entspricht laut Abbildung \ref{fig:wideband_lna_gain} des Herstellers etwa 22.5 Dezibel bei 433 Megahertz.
 
 Um das LNA vor den Belastungen der Natur zu schützen, wird dieses in ein kompaktes wasserdichtes Aluminiumgehäuse mit zwei Kabelverschraubungen für die beiden Antennenkabel verbaut. 
 
@@ -270,7 +277,7 @@ Der nachfolgende Prinzipschaltplan dient dem Zweck, Anwenderinnen und Anwendern 
 
 \section{Observation planen}
 \subsection{Voraussetzung}
-Um eine Observation mit der Empfangsstation planen zu können, wird ein Benutzerkonto im SatNOGS Netzwerk mit der entsprechenden Berechtigung benötigt. Folgende Matrix erläutert die möglichen Aktionen, die gemäß der Art des Benutzerkontos durchgeführt werden können.
+Um eine Observation mit der Empfangsstation planen zu können, wird ein Benutzerkonto im SatNOGS Netzwerk mit der entsprechenden Berechtigung benötigt. Folgende Abbildung erläutert die möglichen Aktionen, die gemäß der Art des Benutzerkontos durchgeführt werden können.
 
 \begin{figure} [H]
 	\centering
@@ -319,7 +326,7 @@ Entsprechend der Beschriftung geben die Informationen Aufschluss über folgende 
 	\label{fig:htrl-uhf(test)configureobservation}
 \end{figure}
 
-Das mit \textbf{1} markierte Dropdown-Menü zeigt den zur Observation ausgewählten Satelliten an und über das mit \textbf{2} Dropdown-Menü markierte können die vorhandenen Sender des Satelliten angezeigt sowie ausgewählt werden. Mithilfe der mit \textbf{4} markierten Eingabefelder kann Start- und Endzeitpunkt der Observation konfiguriert werden. Das mit \textbf{3} markierte Feld zeigt die zur Observation ausgewählte Empfangsstation an. Mit einem Klick auf den mit \textbf{5} markierten Button \textbf{Schedule} wird die Observation geplant und startet automatisch zum konfigurierten Zeitpunkt.
+Das mit \textbf{1} markierte Dropdown-Menü zeigt den zur Observation ausgewählten Satelliten an und über das mit \textbf{2} Dropdown-Menü markierte können die vorhandenen Sender des Satelliten angezeigt sowie ausgewählt werden. Mithilfe der mit \textbf{4} markierten Eingabefelder kann Start- und Endzeitpunkt der Observation konfiguriert werden. Das mit \textbf{3} markierte Feld zeigt die zur Observation ausgewählte Empfangsstation an. Mit einem Klick auf den mit \textbf{5} markierten Button \glqq Schedule\grqq{} wird die Observation geplant und startet automatisch zum konfigurierten Zeitpunkt.
 
 \subsection{Observation auswerten}
 Um die Observationen einer Empfangsstation anzuzeigen, wird auf den in Abbildung \ref{fig:htrl-uhf(test)showobservations} mit \textbf{1} markierten Button auf der Landingpage der Empfangsstation gedrückt.

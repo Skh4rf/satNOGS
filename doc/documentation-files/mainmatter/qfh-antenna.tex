@@ -1,8 +1,8 @@
 \chapter{Quadrifilare Helixantenne (QFH)}
 \label{chap:qfh}
-Die quadrifilare Helixantenne ist eine Abwandlung der monofilaren Helixantenne und unterscheidet sich von dieser in mehreren wichtigen Punkten.
+Die quadrifilare Helixantenne ist eine Abwandlung der monofilaren Helixantenne und unterscheidet sich von dieser weist einige interessante Eigenschaften auf.
 
-Zum einen ist sie um einiges kleiner als die monofilare Helixantenne, zum anderen wird sie als omnidirektionale Antenne für Satellitenkommunikation verwendet, da sie, wie die monofilare Helixantenne, zirkular polarisiert ist. Die quadrifilare Helixantenne zeigt entlang des Horizonts sowie direkt nach oben einen besseren Antennengewinn als in andere Richtungen.
+Zum einen ist sie um einiges kleiner als die monofilare Helixantenne und zum anderen wird sie oft als omnidirektionale Antenne für die Satellitenkommunikation verwendet, da sie wie die monofilare Helixantenne zirkular polarisiert ist. Die quadrifilare Helixantenne zeigt entlang des Horizonts sowie direkt nach oben einen besseren Antennengewinn als in andere Richtungen.
 
 \section{Design}
 Das Design der QFH muss verschiedenen Anforderungen entsprechen. Neben der Anforderung die eigentliche Funktion zu erfüllen, scilicet für eine Frequenz von 433 Megahertz ein möglichst quasi-isotropes Abstrahlverhalten nach oben aufzuweisen und auf 50 Ohm angepasst zu sein, sollte die Antennen ebenfalls Belastungen die von der Natur ausgehen standhalten. Dabei wird ein besonderes Augenmerk auf die UV-Resistenz und den Korrosionsschutz gelegt. 
@@ -25,7 +25,7 @@ Mittels dieser Werte wurde folgendes 3D-Model der Antenne zur Simulation entworf
 
 \begin{figure} [H]
 	\centering
-	\includegraphics[width=.25\linewidth]{../ref/qfh_render.png}
+	\includegraphics[width=.15\linewidth]{../ref/qfh_render.png}
 	\caption{CAD-Model der QHA}
 	\label{fig:qfh_render}
 \end{figure}
@@ -39,7 +39,7 @@ Die Simulationsergebnisse der Antenne zeigen, dass sie bei einer Frequenz von 46
 	\label{fig:s11_old_qfh}
 \end{figure}
 
-Die Form des Abstrahlverhaltens sowie der maximale Gewinn mit 4.13 Dezibel entsprechen ebenfalls typischen Werten für eine QHA \cite{keller_quadrifilar_2015}.
+Die Form des Abstrahlverhaltens sowie die maximale Richtwirkung von 4.13 Dezibel entsprechen ebenfalls typischen Werten für eine QHA \cite{keller_quadrifilar_2015}.
 
 \begin{figure} [H]
 	\centering
@@ -64,7 +64,7 @@ Die finalen Werte belaufen sich auf:
 	\end{tabular}
 \end{center} 
 
-Bei der Simulation dieser Werte ergibt sich eine Rückflussdämpfung von -13.7 Dezibel und ein maximaler Gewinn von 3.55 Dezibel bei 433 Megahertz. Die beste Anpassung besitzt die QHA bei 426 Megahertz mit einer Rückflussdämpfung von -14.4 Dezibel.
+Bei der Simulation dieser Werte ergibt sich eine Rückflussdämpfung von -13.7 Dezibel und eine maximale Richtwirkung von 3.55 Dezibel bei 433 Megahertz. Die beste Anpassung besitzt die QHA bei 426 Megahertz mit einer Rückflussdämpfung von -14.4 Dezibel.
 
 \begin{figure} [H]
 	\centering
@@ -136,7 +136,7 @@ Da die QHA eine symmetrische Antenne ist, weist die fertige QHA vier Wicklungen 
 	\label{fig:fertig_qha}
 \end{figure}
 
-Für die Anpassung der QHA relevant sind vor allem die Länge des abisolierten und nicht geschirmten Antennenkabels und die Form der Schleifen. Durch das Minimieren der abisolierten Länge des Antennenkabels sowie das leichte Korrigieren der Form der Schleifen konnte eine Rückflussdämpfung von -17.44 Dezibel bei einer Frequenz von 433 Megahertz erreicht werden, siehe Kapitel (\ref{sec:messungen_qha}). Die Mantelwellensperre nahm keinen Einfluss auf die Anpassung und die Ergebnisse blieben mit und ohne Mantelwellensperre nahezu dieselben. 
+Für die Anpassung der QHA relevant sind vor allem die Länge des abisolierten und nicht geschirmten Antennenkabels und die Form der Schleifen. Durch das Minimieren der abisolierten Länge des Antennenkabels sowie das leichte Korrigieren der Form der Schleifen konnte eine Rückflussdämpfung von -17.44 Dezibel bei einer Frequenz von 433 Megahertz erreicht werden, siehe Kapitel \ref{sec:messungen_qha}. Die Mantelwellensperre nahm keinen Einfluss auf die Anpassung und die Ergebnisse blieben mit und ohne Mantelwellensperre nahezu dieselben. 
 
 \section{Messungen}
 \label{sec:messungen_qha}
@@ -148,10 +148,10 @@ Für die Anpassung der QHA relevant sind vor allem die Länge des abisolierten u
 	\label{fig:fertig_qha}
 \end{figure}
 
-Die Messung zeigt eine maximale Rückflussdämpfung von -17.4 Dezibel bei fast genau 433 Megahertz. Für eine minimale Rückflussdämpfung von -10 Dezibel ergibt sich eine Bandbreite von etwa 422 bis 442 Megahertz. Das Smith-Diagramm gibt Aufschluss darüber, dass die Antenne bei 433 Megahertz mit 52.26 Ohm Wirkwiderstand und 8.85 Ohm Blindwiderstand leichte induktive Eigenschaften aufweist.
+Die Messung zeigt eine maximale Rückflussdämpfung von -17.4 Dezibel bei fast genau 433 Megahertz. Für eine minimale Rückflussdämpfung von -10 Dezibel ergibt sich eine Bandbreite von etwa 422 bis 442 Megahertz. Das Smith-Diagramm gibt Aufschluss darüber, dass die Antenne bei 433 Megahertz mit 62.26 Ohm Wirkwiderstand und 8.85 Ohm Blindwiderstand leichte induktive Eigenschaften aufweist.
 
 \subsection{qualitative Charakterisierung}
-Zur Charakterisierung der QHA wurde mithilfe eines einfachen Dipols und einem HackRF One als Sender die Antenne aus verschiedenen Richtungen angestrahlt. Mithilfe des SDRs wurde die von der Antenne empfangene Leistung ermittelt. Aufgrund der unbekannten Sendeleistung des HackRF One, welcher nur über eine VGA die bei der Sendefrequenz maximale Sendeleistung kontrolliert, kann keine Aussage über die gesendete Leistung getroffen werden. Dementsprechend beschreiben die nachfolgenden Abstrahldiagramme nur relativ das Abstrahlverhalten der QHA und geben keinen Aufschluss über den wirklichen Gewinn der Antenne. Die dargestellten Werte entsprechen der Differenz der minimal empfangenen Leistung mit -105 dBm und dem Wert der empfangenen Liestung der entsprechenden Ausrichtung. Die Y-Achse entspricht der Vertikalen, die X-Achse der Richtung des Verbindungselements der großen Schleife und die Z-Achse der Richtung des Verbindungselements der kleinen Schleife. Auch die empfangenen Leistungen sollten nur als grobe Messwerte betrachtet werden, da das SDR keinen vollwertigen und kalibrierten Spectrum-Analyzer ersetzen kann. 
+Zur Charakterisierung der QHA wurde mithilfe eines einfachen Dipols und einem HackRF One als Sender die Antenne aus verschiedenen Richtungen angestrahlt. Mithilfe des SDRs wurde die von der Antenne empfangene Leistung ermittelt. Aufgrund der unbekannten Sendeleistung des HackRF One, welcher nur über eine VGA die bei der Sendefrequenz maximale Sendeleistung kontrolliert, kann keine Aussage über die gesendete Leistung getroffen werden. Dementsprechend beschreiben die nachfolgenden Strahlungsmuster nur relativ das Abstrahlverhalten der QHA und geben keinen Aufschluss über den wirklichen Gewinn der Antenne. Die dargestellten Werte entsprechen der Differenz der minimal empfangenen Leistung mit -105 dBm und dem Wert der empfangenen Leistung der entsprechenden Ausrichtung. Die Y-Achse entspricht der Vertikalen, die X-Achse der Richtung des Verbindungselements der großen Schleife und die Z-Achse der Richtung des Verbindungselements der kleinen Schleife. Auch die empfangenen Leistungen sollten nur als grobe Messwerte betrachtet werden, da das SDR keinen vollwertigen und kalibrierten Spectrum-Analyzer ersetzen kann. Die Strecke zwischen den beiden Antennen betrug 14 Meter, um sicherzustellen, dass lediglich das Fernfeld Einfluss auf die Ergebnisse hatte.
 
 \subsubsection{XZ-Strahlungsmuster}
 Die nachfolgende Tabelle zeigt die Ergebnisse der Messungen des XZ-Strahlungsmusters, wobei 0 und 180 Grad auf der X-Achse und 90 und 270 Grad auf der Z-Achse.
@@ -236,13 +236,13 @@ Die nachfolgende Tabelle zeigt die Ergebnisse der Messungen des YZ-Strahlungsmus
 Deutlich erkennbar bei der Betrachtung des gemessenen Strahlungsmusters ist, dass die QHA, im Vergleich zur Simulation, den besten Gewinn in die um 180 Grad verschobene Richtung, also 270 Grad, aufweist. Wird das simulierte Strahlungsmuster allerdings um 180 Grad gedreht, so sind die Formen nahezu identisch. Auch das Minimum bei etwa 225 Grad in der Simulation ist somit bei 45 Grad in der Messung deutlich zu erkennen. 
 
 \section{Test}
-Um die Funktionalität der QHA nachzuweisen wurden mehrere Observationen durchgeführt. Dabei wurde das Signal der QHA zusätzlich mit dem im späteren Kapitel \ref{sec:LNA} erläuterten LNA verstärkt. Wichtig zu erwähnen ist, dass die zum Test durchgeführten Messungen vor der Charakterisierung der QHA stattgefunden haben und die Ausrichtung der QHA entsprechend der Simulationsergebnisse vorgenommen wurde. Das trotzdem sehr gute Signale empfangen wurden, könnte durch den dennoch guten Gewinn mit dieser Ausrichtung oder Reflexionen an der Erdoberfläche begründet sein. 
+Um die Funktionalität der QHA nachzuweisen wurden mehrere Observationen durchgeführt. Dabei wurde das Signal der QHA zusätzlich mit dem im späteren Kapitel \ref{sec:LNA} erläuterten LNA verstärkt. Wichtig zu erwähnen ist, dass die zum Test durchgeführten Messungen vor der Charakterisierung der QHA stattgefunden haben und die Ausrichtung der QHA entsprechend der Simulationsergebnisse vorgenommen wurde. Das trotzdem sehr gute Signale empfangen wurden, könnte durch den dennoch guten Gewinn mit dieser Ausrichtung oder Reflexionen an der Erdoberfläche begründet werden. 
 
 Die Observationen wurden vom 11. März 2024 bis zum 14. März 2024, an den Koordinaten 47.44983098163626, 9.833138913740827 (Hof 417, 6861 Alberschwende) auf einer Höhe von 730 Metern über dem Meeresspiegel, durchgeführt. Die Ergebnisse dieser Observationen können unter folgendem Link aufgerufen werden:\newline \url{https://network.satnogs.org/observations/?norad=&start=2024-02-01+17%3A17&end=2024-03-15+17%3A17&observer=&station=3307&transmitter_mode=&transmitter_uuid=&page=1}
 
 \begin{figure} [H]
 	\centering
-	\includegraphics[width=.25\linewidth]{../ref/qha_duringob.jpg}
+	\includegraphics[width=.18\linewidth]{../ref/qha_duringob.jpg}
 	\caption{QHA während der Observationen}
 	\label{fig:qha_duringobs}
 \end{figure}

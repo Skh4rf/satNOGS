@@ -1,34 +1,12 @@
 \addcontentsline{toc}{section}{Zusammenfassung}
 \section*{Zusammenfassung}
-Es soll eine Bodenstation zum Empfang von Daten wissenschaftlicher Satelliten im 70cm Frequenzband aufgebaut werden. Das Problem ist, dass rund um die Uhr Daten empfangen werden sollen, allerdings befinden sich die Satelliten im LEO, was zur Folge hat, dass sie nicht mit der Erdrotation synchronisiert sind. Dadurch wird ein globales Bodenstations-Netzwerk benötigt, SatNOGS schafft hierbei Abhilfe.
-Um die Eignung verschiedener Antennentypen zum Empfang von Daten auszuwerten sollen zwei verschiedene aufgebaut und getestet werden.
-Das Ergebnis war eine funktionale Bodenstation sowie eine omnidirektionale Antenne (QHA) und ein direktionales Antennenarray bestehend aus vier Helixantennen.
+Stephen Hawkins riet der Menschheit kurz vor seinem Tod: \glqq Schaut nicht runter zu euren Füßen, sondern rauf zu den Sternen!\grqq{} und unterstreicht damit die Relevanz der Erforschung des Weltalls. Um bereits Schülerinnen und Schülern in allgemein- und berufsbildenden höheren Schulen Untersuchungen im Weltraum, genauer gesagt im Low-Earth-Orbit, zu ermöglichen befördert das TU Wien Space Team im Jahr 2024 einen Satellit als Forschungsplattform für genau diesen Zweck in den Erdorbit. Um mit diesem Satellit kommunizieren zu können, wird ein globales Netzwerk an Empfangsstationen benötigt, für welches als Fallstudie in dieser Diplomarbeit eine Empfangsstation entwickelt, aufgebaut und in Betrieb genommen wird. 
 
 \subsection*{A Aufgabenstellung}
-\begin{itemize}	
-	\item Welches Ziel soll erreicht werden?
-	
-	Das Ergebnis soll eine funktionale Bodenstation sein, welche Daten von wissenschaftlichen Satelliten empfangen kann.
-	
-	\item Warum und für wen ist das definierte Ziel von Interesse?
-	
-	Das Ziel ist für das Space Team der Technischen Universität Wien von Interesse, da dadurch von ihrem neuen CubeSat über einen längeren Zeitraum hinweg Daten empfangen werden können.
-\end{itemize}
+Das Hauptziel dieser Diplomarbeit ist es, erfolgreich Daten von bereits vorhandenen Satelliten im 70cm-Band zu empfangen. Hierfür soll die Empfangsstation, die im Rahmen der Arbeit in Betrieb genommen wird, in das globale Satellitenbodenstationsnetzwerk SatNOGS integriert werden. Dadurch wird den Betreibern von Satelliten eine erweiterte flächenmäßige Abdeckung für die Kommunikation und eine verbesserte Ausfallsicherheit geboten.
 
 \subsection*{B Umsetzung}
-\begin{itemize}
-	\item Auf welche fachtheoretischen/-praktischen Grundlagen wurde zurückgegriffen?
-	
-	Es wurde auf hochfrequenztechnische Grundlagen zum Thema Anpassnetzwerke zurückgegriffen. Weiters musste mit einem Raspberry Pi umgegangen werden, um das SatNOGS-Image darauf zu flashen.
-	
-	\item 
-\end{itemize}
+Als Hauptbestandteil der Empfangsstation wird sowohl ein Antennenarray aus vier gerichteten monofilaren Helixantennen als auch eine quasi-omnidirektionale quadrifilare Helixantenne entwickelt und aufgebaut. Für die notwendige Nachführung der gerichteten Antennen wird auf einen Yeasu G-5500DC Rotor zurückgegriffen und das dafür benötigte Computer Control Interface emuliert. Die gesamten restlichen Komponenten für die Empfangsstation werden kompakt in einem Schaltschrank untergebracht.  
 
 \subsection*{C Ergebnisse}
-\begin{itemize}
-	\item Welchen Wert hat diese Diplomarbeit für Andere?
-	
-	Die Diplomarbeit ist im SatNOGS-Netzwerk registriert. Das bedeutet, dass jeder Zugriff auf die Antennen hat und sie nach Wunsch benutzen kann um Daten von Satelliten zu empfangen.
-	
-	\item 
-\end{itemize}
+Das Ergebnis der Diplomarbeit ist eine funktionsfähige Empfangsstation, die Daten von wissenschaftlichen Satelliten im 70cm-Band mithilfe beider entwickelter Antennentypen empfängt. Darüber hinaus ermöglicht die Dokumentation des zeitlichen und finanziellen Aufwands die Bewertung der Rentabilität der jeweiligen Antennentypen sowie die Identifizierung weiterer Vor- und Nachteile.

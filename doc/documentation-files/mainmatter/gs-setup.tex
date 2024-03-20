@@ -4,7 +4,7 @@ Der SatNOGS Client bildet das Herzstück der gesamten Empfangsstation. Er ist f�
 
 \section{Grundlegende Konfiguration}
 \subsection{Verbinden zum Raspberry PI 4}
-Um Einstellungen am Raspberry Pi 4 vornehmen zu können wird auf diesen über SSH zugegriffen. Dazu muss das Gerät, welches auf den Raspberry Pi 4 zugreift, am besten mit dem selben Netzwerk verbunden sein wie der Raspberry selbst. Die einfachste Vorgehensweise, um sich mit dieser Voraussetzung mit einem Windows System zum Raspberry Pi 4 über SSH zu verbinden, besteht darin, in der Eingabeaufforderung den Befehl \glqq ssh *hostname*\grqq{} auszuführen. Der Hostname wird im Zuge der Installation des Betriebssystems vergeben und lautet in diesem Fall \glqq qfh\grqq{}. Wurde bei der Installation ein Passwort eingegeben, so erscheint anschließend eine Aufforderung dieses einzugeben. Nach der Eingabe wird bei erfolgreicher Verbindung folgende Information zurückgegeben:
+Um Einstellungen am Raspberry Pi 4 vornehmen zu können wird auf diesen über SSH zugegriffen. Dazu muss das Gerät, welches auf den Raspberry Pi 4 zugreift, am besten mit dem selben Netzwerk verbunden sein wie der Raspberry. Die einfachste Vorgehensweise, um sich mit dieser Voraussetzung mit einem Windows System zum Raspberry Pi 4 über SSH zu verbinden, besteht darin, in der Eingabeaufforderung den Befehl \glqq ssh *hostname*\grqq{} auszuführen. Der Hostname wird im Zuge der Installation des Raspbian SatNOGS Image vergeben und lautet in diesem Fall \glqq qfh\grqq{}. Wurde bei der Installation ein Passwort festgelegt, so erscheint anschließend eine Aufforderung dieses einzugeben. Nach der Eingabe wird bei erfolgreicher Verbindung folgende Information zurückgegeben:
 
 \begin{figure} [H]
 	\centering
@@ -23,7 +23,7 @@ Mithilfe des Befehls \glqq sudo satnogs-setup\grqq{} öffnet sich das Hauptmenü
 	\label{fig:mainmenu}
 \end{figure}
 
-Wurden alle Einstellungen vorgenommen, so können diese mit Wurde bei der Installation ein Passwort eingegeben\glqq Apply\grqq{} angewendet und gespeichert werden.
+Wurden alle Einstellungen vorgenommen, so können diese mit \glqq Apply\grqq{} angewendet und gespeichert werden.
 
 \subsection{Einstellungen}
 Wird im Hauptmenü der Reiter \glqq Basic\grqq{} mit \glqq Enter\grqq{} ausgewählt, erscheint folgendes Fenster über welches alle grundlegenden Einstellungen zum Betrieb einer Empfangsstation vorgenommen werden können.
@@ -55,7 +55,7 @@ Mithilfe dieses Einstellungsparameters wird dem SatNOGS Client das verwendete SD
 Dieser Parameter legt die Abtastrate des SDRs fest. Für das RTL-SDR Blog v3 wird eine Abtastrate von 2.048 Megasamples pro Sekunde empfohlen \cite{noauthor_satnogsclient_nodate}, was über den Parameter 2.048e6 eingestellt werden kann. Auch hier finden sich für weitere SDRs Informationen auf der Software Defined Radio Seite des SatNOGS Wiki \cite{noauthor_software_nodate}. 
 
 \subsubsection{SATNOGS\textunderscore STATION\textunderscore ELEV}
-Für diesen Parameter ist es notwendig, die Höhenlage der Empfangsstation zu ermitteln. Dazu empfiehlt sich die Verwendung einer interaktiven topografischen Karte wie \url{http://www.de-at.topographic-map.com}. Der für den Standort der HTL Rankweil ermittelte Wert, welcher auch dem Parameter entspricht, beträgt 459 Meter. Dieser Wert wird für die Berechnungen der passierenden Satelliten und dessen Elevation- und Azimutalwinkel verwendet.
+Für diesen Parameter ist es notwendig, die Höhenlage der Empfangsstation zu ermitteln. Dazu empfiehlt sich die Verwendung einer interaktiven topografischen Karte wie \url{http://www.de-at.topographic-map.com}. Der für den Standort der HTL Rankweil ermittelte Wert, welcher auch dem Parameter entspricht, beträgt 459 Meter. Dieser Wert wird für die Berechnungen der passierenden Satelliten und den dazugehörigen Elevation- und Azimutalwinkel verwendet.
 
 \subsubsection{SATNOGS\textunderscore STATION\textunderscore ID}
 Die Station-ID wird zur eindeutigen Identifikation der Empfangsstation im SatNOGS-Netzwerk verwendet. Sie kann auf der Seite des Benutzerprofils auf der Homepage des SatNOGS-Netzwerks abgelesen werden. 
@@ -68,10 +68,10 @@ Die Station-ID wird zur eindeutigen Identifikation der Empfangsstation im SatNOG
 \end{figure}
 
 \subsubsection{SATNOGS\textunderscore STATION\textunderscore LAT}
-Dieser Parameter gibt den Breitengrad der Position der Empfangsstation an. Er wird für die Berechnungen der passierenden Satelliten und dessen Elevation- und Azimutalwinkel verwendet.
+Dieser Parameter gibt den Breitengrad der Position der Empfangsstation an. Er wird für die Berechnungen der passierenden Satelliten und den dazugehörigen Elevation- und Azimutalwinkel verwendet.
 
 \subsubsection{SATNOGS\textunderscore STATION\textunderscore LON}
-Dieser Parameter gibt den Längengrad der Position der Empfangstation an. Er wird ebenfalls für die Berechnungen der passierenden Satelliten und dessen Elevation- und Azimutalwinkel verwendet.
+Dieser Parameter gibt den Längengrad der Position der Empfangstation an. Er wird ebenfalls für die Berechnungen der passierenden Satelliten und den dazugehörigen Elevation- und Azimutalwinkel verwendet.
 
 \section{Erweiterte Konfiguration} 
 Wird im Hauptmenü der Reiter \glqq Advanced\grqq{} mit \glqq Enter\grqq{} ausgewählt, erscheint das folgende Fenster über welches erweiterte Einstellungen vorgenommen werden können. 
@@ -86,7 +86,7 @@ Wird im Hauptmenü der Reiter \glqq Advanced\grqq{} mit \glqq Enter\grqq{} ausge
 Die wichtigsten Einstellungen, die hier vorgenommen werden können, sind das Definieren der Verstärkung des SDRs, das Einrichten einer Unterstützung für die Verwendung eines Rotors und das automatische Aktivieren von Bias-T während einer Observation.
 
 \subsection{Verstärkung des SDRs einstellen}
-Um die Verstärkung des SDRs einzustellen, müssen zuerst die möglichen Parameter ermittelt werden, was durch das Ausführen des Befehls \glqq rtl\textunderscore test\grqq{} in der SSH gemacht werden kann. 
+Um die Verstärkung des SDRs einzustellen, müssen zuerst die möglichen Parameter ermittelt werden, was durch das Ausführen des Befehls \glqq rtl\textunderscore test\grqq{} in der SSH gemacht wird. 
 
 \begin{figure} [H]
 	\centering
@@ -120,4 +120,4 @@ Diese Schritte ermöglichen die Kontrolle der Bias-T Funktion des RTL-SDR Blog v
 \newline Einschalten: \glqq /rtl\textunderscore biast/build/src/rtl\textunderscore biast -b 1\grqq{}
 \newline Ausschalten: \glqq /rtl\textunderscore biast/build/src/rtl\textunderscore biast -b 0\grqq{}
 
-Diese Befehle können nun in den erweiterten Einstellungen unter dem Reiter Scripts als Pre- und Post-Observation Script festgelegt werden. Dazu wird der Einschalt- sowie Ausschalt-Befehl mit \glqq /home\grqq{} , aufgrund des Ursprungsverzeichnisses des SatNOGS Client, am Anfang erweitert.
+Diese Befehle können in den erweiterten Einstellungen unter dem Reiter Scripts als Pre- und Post-Observation Script festgelegt werden. Dazu wird der Einschalt- sowie Ausschalt-Befehl mit \glqq /home\grqq{} , aufgrund des Ursprungsverzeichnisses des SatNOGS Client, am Anfang erweitert. Somit wird Bias-T automatisch zum Startzeitpunkt einer Observation aktiviert und nach vollendeter Observation wieder deaktiviert. 

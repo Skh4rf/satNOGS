@@ -1,7 +1,7 @@
 \chapter{Rotor}
 Rotoren werden in der Antennentechnik eingesetzt, um die Kommunikation mit nicht-\\geostationären Satelliten zu ermöglichen, wobei Antennentypen mit hoher Richtwirkung verwendet werden (z.B. Helix-Antenne). In der Regel werden durch diese Methode stärkere Signale empfangen, als es mit Antennen möglich ist, welche eine größere Abdeckung von Richtungen aufweisen und daher keine Nachführung erfordern. 
 \section{Azimut und Elevation}
-Die Ausrichtung des Rotors und somit auch der Antenne erfolgt durch die Angabe von zwei Winkeln - Azimut und Elevation - im Gradmaß des astronomischen Horizont-Koordinatensystems. Dabei entspricht das Azimut der auszurichtenden Himmelsrichtung und die Elevation der vertikalen Ausrichtung. Beide Winkelscheitelpunkte werden durch die Position des Rotors definiert. Als Referenzlinie für das Azimut dient die Linie vom Winkelscheitelpunkt nach Norden. Die Referenzlinie für die Elevation bildet der Zenit am Standort des Rotors. Die Elevation entspricht somit dem Komplementärwinkel vom Referenzschenkel zur Linie, welche den Winkelscheitel mit dem auszurichtenden Punkt verbindet.\cite{noauthor_astronomische_nodate}
+Die Ausrichtung des Rotors und somit auch der Antenne erfolgt durch die Angabe von zwei Winkeln - Azimut und Elevation - im Gradmaß des astronomischen Horizont-Koordinatensystems. Dabei entspricht das Azimut der auszurichtenden Himmelsrichtung und die Elevation der vertikalen Ausrichtung. Beide Winkelscheitelpunkte werden durch die Position des Rotors definiert. Als Referenzlinie für das Azimut dient die Linie vom Winkelscheitelpunkt nach Norden. Die Referenzlinie für die Elevation bildet der Zenit am Standort des Rotors. Die Elevation entspricht somit dem Komplementärwinkel vom Referenzschenkel zur Linie, welche den Winkelscheitel mit dem auszurichtenden Punkt verbindet. \cite{noauthor_astronomische_nodate}
 
 \begin{figure}[H]
 	\centering
@@ -221,7 +221,7 @@ Diese Informationen genügen, um nun mithilfe eines Arduino Uno und entsprechend
 Die softwaremäßige Implementierung der Emulation basiert auf dem K3NG Rotator Controller Code \cite{good_k3ngk3ng_rotator_controller_2024}, welcher Grundkonstrukte für unterschiedlichste Rotoren und Anwendungen beinhaltet. Diese Software bedient die beiden Schnittstellen und führt diesbezüglich Aktionen entsprechend der vorhergehenden Beschreibung der Funktionsweise des GS232A/B aus. Folgende Konfigurationen und Änderungen wurden an der Software vorgenommen, um den benötigten Anforderungen zu entsprechen:
 
 \subsubsection{Änderungen in rotator\_features.h}
-In der rotator\_features.h mussten 2 Änderung vorgenommen werden. Die erste Änderung teilt dem Programm mit, dass neben einem Azimut-Rotor auch ein Elevation-Rotor vorhanden ist, dessen Position über eine Spannung am Schleifer eines Potentiometer bestimmt wird. Dazu müssen folgende Präprozessordirektiven dem Programm hinzugefügt werden:
+In der rotator\_features.h müssen 2 Änderung vorgenommen werden. Die erste Änderung teilt dem Programm mit, dass neben einem Azimut-Rotor auch ein Elevation-Rotor vorhanden ist, dessen Position über eine Spannung am Schleifer eines Potentiometer bestimmt wird. Dazu müssen folgende Präprozessordirektiven dem Programm hinzugefügt werden:
 
 \definecolor{officegreen}{rgb}{0.0, 0.5, 0.0}
 \lstset{
@@ -266,7 +266,7 @@ Um das Layout des Arduino-Shields, welches im späteren Kapitel \ref{subsubsec:p
 
 Somit können aus der Datei rotator\_pins.h folgende Funktionen für entsprechende Pins des Arduino Uno entnommen werden:
 
-\begin{table}
+\begin{table}[H]
 	\centering
 	\begin{tabular}{| c | c | l |}
 		\hline
@@ -350,7 +350,7 @@ Zuzüglich Kondensatoren zur Entstörung der Treiber-Eingänge ergibt sich dadur
 Die Bezeichner D (Down), L (Left), U (Up) und R (Right) sind mit Pin 5, 4, 3 und 2 mit der analogen Schnittstelle verbunden.
 
 \subsubsection{Schaltplan}
-Mit den genannten zwei Hauptblöcken als Grundlage ergibt sich folgender Gesamtschaltplan:
+Mit den genannten zwei Hauptblöcken als Grundlage ergibt sich der in der nächsten Abbildung gezeigte Gesamtschaltplan:
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{../ref/SchematicFullGS232.png}
