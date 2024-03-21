@@ -12,6 +12,7 @@
 
 \documentclass[hidelinks,12pt,a4paper,twoside]{report}
 \usepackage{Rusch-Vorlage}
+\usepackage{pdfpages}
 
 \bibliography{references.bib} %mehrsprachiges Bibliotheks(Literatur-)verzeichnis
 
@@ -130,6 +131,8 @@
 	\fancyfoot[LO,RE]{\DADate~\textbar~SatNOGS-Empfangsstation~\textbar ~\@SecAuth}
 	
 	\input{frontbackmatter/quotes.tex}        % INCLUDE Quotes
+	\newpage
+	\input{frontbackmatter/utilized_software}
 	\newpage
 	
 	% -------------------------- 
